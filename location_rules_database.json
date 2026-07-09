@@ -1,0 +1,1702 @@
+[
+  {
+    "city_name": "San Antonio",
+    "county": "Bexar",
+    "state_code": "TX",
+    "region": "Texas",
+    "sale_dialect": "Garage Sale",
+    "permit_required": true,
+    "permit_cost": "$16.50",
+    "permit_link": "https://www.sanantonio.gov/dsd/permitting/garagesale",
+    "signage_rules": "On private property only with owner consent. Prohibited on utility poles, traffic signs, and public rights-of-way.",
+    "best_weekends": "Spring and Fall (March-May, September-November)",
+    "local_crosspost_sites": [
+      "Craigslist San Antonio",
+      "Nextdoor Bexar County",
+      "San Antonio Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Austin",
+    "county": "Travis",
+    "state_code": "TX",
+    "region": "Texas",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Permitted only on the property where the sale is held. Prohibited on public right-of-ways and utility poles.",
+    "best_weekends": "Spring and Fall (March-May, October-November)",
+    "local_crosspost_sites": [
+      "Craigslist Austin",
+      "Nextdoor Travis County",
+      "Austin Yard/Garage Sale Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Houston",
+    "county": "Harris",
+    "state_code": "TX",
+    "region": "Texas",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Allowed only on private property with owner permission. Strictly banned on all city property, easements, and utility poles.",
+    "best_weekends": "Late Fall to Early Spring (October-April)",
+    "local_crosspost_sites": [
+      "Craigslist Houston",
+      "Nextdoor Harris County",
+      "Houston Garage Sale Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Dallas",
+    "county": "Dallas",
+    "state_code": "TX",
+    "region": "Texas",
+    "sale_dialect": "Garage Sale",
+    "permit_required": true,
+    "permit_cost": "$0.00",
+    "permit_link": "https://dallascityhall.com",
+    "signage_rules": "Limited to one sign on the sale property and two directional signs on private property with consent. Max size 2 sq ft.",
+    "best_weekends": "Spring and Fall (March-May, October-November)",
+    "local_crosspost_sites": [
+      "Craigslist Dallas",
+      "Nextdoor Dallas County",
+      "Dallas Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Fort Worth",
+    "county": "Tarrant",
+    "state_code": "TX",
+    "region": "Texas",
+    "sale_dialect": "Garage Sale",
+    "permit_required": true,
+    "permit_cost": "$0.00",
+    "permit_link": "https://www.fortworthtexas.gov",
+    "signage_rules": "Signs allowed on the property hosting the sale. Prohibited on public rights-of-way, utility poles, or trees.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Fort Worth",
+      "Nextdoor Tarrant County",
+      "Fort Worth Garage/Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "El Paso",
+    "county": "El Paso",
+    "state_code": "TX",
+    "region": "Texas",
+    "sale_dialect": "Garage Sale",
+    "permit_required": true,
+    "permit_cost": "$0.00",
+    "permit_link": "https://www.elpasotexas.gov",
+    "signage_rules": "Signs must be placed on the property where the sale takes place. Off-site and public right-of-way placement is prohibited.",
+    "best_weekends": "Spring and Fall (March-May, September-November)",
+    "local_crosspost_sites": [
+      "Craigslist El Paso",
+      "Nextdoor El Paso County",
+      "El Paso Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Arlington",
+    "county": "Tarrant",
+    "state_code": "TX",
+    "region": "Texas",
+    "sale_dialect": "Garage Sale",
+    "permit_required": true,
+    "permit_cost": "$0.00",
+    "permit_link": "https://www.arlingtontx.gov",
+    "signage_rules": "Up to 3 signs are permitted on private property with owner permission. Prohibited on traffic signs, utility poles, and public property.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Dallas / Fort Worth",
+      "Nextdoor Tarrant County",
+      "Arlington Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Corpus Christi",
+    "county": "Nueces",
+    "state_code": "TX",
+    "region": "Texas",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property only. Attaching signs to trees, telephone poles, or public structures is strictly prohibited.",
+    "best_weekends": "Late Winter and Spring (February-April, October-November)",
+    "local_crosspost_sites": [
+      "Craigslist Corpus Christi",
+      "Nextdoor Nueces County",
+      "Corpus Christi Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Phoenix",
+    "county": "Maricopa",
+    "state_code": "AZ",
+    "region": "Midwest",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed only on private property with consent. Strictly forbidden on utility poles, streetlights, or city right-of-ways.",
+    "best_weekends": "Late Fall through Early Spring (November-April)",
+    "local_crosspost_sites": [
+      "Craigslist Phoenix",
+      "Nextdoor Maricopa County",
+      "Phoenix Garage Sale Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Tucson",
+    "county": "Pima",
+    "state_code": "AZ",
+    "region": "Midwest",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "One on-site sign and up to two off-site directional signs allowed on private property with owner consent.",
+    "best_weekends": "Late Fall through Early Spring (November-March)",
+    "local_crosspost_sites": [
+      "Craigslist Tucson",
+      "Nextdoor Pima County",
+      "Tucson Yard and Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Mesa",
+    "county": "Maricopa",
+    "state_code": "AZ",
+    "region": "Midwest",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be placed on private property only. Signs on utility poles, medians, or public right-of-ways are subject to dynamic fines.",
+    "best_weekends": "Winter and Spring (January-April, October-December)",
+    "local_crosspost_sites": [
+      "Craigslist Phoenix",
+      "Nextdoor Maricopa County",
+      "Mesa Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Chandler",
+    "county": "Maricopa",
+    "state_code": "AZ",
+    "region": "Midwest",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed on the residence only. Off-site signage on public streets, light poles, or traffic lights is prohibited.",
+    "best_weekends": "Winter and Spring (January-March, October-November)",
+    "local_crosspost_sites": [
+      "Craigslist Phoenix",
+      "Nextdoor Maricopa County",
+      "Chandler Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Los Angeles",
+    "county": "Los Angeles",
+    "state_code": "CA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must remain on private property. Attaching signs to public property, utility poles, parkway trees, or street lights is illegal.",
+    "best_weekends": "Year-round (Optimal March-May, September-November)",
+    "local_crosspost_sites": [
+      "Craigslist Los Angeles",
+      "Nextdoor Los Angeles County",
+      "Los Angeles Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "San Diego",
+    "county": "San Diego",
+    "state_code": "CA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signage restricted to the property where the sale takes place. Prohibited on public right-of-ways and telephone poles.",
+    "best_weekends": "Year-round (Optimal April-June, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist San Diego",
+      "Nextdoor San Diego County",
+      "San Diego Garage & Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "San Jose",
+    "county": "Santa Clara",
+    "state_code": "CA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed on the premises only. Off-site signs on public property, utility poles, or street signs are prohibited and strictly enforced.",
+    "best_weekends": "Spring and Summer (April-August)",
+    "local_crosspost_sites": [
+      "Craigslist SF Bay Area",
+      "Nextdoor Santa Clara County",
+      "San Jose Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "San Francisco",
+    "county": "San Francisco",
+    "state_code": "CA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs permitted on the private property of the sale only. Strictly banned on utility posts, lampposts, and public structures.",
+    "best_weekends": "Spring and Early Fall (May-June, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist SF Bay Area",
+      "Nextdoor San Francisco County",
+      "San Francisco Yard/Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Fresno",
+    "county": "Fresno",
+    "state_code": "CA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "One on-site sign allowed. No off-site signage permitted on telephone poles, traffic signs, or street light poles.",
+    "best_weekends": "Spring and Fall (March-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Fresno",
+      "Nextdoor Fresno County",
+      "Fresno Garage/Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Sacramento",
+    "county": "Sacramento",
+    "state_code": "CA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be placed on private property with permission. Prohibited on all public right-of-ways, utility poles, and street traffic installations.",
+    "best_weekends": "Spring and Fall (April-June, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Sacramento",
+      "Nextdoor Sacramento County",
+      "Sacramento Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Long Beach",
+    "county": "Los Angeles",
+    "state_code": "CA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": true,
+    "permit_cost": "$17.00",
+    "permit_link": "https://www.longbeach.gov",
+    "signage_rules": "Signs restricted to the sale site only. Banned on public parkways, utility poles, street lamps, and public structures.",
+    "best_weekends": "Year-round (Optimal May-July, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Los Angeles",
+      "Nextdoor Los Angeles County",
+      "Long Beach Garage Sale Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Oakland",
+    "county": "Alameda",
+    "state_code": "CA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs limited to private property. Posting on city street lights, trees, medians, or utility poles is explicitly prohibited.",
+    "best_weekends": "Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist SF Bay Area",
+      "Nextdoor Alameda County",
+      "Oakland Yard & Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Bakersfield",
+    "county": "Kern",
+    "state_code": "CA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Allowed strictly on private property with owner's permission. Banned on public property, parkways, trees, utility poles, and city structures.",
+    "best_weekends": "Spring and Fall (March-May, October-November)",
+    "local_crosspost_sites": [
+      "Craigslist Bakersfield",
+      "Nextdoor Kern County",
+      "Bakersfield Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Anaheim",
+    "county": "Orange",
+    "state_code": "CA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be placed on private residential property only. Attaching signs to telephone poles, streetlights, or public rights-of-way is prohibited.",
+    "best_weekends": "Year-round (Optimal March-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Orange County",
+      "Nextdoor Orange County",
+      "Anaheim Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Seattle",
+    "county": "King",
+    "state_code": "WA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs permitted on private property with consent. Strictly prohibited from being attached to utility poles, street trees, or public signs.",
+    "best_weekends": "Summer (June-August, dodging local rainfall patterns)",
+    "local_crosspost_sites": [
+      "Craigslist Seattle",
+      "Nextdoor King County",
+      "Seattle Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Spokane",
+    "county": "Spokane",
+    "state_code": "WA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Posting on public utility poles, city signs, or right-of-ways is prohibited.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Spokane",
+      "Nextdoor Spokane County",
+      "Spokane Yard & Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Tacoma",
+    "county": "Pierce",
+    "state_code": "WA",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs are restricted to private property. Posting on city infrastructure, streetlights, or utility poles is banned.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Tacoma",
+      "Nextdoor Pierce County",
+      "Tacoma Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Portland",
+    "county": "Multnomah",
+    "state_code": "OR",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property with owner permission. Prohibited on utility poles, street signs, and pedestrian paths.",
+    "best_weekends": "Summer (July-August, optimal low-precipitation windows)",
+    "local_crosspost_sites": [
+      "Craigslist Portland",
+      "Nextdoor Multnomah County",
+      "Portland Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Salem",
+    "county": "Marion",
+    "state_code": "OR",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must stay on private property. Posting on light poles, traffic controls, or within the public right-of-way is prohibited.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Salem",
+      "Nextdoor Marion County",
+      "Salem Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Las Vegas",
+    "county": "Clark",
+    "state_code": "NV",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed on the host residential property only. Off-site signage on utility poles, medians, or public right-of-ways is illegal.",
+    "best_weekends": "Spring and Fall (March-April, October-November)",
+    "local_crosspost_sites": [
+      "Craigslist Las Vegas",
+      "Nextdoor Clark County",
+      "Las Vegas Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Henderson",
+    "county": "Clark",
+    "state_code": "NV",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs permitted on private property with owner's consent. Prohibited on public right-of-ways, city street lights, or utility infrastructure.",
+    "best_weekends": "Spring and Fall (March-May, October-November)",
+    "local_crosspost_sites": [
+      "Craigslist Las Vegas",
+      "Nextdoor Clark County",
+      "Henderson Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Reno",
+    "county": "Washoe",
+    "state_code": "NV",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be limited to private properties with permission. Placing signs on utility poles or public easements is strictly prohibited.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Reno",
+      "Nextdoor Washoe County",
+      "Reno Yard and Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Denver",
+    "county": "Denver",
+    "state_code": "CO",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be placed on private property only. Strictly prohibited on public utility poles, trees, medians, or public easements.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Denver",
+      "Nextdoor Denver County",
+      "Denver Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Colorado Springs",
+    "county": "El Paso",
+    "state_code": "CO",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs permitted on private property with owner's consent. Prohibited on traffic signals, light posts, or public rights-of-way.",
+    "best_weekends": "Late Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist Colorado Springs",
+      "Nextdoor El Paso County",
+      "Colorado Springs Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Aurora",
+    "county": "Arapahoe",
+    "state_code": "CO",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Posting on public utility poles, city signposts, or medians is strictly illegal.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Denver",
+      "Nextdoor Arapahoe County",
+      "Aurora Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Oklahoma City",
+    "county": "Oklahoma",
+    "state_code": "OK",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": true,
+    "permit_cost": "$10.00",
+    "permit_link": "https://www.okc.gov",
+    "signage_rules": "One on-site sign allowed. Up to two off-site directional signs allowed on private property with owner permission. No public right-of-way signage.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Oklahoma City",
+      "Nextdoor Oklahoma County",
+      "Oklahoma City Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Tulsa",
+    "county": "Tulsa",
+    "state_code": "OK",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must remain on private residential property. Placing signs on utility poles, street signs, or public right-of-ways is prohibited.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Tulsa",
+      "Nextdoor Tulsa County",
+      "Tulsa Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Salt Lake City",
+    "county": "Salt Lake",
+    "state_code": "UT",
+    "region": "Pacific Coast",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must stay strictly on private property. Attaching signs to trees, telephone poles, or public structures is banned.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Salt Lake City",
+      "Nextdoor Salt Lake County",
+      "Salt Lake City Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Chicago",
+    "county": "Cook",
+    "state_code": "IL",
+    "region": "Midwest",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Posting on city light poles, traffic signs, or public parkways is illegal and subject to fines.",
+    "best_weekends": "Late Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist Chicago",
+      "Nextdoor Cook County",
+      "Chicago Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Aurora",
+    "county": "Kane",
+    "state_code": "IL",
+    "region": "Midwest",
+    "sale_dialect": "Garage Sale",
+    "permit_required": true,
+    "permit_cost": "$5.00",
+    "permit_link": "https://www.aurora-il.org",
+    "signage_rules": "Signs allowed on private host property only. Placement on utility poles, public streets, or right-of-ways is prohibited.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Chicago",
+      "Nextdoor Kane County",
+      "Aurora IL Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Joliet",
+    "county": "Will",
+    "state_code": "IL",
+    "region": "Midwest",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property with consent. Banned on public right-of-ways, utility poles, and streetlights.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Chicago",
+      "Nextdoor Will County",
+      "Joliet Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Naperville",
+    "county": "DuPage",
+    "state_code": "IL",
+    "region": "Midwest",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must stay on private property. Posting on public traffic control posts, utility lines, or easements is banned.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Chicago",
+      "Nextdoor DuPage County",
+      "Naperville Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Detroit",
+    "county": "Wayne",
+    "state_code": "MI",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed only on private residential properties. Prohibited on utility poles, highway ramps, and city structures.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Detroit",
+      "Nextdoor Wayne County",
+      "Detroit Metro Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Grand Rapids",
+    "county": "Kent",
+    "state_code": "MI",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed strictly on private property with owner permission. Posting on light poles or public boulevards is banned.",
+    "best_weekends": "Late Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist Grand Rapids",
+      "Nextdoor Kent County",
+      "Grand Rapids Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Warren",
+    "county": "Macomb",
+    "state_code": "MI",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": true,
+    "permit_cost": "$5.00",
+    "permit_link": "https://www.cityofwarren.org",
+    "signage_rules": "Signs permitted on private property where the sale takes place. Prohibited on traffic signs, utility poles, and public street edges.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Detroit",
+      "Nextdoor Macomb County",
+      "Warren Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Columbus",
+    "county": "Franklin",
+    "state_code": "OH",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be limited to private property. Posting on telephone posts, city light poles, or within the public right-of-way is illegal.",
+    "best_weekends": "Late Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist Columbus",
+      "Nextdoor Franklin County",
+      "Columbus Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Cleveland",
+    "county": "Cuyahoga",
+    "state_code": "OH",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed strictly on private property with owner permission. Banned on public right-of-ways, utility poles, and municipal trees.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Cleveland",
+      "Nextdoor Cuyahoga County",
+      "Cleveland Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Cincinnati",
+    "county": "Hamilton",
+    "state_code": "OH",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be placed entirely on private property with owner permission. Prohibited on utility poles, street signs, or public rights-of-way.",
+    "best_weekends": "Late Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist Cincinnati",
+      "Nextdoor Hamilton County",
+      "Cincinnati Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Toledo",
+    "county": "Lucas",
+    "state_code": "OH",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed on the host property only. Placement on utility poles, streetlights, or city easements is illegal.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Toledo",
+      "Nextdoor Lucas County",
+      "Toledo Area Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Indianapolis",
+    "county": "Marion",
+    "state_code": "IN",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Posting on traffic signs, public utility poles, or street trees is strictly prohibited.",
+    "best_weekends": "Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Indianapolis",
+      "Nextdoor Marion County",
+      "Indianapolis Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Fort Wayne",
+    "county": "Allen",
+    "state_code": "IN",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must stay strictly on private property with owner consent. Prohibited inside public street rights-of-way or on utility infrastructure.",
+    "best_weekends": "Late Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist Fort Wayne",
+      "Nextdoor Allen County",
+      "Fort Wayne Yard/Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Minneapolis",
+    "county": "Hennepin",
+    "state_code": "MN",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs permitted on private property where the sale takes place. Prohibited on public parkways, utility poles, or municipal street infrastructure.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Minneapolis",
+      "Nextdoor Hennepin County",
+      "Twin Cities Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "St. Paul",
+    "county": "Ramsey",
+    "state_code": "MN",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Attaching signs to utility poles, streetlights, or public right-of-ways is prohibited.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Minneapolis / St Paul",
+      "Nextdoor Ramsey County",
+      "St. Paul Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Kansas City",
+    "county": "Jackson",
+    "state_code": "MO",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed on the host residential property. Off-site signage on public utility poles, traffic control posts, or medians is illegal.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Kansas City",
+      "Nextdoor Jackson County",
+      "Kansas City Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "St. Louis",
+    "county": "Independent City",
+    "state_code": "MO",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be limited to private property. Posting on city street lamps, utility lines, or within public easements is strictly prohibited.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist St. Louis",
+      "Nextdoor St. Louis City",
+      "St. Louis Garage/Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Omaha",
+    "county": "Douglas",
+    "state_code": "NE",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must stay strictly on private property with owner permission. Prohibited on traffic signals, light posts, or public rights-of-way.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Omaha",
+      "Nextdoor Douglas County",
+      "Omaha Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Lincoln",
+    "county": "Lancaster",
+    "state_code": "NE",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private properties with consent. Placing signs on utility poles or public easements is strictly prohibited.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Lincoln",
+      "Nextdoor Lancaster County",
+      "Lincoln Yard and Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Des Moines",
+    "county": "Polk",
+    "state_code": "IA",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must remain on private residential property. Placing signs on utility poles, street signs, or public right-of-ways is prohibited.",
+    "best_weekends": "Late Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist Des Moines",
+      "Nextdoor Polk County",
+      "Des Moines Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Wichita",
+    "county": "Sedgwick",
+    "state_code": "KS",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed strictly on private property with owner permission. Banned on public right-of-ways, utility poles, and municipal structures.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Wichita",
+      "Nextdoor Sedgwick County",
+      "Wichita Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Fargo",
+    "county": "Cass",
+    "state_code": "ND",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be placed on private property only. Strictly prohibited on public utility poles, trees, medians, or public easements.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Fargo",
+      "Nextdoor Cass County",
+      "Fargo Yard & Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Sioux Falls",
+    "county": "Minnehaha",
+    "state_code": "SD",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs permitted on private property with owner's consent. Prohibited on traffic control posts, light posts, or public rights-of-way.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Sioux Falls",
+      "Nextdoor Minnehaha County",
+      "Sioux Falls Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Boise",
+    "county": "Ada",
+    "state_code": "ID",
+    "region": "Great Lakes",
+    "sale_dialect": "Garage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Posting on public utility poles, city signposts, or medians is strictly illegal.",
+    "best_weekends": "Late Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist Boise",
+      "Nextdoor Ada County",
+      "Boise Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Atlanta",
+    "county": "Fulton",
+    "state_code": "GA",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be limited to private property with owner permission. Prohibited on public right-of-ways, utility poles, and street trees.",
+    "best_weekends": "Spring and Fall (March-May, September-November)",
+    "local_crosspost_sites": [
+      "Craigslist Atlanta",
+      "Nextdoor Fulton County",
+      "Atlanta Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Augusta",
+    "county": "Richmond",
+    "state_code": "GA",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Permitted on-site only. Signs cannot be posted on utility lines, public traffic signposts, or medians.",
+    "best_weekends": "Spring and Autumn (March-April, October-November)",
+    "local_crosspost_sites": [
+      "Craigslist Augusta",
+      "Nextdoor Richmond County",
+      "Augusta Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Miami",
+    "county": "Miami-Dade",
+    "state_code": "FL",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Strictly prohibited on public right-of-ways. Allowed only on private residential property where the sale takes place.",
+    "best_weekends": "Winter and Early Spring (December-March, avoiding high humidity and rain)",
+    "local_crosspost_sites": [
+      "Craigslist Miami",
+      "Nextdoor Miami-Dade County",
+      "Miami Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Tampa",
+    "county": "Hillsborough",
+    "state_code": "FL",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to the private host property only. Banned from public easements, utility infrastructure, and highway exits.",
+    "best_weekends": "Winter and Spring (January-April, October-November)",
+    "local_crosspost_sites": [
+      "Craigslist Tampa",
+      "Nextdoor Hillsborough County",
+      "Tampa Bay Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Orlando",
+    "county": "Orange",
+    "state_code": "FL",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Allowed strictly on private residential property. Any off-site signs on city street structures or right-of-ways are subject to confiscation and fines.",
+    "best_weekends": "Late Fall through Early Spring (November-March)",
+    "local_crosspost_sites": [
+      "Craigslist Orlando",
+      "Nextdoor Orange County",
+      "Orlando Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Jacksonville",
+    "county": "Duval",
+    "state_code": "FL",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed on the host parcel. Posting on public utility poles, trees, or public property easements is strictly banned.",
+    "best_weekends": "Winter and Spring (November-April)",
+    "local_crosspost_sites": [
+      "Craigslist Jacksonville",
+      "Nextdoor Duval County",
+      "Jacksonville Yard/Garage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "St. Petersburg",
+    "county": "Pinellas",
+    "state_code": "FL",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Attaching signs to code traffic markers, telephone poles, or public right-of-ways is prohibited.",
+    "best_weekends": "Winter and Spring (January-April, October-November)",
+    "local_crosspost_sites": [
+      "Craigslist Hilsborough/Pinellas",
+      "Nextdoor Pinellas County",
+      "St. Pete Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Charlotte",
+    "county": "Mecklenburg",
+    "state_code": "NC",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must stay entirely on private properties with consent. Forbidden on public verges, utility standards, or roadway medians.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Charlotte",
+      "Nextdoor Mecklenburg County",
+      "Charlotte Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Raleigh",
+    "county": "Wake",
+    "state_code": "NC",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed on private residential property only. Placing signs on utility poles, traffic signs, or public right-of-ways is prohibited.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Raleigh",
+      "Nextdoor Wake County",
+      "Raleigh Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Greensboro",
+    "county": "Guilford",
+    "state_code": "NC",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Allowed only on the site of the sale. Strictly forbidden on utility poles, streetlights, or city right-of-ways.",
+    "best_weekends": "Spring and Autumn (May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Greensboro",
+      "Nextdoor Guilford County",
+      "Greensboro Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Durham",
+    "county": "Durham",
+    "state_code": "NC",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Off-site and public right-of-way placement is prohibited under city zoning ordinances.",
+    "best_weekends": "Spring and Fall (April-May, October)",
+    "local_crosspost_sites": [
+      "Craigslist Raleigh / Durham",
+      "Nextdoor Durham County",
+      "Durham Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Nashville",
+    "county": "Davidson",
+    "state_code": "TN",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must remain on private property. Placing signs in the public right-of-way, on traffic signs, or on utility poles is a code violation.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Nashville",
+      "Nextdoor Davidson County",
+      "Nashville Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Memphis",
+    "county": "Shelby",
+    "state_code": "TN",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs permitted on private residential properties with consent. Prohibited on city light poles, traffic controls, or easements.",
+    "best_weekends": "Spring and Fall (April-May, October)",
+    "local_crosspost_sites": [
+      "Craigslist Memphis",
+      "Nextdoor Shelby County",
+      "Memphis Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Knoxville",
+    "county": "Knox",
+    "state_code": "TN",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property with owner permission. Prohibited inside public street rights-of-way or on utility infrastructure.",
+    "best_weekends": "Late Spring and Autumn (May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Knoxville",
+      "Nextdoor Knox County",
+      "Knoxville Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Louisville",
+    "county": "Jefferson",
+    "state_code": "KY",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed on the host property only. Off-site signage on public streets, light poles, or traffic lights is prohibited.",
+    "best_weekends": "Spring and Fall (April-May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Louisville",
+      "Nextdoor Jefferson County",
+      "Louisville Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Lexington",
+    "county": "Fayette",
+    "state_code": "KY",
+    "region": "Southeast",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must stay strictly on private property. Posting on public utility poles, city signs, or right-of-ways is prohibited.",
+    "best_weekends": "Spring and Autumn (May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Lexington",
+      "Nextdoor Fayette County",
+      "Lexington Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Washington",
+    "county": "District of Columbia",
+    "state_code": "DC",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private residential property. Attaching posters or signs to public space, lampposts, or utility poles is banned.",
+    "best_weekends": "Late Spring and Early Fall (May-June, September)",
+    "local_crosspost_sites": [
+      "Craigslist Washington DC",
+      "Nextdoor DC",
+      "Washington DC Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Baltimore",
+    "county": "Independent City",
+    "state_code": "MD",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be limited to private property. Posting on city street lights, public easements, or tree lawns is illegal.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Baltimore",
+      "Nextdoor Baltimore City",
+      "Baltimore Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Richmond",
+    "county": "Independent City",
+    "state_code": "VA",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be placed on private property only. Strictly prohibited on public utility poles, trees, medians, or public easements.",
+    "best_weekends": "Spring and Fall (May, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist Richmond",
+      "Nextdoor Richmond City",
+      "Richmond VA Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Virginia Beach",
+    "county": "Independent City",
+    "state_code": "VA",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs permitted on private property with owner's consent. Prohibited on traffic signals, light posts, or public rights-of-way.",
+    "best_weekends": "Spring and Summer (April-June, September)",
+    "local_crosspost_sites": [
+      "Craigslist Norfolk / Hampton Roads",
+      "Nextdoor Virginia Beach",
+      "Virginia Beach Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Philadelphia",
+    "county": "Philadelphia",
+    "state_code": "PA",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Posting on city utility poles, traffic control posts, or medians is strictly illegal.",
+    "best_weekends": "Late Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist Philadelphia",
+      "Nextdoor Philadelphia County",
+      "Philadelphia Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Pittsburgh",
+    "county": "Allegheny",
+    "state_code": "PA",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "One on-site sign and up to two directional signs allowed on private property with owner permission. No public right-of-way signage.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Pittsburgh",
+      "Nextdoor Allegheny County",
+      "Pittsburgh Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Allentown",
+    "county": "Lehigh",
+    "state_code": "PA",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": true,
+    "permit_cost": "$0.00",
+    "permit_link": "https://www.allentownpa.gov",
+    "signage_rules": "Signs must remain on private residential property. Placing signs on utility poles, street signs, or public right-of-ways is prohibited.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Allentown",
+      "Nextdoor Lehigh County",
+      "Allentown Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "New York City",
+    "county": "New York",
+    "state_code": "NY",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must stay strictly on private property. Attaching flyers, signs, or stickers to lamp posts, traffic signals, or public structures is illegal.",
+    "best_weekends": "Late Spring and Early Fall (May-June, September-October)",
+    "local_crosspost_sites": [
+      "Craigslist New York City",
+      "Nextdoor New York County",
+      "NYC Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Buffalo",
+    "county": "Erie",
+    "state_code": "NY",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Posting on city light poles, traffic signs, or public parkways is illegal.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Buffalo",
+      "Nextdoor Erie County",
+      "Buffalo Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Newark",
+    "county": "Essex",
+    "state_code": "NJ",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": true,
+    "permit_cost": "$5.00",
+    "permit_link": "https://www.newarknj.gov",
+    "signage_rules": "Signs allowed on private host property only. Placement on utility poles, public streets, or right-of-ways is prohibited.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist North Jersey",
+      "Nextdoor Essex County",
+      "Newark NJ Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Jersey City",
+    "county": "Hudson",
+    "state_code": "NJ",
+    "region": "Mid-Atlantic",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property with consent. Banned on public right-of-ways, utility poles, and streetlights.",
+    "best_weekends": "Late Spring and Summer (May-September)",
+    "local_crosspost_sites": [
+      "Craigslist Jersey City",
+      "Nextdoor Hudson County",
+      "Jersey City Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Boston",
+    "county": "Suffolk",
+    "state_code": "MA",
+    "region": "New England",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must stay on private property. Posting on public traffic control posts, utility lines, or street trees is banned.",
+    "best_weekends": "Late Spring and Early Fall (May-June, September)",
+    "local_crosspost_sites": [
+      "Craigslist Boston",
+      "Nextdoor Suffolk County",
+      "Boston Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Worcester",
+    "county": "Worcester",
+    "state_code": "MA",
+    "region": "New England",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed only on private residential properties. Prohibited on utility poles, traffic signs, and municipal easements.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Worcester",
+      "Nextdoor Worcester County",
+      "Worcester Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Providence",
+    "county": "Providence",
+    "state_code": "RI",
+    "region": "New England",
+    "sale_dialect": "Yard Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed strictly on private property with owner permission. Posting on light poles or public sidewalks is banned.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Rhode Island",
+      "Nextdoor Providence County",
+      "Providence Yard Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Milwaukee",
+    "county": "Milwaukee",
+    "state_code": "WI",
+    "region": "Wisconsin and Upper Midwest",
+    "sale_dialect": "Rummage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be limited to private property. Posting on telephone posts, city light poles, or within the public right-of-way is illegal.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Milwaukee",
+      "Nextdoor Milwaukee County",
+      "Milwaukee Rummage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Madison",
+    "county": "Dane",
+    "state_code": "WI",
+    "region": "Wisconsin and Upper Midwest",
+    "sale_dialect": "Rummage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs allowed strictly on private property with owner permission. Banned on public right-of-ways, utility poles, and municipal trees.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Madison",
+      "Nextdoor Dane County",
+      "Madison Rummage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Green Bay",
+    "county": "Brown",
+    "state_code": "WI",
+    "region": "Wisconsin and Upper Midwest",
+    "sale_dialect": "Rummage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs entirely limited to private properties with owner consent. Prohibited on public street poles or signs.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Appleton/Green Bay",
+      "Nextdoor Brown County",
+      "Green Bay Rummage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Kenosha",
+    "county": "Kenosha",
+    "state_code": "WI",
+    "region": "Wisconsin and Upper Midwest",
+    "sale_dialect": "Rummage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must be placed on private property only. Strictly prohibited on public utility poles, trees, or city right-of-ways.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Kenosha",
+      "Nextdoor Kenosha County",
+      "Kenosha Rummage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Racine",
+    "county": "Racine",
+    "state_code": "WI",
+    "region": "Wisconsin and Upper Midwest",
+    "sale_dialect": "Rummage Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs permitted on private property with owner's consent. Prohibited on traffic signals, light posts, or public rights-of-way.",
+    "best_weekends": "Summer (June-August)",
+    "local_crosspost_sites": [
+      "Craigslist Racine",
+      "Nextdoor Racine County",
+      "Racine Rummage Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Hartford",
+    "county": "Hartford",
+    "state_code": "CT",
+    "region": "Connecticut and Western Massachusetts",
+    "sale_dialect": "Tag Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Posting on public utility poles, city signposts, or medians is strictly illegal.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Hartford",
+      "Nextdoor Hartford County",
+      "Hartford Tag Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "New Haven",
+    "county": "New Haven",
+    "state_code": "CT",
+    "region": "Connecticut and Western Massachusetts",
+    "sale_dialect": "Tag Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "One on-site sign allowed. Up to two off-site directional signs allowed on private property with owner permission. No public right-of-way signage.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist New Haven",
+      "Nextdoor New Haven County",
+      "New Haven Tag Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Stamford",
+    "county": "Fairfield",
+    "state_code": "CT",
+    "region": "Connecticut and Western Massachusetts",
+    "sale_dialect": "Tag Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must remain on private residential property. Placing signs on utility poles, street signs, or public right-of-ways is prohibited.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Fairfield County",
+      "Nextdoor Fairfield County",
+      "Stamford Tag Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Bridgeport",
+    "county": "Fairfield",
+    "state_code": "CT",
+    "region": "Connecticut and Western Massachusetts",
+    "sale_dialect": "Tag Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs must stay strictly on private property. Attaching signs to trees, telephone poles, or public structures is banned.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Fairfield County",
+      "Nextdoor Fairfield County",
+      "Bridgeport Tag Sales Facebook Groups"
+    ]
+  },
+  {
+    "city_name": "Springfield",
+    "county": "Hampden",
+    "state_code": "MA",
+    "region": "Connecticut and Western Massachusetts",
+    "sale_dialect": "Tag Sale",
+    "permit_required": false,
+    "permit_cost": "$0.00",
+    "permit_link": "N/A",
+    "signage_rules": "Signs restricted to private property. Posting on city light poles, traffic signs, or public parkways is illegal.",
+    "best_weekends": "Late Spring and Summer (May-August)",
+    "local_crosspost_sites": [
+      "Craigslist Western Massachusetts",
+      "Nextdoor Hampden County",
+      "Springfield Tag Sales Facebook Groups"
+    ]
+  }
+]
