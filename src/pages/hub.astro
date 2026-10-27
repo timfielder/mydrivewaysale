@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import { allCities } from '../lib/cities.mjs';
+const byState = Object.groupBy(allCities, (c) => c.state);
+---
+<Base title="Local Sale Guide Hub: Garage Sale Rules by City" description="Pick your city for its garage, yard, or tag sale rules: permits, fees, signs, and limits, with official sources and last-checked dates." canonicalPath="/hub/">
+  <h1>City guides</h1>
+  {Object.entries(byState).map(([state, list]) => (
+    <section>
+      <h2>{state}</h2>
+      <ul>{list.map((c) => <li><a href={`/${c.slug}/`}>{c.city}</a>{c.confidence === 'verified' && ' (checked)'}</li>)}</ul>
+    </section>
+  ))}
+</Base>

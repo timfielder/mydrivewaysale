@@ -1,0 +1,51 @@
+{
+  "_about": "Spot checks re-opened on official sources on 2026-10-27 (Central). Only facts the source states are filled. Fort Worth was NOT re-confirmed (fortworthtexas.gov returned 403/404 to every fetch method), so it stays unverified.",
+  "san-antonio-tx-garage-sale-guide": {
+    "permit_required": true,
+    "fee": "$20 per permit (non-refundable); 4th permit in a calendar year is free",
+    "sales_per_year": 4,
+    "max_days": null,
+    "hours": "9 a.m. to 6 p.m.",
+    "sign_rules": "Up to 3 signs, each 6 sq ft or smaller: 1 at the sale, 2 off premises with the city sign decals. Nothing on utility poles, street signs, traffic signs, or other right-of-way objects. Signs may go up 2 days before the sale and must come down when the permit expires.",
+    "how_to_apply": "Online through the city's permit portal (no login needed), in person at the Development Services One Stop (1901 S. Alamo St.), or at participating H-E-B stores. Get it before the sale starts and post it in plain view.",
+    "official_source_url": "https://www.sa.gov/Directory/Departments/DSD/CES/Permits-Licenses/Garage-Sales",
+    "notes": "Limit is one sale per quarter, 4 per calendar year per residence. Selling 5 items or fewer needs no permit. Fee rose from $16.50 to $20 with the FY2027 fee schedule (Oct 1, 2026).",
+    "verified_fields": ["permit_required", "fee", "sales_per_year", "hours", "sign_rules", "how_to_apply"]
+  },
+  "dallas-tx-garage-sale-guide": {
+    "permit_required": true,
+    "fee": "$0 for the 1st permit, $25 for the 2nd permit in a 12-month period",
+    "sales_per_year": 2,
+    "max_days": 3,
+    "hours": null,
+    "sign_rules": "1 sign on the sale property, plus up to 5 signs at remote locations. Remote signs go on private property with the owner's permission. No signs in the right-of-way or medians. Remove all signs within 24 hours after the sale.",
+    "how_to_apply": "Online only through Dallas Code Compliance. Have your driver's license or ID, a water bill, and a valid email.",
+    "official_source_url": "https://dallascityhall.com/departments/codecompliance/Pages/FAQs.aspx",
+    "notes": "The 2-sale limit runs over any 12-month period, not the calendar year. Application details: https://dallascityhall.com/departments/codecompliance/Pages/garage-sales.aspx",
+    "verified_fields": ["permit_required", "fee", "sales_per_year", "max_days", "sign_rules", "how_to_apply"]
+  },
+  "long-beach-ca-garage-sale-guide": {
+    "permit_required": true,
+    "fee": "$17 per permit (online applications add a $1.59 processing fee)",
+    "sales_per_year": 2,
+    "max_days": 3,
+    "hours": "8 a.m. to 3 p.m.",
+    "sign_rules": "1 sign only, on the sale property, no taller than 4 ft and no larger than 6 sq ft. No directional or off-site signs.",
+    "how_to_apply": "Online (needs a Long Beach utility bill in your name or a past permit at the address), by email to LBBIZ@LongBeach.Gov, or in person at the Business License Division, 411 W. Ocean Blvd., 2nd Floor.",
+    "official_source_url": "https://longbeach.gov/finance/services-and-permits/garage-sales/",
+    "notes": "2 per year applies to single-family homes; apartments get 1 per quarter. Processing fee source: https://www.longbeach.gov/finance/services-and-permits/convenience-fee/",
+    "verified_fields": ["permit_required", "fee", "sales_per_year", "max_days", "hours", "sign_rules", "how_to_apply"]
+  },
+  "tulsa-ok-garage-sale-guide": {
+    "permit_required": false,
+    "fee": "None (no permit needed)",
+    "sales_per_year": 2,
+    "max_days": 4,
+    "hours": null,
+    "sign_rules": null,
+    "how_to_apply": "No permit needed for up to 2 sales a year. More than 2 needs a special exception from the Board of Adjustment (Zoning Code Section 70.120).",
+    "official_source_url": "https://tulsaplanning.org/plans/TulsaZoningCode.pdf",
+    "notes": "Tulsa Zoning Code Section 50.050-A (as amended Oct 21, 2025). Limits are per lot, no matter who runs the sale. No merchandise bought for resale.",
+    "verified_fields": ["permit_required", "fee", "sales_per_year", "max_days", "how_to_apply"]
+  }
+}

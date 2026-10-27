@@ -1,0 +1,126 @@
+url,type,source_on_live_site,new_build,in_sitemap,notes
+/,home,WP front page,index (city list),yes,
+/about-contact/,wp_page,WP page 146,"stub, noindex",no,
+/home/,wp_page,WP page 14,"stub, noindex",no,canonical to /
+/hub/,wp_page,WP page 392,city list,yes,
+/privacy-policy/,wp_page,WP page 123,"stub, noindex",no,
+/stickercalc-app/,wp_page,WP page 251,"stub, noindex",no,
+/stickercalc-web/,wp_page,WP page 328,"stub, noindex",no,
+/terms-of-service/,wp_page,WP page 137,"stub, noindex",no,
+/animal-protocol/,wp_page,WP page 543,"stub, noindex",no,
+/attractive-nuisance-warning/,wp_page,WP page 558,"stub, noindex",no,
+/driveway-liability-checklist/,wp_page,WP page 553,"stub, noindex",no,
+/multifamily-sales/,wp_page,WP page 678,"stub, noindex",no,
+/local_regulations_guide/,wp_page,WP page 878,"stub, noindex",no,
+/local-best-weekends-data/,wp_page,WP page 800,"stub, noindex",no,
+/the-host-comfort-survival-kit/,wp_page,WP page 765,"stub, noindex",no,
+/house-security-lockdown/,wp_page,WP page 983,"stub, noindex",no,
+/the-weather-rain-pivot-plan/,wp_page,WP page 793,"stub, noindex",no,
+/the-pricing-and-appriasal-protocol/,wp_page,WP page 1073,"stub, noindex",no,"slug typo ""appriasal"" kept on purpose"
+/the-ultimate-color-sticker-pricing-strategy/,wp_page,WP page 1046,"stub, noindex",no,
+/san-antonio-tx-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,verified
+/austin-tx-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/houston-tx-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/dallas-tx-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,verified
+/fort-worth-tx-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/el-paso-tx-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/arlington-tx-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/corpus-christi-tx-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/phoenix-az-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/tucson-az-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/mesa-az-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/chandler-az-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/los-angeles-ca-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/san-diego-ca-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/san-jose-ca-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/san-francisco-ca-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/fresno-ca-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/sacramento-ca-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/long-beach-ca-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,verified
+/oakland-ca-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/bakersfield-ca-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/anaheim-ca-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/seattle-wa-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/spokane-wa-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/tacoma-wa-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/portland-or-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/salem-or-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/las-vegas-nv-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/henderson-nv-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/reno-nv-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/denver-co-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/colorado-springs-co-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/aurora-co-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/oklahoma-city-ok-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/tulsa-ok-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,verified
+/salt-lake-city-ut-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/chicago-il-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/aurora-il-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/joliet-il-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/naperville-il-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/detroit-mi-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/grand-rapids-mi-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/warren-mi-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/columbus-oh-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/cleveland-oh-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/cincinnati-oh-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/toledo-oh-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/indianapolis-in-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/fort-wayne-in-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/minneapolis-mn-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/st.-paul-mn-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/kansas-city-mo-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/st.-louis-mo-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/omaha-ne-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/lincoln-ne-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/des-moines-ia-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/wichita-ks-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/fargo-nd-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/sioux-falls-sd-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/boise-id-garage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/atlanta-ga-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/augusta-ga-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/miami-fl-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/tampa-fl-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/orlando-fl-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/jacksonville-fl-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/st.-petersburg-fl-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/charlotte-nc-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/raleigh-nc-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/greensboro-nc-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/durham-nc-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/nashville-tn-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/memphis-tn-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/knoxville-tn-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/louisville-ky-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/lexington-ky-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/washington-dc-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/baltimore-md-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/richmond-va-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/virginia-beach-va-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/philadelphia-pa-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/pittsburgh-pa-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/allentown-pa-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/new-york-city-ny-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/buffalo-ny-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/newark-nj-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/jersey-city-nj-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/boston-ma-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/worcester-ma-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/providence-ri-yard-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/milwaukee-wi-rummage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/madison-wi-rummage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/green-bay-wi-rummage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/kenosha-wi-rummage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/racine-wi-rummage-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/hartford-ct-tag-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/new-haven-ct-tag-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/stamford-ct-tag-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/bridgeport-ct-tag-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/springfield-ma-tag-sale-guide/,city_guide,WP page 392 rendered per city,city page,yes,unverified
+/hello-world/,wp_post,default WP post,not built (404),no,removal planned in M1; needs Tim OK
+/international-garage-sale-guide/,virtual_route,returns 200 with blank hub template,not built (404),no,M2 content; decide before cutover
+/general-texas-garage-sale-guide/,virtual_route,returns 200 with blank hub template,not built (404),no,M2 content; decide before cutover
+/general-california-garage-sale-guide/,virtual_route,returns 200 with blank hub template,not built (404),no,M2 content; decide before cutover
+/general-new-york-garage-sale-guide/,virtual_route,returns 200 with blank hub template,not built (404),no,M2 content; decide before cutover
+/{city-slug-prefix}-{topic}/,per_city_subguide,"30 links per city; 12 resolve to template pages, 18 are 404",not built,no,pattern e.g. /san-antonio-tx-garage-sale-weather-plan/; needs redirect or page plan before cutover

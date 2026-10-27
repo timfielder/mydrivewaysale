@@ -1,0 +1,502 @@
+[
+ {
+  "city": "san antonio",
+  "state": "tx",
+  "slug": "san-antonio-tx-garage-sale-guide"
+ },
+ {
+  "city": "austin",
+  "state": "tx",
+  "slug": "austin-tx-garage-sale-guide"
+ },
+ {
+  "city": "houston",
+  "state": "tx",
+  "slug": "houston-tx-garage-sale-guide"
+ },
+ {
+  "city": "dallas",
+  "state": "tx",
+  "slug": "dallas-tx-garage-sale-guide"
+ },
+ {
+  "city": "fort worth",
+  "state": "tx",
+  "slug": "fort-worth-tx-garage-sale-guide"
+ },
+ {
+  "city": "el paso",
+  "state": "tx",
+  "slug": "el-paso-tx-garage-sale-guide"
+ },
+ {
+  "city": "arlington",
+  "state": "tx",
+  "slug": "arlington-tx-garage-sale-guide"
+ },
+ {
+  "city": "corpus christi",
+  "state": "tx",
+  "slug": "corpus-christi-tx-garage-sale-guide"
+ },
+ {
+  "city": "phoenix",
+  "state": "az",
+  "slug": "phoenix-az-garage-sale-guide"
+ },
+ {
+  "city": "tucson",
+  "state": "az",
+  "slug": "tucson-az-garage-sale-guide"
+ },
+ {
+  "city": "mesa",
+  "state": "az",
+  "slug": "mesa-az-garage-sale-guide"
+ },
+ {
+  "city": "chandler",
+  "state": "az",
+  "slug": "chandler-az-garage-sale-guide"
+ },
+ {
+  "city": "los angeles",
+  "state": "ca",
+  "slug": "los-angeles-ca-garage-sale-guide"
+ },
+ {
+  "city": "san diego",
+  "state": "ca",
+  "slug": "san-diego-ca-garage-sale-guide"
+ },
+ {
+  "city": "san jose",
+  "state": "ca",
+  "slug": "san-jose-ca-garage-sale-guide"
+ },
+ {
+  "city": "san francisco",
+  "state": "ca",
+  "slug": "san-francisco-ca-garage-sale-guide"
+ },
+ {
+  "city": "fresno",
+  "state": "ca",
+  "slug": "fresno-ca-garage-sale-guide"
+ },
+ {
+  "city": "sacramento",
+  "state": "ca",
+  "slug": "sacramento-ca-garage-sale-guide"
+ },
+ {
+  "city": "long beach",
+  "state": "ca",
+  "slug": "long-beach-ca-garage-sale-guide"
+ },
+ {
+  "city": "oakland",
+  "state": "ca",
+  "slug": "oakland-ca-garage-sale-guide"
+ },
+ {
+  "city": "bakersfield",
+  "state": "ca",
+  "slug": "bakersfield-ca-garage-sale-guide"
+ },
+ {
+  "city": "anaheim",
+  "state": "ca",
+  "slug": "anaheim-ca-garage-sale-guide"
+ },
+ {
+  "city": "seattle",
+  "state": "wa",
+  "slug": "seattle-wa-garage-sale-guide"
+ },
+ {
+  "city": "spokane",
+  "state": "wa",
+  "slug": "spokane-wa-garage-sale-guide"
+ },
+ {
+  "city": "tacoma",
+  "state": "wa",
+  "slug": "tacoma-wa-garage-sale-guide"
+ },
+ {
+  "city": "portland",
+  "state": "or",
+  "slug": "portland-or-garage-sale-guide"
+ },
+ {
+  "city": "salem",
+  "state": "or",
+  "slug": "salem-or-garage-sale-guide"
+ },
+ {
+  "city": "las vegas",
+  "state": "nv",
+  "slug": "las-vegas-nv-garage-sale-guide"
+ },
+ {
+  "city": "henderson",
+  "state": "nv",
+  "slug": "henderson-nv-garage-sale-guide"
+ },
+ {
+  "city": "reno",
+  "state": "nv",
+  "slug": "reno-nv-garage-sale-guide"
+ },
+ {
+  "city": "denver",
+  "state": "co",
+  "slug": "denver-co-garage-sale-guide"
+ },
+ {
+  "city": "colorado springs",
+  "state": "co",
+  "slug": "colorado-springs-co-garage-sale-guide"
+ },
+ {
+  "city": "aurora",
+  "state": "co",
+  "slug": "aurora-co-garage-sale-guide"
+ },
+ {
+  "city": "oklahoma city",
+  "state": "ok",
+  "slug": "oklahoma-city-ok-garage-sale-guide"
+ },
+ {
+  "city": "tulsa",
+  "state": "ok",
+  "slug": "tulsa-ok-garage-sale-guide"
+ },
+ {
+  "city": "salt lake city",
+  "state": "ut",
+  "slug": "salt-lake-city-ut-garage-sale-guide"
+ },
+ {
+  "city": "chicago",
+  "state": "il",
+  "slug": "chicago-il-garage-sale-guide"
+ },
+ {
+  "city": "aurora",
+  "state": "il",
+  "slug": "aurora-il-garage-sale-guide"
+ },
+ {
+  "city": "joliet",
+  "state": "il",
+  "slug": "joliet-il-garage-sale-guide"
+ },
+ {
+  "city": "naperville",
+  "state": "il",
+  "slug": "naperville-il-garage-sale-guide"
+ },
+ {
+  "city": "detroit",
+  "state": "mi",
+  "slug": "detroit-mi-garage-sale-guide"
+ },
+ {
+  "city": "grand rapids",
+  "state": "mi",
+  "slug": "grand-rapids-mi-garage-sale-guide"
+ },
+ {
+  "city": "warren",
+  "state": "mi",
+  "slug": "warren-mi-garage-sale-guide"
+ },
+ {
+  "city": "columbus",
+  "state": "oh",
+  "slug": "columbus-oh-garage-sale-guide"
+ },
+ {
+  "city": "cleveland",
+  "state": "oh",
+  "slug": "cleveland-oh-garage-sale-guide"
+ },
+ {
+  "city": "cincinnati",
+  "state": "oh",
+  "slug": "cincinnati-oh-garage-sale-guide"
+ },
+ {
+  "city": "toledo",
+  "state": "oh",
+  "slug": "toledo-oh-garage-sale-guide"
+ },
+ {
+  "city": "indianapolis",
+  "state": "in",
+  "slug": "indianapolis-in-garage-sale-guide"
+ },
+ {
+  "city": "fort wayne",
+  "state": "in",
+  "slug": "fort-wayne-in-garage-sale-guide"
+ },
+ {
+  "city": "minneapolis",
+  "state": "mn",
+  "slug": "minneapolis-mn-garage-sale-guide"
+ },
+ {
+  "city": "st. paul",
+  "state": "mn",
+  "slug": "st.-paul-mn-garage-sale-guide"
+ },
+ {
+  "city": "kansas city",
+  "state": "mo",
+  "slug": "kansas-city-mo-garage-sale-guide"
+ },
+ {
+  "city": "st. louis",
+  "state": "mo",
+  "slug": "st.-louis-mo-garage-sale-guide"
+ },
+ {
+  "city": "omaha",
+  "state": "ne",
+  "slug": "omaha-ne-garage-sale-guide"
+ },
+ {
+  "city": "lincoln",
+  "state": "ne",
+  "slug": "lincoln-ne-garage-sale-guide"
+ },
+ {
+  "city": "des moines",
+  "state": "ia",
+  "slug": "des-moines-ia-garage-sale-guide"
+ },
+ {
+  "city": "wichita",
+  "state": "ks",
+  "slug": "wichita-ks-garage-sale-guide"
+ },
+ {
+  "city": "fargo",
+  "state": "nd",
+  "slug": "fargo-nd-garage-sale-guide"
+ },
+ {
+  "city": "sioux falls",
+  "state": "sd",
+  "slug": "sioux-falls-sd-garage-sale-guide"
+ },
+ {
+  "city": "boise",
+  "state": "id",
+  "slug": "boise-id-garage-sale-guide"
+ },
+ {
+  "city": "atlanta",
+  "state": "ga",
+  "slug": "atlanta-ga-yard-sale-guide"
+ },
+ {
+  "city": "augusta",
+  "state": "ga",
+  "slug": "augusta-ga-yard-sale-guide"
+ },
+ {
+  "city": "miami",
+  "state": "fl",
+  "slug": "miami-fl-yard-sale-guide"
+ },
+ {
+  "city": "tampa",
+  "state": "fl",
+  "slug": "tampa-fl-yard-sale-guide"
+ },
+ {
+  "city": "orlando",
+  "state": "fl",
+  "slug": "orlando-fl-yard-sale-guide"
+ },
+ {
+  "city": "jacksonville",
+  "state": "fl",
+  "slug": "jacksonville-fl-yard-sale-guide"
+ },
+ {
+  "city": "st. petersburg",
+  "state": "fl",
+  "slug": "st.-petersburg-fl-yard-sale-guide"
+ },
+ {
+  "city": "charlotte",
+  "state": "nc",
+  "slug": "charlotte-nc-yard-sale-guide"
+ },
+ {
+  "city": "raleigh",
+  "state": "nc",
+  "slug": "raleigh-nc-yard-sale-guide"
+ },
+ {
+  "city": "greensboro",
+  "state": "nc",
+  "slug": "greensboro-nc-yard-sale-guide"
+ },
+ {
+  "city": "durham",
+  "state": "nc",
+  "slug": "durham-nc-yard-sale-guide"
+ },
+ {
+  "city": "nashville",
+  "state": "tn",
+  "slug": "nashville-tn-yard-sale-guide"
+ },
+ {
+  "city": "memphis",
+  "state": "tn",
+  "slug": "memphis-tn-yard-sale-guide"
+ },
+ {
+  "city": "knoxville",
+  "state": "tn",
+  "slug": "knoxville-tn-yard-sale-guide"
+ },
+ {
+  "city": "louisville",
+  "state": "ky",
+  "slug": "louisville-ky-yard-sale-guide"
+ },
+ {
+  "city": "lexington",
+  "state": "ky",
+  "slug": "lexington-ky-yard-sale-guide"
+ },
+ {
+  "city": "washington",
+  "state": "dc",
+  "slug": "washington-dc-yard-sale-guide"
+ },
+ {
+  "city": "baltimore",
+  "state": "md",
+  "slug": "baltimore-md-yard-sale-guide"
+ },
+ {
+  "city": "richmond",
+  "state": "va",
+  "slug": "richmond-va-yard-sale-guide"
+ },
+ {
+  "city": "virginia beach",
+  "state": "va",
+  "slug": "virginia-beach-va-yard-sale-guide"
+ },
+ {
+  "city": "philadelphia",
+  "state": "pa",
+  "slug": "philadelphia-pa-yard-sale-guide"
+ },
+ {
+  "city": "pittsburgh",
+  "state": "pa",
+  "slug": "pittsburgh-pa-yard-sale-guide"
+ },
+ {
+  "city": "allentown",
+  "state": "pa",
+  "slug": "allentown-pa-yard-sale-guide"
+ },
+ {
+  "city": "new york city",
+  "state": "ny",
+  "slug": "new-york-city-ny-yard-sale-guide"
+ },
+ {
+  "city": "buffalo",
+  "state": "ny",
+  "slug": "buffalo-ny-yard-sale-guide"
+ },
+ {
+  "city": "newark",
+  "state": "nj",
+  "slug": "newark-nj-yard-sale-guide"
+ },
+ {
+  "city": "jersey city",
+  "state": "nj",
+  "slug": "jersey-city-nj-yard-sale-guide"
+ },
+ {
+  "city": "boston",
+  "state": "ma",
+  "slug": "boston-ma-yard-sale-guide"
+ },
+ {
+  "city": "worcester",
+  "state": "ma",
+  "slug": "worcester-ma-yard-sale-guide"
+ },
+ {
+  "city": "providence",
+  "state": "ri",
+  "slug": "providence-ri-yard-sale-guide"
+ },
+ {
+  "city": "milwaukee",
+  "state": "wi",
+  "slug": "milwaukee-wi-rummage-sale-guide"
+ },
+ {
+  "city": "madison",
+  "state": "wi",
+  "slug": "madison-wi-rummage-sale-guide"
+ },
+ {
+  "city": "green bay",
+  "state": "wi",
+  "slug": "green-bay-wi-rummage-sale-guide"
+ },
+ {
+  "city": "kenosha",
+  "state": "wi",
+  "slug": "kenosha-wi-rummage-sale-guide"
+ },
+ {
+  "city": "racine",
+  "state": "wi",
+  "slug": "racine-wi-rummage-sale-guide"
+ },
+ {
+  "city": "hartford",
+  "state": "ct",
+  "slug": "hartford-ct-tag-sale-guide"
+ },
+ {
+  "city": "new haven",
+  "state": "ct",
+  "slug": "new-haven-ct-tag-sale-guide"
+ },
+ {
+  "city": "stamford",
+  "state": "ct",
+  "slug": "stamford-ct-tag-sale-guide"
+ },
+ {
+  "city": "bridgeport",
+  "state": "ct",
+  "slug": "bridgeport-ct-tag-sale-guide"
+ },
+ {
+  "city": "springfield",
+  "state": "ma",
+  "slug": "springfield-ma-tag-sale-guide"
+ }
+]

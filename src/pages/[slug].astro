@@ -1,0 +1,70 @@
+---
+// One route for every root-level page: the 100 city guides plus placeholder stubs
+// for the existing WordPress pages, so every current URL keeps working.
+import Base from '../layouts/Base.astro';
+import pages from '../../data/pages.json' with { type: 'json' };
+import { allCities, legalValue, display, pageTitle, metaDescription, UNKNOWN } from '../lib/cities.mjs';
+
+export function getStaticPaths() {
+  const cityPaths = allCities.map((city) => ({ params: { slug: city.slug }, props: { kind: 'city', city } }));
+  const stubPaths = pages
+    .filter((p) => p.stub)
+    .map((page) => ({ params: { slug: page.path.replaceAll('/', '') }, props: { kind: 'stub', page } }));
+  return [...cityPaths, ...stubPaths];
+}
+
+const { kind, city: r, page } = Astro.props;
+const LEGAL_ROWS = [
+  ['Permit required?', 'permit_required'],
+  ['Fee', 'fee'],
+  ['Sales allowed per year', 'sales_per_year'],
+  ['Max days per sale', 'max_days'],
+  ['Allowed hours', 'hours'],
+  ['Sign rules', 'sign_rules'],
+  ['How to apply', 'how_to_apply'],
+];
+const sameState = r ? allCities.filter((c) => c.state === r.state && c.slug !== r.slug) : [];
+---
+{kind === 'city' ? (
+  <Base title={pageTitle(r)} description={metaDescription(r)}>
+    <h1>{r.city}, {r.state} {r.sale_term} Guide</h1>
+    <p>
+      {r.confidence === 'verified'
+        ? <span class="badge verified">Checked against the city's official source</span>
+        : <span class="badge unverified">Not yet verified against an official source</span>}
+    </p>
+    <h2>The rules</h2>
+    <table>
+      <tbody>
+        {LEGAL_ROWS.map(([label, field]) => (
+          <tr><th scope="row">{label}</th><td>{display(legalValue(r, field))}</td></tr>
+        ))}
+      </tbody>
+    </table>
+    <p>
+      <strong>Last checked:</strong> {r.last_checked ?? 'Not yet checked'}<br />
+      <strong>Official source:</strong>{' '}
+      {r.official_source_url
+        ? <a href={r.official_source_url} rel="noopener" target="_blank">{new URL(r.official_source_url).hostname}</a>
+        : UNKNOWN}
+    </p>
+    {r.confidence !== 'verified' && (
+      <p>We're re-checking every city against its own website. Until {r.city} is checked, call your city hall or check the city's website before you put out a single sign.</p>
+    )}
+    <h2>Best time to hold a sale</h2>
+    <p>{r.best_season ?? UNKNOWN} <small>(our general guidance, not a city rule)</small></p>
+    <h2>Where to post your sale</h2>
+    {r.cross_posting.length ? <ul>{r.cross_posting.map((s) => <li>{s}</li>)}</ul> : <p>{UNKNOWN}</p>}
+    {sameState.length > 0 && (
+      <>
+        <h2>Other {r.state} city guides</h2>
+        <ul>{sameState.map((c) => <li><a href={`/${c.slug}/`}>{c.city}, {c.state}</a></li>)}</ul>
+      </>
+    )}
+  </Base>
+) : (
+  <Base title={page.title} description={`${page.title} from My Driveway Sale. This page is being rebuilt.`} canonicalPath={page.canonical} noindex>
+    <h1>{page.title}</h1>
+    <p>This page is being rebuilt. In the meantime, find your city's rules in the <a href="/hub/">city guides</a>.</p>
+  </Base>
+)}

@@ -1,0 +1,128 @@
+[
+  {
+    "wp_id": 146,
+    "title": "About and Contact",
+    "path": "/about-contact/",
+    "stub": true,
+    "canonical": "/about-contact/"
+  },
+  {
+    "wp_id": 14,
+    "title": "Home",
+    "path": "/home/",
+    "stub": true,
+    "canonical": "/"
+  },
+  {
+    "wp_id": 392,
+    "title": "Local Sale Guide Hub",
+    "path": "/hub/",
+    "stub": false,
+    "canonical": "/hub/"
+  },
+  {
+    "wp_id": 123,
+    "title": "Privacy Policy",
+    "path": "/privacy-policy/",
+    "stub": true,
+    "canonical": "/privacy-policy/"
+  },
+  {
+    "wp_id": 251,
+    "title": "StickerCalc App",
+    "path": "/stickercalc-app/",
+    "stub": true,
+    "canonical": "/stickercalc-app/"
+  },
+  {
+    "wp_id": 328,
+    "title": "StickerCalc Web",
+    "path": "/stickercalc-web/",
+    "stub": true,
+    "canonical": "/stickercalc-web/"
+  },
+  {
+    "wp_id": 137,
+    "title": "Terms of Service",
+    "path": "/terms-of-service/",
+    "stub": true,
+    "canonical": "/terms-of-service/"
+  },
+  {
+    "wp_id": 543,
+    "title": "Animal Protocol",
+    "path": "/animal-protocol/",
+    "stub": true,
+    "canonical": "/animal-protocol/"
+  },
+  {
+    "wp_id": 558,
+    "title": "Attractive Nuisance Warning",
+    "path": "/attractive-nuisance-warning/",
+    "stub": true,
+    "canonical": "/attractive-nuisance-warning/"
+  },
+  {
+    "wp_id": 553,
+    "title": "Driveway Liability Checklist",
+    "path": "/driveway-liability-checklist/",
+    "stub": true,
+    "canonical": "/driveway-liability-checklist/"
+  },
+  {
+    "wp_id": 678,
+    "title": "Multi-Family Sales",
+    "path": "/multifamily-sales/",
+    "stub": true,
+    "canonical": "/multifamily-sales/"
+  },
+  {
+    "wp_id": 878,
+    "title": "Local Regulations Guide",
+    "path": "/local_regulations_guide/",
+    "stub": true,
+    "canonical": "/local_regulations_guide/"
+  },
+  {
+    "wp_id": 800,
+    "title": "Best Weekends",
+    "path": "/local-best-weekends-data/",
+    "stub": true,
+    "canonical": "/local-best-weekends-data/"
+  },
+  {
+    "wp_id": 765,
+    "title": "Host Comfort Survival Kit",
+    "path": "/the-host-comfort-survival-kit/",
+    "stub": true,
+    "canonical": "/the-host-comfort-survival-kit/"
+  },
+  {
+    "wp_id": 983,
+    "title": "House Security Lockdown",
+    "path": "/house-security-lockdown/",
+    "stub": true,
+    "canonical": "/house-security-lockdown/"
+  },
+  {
+    "wp_id": 793,
+    "title": "Weather Plan",
+    "path": "/the-weather-rain-pivot-plan/",
+    "stub": true,
+    "canonical": "/the-weather-rain-pivot-plan/"
+  },
+  {
+    "wp_id": 1073,
+    "title": "Pricing and Appraisal Protocol",
+    "path": "/the-pricing-and-appriasal-protocol/",
+    "stub": true,
+    "canonical": "/the-pricing-and-appriasal-protocol/"
+  },
+  {
+    "wp_id": 1046,
+    "title": "Color Sticker Pricing Strategy",
+    "path": "/the-ultimate-color-sticker-pricing-strategy/",
+    "stub": true,
+    "canonical": "/the-ultimate-color-sticker-pricing-strategy/"
+  }
+]

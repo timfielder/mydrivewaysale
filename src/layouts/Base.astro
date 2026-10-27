@@ -1,0 +1,36 @@
+---
+import { SITE_URL, SITE_NAME } from '../lib/site-config.mjs';
+interface Props { title: string; description: string; canonicalPath?: string | null; noindex?: boolean; }
+const { title, description, canonicalPath = Astro.url.pathname, noindex = false } = Astro.props;
+const canonical = canonicalPath ? new URL(canonicalPath, SITE_URL).href : null;
+const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <style is:global>
+      body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 0 auto; padding: 1rem; color: #00264C; line-height: 1.5; }
+      a { color: #1a5d8f; }
+      table { border-collapse: collapse; width: 100%; }
+      th, td { text-align: left; padding: .5rem; border-bottom: 1px solid #E2E8F0; vertical-align: top; }
+      .badge { display: inline-block; padding: .1rem .5rem; border-radius: 4px; font-size: .85rem; }
+      .verified { background: #E6F4EA; color: #137333; }
+      .unverified { background: #FFF4E5; color: #8a4b00; }
+      header nav a, footer a { margin-right: 1rem; }
+    </style>
+  </head>
+  <body>
+    <header><nav><a href="/">My Driveway Sale</a><a href="/hub/">City guides</a><a href="/about-contact/">About</a></nav></header>
+    <main><slot /></main>
+    <footer>
+      <p><small>Rules change. Always confirm with your city before your sale. <a href="/privacy-policy/">Privacy</a><a href="/terms-of-service/">Terms</a></small></p>
+    </footer>
+  </body>
+</html>
