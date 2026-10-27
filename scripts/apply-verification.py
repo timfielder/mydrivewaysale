@@ -14,15 +14,23 @@ for slug, b in batch.items():
     for field, new in b["set"].items():
         old = r[field]
         flag = "same" if old == new else "CHANGED"
-        lines.append(f"| {r['city']}, {r['state']} | {field} | {fmt(old)} | {fmt(new)} | {flag} | {b['official_source_url']} |")
+        lines.append(f"| {r['city']}, {r['state']} | {field} | {fmt(old)} | {fmt(new)} | {flag} | {b.get('field_sources', {}).get(field) or b.get('official_source_url') or r['official_source_url']} |")
         r[field] = new
+    merge = b.get("merge", False)
     for field in ("confidence", "official_source_url", "last_checked"):
-        new = {"confidence": b["confidence"], "official_source_url": b["official_source_url"], "last_checked": date}[field]
-        lines.append(f"| {r['city']}, {r['state']} | {field} | {fmt(r[field])} | {fmt(new)} | meta | {b['official_source_url']} |")
+        new = {"confidence": b["confidence"], "official_source_url": b.get("official_source_url") or r["official_source_url"], "last_checked": date}[field]
+        if r[field] == new: continue
+        lines.append(f"| {r['city']}, {r['state']} | {field} | {fmt(r[field])} | {fmt(new)} | meta | {new if field == 'official_source_url' else ''} |")
         r[field] = new
-    r["verified_fields"] = list(b["set"].keys())
-    live_note = r["notes"]
-    r["notes"] = b["notes"] + (" " + live_note if live_note else "")
+    if merge:
+        r["verified_fields"] = list(dict.fromkeys(r["verified_fields"] + list(b["set"].keys())))
+        r["notes"] = (r["notes"] + " " if r["notes"] else "") + f"[{date} update] " + b["notes"]
+    else:
+        r["verified_fields"] = list(b["set"].keys())
+        live_note = r["notes"]
+        r["notes"] = b["notes"] + (" " + live_note if live_note else "")
+    if not b["set"]:
+        lines.append(f"| {r['city']}, {r['state']} | (no field change) | | | note only | {b.get('official_source_url') or r['official_source_url']} |")
 json.dump(rows, open(path, "w"), indent=2, ensure_ascii=False)
 new_file = not os.path.exists(log_path)
 with open(log_path, "a") as f:

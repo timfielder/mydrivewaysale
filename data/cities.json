@@ -54,7 +54,7 @@
       "Nextdoor Travis County",
       "Austin Yard/Garage Sale Facebook Groups"
     ],
-    "notes": "City page: a garage sale may not be held at the same property more than 4 days per calendar year (Land Development Code 25-2-903), and not at a property on a residential tour. The same page also says 'more than four garage sales per calendar year' is a home-based business, so the 4-day vs 4-sale wording conflicts; sales_per_year and max_days left null until the code text is checked. Page does not say whether a permit or fee is required. Live site permit link is broken: +garage+sale+permit']"
+    "notes": "City page: a garage sale may not be held at the same property more than 4 days per calendar year (Land Development Code 25-2-903), and not at a property on a residential tour. The same page also says 'more than four garage sales per calendar year' is a home-based business, so the 4-day vs 4-sale wording conflicts; sales_per_year and max_days left null until the code text is checked. Page does not say whether a permit or fee is required. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Code text checked: Land Development Code 25-2-903 (city copy, https://www.austintexas.gov/edims/document.cfm?id=246534, labeled CURRENT CODE) allows garage sales as an accessory residential use at the seller's principal residence, max 4 days per calendar year at the same property. The section says nothing about a permit or fee, so permit stays null (silence)."
   },
   {
     "slug": "houston-tx-garage-sale-guide",
@@ -125,19 +125,21 @@
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
-    "sign_rules": "Signs allowed on the property hosting the sale. Prohibited on public rights-of-way, utility poles, or trees.",
+    "sign_rules": "1 non-illuminated garage or estate sale sign, 2 sq ft max, temporary, on the property where the sale is held. Remove it within 24 hours after the sale ends.",
     "how_to_apply": null,
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
-    "verified_fields": [],
+    "official_source_url": "https://codelibrary.amlegal.com/codes/ftworth/latest/overview",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
+    "verified_fields": [
+      "sign_rules"
+    ],
     "best_season": "Spring and Fall (April-May, September-October)",
     "cross_posting": [
       "Craigslist Fort Worth",
       "Nextdoor Tarrant County",
       "Fort Worth Garage/Yard Sales Facebook Groups"
     ],
-    "notes": "Live site permit link is broken: https://www.fortworthtexas.gov+garage+sale+permit']"
+    "notes": "Browser pass 2026-10-27: Fort Worth City Code Sec. 6.403(j) (signs not requiring a permit) refers to 'property for which a garage sale permit has been obtained.' That conflicts with the city's Zoning Issues page (cited in the July review) saying no permit is required. Permit left unknown; follow up on the conflict. Sec. 20-258(c) exempts occasional residential garage sales from the secondhand dealer rules. The $10 fee on fortworthtexas.gov/news/2025/9/garage-sales is for city-run community-center sales only. Fee, limits, and hours not stated. Live site permit link is broken: https://www.fortworthtexas.gov+garage+sale+permit']"
   },
   {
     "slug": "el-paso-tx-garage-sale-guide",
@@ -251,7 +253,7 @@
       "Nextdoor Maricopa County",
       "Phoenix Garage Sale Facebook Groups"
     ],
-    "notes": "City Neighborhood Services flyer: 2 sales per residential property within any 12-month period, each no more than 3 consecutive days; not on sidewalks, streets, or vacant lots. Flyer does not mention a permit, fee, or sign rules. Live site permit link is broken: +garage+sale+permit']"
+    "notes": "City Neighborhood Services flyer: 2 sales per residential property within any 12-month period, each no more than 3 consecutive days; not on sidewalks, streets, or vacant lots. Flyer does not mention a permit, fee, or sign rules. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Code text checked: Phoenix Zoning Ordinance 608.E.31 (https://phoenix.municipal.codes/ZO/608) says garage or yard sales may be held twice every 12 months on residentially zoned property with a dwelling, max 3 consecutive days. Matches the flyer. The section says nothing about a permit or fee, so permit stays null (silence)."
   },
   {
     "slug": "tucson-az-garage-sale-guide",
@@ -335,7 +337,7 @@
     "sales_per_year": 5,
     "max_days": 2,
     "hours": "9 a.m. to 5 p.m.",
-    "sign_rules": "Signs must remain on private property. Attaching signs to public property, utility poles, parkway trees, or street lights is illegal.",
+    "sign_rules": "No signs on sidewalks, curbs, poles, trees, hydrants, or street and traffic signs. Signs on private property need the owner's consent. The property owner or tenant is held responsible for yard sale signs. Fines: up to $100 first, $250 second, $500 third in a calendar year, then a misdemeanor.",
     "how_to_apply": null,
     "official_source_url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886",
     "last_checked": "2026-10-27",
@@ -343,7 +345,8 @@
     "verified_fields": [
       "sales_per_year",
       "max_days",
-      "hours"
+      "hours",
+      "sign_rules"
     ],
     "best_season": "Year-round (Optimal March-May, September-November)",
     "cross_posting": [
@@ -351,7 +354,7 @@
       "Nextdoor Los Angeles County",
       "Los Angeles Garage Sales Facebook Groups"
     ],
-    "notes": "LAMC Sec. 12.03 (Accessory Use): max 5 sale events per calendar year, 2 consecutive days per event, 10 days per year total, used household items only. The code section has no permit or fee language; permit left unverified. Sign rules not checked yet (LAMC 28.04 is the likely section). Live site permit link is broken: +garage+sale+permit']"
+    "notes": "LAMC Sec. 12.03 (Accessory Use): max 5 sale events per calendar year, 2 consecutive days per event, 10 days per year total, used household items only. The code section has no permit or fee language; permit left unverified. Sign rules not checked yet (LAMC 28.04 is the likely section). Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Signs from LAMC Sec. 28.04 (https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-128154) and Sec. 28.03 (owner consent), browser pass. Neither section, nor Sec. 12.03, mentions a permit or fee, so permit stays unknown (silence)."
   },
   {
     "slug": "san-diego-ca-garage-sale-guide",
@@ -378,7 +381,7 @@
       "Nextdoor San Diego County",
       "San Diego Garage & Yard Sales Facebook Groups"
     ],
-    "notes": "San Diego Municipal Code 141.0306: allowed only as an accessory use to a dwelling, in zones marked L; max 3 sales per premises per year, each no more than 2 consecutive calendar days. The section has no permit or fee language; permit left unverified. Live site permit link is broken: +garage+sale+permit']"
+    "notes": "San Diego Municipal Code 141.0306: allowed only as an accessory use to a dwelling, in zones marked L; max 3 sales per premises per year, each no more than 2 consecutive calendar days. The section has no permit or fee language; permit left unverified. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Re-checked SDMC 141.0306: no permit or fee language; permit stays null (silence)."
   },
   {
     "slug": "san-jose-ca-garage-sale-guide",
@@ -590,19 +593,21 @@
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
-    "sign_rules": "Signs permitted on private property with consent. Strictly prohibited from being attached to utility poles, street trees, or public signs.",
+    "sign_rules": "Yard signs may go in the planting strip in front of private property without a permit, with the occupant's permission: 8 sq ft max, 36 in tall max (24 in within 30 ft of an intersection). Don't block sidewalks or sight lines. Never attach signs to City poles, streetlights, or other City infrastructure.",
     "how_to_apply": null,
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
-    "verified_fields": [],
+    "official_source_url": "https://www.seattle.gov/transportation/permits-and-services/permits/applicant-guides/ag-1006",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
+    "verified_fields": [
+      "sign_rules"
+    ],
     "best_season": "Summer (June-August, dodging local rainfall patterns)",
     "cross_posting": [
       "Craigslist Seattle",
       "Nextdoor King County",
       "Seattle Garage Sales Facebook Groups"
     ],
-    "notes": "Live site permit link is broken: +garage+sale+permit']"
+    "notes": "SDOT guide AG 1006 covers yard signs in general (garage sale signs included). No official Seattle page or code section on garage sale permits or limits was found; permit, fee, and limits stay unknown. Live site permit link is broken: +garage+sale+permit']"
   },
   {
     "slug": "spokane-wa-garage-sale-guide",
@@ -706,23 +711,30 @@
     "state": "NV",
     "sale_term": "Garage Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
-    "sign_rules": "Signs allowed on the host residential property only. Off-site signage on utility poles, medians, or public right-of-ways is illegal.",
+    "fee": "None (no permit needed)",
+    "sales_per_year": 2,
+    "max_days": 3,
+    "hours": "Daylight hours only",
+    "sign_rules": "1 sign per sale, up to 16 sq ft and 6 ft tall, not lit. Private property only, with the owner's permission. None on public land, rights-of-way, medians, sidewalks, trails, light poles, or traffic signals. Put it up no more than 24 hours before the sale; the property owner removes it after.",
     "how_to_apply": null,
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
-    "verified_fields": [],
+    "official_source_url": "https://files.lasvegasnevada.gov/code-enforcement/Code-Enforcement-Common-Violations.pdf",
+    "last_checked": "2026-10-27",
+    "confidence": "verified",
+    "verified_fields": [
+      "permit_required",
+      "fee",
+      "sales_per_year",
+      "max_days",
+      "hours",
+      "sign_rules"
+    ],
     "best_season": "Spring and Fall (March-April, October-November)",
     "cross_posting": [
       "Craigslist Las Vegas",
       "Nextdoor Clark County",
       "Las Vegas Garage Sales Facebook Groups"
     ],
-    "notes": "Live site permit link is broken: +garage+sale+permit']"
+    "notes": "City Code Enforcement sheet: 'No permits are required to conduct a garage sale.' Limits, hours, and signs come from the Unified Development Ordinance 19.12.020(B)(1) and the garage sale sign table (encodeplus pages 310 and 115). Wording conflict: the UDO says 2 per calendar year; the Code Enforcement sheet says 2 in any 12 consecutive months. Only items owned and used by the occupant. Live site permit link is broken: +garage+sale+permit']"
   },
   {
     "slug": "henderson-nv-garage-sale-guide",
@@ -779,22 +791,26 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 3,
     "hours": null,
-    "sign_rules": "Signs must be placed on private property only. Strictly prohibited on public utility poles, trees, medians, or public easements.",
+    "sign_rules": "Remove all signs and any other sign of the sale right after it ends.",
     "how_to_apply": null,
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
-    "verified_fields": [],
+    "official_source_url": "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Plan-Review-Permits-and-Inspections/Neighborhood-Inspections",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
+    "verified_fields": [
+      "sales_per_year",
+      "max_days",
+      "sign_rules"
+    ],
     "best_season": "Late Spring and Summer (May-August)",
     "cross_posting": [
       "Craigslist Denver",
       "Nextdoor Denver County",
       "Denver Garage Sales Facebook Groups"
     ],
-    "notes": "Live site permit link is broken: +garage+sale+permit']"
+    "notes": "City page: one yard sale every six months (recorded as 2 a year), each lasting less than 72 hours (recorded as 3 days max), no items bought for resale or on consignment. The page doesn't mention a permit or fee. Live site permit link is broken: +garage+sale+permit']"
   },
   {
     "slug": "colorado-springs-co-garage-sale-guide",
@@ -851,21 +867,22 @@
     "sale_term": "Garage Sale",
     "permit_required": true,
     "fee": "$10 per permit",
-    "sales_per_year": null,
+    "sales_per_year": 2,
     "max_days": 3,
     "hours": "8 a.m. to 6 p.m.",
     "sign_rules": "1 sign in front of your house, no larger than 12 sq ft. No signs on utility poles, traffic sign poles, medians, or any public right-of-way.",
     "how_to_apply": "Buy online with a credit card through the city's permit portal, or call the License Division at 405-297-2606 for a paperless permit number.",
     "official_source_url": "https://www.okc.gov/Services/Permits/Garage-Sale-Permit",
     "last_checked": "2026-10-27",
-    "confidence": "partial",
+    "confidence": "verified",
     "verified_fields": [
       "permit_required",
       "fee",
       "max_days",
       "hours",
       "sign_rules",
-      "how_to_apply"
+      "how_to_apply",
+      "sales_per_year"
     ],
     "best_season": "Spring and Fall (April-May, September-October)",
     "cross_posting": [
@@ -873,7 +890,7 @@
       "Nextdoor Oklahoma County",
       "Oklahoma City Garage Sales Facebook Groups"
     ],
-    "notes": "Permit good for 3 consecutive days at the listed address. Max fine $200 plus costs. The city page gives no yearly limit; Municode Title 22 likely has it but wasn't opened (JS-only site), so sales_per_year stays null. Page blocked curl; read via WebFetch on 2026-10-27. Live site permit link is broken: https://www.okc.gov+garage+sale+permit']"
+    "notes": "Permit good for 3 consecutive days at the listed address. Max fine $200 plus costs. The city page gives no yearly limit; Municode Title 22 likely has it but wasn't opened (JS-only site), so sales_per_year stays null. Page blocked curl; read via WebFetch on 2026-10-27. Live site permit link is broken: https://www.okc.gov+garage+sale+permit'] [2026-10-27 update] Yearly limit from the city's Business Licensing page: 'Each household can have two garage sales a year with proper permits. Garage sale permits are $10.' (read via WebFetch; okc.gov blocks curl; Municode blocked even in a browser)."
   },
   {
     "slug": "tulsa-ok-garage-sale-guide",
@@ -1686,24 +1703,27 @@
     "city": "Charlotte",
     "state": "NC",
     "sale_term": "Yard Sale",
-    "permit_required": false,
+    "permit_required": true,
     "fee": "$0.00",
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
     "sign_rules": "Signs must stay entirely on private properties with consent. Forbidden on public verges, utility standards, or roadway medians.",
-    "how_to_apply": null,
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
-    "verified_fields": [],
+    "how_to_apply": "Buy a Yard Sale License online from Mecklenburg County Business Tax Collections (you print it yourself), or in person, cash only, at the Office of the Tax Collector, 3205 Freedom Drive, Suite 3000. Questions: 980-314-4400.",
+    "official_source_url": "https://biztax.mecklenburgcountync.gov/yardsale/Default.aspx",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
+    "verified_fields": [
+      "permit_required",
+      "how_to_apply"
+    ],
     "best_season": "Spring and Fall (April-May, September-October)",
     "cross_posting": [
       "Craigslist Charlotte",
       "Nextdoor Mecklenburg County",
       "Charlotte Yard Sales Facebook Groups"
     ],
-    "notes": "Live site permit link is broken: +garage+sale+permit']"
+    "notes": "County tax office page: a Yard Sale License is required for any attic, garage, yard, or similar sale inside Charlotte city limits, and skipping it can mean a fine. Fee and limits aren't shown on that page. Live site permit link is broken: +garage+sale+permit']"
   },
   {
     "slug": "raleigh-nc-yard-sale-guide",
@@ -1784,22 +1804,26 @@
     "sale_term": "Yard Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 3,
     "hours": null,
-    "sign_rules": "Signs must remain on private property. Placing signs in the public right-of-way, on traffic signs, or on utility poles is a code violation.",
+    "sign_rules": "No signs on public property without permission, including utility poles, light poles, bus benches, and utility boxes. Not in or too close to the right-of-way. Portable signs aren't allowed in Davidson County.",
     "how_to_apply": null,
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
-    "verified_fields": [],
+    "official_source_url": "https://www.nashville.gov/departments/codes/property-standards/code-enforcement/codes-violation-types",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
+    "verified_fields": [
+      "sales_per_year",
+      "max_days",
+      "sign_rules"
+    ],
     "best_season": "Spring and Fall (April-May, September-October)",
     "cross_posting": [
       "Craigslist Nashville",
       "Nextdoor Davidson County",
       "Nashville Yard Sales Facebook Groups"
     ],
-    "notes": "Live site permit link is broken: +garage+sale+permit']"
+    "notes": "Metro Codes page: no more than 2 yard/garage sales a year, up to 3 days each; consignment sales prohibited. Sign rules on that page are general Davidson County sign rules. No permit or fee mentioned. Live site permit link is broken: +garage+sale+permit']"
   },
   {
     "slug": "memphis-tn-yard-sale-guide",
