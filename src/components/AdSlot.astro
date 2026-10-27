@@ -1,0 +1,22 @@
+---
+// One AdSense unit at a named spot. Renders nothing while ads are off or IDs are TODO.
+import { ADSENSE_CLIENT, adUnitFor } from '../lib/ads-config.mjs';
+interface Props { pageType: string; spot: string; noindex?: boolean; }
+const { pageType, spot, noindex = false } = Astro.props;
+const unit = adUnitFor(pageType, spot, { noindex });
+---
+{unit && (
+  <aside class={`ad ad-${unit.name}`} aria-label="Advertisement">
+    <span class="ad-label">{unit.label}</span>
+    <ins
+      class="adsbygoogle"
+      style="display:block"
+      data-ad-client={ADSENSE_CLIENT}
+      data-ad-slot={unit.slot}
+      data-ad-format={unit.format}
+      data-ad-layout={unit.layout}
+      data-full-width-responsive={unit.format === 'auto' ? 'true' : undefined}
+    ></ins>
+    <script is:inline>(window.adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </aside>
+)}

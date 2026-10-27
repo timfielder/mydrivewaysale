@@ -1,0 +1,31 @@
+---
+// Promo cards for Tim's own apps. Store links come from APPS in site-config.
+import { APPS } from '../lib/site-config.mjs';
+interface Props { app: 'stickercalc' | 'beamme'; saleTerm?: string; }
+const { app, saleTerm } = Astro.props;
+const a = APPS[app];
+const handy = saleTerm ? ` Handy for a ${saleTerm.toLowerCase()}.` : '';
+---
+<aside class={`promo promo-${app}`}>
+  {app === 'stickercalc' ? (
+    <>
+      <h3>StickerCalc: checkout math for color-sticker pricing</h3>
+      <p>Give each sticker color a price, tap the colors as people buy, and see the total. The phone app adds sales tax, logs how each buyer paid, and hands you one end-of-day report instead of a notebook full of scribbles.</p>
+      <p>
+        <a class="btn" href={a.webPath}>Try the free web version</a>
+        {a.appStore && <a class="btn" href={a.appStore} rel="noopener" target="_blank">App Store ({a.price})</a>}
+        {a.googlePlay && <a class="btn" href={a.googlePlay} rel="noopener" target="_blank">Google Play ({a.price})</a>}
+      </p>
+    </>
+  ) : (
+    <>
+      <h3>BeamMe: let buyers pay their way</h3>
+      <p>Skip spelling your Venmo handle across the driveway. Type the amount, show one QR code, and the buyer picks from the payment apps you accept. BeamMe never holds your money; the payment goes through the app they choose.{handy}</p>
+      <p>
+        {a.appStore && <a class="btn" href={a.appStore} rel="noopener" target="_blank">App Store (free)</a>}
+        {a.googlePlay && <a class="btn" href={a.googlePlay} rel="noopener" target="_blank">Google Play (free)</a>}
+      </p>
+    </>
+  )}
+  <p><small>{a.name} is made by Tim Fielder Enterprises, LLC, the company behind My Driveway Sale.</small></p>
+</aside>

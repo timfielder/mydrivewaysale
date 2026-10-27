@@ -7,9 +7,28 @@ export const SITE_NAME = 'My Driveway Sale';
 // Amazon Associates tracking ID. Keep as config; do not hardcode in templates.
 export const AMAZON_TAG = 'mydrivewaysal-20';
 
-// BeamMe may be linked publicly (Tim, 2026-10-27). No public store URL captured yet,
-// so this stays null until one is confirmed; templates skip the link when null.
-export const BEAMME_URL = null;
+// Tim's apps. Store URLs confirmed 2026-10-27 by opening each public listing (seller
+// "Tim Fielder Enterprises, LLC" / developer "TF Dev"); prices are the US listings that day.
+// BeamMe may be linked publicly (Tim, 2026-10-27). A null URL makes templates skip that button.
+export const APPS = {
+  stickercalc: {
+    name: 'StickerCalc',
+    price: '$2.99',
+    // Free browser version (StickerCalc Lite): on the live site /stickercalc-web/ wraps the
+    // Flutter build at /app/. TODO(port): that app isn't in this repo yet, so on this build
+    // /stickercalc-web/ is still a stub. Port /app/ before cutover.
+    webPath: '/stickercalc-web/',
+    appStore: 'https://apps.apple.com/us/app/stickercalc-color-tag-checkout/id6761667962',
+    googlePlay: 'https://play.google.com/store/apps/details?id=com.tfielder.sticker_calc',
+  },
+  beamme: {
+    name: 'BeamMe',
+    price: 'Free',
+    site: 'https://tfdev.tfielder.com/beammeapp/',
+    appStore: 'https://apps.apple.com/us/app/beamme-payment-requests/id6759508798',
+    googlePlay: 'https://play.google.com/store/apps/details?id=com.tfielder.beamme',
+  },
+};
 
 // When false, legal fields (permit, fee, limits, hours, signs, how to apply) from rows
 // that are not "verified" render as "Unknown, check with your city".

@@ -1,0 +1,16 @@
+---
+// The AdSense loader script, once per page in <head>. The live WordPress site never
+// loaded this, which is why its ad boxes stayed empty. Off until ads are approved.
+import { ADSENSE_CLIENT, adsLive } from '../lib/ads-config.mjs';
+interface Props { pageType: string; noindex?: boolean; }
+const { pageType, noindex = false } = Astro.props;
+const live = adsLive(pageType, { noindex });
+---
+{live && (
+  <script
+    is:inline
+    async
+    src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+    crossorigin="anonymous"
+  ></script>
+)}

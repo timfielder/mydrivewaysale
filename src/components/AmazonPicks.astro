@@ -1,0 +1,19 @@
+---
+// A short list of tagged Amazon search links, with the Associates disclosure right there.
+import { amazonGroup, AMAZON_DISCLOSURE } from '../lib/amazon.mjs';
+interface Props { group: string; heading?: string; disclose?: boolean; }
+// disclose: show the Associates line under this block. Keep it on the first block of a page;
+// the site footer repeats it on every page.
+const { group, heading, disclose = true } = Astro.props;
+const g = amazonGroup(group);
+---
+<aside class="picks" data-amazon-group={g.name}>
+  <h3>{heading ?? g.title}</h3>
+  {g.note && <p><small>{g.note}</small></p>}
+  <ul>
+    {g.items.map((it) => (
+      <li><a href={it.url} rel="sponsored nofollow noopener" target="_blank">{it.label}</a> <small>(Amazon search)</small></li>
+    ))}
+  </ul>
+  {disclose && <p class="disclosure"><small>{AMAZON_DISCLOSURE}</small></p>}
+</aside>
