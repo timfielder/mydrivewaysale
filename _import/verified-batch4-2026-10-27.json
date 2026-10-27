@@ -1,0 +1,94 @@
+{
+  "_about": "Batch 4, 2026-10-27. Official city pages or code only. Detroit and Columbus: Municode blocks direct access, so their code text was read from the search engine's copy of the official Municode page (section numbers and wording shown); re-open in a browser to confirm.",
+  "fort-worth-tx-garage-sale-guide": {
+    "merge": true,
+    "set": { "sales_per_year": 2, "max_days": 3 },
+    "official_source_url": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037",
+    "notes": "Zoning Ordinance 5.402 (American Legal, opened 2026-10-27): no more than 2 garage sales per premises per calendar year, each up to 3 consecutive days, sale confined to garage or patio, 1 sign up to 2 sq ft on the premises. 5.402(d) still says a permit must be secured 72 hours ahead. The city's Code Compliance 'Zoning Issues' page says the city does not require permits for garage sales and asks residents to limit them to 2 a year (seen in search results today; the page returned 404 to a direct fetch). Council moved to drop the permit in Oct 2017 (FOX 4, 2017-10-13). Permit status stays unknown until the city confirms which rule applies."
+  },
+  "san-jose-ca-garage-sale-guide": {
+    "confidence": "partial",
+    "set": { "sales_per_year": 2, "max_days": 4, "hours": "9 a.m. to 9 p.m." },
+    "official_source_url": "https://sanjose.legistar.com/gateway.aspx?ID=1c8eeaf8-deab-4672-b264-1d478fa2197c.pdf&M=F",
+    "notes": "San Jose Municipal Code 20.30.110(D)-(E): a garage sale of the occupants' own things is an allowed non-commercial incidental use if there are no more than 2 sales a calendar year, none longer than 4 consecutive days, held 9 a.m. to 9 p.m. Text read from the city's own Legistar council packet (file 19-1216, Dec 2019, which amended 20.30.110); the section's history ends at Ord. 30353 (Jan 2020), so no later change is known. Municode (current code) blocks direct access. The code doesn't mention a permit or fee, so those stay unknown."
+  },
+  "detroit-mi-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "permit_required": false,
+      "fee": "None for one sale every 90 days",
+      "sales_per_year": 4,
+      "max_days": 3,
+      "hours": "Daylight hours only",
+      "sign_rules": "No yard or garage sale signs on any public property."
+    },
+    "official_source_url": "https://library.municode.com/mi/detroit/codes/code_of_ordinances/389797?nodeId=PTIVDECO_CH50ZO_ARTXIIUSRE_DIV6TEUSST",
+    "notes": "Detroit City Code 50-12-558: one yard or garage sale per 90 days without a permit (recorded as 4 a year), daylight hours, up to 3 consecutive days, only the owner's or tenant's goods, nothing on streets or sidewalks, no signs on public property. Read from the search engine's copy of the official Municode page; Municode and detroitmi.gov block direct access. Confirm in a browser."
+  },
+  "columbus-oh-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "permit_required": false,
+      "fee": "None (no temporary use permit needed)",
+      "sales_per_year": 2,
+      "max_days": 4,
+      "sign_rules": "A yard or garage sale sign up to 4 sq ft needs no sign permit (Columbus City Code 3375.09(C)). Signs must follow the Graphics Code."
+    },
+    "official_source_url": "https://library.municode.com/oh/columbus/codes/code_of_ordinances?nodeId=TIT33ZOCO_CH3390TEUS&showChanges=true",
+    "field_sources": { "sign_rules": "https://library.municode.com/oh/columbus/codes/code_of_ordinances?nodeId=TIT33ZOCO_CH3375GEPR" },
+    "notes": "Columbus City Code 3390.02(C): a garage or yard sale is allowed without a temporary use permit up to 2 times a year, up to 4 days each. 3375.09(C): a yard or garage sale sign up to 4 sq ft needs no permit. Read from the search engine's copy of the official Municode pages; Municode blocks direct access. Confirm in a browser."
+  },
+  "portland-or-garage-sale-guide": {
+    "confidence": "partial",
+    "set": { "sales_per_year": 2, "max_days": 3 },
+    "official_source_url": "https://www.portland.gov/sites/default/files/code/33.296-temporary-activities.pdf",
+    "notes": "Portland Zoning Code 33.296.030.C.1 (portland.gov PDF): garage sales in residential zones for no more than 3 consecutive days on 2 occasions a calendar year; no products brought in for the sale. Doesn't mention a permit, fee, hours, or signs."
+  },
+  "washington-dc-yard-sale-guide": {
+    "confidence": "partial",
+    "set": { "permit_required": false, "fee": "None (no vending permit for used household goods sold at home)", "sales_per_year": 5 },
+    "official_source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2703",
+    "field_sources": { "sales_per_year": "https://online.encodeplus.com/regs/washington-dc/ereader/files/basic-html/page768.html" },
+    "notes": "DC Code 47-2703: no permit is needed to sell used household furniture and effects at the seller's residence. Zoning, 11 DCMR Subtitle U 251.1(l)(2): 5 yard sales, garage sales, or home sales parties a year at a dwelling as a matter of right; a 6th needs Board of Zoning Adjustment approval. That limit sits inside the home occupation rules, so read it as the zoning cap."
+  },
+  "louisville-ky-yard-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 2,
+      "sign_rules": "Remove every sign advertising or pointing to the sale within 48 hours after it ends. Nothing for sale in the right-of-way."
+    },
+    "official_source_url": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukyldc/0-0-0-4512",
+    "notes": "Louisville Metro Land Development Code 4.4.4: no more than 2 garage or yard sales a calendar year per property, up to 2 days each, sales area up to 1,800 sq ft, no items in the right-of-way, signs down within 48 hours. No permit or fee language."
+  },
+  "tucson-az-garage-sale-guide": {
+    "confidence": "partial",
+    "set": { "sales_per_year": 4, "max_days": 3 },
+    "official_source_url": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-25386",
+    "notes": "Tucson Code 16-39.1: no more than 4 yard sales a calendar year per residential property, none longer than 3 consecutive days. Violations are civil infractions, $100 to $2,500 (16-48). No permit or fee language."
+  },
+  "sacramento-ca-garage-sale-guide": {
+    "confidence": "partial",
+    "set": { "sales_per_year": 1, "max_days": 2 },
+    "official_source_url": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-12627",
+    "notes": "Sacramento City Code 5.80.020: anyone who holds more than 1 garage sale a calendar year, or one longer than 2 consecutive days, counts as a secondhand dealer, which needs a police permit (5.80.010). One sale of up to 2 days needs no dealer permit; no other garage sale permit was found, so permit status stays unknown."
+  },
+  "cincinnati-oh-garage-sale-guide": {
+    "confidence": "partial",
+    "set": { "sales_per_year": 2, "max_days": 2, "hours": "Daylight hours only" },
+    "official_source_url": "https://www.cincinnati-oh.gov/finance/linkservid/8CCCD0EB-FE79-DA37-0231088CA5B0845D/showMeta/0/",
+    "notes": "Cincinnati Municipal Code 843-11 (city-hosted PDF of Chapter 843): no home sale (garage, yard, rummage and similar) longer than 2 consecutive days, daylight hours only, no more than 2 a calendar year per residence. No permit or fee language in 843-11."
+  },
+  "colorado-springs-co-garage-sale-guide": {
+    "confidence": "partial",
+    "set": { "sales_per_year": 2, "max_days": 2 },
+    "official_source_url": "https://coloradosprings.gov/planning-and-development/page/residential-accessory-use",
+    "notes": "City page (citing City Code 7.3.105.A.2.g): garage sales allowed no more than 2 times a calendar year, each up to 2 consecutive days. No permit or fee language."
+  },
+  "minneapolis-mn-garage-sale-guide": {
+    "confidence": "verified",
+    "set": { "permit_required": false, "fee": "None (no license needed)", "sales_per_year": 2, "max_days": 3 },
+    "official_source_url": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/business-licenses/door-secondhand/secondhand-goods/",
+    "notes": "City Secondhand Goods License page: no license needed for a garage, yard or estate sale on private property when the seller owns the items and runs the sale, it lasts no more than 72 hours (recorded as 3 days), and there are no more than 2 sales in any 12 months."
+  }
+}

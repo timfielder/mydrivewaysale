@@ -548,8 +548,8 @@
     "sale_term": "Garage Sale",
     "permit_required": true,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "1 non-illuminated garage or estate sale sign, 2 sq ft max, temporary, on the property where the sale is held. Remove it within 24 hours after the sale ends.",
     "how_to_apply": null,
@@ -560,7 +560,7 @@
       "Nextdoor Tarrant County",
       "Fort Worth Garage/Yard Sales Facebook Groups"
     ],
-    "official_source_url": "https://codelibrary.amlegal.com/codes/ftworth/latest/overview",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037",
     "last_checked": "2026-10-27",
     "confidence": "partial",
     "field_status": {
@@ -607,16 +607,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037"
       },
       "hours": {
         "verified": false,
@@ -655,7 +655,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Browser pass 2026-10-27: Fort Worth City Code Sec. 6.403(j) (signs not requiring a permit) refers to 'property for which a garage sale permit has been obtained.' That conflicts with the city's Zoning Issues page (cited in the July review) saying no permit is required. Permit left unknown; follow up on the conflict. Sec. 20-258(c) exempts occasional residential garage sales from the secondhand dealer rules. The $10 fee on fortworthtexas.gov/news/2025/9/garage-sales is for city-run community-center sales only. Fee, limits, and hours not stated. Live site permit link is broken: https://www.fortworthtexas.gov+garage+sale+permit']",
+    "notes": "Browser pass 2026-10-27: Fort Worth City Code Sec. 6.403(j) (signs not requiring a permit) refers to 'property for which a garage sale permit has been obtained.' That conflicts with the city's Zoning Issues page (cited in the July review) saying no permit is required. Permit left unknown; follow up on the conflict. Sec. 20-258(c) exempts occasional residential garage sales from the secondhand dealer rules. The $10 fee on fortworthtexas.gov/news/2025/9/garage-sales is for city-run community-center sales only. Fee, limits, and hours not stated. Live site permit link is broken: https://www.fortworthtexas.gov+garage+sale+permit'] [2026-10-27 update] Zoning Ordinance 5.402 (American Legal, opened 2026-10-27): no more than 2 garage sales per premises per calendar year, each up to 3 consecutive days, sale confined to garage or patio, 1 sign up to 2 sq ft on the premises. 5.402(d) still says a permit must be secured 72 hours ahead. The city's Code Compliance 'Zoning Issues' page says the city does not require permits for garage sales and asks residents to limit them to 2 a year (seen in search results today; the page returned 404 to a direct fetch). Council moved to drop the permit in Oct 2017 (FOX 4, 2017-10-13). Permit status stays unknown until the city confirms which rule applies.",
     "original": {
       "city_name": "Fort Worth",
       "county": "Tarrant",
@@ -1223,8 +1223,8 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 4,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "One on-site sign and up to two off-site directional signs allowed on private property with owner consent.",
     "how_to_apply": null,
@@ -1235,9 +1235,9 @@
       "Nextdoor Pima County",
       "Tucson Yard and Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-25386",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -1282,16 +1282,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-25386"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-25386"
       },
       "hours": {
         "verified": false,
@@ -1330,7 +1330,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Tucson Code 16-39.1: no more than 4 yard sales a calendar year per residential property, none longer than 3 consecutive days. Violations are civil infractions, $100 to $2,500 (16-48). No permit or fee language. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Tucson",
       "county": "Pima",
@@ -1898,9 +1898,9 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
+    "sales_per_year": 2,
+    "max_days": 4,
+    "hours": "9 a.m. to 9 p.m.",
     "sign_rules": "Signs allowed on the premises only. Off-site signs on public property, utility poles, or street signs are prohibited and strictly enforced.",
     "how_to_apply": null,
     "permit_link": null,
@@ -1910,9 +1910,9 @@
       "Nextdoor Santa Clara County",
       "San Jose Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://sanjose.legistar.com/gateway.aspx?ID=1c8eeaf8-deab-4672-b264-1d478fa2197c.pdf&M=F",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -1957,22 +1957,22 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://sanjose.legistar.com/gateway.aspx?ID=1c8eeaf8-deab-4672-b264-1d478fa2197c.pdf&M=F"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://sanjose.legistar.com/gateway.aspx?ID=1c8eeaf8-deab-4672-b264-1d478fa2197c.pdf&M=F"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://sanjose.legistar.com/gateway.aspx?ID=1c8eeaf8-deab-4672-b264-1d478fa2197c.pdf&M=F"
       },
       "sign_rules": {
         "verified": false,
@@ -2005,7 +2005,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "San Jose Municipal Code 20.30.110(D)-(E): a garage sale of the occupants' own things is an allowed non-commercial incidental use if there are no more than 2 sales a calendar year, none longer than 4 consecutive days, held 9 a.m. to 9 p.m. Text read from the city's own Legistar council packet (file 19-1216, Dec 2019, which amended 20.30.110); the section's history ends at Ord. 30353 (Jan 2020), so no later change is known. Municode (current code) blocks direct access. The code doesn't mention a permit or fee, so those stay unknown. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "San Jose",
       "county": "Santa Clara",
@@ -2303,8 +2303,8 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 1,
+    "max_days": 2,
     "hours": null,
     "sign_rules": "Signs must be placed on private property with permission. Prohibited on all public right-of-ways, utility poles, and street traffic installations.",
     "how_to_apply": null,
@@ -2315,9 +2315,9 @@
       "Nextdoor Sacramento County",
       "Sacramento Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-12627",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -2362,16 +2362,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-12627"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-12627"
       },
       "hours": {
         "verified": false,
@@ -2410,7 +2410,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Sacramento City Code 5.80.020: anyone who holds more than 1 garage sale a calendar year, or one longer than 2 consecutive days, counts as a secondhand dealer, which needs a police permit (5.80.010). One sale of up to 2 days needs no dealer permit; no other garage sale permit was found, so permit status stays unknown. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Sacramento",
       "county": "Sacramento",
@@ -3383,8 +3383,8 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "Signs restricted to private property with owner permission. Prohibited on utility poles, street signs, and pedestrian paths.",
     "how_to_apply": null,
@@ -3395,9 +3395,9 @@
       "Nextdoor Multnomah County",
       "Portland Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.portland.gov/sites/default/files/code/33.296-temporary-activities.pdf",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -3442,16 +3442,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.portland.gov/sites/default/files/code/33.296-temporary-activities.pdf"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.portland.gov/sites/default/files/code/33.296-temporary-activities.pdf"
       },
       "hours": {
         "verified": false,
@@ -3490,7 +3490,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Portland Zoning Code 33.296.030.C.1 (portland.gov PDF): garage sales in residential zones for no more than 3 consecutive days on 2 occasions a calendar year; no products brought in for the sale. Doesn't mention a permit, fee, hours, or signs. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Portland",
       "county": "Multnomah",
@@ -4193,8 +4193,8 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 2,
     "hours": null,
     "sign_rules": "Signs permitted on private property with owner's consent. Prohibited on traffic signals, light posts, or public rights-of-way.",
     "how_to_apply": null,
@@ -4205,9 +4205,9 @@
       "Nextdoor El Paso County",
       "Colorado Springs Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://coloradosprings.gov/planning-and-development/page/residential-accessory-use",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -4252,16 +4252,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://coloradosprings.gov/planning-and-development/page/residential-accessory-use"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://coloradosprings.gov/planning-and-development/page/residential-accessory-use"
       },
       "hours": {
         "verified": false,
@@ -4300,7 +4300,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City page (citing City Code 7.3.105.A.2.g): garage sales allowed no more than 2 times a calendar year, each up to 2 consecutive days. No permit or fee language. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Colorado Springs",
       "county": "El Paso",
@@ -5407,11 +5407,11 @@
     "region": "Great Lakes",
     "sale_term": "Garage Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
-    "sign_rules": "Signs allowed only on private residential properties. Prohibited on utility poles, highway ramps, and city structures.",
+    "fee": "None for one sale every 90 days",
+    "sales_per_year": 4,
+    "max_days": 3,
+    "hours": "Daylight hours only",
+    "sign_rules": "No yard or garage sale signs on any public property.",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Summer (June-August)",
@@ -5420,9 +5420,9 @@
       "Nextdoor Wayne County",
       "Detroit Metro Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/mi/detroit/codes/code_of_ordinances/389797?nodeId=PTIVDECO_CH50ZO_ARTXIIUSRE_DIV6TEUSST",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -5455,40 +5455,40 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/mi/detroit/codes/code_of_ordinances/389797?nodeId=PTIVDECO_CH50ZO_ARTXIIUSRE_DIV6TEUSST"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/mi/detroit/codes/code_of_ordinances/389797?nodeId=PTIVDECO_CH50ZO_ARTXIIUSRE_DIV6TEUSST"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/mi/detroit/codes/code_of_ordinances/389797?nodeId=PTIVDECO_CH50ZO_ARTXIIUSRE_DIV6TEUSST"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/mi/detroit/codes/code_of_ordinances/389797?nodeId=PTIVDECO_CH50ZO_ARTXIIUSRE_DIV6TEUSST"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/mi/detroit/codes/code_of_ordinances/389797?nodeId=PTIVDECO_CH50ZO_ARTXIIUSRE_DIV6TEUSST"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/mi/detroit/codes/code_of_ordinances/389797?nodeId=PTIVDECO_CH50ZO_ARTXIIUSRE_DIV6TEUSST"
       },
       "how_to_apply": {
         "verified": false,
@@ -5515,7 +5515,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Detroit City Code 50-12-558: one yard or garage sale per 90 days without a permit (recorded as 4 a year), daylight hours, up to 3 consecutive days, only the owner's or tenant's goods, nothing on streets or sidewalks, no signs on public property. Read from the search engine's copy of the official Municode page; Municode and detroitmi.gov block direct access. Confirm in a browser. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Detroit",
       "county": "Wayne",
@@ -5812,11 +5812,11 @@
     "region": "Great Lakes",
     "sale_term": "Garage Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "fee": "None (no temporary use permit needed)",
+    "sales_per_year": 2,
+    "max_days": 4,
     "hours": null,
-    "sign_rules": "Signs must be limited to private property. Posting on telephone posts, city light poles, or within the public right-of-way is illegal.",
+    "sign_rules": "A yard or garage sale sign up to 4 sq ft needs no sign permit (Columbus City Code 3375.09(C)). Signs must follow the Graphics Code.",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Late Spring and Summer (May-September)",
@@ -5825,9 +5825,9 @@
       "Nextdoor Franklin County",
       "Columbus Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/oh/columbus/codes/code_of_ordinances?nodeId=TIT33ZOCO_CH3390TEUS&showChanges=true",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -5860,28 +5860,28 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/oh/columbus/codes/code_of_ordinances?nodeId=TIT33ZOCO_CH3390TEUS&showChanges=true"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/oh/columbus/codes/code_of_ordinances?nodeId=TIT33ZOCO_CH3390TEUS&showChanges=true"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/oh/columbus/codes/code_of_ordinances?nodeId=TIT33ZOCO_CH3390TEUS&showChanges=true"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/oh/columbus/codes/code_of_ordinances?nodeId=TIT33ZOCO_CH3390TEUS&showChanges=true"
       },
       "hours": {
         "verified": false,
@@ -5890,10 +5890,10 @@
         "origin": "none"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://library.municode.com/oh/columbus/codes/code_of_ordinances?nodeId=TIT33ZOCO_CH3375GEPR"
       },
       "how_to_apply": {
         "verified": false,
@@ -5920,7 +5920,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Columbus City Code 3390.02(C): a garage or yard sale is allowed without a temporary use permit up to 2 times a year, up to 4 days each. 3375.09(C): a yard or garage sale sign up to 4 sq ft needs no permit. Read from the search engine's copy of the official Municode pages; Municode blocks direct access. Confirm in a browser. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Columbus",
       "county": "Franklin",
@@ -6083,9 +6083,9 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
+    "sales_per_year": 2,
+    "max_days": 2,
+    "hours": "Daylight hours only",
     "sign_rules": "Signs must be placed entirely on private property with owner permission. Prohibited on utility poles, street signs, or public rights-of-way.",
     "how_to_apply": null,
     "permit_link": null,
@@ -6095,9 +6095,9 @@
       "Nextdoor Hamilton County",
       "Cincinnati Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.cincinnati-oh.gov/finance/linkservid/8CCCD0EB-FE79-DA37-0231088CA5B0845D/showMeta/0/",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -6142,22 +6142,22 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.cincinnati-oh.gov/finance/linkservid/8CCCD0EB-FE79-DA37-0231088CA5B0845D/showMeta/0/"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.cincinnati-oh.gov/finance/linkservid/8CCCD0EB-FE79-DA37-0231088CA5B0845D/showMeta/0/"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.cincinnati-oh.gov/finance/linkservid/8CCCD0EB-FE79-DA37-0231088CA5B0845D/showMeta/0/"
       },
       "sign_rules": {
         "verified": false,
@@ -6190,7 +6190,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Cincinnati Municipal Code 843-11 (city-hosted PDF of Chapter 843): no home sale (garage, yard, rummage and similar) longer than 2 consecutive days, daylight hours only, no more than 2 a calendar year per residence. No permit or fee language in 843-11. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Cincinnati",
       "county": "Hamilton",
@@ -6622,9 +6622,9 @@
     "region": "Great Lakes",
     "sale_term": "Garage Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "fee": "None (no license needed)",
+    "sales_per_year": 2,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "Signs permitted on private property where the sale takes place. Prohibited on public parkways, utility poles, or municipal street infrastructure.",
     "how_to_apply": null,
@@ -6635,9 +6635,9 @@
       "Nextdoor Hennepin County",
       "Twin Cities Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/business-licenses/door-secondhand/secondhand-goods/",
+    "last_checked": "2026-10-27",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -6670,28 +6670,28 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/business-licenses/door-secondhand/secondhand-goods/"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/business-licenses/door-secondhand/secondhand-goods/"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/business-licenses/door-secondhand/secondhand-goods/"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/business-licenses/door-secondhand/secondhand-goods/"
       },
       "hours": {
         "verified": false,
@@ -6730,7 +6730,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City Secondhand Goods License page: no license needed for a garage, yard or estate sale on private property when the seller owns the items and runs the sale, it lasts no more than 72 hours (recorded as 3 days), and there are no more than 2 sales in any 12 months. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Minneapolis",
       "county": "Hennepin",
@@ -9998,10 +9998,10 @@
     "sale_term": "Yard Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 2,
     "hours": null,
-    "sign_rules": "Signs allowed on the host property only. Off-site signage on public streets, light poles, or traffic lights is prohibited.",
+    "sign_rules": "Remove every sign advertising or pointing to the sale within 48 hours after it ends. Nothing for sale in the right-of-way.",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Spring and Fall (April-May, September-October)",
@@ -10010,9 +10010,9 @@
       "Nextdoor Jefferson County",
       "Louisville Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukyldc/0-0-0-4512",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -10057,16 +10057,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukyldc/0-0-0-4512"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukyldc/0-0-0-4512"
       },
       "hours": {
         "verified": false,
@@ -10075,10 +10075,10 @@
         "origin": "none"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukyldc/0-0-0-4512"
       },
       "how_to_apply": {
         "verified": false,
@@ -10105,7 +10105,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Louisville Metro Land Development Code 4.4.4: no more than 2 garage or yard sales a calendar year per property, up to 2 days each, sales area up to 1,800 sq ft, no items in the right-of-way, signs down within 48 hours. No permit or fee language. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Louisville",
       "county": "Jefferson",
@@ -10267,8 +10267,8 @@
     "region": "Mid-Atlantic",
     "sale_term": "Yard Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
+    "fee": "None (no vending permit for used household goods sold at home)",
+    "sales_per_year": 5,
     "max_days": null,
     "hours": null,
     "sign_rules": "Signs restricted to private residential property. Attaching posters or signs to public space, lampposts, or utility poles is banned.",
@@ -10280,9 +10280,9 @@
       "Nextdoor DC",
       "Washington DC Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2703",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -10315,22 +10315,22 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2703"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://code.dccouncil.gov/us/dc/council/code/sections/47-2703"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://online.encodeplus.com/regs/washington-dc/ereader/files/basic-html/page768.html"
       },
       "max_days": {
         "verified": false,
@@ -10375,7 +10375,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "DC Code 47-2703: no permit is needed to sell used household furniture and effects at the seller's residence. Zoning, 11 DCMR Subtitle U 251.1(l)(2): 5 yard sales, garage sales, or home sales parties a year at a dwelling as a matter of right; a 6th needs Board of Zoning Adjustment approval. That limit sits inside the home occupation rules, so read it as the zoning cap. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Washington",
       "county": "District of Columbia",
