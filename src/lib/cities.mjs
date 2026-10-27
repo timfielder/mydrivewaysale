@@ -4,11 +4,16 @@ import { SHOW_UNVERIFIED_VALUES } from './site-config.mjs';
 export const UNKNOWN = 'Unknown, check with your city';
 export const allCities = [...cities].sort((a, b) => a.state.localeCompare(b.state) || a.city.localeCompare(b.city));
 
+// True when this one field was checked against an official source.
+export function isVerified(row, field) {
+  return row.field_status?.[field]?.verified === true;
+}
+
 // Returns the value to show for a legal field, or null when it must render as unknown.
 export function legalValue(row, field) {
   const v = row[field];
   if (v === null || v === undefined) return null;
-  if (row.confidence !== 'unverified' && row.verified_fields.includes(field)) return v;
+  if (isVerified(row, field)) return v;
   return SHOW_UNVERIFIED_VALUES ? v : null;
 }
 
@@ -25,10 +30,11 @@ export function pageTitle(r) {
 
 export function metaDescription(r) {
   if (r.confidence === 'verified') {
-    const permit = r.permit_required ? 'You need a permit' : 'No permit needed';
+    const permit = legalValue(r, 'permit_required') ? 'You need a permit' : 'No permit needed';
     const parts = [`${permit} for a ${r.sale_term.toLowerCase()} in ${r.city}, ${r.state}.`];
-    if (r.fee) parts.push(`Fee: ${r.fee.split(';')[0].split('(')[0].trim()}.`);
-    if (r.sales_per_year) parts.push(`Limit ${r.sales_per_year} sales a year.`);
+    const fee = legalValue(r, 'fee');
+    if (fee) parts.push(`Fee: ${fee.split(';')[0].split('(')[0].trim()}.`);
+    if (legalValue(r, 'sales_per_year')) parts.push(`Limit ${r.sales_per_year} sales a year.`);
     parts.push(`Checked ${r.last_checked} against the city's own page.`);
     return parts.join(' ').slice(0, 160);
   }

@@ -3,7 +3,7 @@
 // for the existing WordPress pages, so every current URL keeps working.
 import Base from '../layouts/Base.astro';
 import pages from '../../data/pages.json' with { type: 'json' };
-import { allCities, legalValue, display, pageTitle, metaDescription, UNKNOWN } from '../lib/cities.mjs';
+import { allCities, isVerified, legalValue, display, pageTitle, metaDescription, UNKNOWN } from '../lib/cities.mjs';
 
 export function getStaticPaths() {
   const cityPaths = allCities.map((city) => ({ params: { slug: city.slug }, props: { kind: 'city', city } }));
@@ -52,8 +52,9 @@ const sameState = r ? allCities.filter((c) => c.state === r.state && c.slug !== 
       <p>We're re-checking every city against its own website. Until {r.city} is checked, call your city hall or check the city's website before you put out a single sign.</p>
     )}
     <h2>Best time to hold a sale</h2>
-    <p>{r.best_season ?? UNKNOWN} <small>(our general guidance, not a city rule)</small></p>
+    <p>{r.best_season ?? UNKNOWN} <small>(our general guidance, not a city rule{!isVerified(r, 'best_season') && '; not yet backed by a source'})</small></p>
     <h2>Where to post your sale</h2>
+    {r.cross_posting.length > 0 && !isVerified(r, 'cross_posting') && <p><small>We haven't yet confirmed each of these is still active.</small></p>}
     {r.cross_posting.length ? <ul>{r.cross_posting.map((s) => <li>{s}</li>)}</ul> : <p>{UNKNOWN}</p>}
     {sameState.length > 0 && (
       <>

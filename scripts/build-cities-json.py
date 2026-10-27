@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """One-time generator: live values (_import/live_city_values.json) + verified spot checks
 -> data/cities.json. After this, data/cities.json is the source of truth and is edited directly."""
+# NOTE: predates field_status (2026-10-27). Do not re-run; see scripts/migrate-field-status.py.
 import json, os, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMP = os.path.join(ROOT, "_import")
