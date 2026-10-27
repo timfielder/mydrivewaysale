@@ -1,7 +1,8 @@
 ---
 import { SITE_URL, SITE_NAME } from '../lib/site-config.mjs';
-interface Props { title: string; description: string; canonicalPath?: string | null; noindex?: boolean; }
-const { title, description, canonicalPath = Astro.url.pathname, noindex = false } = Astro.props;
+import AdSenseLoader from '../components/AdSenseLoader.astro';
+interface Props { title: string; description: string; canonicalPath?: string | null; noindex?: boolean; pageType?: string; }
+const { title, description, canonicalPath = Astro.url.pathname, noindex = false, pageType = 'legal' } = Astro.props;
 const canonical = canonicalPath ? new URL(canonicalPath, SITE_URL).href : null;
 const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
 ---
@@ -14,7 +15,13 @@ const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
     <meta name="description" content={description} />
     {canonical && <link rel="canonical" href={canonical} />}
     {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {canonical && <meta property="og:url" content={canonical} />}
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <AdSenseLoader pageType={pageType} noindex={noindex} />
     <style is:global>
       body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 0 auto; padding: 1rem; color: #00264C; line-height: 1.5; }
       a { color: #1a5d8f; }
@@ -24,13 +31,20 @@ const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
       .verified { background: #E6F4EA; color: #137333; }
       .unverified { background: #FFF4E5; color: #8a4b00; }
       header nav a, footer a { margin-right: 1rem; }
+      .picks, .promo { border: 1px solid #E2E8F0; border-radius: 12px; padding: .75rem 1rem; margin: 1.5rem 0; background: #F8FAFC; }
+      .picks h3, .promo h3 { margin-top: .25rem; }
+      .promo-stickercalc { border: 2px solid #00264C; }
+      .btn { display: inline-block; background: #E0B42D; color: #00264C; padding: .5rem .9rem; border-radius: 6px; font-weight: 600; text-decoration: none; margin: 0 .5rem .5rem 0; }
+      .ad { margin: 1.5rem 0; text-align: center; }
+      .ad-label { display: block; font-size: .7rem; color: #718096; text-transform: uppercase; letter-spacing: .05em; }
     </style>
   </head>
   <body>
-    <header><nav><a href="/">My Driveway Sale</a><a href="/hub/">City guides</a><a href="/about-contact/">About</a></nav></header>
+    <header><nav><a href="/">My Driveway Sale</a><a href="/hub/">City guides</a><a href="/stickercalc-app/">StickerCalc</a><a href="/about-contact/">About</a></nav></header>
     <main><slot /></main>
     <footer>
       <p><small>Rules change. Always confirm with your city before your sale. <a href="/privacy-policy/">Privacy</a><a href="/terms-of-service/">Terms</a></small></p>
+      <p><small>Some links on this site are affiliate links. As an Amazon Associate, My Driveway Sale earns from qualifying purchases, at no extra cost to you.</small></p>
     </footer>
   </body>
 </html>

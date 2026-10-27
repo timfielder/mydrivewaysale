@@ -40,3 +40,17 @@ export function metaDescription(r) {
   }
   return `Planning a ${r.sale_term.toLowerCase()} in ${r.city}, ${r.state}? What we know about permits, fees, and signs, the best season, and where to post your sale.`.slice(0, 160);
 }
+
+// Where the "permit page" link points. Replaces the live site's broken nested-shortcode
+// fallback (it printed "+garage+sale+permit']" after the URL). Order: a verified permit link,
+// then the official page we checked, then a properly encoded search of government sites.
+export function permitLink(r) {
+  if (isVerified(r, 'permit_link') && r.permit_link) {
+    return { href: r.permit_link, label: 'City permit page', kind: 'verified' };
+  }
+  if (r.confidence !== 'unverified' && r.official_source_url) {
+    return { href: r.official_source_url, label: `${new URL(r.official_source_url).hostname} (the page we checked)`, kind: 'official' };
+  }
+  const q = `${r.city} ${r.state} ${(r.sale_term ?? 'garage sale').toLowerCase()} permit site:.gov OR site:.us`;
+  return { href: `https://www.google.com/search?${new URLSearchParams({ q })}`, label: `Search for ${r.city}'s official permit page`, kind: 'search' };
+}

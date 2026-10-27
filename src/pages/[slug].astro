@@ -2,8 +2,13 @@
 // One route for every root-level page: the 100 city guides plus placeholder stubs
 // for the existing WordPress pages, so every current URL keeps working.
 import Base from '../layouts/Base.astro';
+import AdSlot from '../components/AdSlot.astro';
+import AmazonPicks from '../components/AmazonPicks.astro';
+import AppPromo from '../components/AppPromo.astro';
 import pages from '../../data/pages.json' with { type: 'json' };
-import { allCities, isVerified, legalValue, display, pageTitle, metaDescription, UNKNOWN } from '../lib/cities.mjs';
+import { allCities, isVerified, legalValue, display, pageTitle, metaDescription, permitLink, UNKNOWN } from '../lib/cities.mjs';
+import { AMAZON_BY_PAGE } from '../lib/amazon.mjs';
+import { pageTypeFor } from '../lib/page-types.mjs';
 
 export function getStaticPaths() {
   const cityPaths = allCities.map((city) => ({ params: { slug: city.slug }, props: { kind: 'city', city } }));
@@ -24,21 +29,33 @@ const LEGAL_ROWS = [
   ['How to apply', 'how_to_apply'],
 ];
 const sameState = r ? allCities.filter((c) => c.state === r.state && c.slug !== r.slug) : [];
+const permit = r ? permitLink(r) : null;
+const [stickers, signs, checkout, display_] = AMAZON_BY_PAGE.city;
+const stubType = page ? pageTypeFor(page.path) : null;
+const stubPicks = page ? (AMAZON_BY_PAGE[page.path] ?? []) : [];
 ---
 {kind === 'city' ? (
-  <Base title={pageTitle(r)} description={metaDescription(r)}>
+  <Base title={pageTitle(r)} description={metaDescription(r)} pageType="city">
     <h1>{r.city}, {r.state} {r.sale_term} Guide</h1>
     <p>
       {r.confidence === 'verified' && <span class="badge verified">Checked against the city's official source</span>}
       {r.confidence === 'partial' && <span class="badge verified">Partly checked: items marked unknown aren't on the city's page yet</span>}
       {r.confidence === 'unverified' && <span class="badge unverified">Not yet verified against an official source</span>}
     </p>
+    <AdSlot pageType="city" spot="afterIntro" />
     <h2>The rules</h2>
     <table>
       <tbody>
         {LEGAL_ROWS.map(([label, field]) => (
           <tr><th scope="row">{label}</th><td>{display(legalValue(r, field))}</td></tr>
         ))}
+        <tr>
+          <th scope="row">Permit page</th>
+          <td>
+            <a href={permit.href} rel="noopener" target="_blank">{permit.label}</a>
+            {permit.kind === 'search' && <><br /><small>We haven't confirmed {r.city}'s permit page yet, so this opens a search of government sites.</small></>}
+          </td>
+        </tr>
       </tbody>
     </table>
     <p>
@@ -51,8 +68,18 @@ const sameState = r ? allCities.filter((c) => c.state === r.state && c.slug !== 
     {r.confidence === 'unverified' && (
       <p>We're re-checking every city against its own website. Until {r.city} is checked, call your city hall or check the city's website before you put out a single sign.</p>
     )}
+    <AmazonPicks group={signs} />
+    <AdSlot pageType="city" spot="afterRules" />
+    <h2>Pricing and checkout</h2>
+    <p>Color stickers plus one price per color is the fastest way to run a {r.sale_term.toLowerCase()}: buyers know the price at a glance and you add up colors instead of haggling over every tag.</p>
+    <AmazonPicks group={stickers} disclose={false} />
+    <AppPromo app="stickercalc" saleTerm={r.sale_term} />
+    <AmazonPicks group={checkout} disclose={false} />
+    <AppPromo app="beamme" saleTerm={r.sale_term} />
     <h2>Best time to hold a sale</h2>
     <p>{r.best_season ?? UNKNOWN} <small>(our general guidance, not a city rule{!isVerified(r, 'best_season') && '; not yet backed by a source'})</small></p>
+    <h2>Setting up</h2>
+    <AmazonPicks group={display_} disclose={false} />
     <h2>Where to post your sale</h2>
     {r.cross_posting.length > 0 && !isVerified(r, 'cross_posting') && <p><small>We haven't yet confirmed each of these is still active.</small></p>}
     {r.cross_posting.length ? <ul>{r.cross_posting.map((s) => <li>{s}</li>)}</ul> : <p>{UNKNOWN}</p>}
@@ -62,10 +89,22 @@ const sameState = r ? allCities.filter((c) => c.state === r.state && c.slug !== 
         <ul>{sameState.map((c) => <li><a href={`/${c.slug}/`}>{c.city}, {c.state}</a></li>)}</ul>
       </>
     )}
+    <AdSlot pageType="city" spot="end" />
   </Base>
 ) : (
-  <Base title={page.title} description={`${page.title} from My Driveway Sale. This page is being rebuilt.`} canonicalPath={page.canonical} noindex>
+  <Base title={page.title} description={`${page.title} from My Driveway Sale. This page is being rebuilt.`} canonicalPath={page.canonical} noindex pageType={stubType}>
     <h1>{page.title}</h1>
-    <p>This page is being rebuilt. In the meantime, find your city's rules in the <a href="/hub/">city guides</a>.</p>
+    {stubType === 'app' ? (
+      <>
+        <p>StickerCalc is the no-math checkout for sticker-priced sales. Try it free in your browser, or get the phone app.</p>
+        <AppPromo app="stickercalc" />
+        <AppPromo app="beamme" />
+      </>
+    ) : (
+      <p>This page is being rebuilt. In the meantime, find your city's rules in the <a href="/hub/">city guides</a>.</p>
+    )}
+    {stubPicks.map((g, i) => <AmazonPicks group={g} disclose={i === 0} />)}
+    {stubType === 'topic' && <AppPromo app="stickercalc" />}
+    <AdSlot pageType={stubType} spot="end" noindex />
   </Base>
 )}

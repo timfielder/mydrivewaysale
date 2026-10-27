@@ -1,10 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
+import AppPromo from '../components/AppPromo.astro';
 import { allCities } from '../lib/cities.mjs';
 const states = [...new Set(allCities.map((c) => c.state))];
 ---
-<Base title="My Driveway Sale: Garage, Yard and Tag Sale Rules by City" description="Do you need a permit for your garage sale? City-by-city rules for permits, fees, and signs, with the official source and the date we last checked." canonicalPath="/">
+<Base title="My Driveway Sale: Garage, Yard and Tag Sale Rules by City" description="Do you need a permit for your garage sale? City-by-city rules for permits, fees, and signs, with the official source and the date we last checked." canonicalPath="/" pageType="home">
   <h1>Garage sale rules for your city</h1>
-  <p>Permits, fees, sign rules, and limits for {allCities.length} US cities. Every rule links to the city's own page with the date we last checked it.</p>
+  <p>Permits, fees, sign rules, and limits for {allCities.length} US cities. Each city page says whether we've checked its rules against the city's own website, and shows the source and date when we have.</p>
   <p><a href="/hub/">Browse all city guides</a> ({states.length} states)</p>
+  <AppPromo app="stickercalc" />
+  <AppPromo app="beamme" />
 </Base>
