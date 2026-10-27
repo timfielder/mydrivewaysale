@@ -7566,13 +7566,13 @@
     "county": "Sedgwick",
     "region": "Great Lakes",
     "sale_term": "Garage Sale",
-    "permit_required": false,
-    "fee": "$0.00",
+    "permit_required": true,
+    "fee": "$2.50 per day (plus $1 for card payments online)",
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
     "sign_rules": "Signs allowed strictly on private property with owner permission. Banned on public right-of-ways, utility poles, and municipal structures.",
-    "how_to_apply": null,
+    "how_to_apply": "Buy a garage sale permit online through the City of Wichita Garage Sales Online service (account required), or get and submit the application at City Hall Business Licensing, 455 N. Main, 1st floor (316-268-4553).",
     "permit_link": null,
     "best_season": "Spring and Fall (April-May, September-October)",
     "cross_posting": [
@@ -7580,9 +7580,9 @@
       "Nextdoor Sedgwick County",
       "Wichita Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.wichita.gov/345/Garage-Sales-Online",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -7615,16 +7615,16 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.wichita.gov/344/Business-Licenses"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.wichita.gov/345/Garage-Sales-Online"
       },
       "sales_per_year": {
         "verified": false,
@@ -7651,10 +7651,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.wichita.gov/345/Garage-Sales-Online"
       },
       "permit_link": {
         "verified": false,
@@ -7675,7 +7675,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City Business Licenses page: a miscellaneous sale is any garage, basement, yard, rummage or similar sale of 6 or more items originally bought for the applicant's own use, and needs a permit, available online or at City Hall. City Garage Sales Online page: permit $2.50 per day with a $1 credit card fee; permit holders can list the sale on the city map. The city information sheet with count, day and hour limits did not load (connection failed), so those stay unknown. The live site says no permit is needed, which is wrong. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Wichita",
       "county": "Sedgwick",
@@ -7706,7 +7706,7 @@
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
-    "sign_rules": "Signs must be placed on private property only. Strictly prohibited on public utility poles, trees, medians, or public easements.",
+    "sign_rules": "Signs are generally banned on the boulevard and city right-of-way, including telephone, power and light poles. Garage sale directional signs are the exception: up to 14 days total, no more than 3 days before and 1 day after the sale. No sign permit needed for temporary signs.",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Summer (June-August)",
@@ -7715,9 +7715,9 @@
       "Nextdoor Cass County",
       "Fargo Yard & Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://fargond.gov/city-government/departments/inspections/commercial-building-permits-fees/sign-regulations",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -7780,10 +7780,10 @@
         "origin": "none"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://fargond.gov/city-government/departments/inspections/commercial-building-permits-fees/sign-regulations"
       },
       "how_to_apply": {
         "verified": false,
@@ -7810,7 +7810,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City of Fargo Sign Regulations page (Inspections): sign rules as recorded. No official source opened yet for garage sale permits or limits (the Land Development Code is on Municode), so those stay unknown. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Fargo",
       "county": "Cass",

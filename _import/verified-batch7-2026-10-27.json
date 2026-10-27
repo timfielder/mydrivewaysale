@@ -1,0 +1,17 @@
+{
+ "_about": "Batch 7, 2026-10-27. City-hosted pages only. Wichita requires a permit; the live site says no permit.",
+ "wichita-ks-garage-sale-guide": {
+  "confidence": "partial",
+  "set": {"permit_required": true, "fee": "$2.50 per day (plus $1 for card payments online)", "how_to_apply": "Buy a garage sale permit online through the City of Wichita Garage Sales Online service (account required), or get and submit the application at City Hall Business Licensing, 455 N. Main, 1st floor (316-268-4553)."},
+  "official_source_url": "https://www.wichita.gov/345/Garage-Sales-Online",
+  "field_sources": {"permit_required": "https://www.wichita.gov/344/Business-Licenses"},
+  "notes": "City Business Licenses page: a miscellaneous sale is any garage, basement, yard, rummage or similar sale of 6 or more items originally bought for the applicant's own use, and needs a permit, available online or at City Hall. City Garage Sales Online page: permit $2.50 per day with a $1 credit card fee; permit holders can list the sale on the city map. The city information sheet with count, day and hour limits did not load (connection failed), so those stay unknown. The live site says no permit is needed, which is wrong."
+ },
+ "fargo-nd-garage-sale-guide": {
+  "confidence": "partial",
+  "merge": false,
+  "set": {"sign_rules": "Signs are generally banned on the boulevard and city right-of-way, including telephone, power and light poles. Garage sale directional signs are the exception: up to 14 days total, no more than 3 days before and 1 day after the sale. No sign permit needed for temporary signs."},
+  "official_source_url": "https://fargond.gov/city-government/departments/inspections/commercial-building-permits-fees/sign-regulations",
+  "notes": "City of Fargo Sign Regulations page (Inspections): sign rules as recorded. No official source opened yet for garage sale permits or limits (the Land Development Code is on Municode), so those stay unknown."
+ }
+}
