@@ -1,0 +1,108 @@
+{
+  "austin-tx-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sign_rules": "Signs only on the property where the sale is held, for no more than 3 consecutive days."
+    },
+    "official_source_url": "https://www.austintexas.gov/development-services/common-austin-code-violations",
+    "notes": "City page: a garage sale may not be held at the same property more than 4 days per calendar year (Land Development Code 25-2-903), and not at a property on a residential tour. The same page also says 'more than four garage sales per calendar year' is a home-based business, so the 4-day vs 4-sale wording conflicts; sales_per_year and max_days left null until the code text is checked. Page does not say whether a permit or fee is required."
+  },
+  "houston-tx-garage-sale-guide": {
+    "confidence": "verified",
+    "set": {
+      "permit_required": false,
+      "fee": "None (no city permit)",
+      "sales_per_year": 2
+    },
+    "official_source_url": "https://houstontx.gov/ara/rp/garagesalesyardsales.html",
+    "notes": "City page: 'NOT REGULATED BY City of Houston. There is no City of Houston garage sale permit.' The 2-sales-per-12-months limit is the Texas Comptroller's rule; more than 2 and you need a state sales tax permit. Many subdivisions restrict sales; check your deed restrictions or HOA."
+  },
+  "el-paso-tx-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 3,
+      "max_days": 2
+    },
+    "official_source_url": "https://www.elpasotexas.gov/code-enforcement",
+    "notes": "City page: no more than 3 sales a calendar year on the same lot in a residential district, no more than 2 days at a time (El Paso Municipal Code 20.10.750). The page does not mention a permit or fee. A 2010 city presentation said no city permit is required, but that is too old to count as current; permit left unverified."
+  },
+  "arlington-tx-garage-sale-guide": {
+    "confidence": "verified",
+    "set": {
+      "permit_required": true,
+      "fee": "Free ($0)",
+      "sales_per_year": 3,
+      "max_days": 3,
+      "hours": "7 a.m. to 7 p.m.",
+      "sign_rules": "1 ground sign at the sale, up to 4 ft tall and 8 sq ft. Off-site ground signs allowed on private property with the owner's permission. None in medians, between sidewalk and curb, within 10 ft of the curb, within 40 ft of an intersection, or on utility poles or fences. Remove all signs when the sale ends.",
+      "how_to_apply": "Apply online through the city's permit portal; the permit comes by email. Apartment residents can't get their own permit; the property manager can get one for the whole complex."
+    },
+    "official_source_url": "https://www.arlingtontx.gov/City-Services/Code-Compliance/Code-Compliance-Directory/Single-Family-Rapid-Reference-Guide/Garage-Sales-Map-and-Guidelines",
+    "notes": "3 sales per residence within any 12-month period. Fine up to $500 per violation. Page blocked curl; read via WebFetch on 2026-10-27."
+  },
+  "corpus-christi-tx-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 3,
+      "max_days": 3,
+      "sign_rules": "No off-premise signs. No signs fastened to anything in the public right-of-way (sidewalks, streets, posts)."
+    },
+    "official_source_url": "https://www.corpuschristitx.gov/department-directory/development-services/code-compliance/",
+    "notes": "City page: 3 garage/yard/estate sales per calendar year, each up to 3 days (sec. 38-3-9). Page does not say whether a permit or fee is required."
+  },
+  "phoenix-az-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 3
+    },
+    "official_source_url": "https://www.phoenix.gov/content/dam/phoenix/nsdsite/documents/npd-documents/yard%20sales%20flyer%20english.pdf",
+    "notes": "City Neighborhood Services flyer: 2 sales per residential property within any 12-month period, each no more than 3 consecutive days; not on sidewalks, streets, or vacant lots. Flyer does not mention a permit, fee, or sign rules."
+  },
+  "los-angeles-ca-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 5,
+      "max_days": 2,
+      "hours": "9 a.m. to 5 p.m."
+    },
+    "official_source_url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886",
+    "notes": "LAMC Sec. 12.03 (Accessory Use): max 5 sale events per calendar year, 2 consecutive days per event, 10 days per year total, used household items only. The code section has no permit or fee language; permit left unverified. Sign rules not checked yet (LAMC 28.04 is the likely section)."
+  },
+  "chicago-il-garage-sale-guide": {
+    "confidence": "verified",
+    "set": {
+      "permit_required": true,
+      "fee": "Free ($0)",
+      "sales_per_year": 2,
+      "max_days": 3,
+      "hours": "9 a.m. to sunset",
+      "sign_rules": "Signs only on the property where the sale is held. None anywhere else.",
+      "how_to_apply": "Get the permit at your alderman's ward office, or mail the city's application at least 2 weeks before the sale. Each household in a joint sale needs its own permit."
+    },
+    "official_source_url": "https://www.chicago.gov/city/en/depts/streets/provdrs/streets_san/svcs/garage_yard_and_apartmentsalesavailablecitywide.html",
+    "notes": "2 per calendar year per household; a 3rd is allowed if you're moving out for good. Rain date: the next 3 days after the permit period, still 3 days total. Fines $50 to $500 per day. Charities, churches, and schools are exempt."
+  },
+  "san-diego-ca-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 3,
+      "max_days": 2
+    },
+    "official_source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art01Division03.pdf",
+    "notes": "San Diego Municipal Code 141.0306: allowed only as an accessory use to a dwelling, in zones marked L; max 3 sales per premises per year, each no more than 2 consecutive calendar days. The section has no permit or fee language; permit left unverified."
+  },
+  "oklahoma-city-ok-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "permit_required": true,
+      "fee": "$10 per permit",
+      "max_days": 3,
+      "hours": "8 a.m. to 6 p.m.",
+      "sign_rules": "1 sign in front of your house, no larger than 12 sq ft. No signs on utility poles, traffic sign poles, medians, or any public right-of-way.",
+      "how_to_apply": "Buy online with a credit card through the city's permit portal, or call the License Division at 405-297-2606 for a paperless permit number."
+    },
+    "official_source_url": "https://www.okc.gov/Services/Permits/Garage-Sale-Permit",
+    "notes": "Permit good for 3 consecutive days at the listed address. Max fine $200 plus costs. The city page gives no yearly limit; Municode Title 22 likely has it but wasn't opened (JS-only site), so sales_per_year stays null. Page blocked curl; read via WebFetch on 2026-10-27."
+  }
+}

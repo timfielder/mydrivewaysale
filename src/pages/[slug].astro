@@ -29,9 +29,9 @@ const sameState = r ? allCities.filter((c) => c.state === r.state && c.slug !== 
   <Base title={pageTitle(r)} description={metaDescription(r)}>
     <h1>{r.city}, {r.state} {r.sale_term} Guide</h1>
     <p>
-      {r.confidence === 'verified'
-        ? <span class="badge verified">Checked against the city's official source</span>
-        : <span class="badge unverified">Not yet verified against an official source</span>}
+      {r.confidence === 'verified' && <span class="badge verified">Checked against the city's official source</span>}
+      {r.confidence === 'partial' && <span class="badge verified">Partly checked: items marked unknown aren't on the city's page yet</span>}
+      {r.confidence === 'unverified' && <span class="badge unverified">Not yet verified against an official source</span>}
     </p>
     <h2>The rules</h2>
     <table>
@@ -48,7 +48,7 @@ const sameState = r ? allCities.filter((c) => c.state === r.state && c.slug !== 
         ? <a href={r.official_source_url} rel="noopener" target="_blank">{new URL(r.official_source_url).hostname}</a>
         : UNKNOWN}
     </p>
-    {r.confidence !== 'verified' && (
+    {r.confidence === 'unverified' && (
       <p>We're re-checking every city against its own website. Until {r.city} is checked, call your city hall or check the city's website before you put out a single sign.</p>
     )}
     <h2>Best time to hold a sale</h2>

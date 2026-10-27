@@ -1,0 +1,17 @@
+Pages that blocked curl (403) and were read with the WebFetch tool on 2026-10-27 about 6:45 AM Central. Key text quoted exactly.
+
+ARLINGTON https://www.arlingtontx.gov/City-Services/Code-Compliance/Code-Compliance-Directory/Single-Family-Rapid-Reference-Guide/Garage-Sales-Map-and-Guidelines
+"Residents are required to get a city permit, which is free of charge. Garage/yard sales are limited to three (3) sales within a 12-month period."
+"All Garage Sales require a permit." "No fee is required to obtain a permit." "You will receive your permit by email"
+"Up to three (3) garage sales per residence, within a 12-month period" "Up to three (3) consecutive days per garage sale" "Garage sales may be conducted from 7 a.m. to 7 p.m."
+Signs: "One (1) sign may be placed on the ground at the garage sale residence, this sign may be up to four (4) feet tall and up to eight (8) square feet in area." "Off-site signs may be placed on the ground on private property with the owner's permission." "All signs must be removed at the end of the garage sale." Not allowed: street median, between sidewalk and curb, within 10 feet of the curb, within 40 feet of an intersection, on utility poles or fences.
+
+OKLAHOMA CITY https://www.okc.gov/Services/Permits/Garage-Sale-Permit
+"A single garage sale permit in Oklahoma City costs $10." "Purchase a permit online using a credit card." "you may call the License Division at 405-297-2606 for a 'paperless permit.'"
+"Garage sale signs and other service signs are not allowed on utility poles, traffic sign poles, medians or any public right-of-way. You can put one sign in front of your house. The sign itself can't be larger than 12 square feet."
+"A single permit is good for three consecutive days. The sale must be held at the address listed on it, between the hours of 8 a.m. and 6 p.m."
+(No yearly sale limit on this page.)
+
+LOS ANGELES https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886  (LAMC Sec. 12.03, definition of ACCESSORY USE)
+"Garage and/or yard sales shall be considered accessory to a residential use, if ... 2. The sales are restricted to a maximum of five sales events per calendar year ... 3. The sales are limited to not more than two consecutive days per event; and 4. The sales are limited to not more than ten days per calendar year total; and 5. The sales are limited to the hours between 9 a.m. and 5 p.m."
+(No permit or fee language in this section.)

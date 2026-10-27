@@ -8,7 +8,7 @@ export const allCities = [...cities].sort((a, b) => a.state.localeCompare(b.stat
 export function legalValue(row, field) {
   const v = row[field];
   if (v === null || v === undefined) return null;
-  if (row.confidence === 'verified' && row.verified_fields.includes(field)) return v;
+  if (row.confidence !== 'unverified' && row.verified_fields.includes(field)) return v;
   return SHOW_UNVERIFIED_VALUES ? v : null;
 }
 
