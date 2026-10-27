@@ -1,0 +1,81 @@
+{
+ "_about": "Batch 5, 2026-10-27. Official city pages or code only (American Legal via WebFetch, ecode360, city-hosted code, city clerk legislation PDFs, NYC311). Silence in a source is recorded as unknown.",
+ "baltimore-md-yard-sale-guide": {
+  "confidence": "verified",
+  "set": {"permit_required": false, "fee": "None (no temporary-use permit needed)", "sales_per_year": 3, "max_days": 3},
+  "official_source_url": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/32/14-409",
+  "notes": "Baltimore City Zoning Code (Art. 32) 14-409, City of Baltimore Law Library: house, apartment, garage and yard sales allowed in any district when limited to the owner's or occupant's personal possessions or crafts they made. No temporary-use permit is required. Each sale up to 3 consecutive days; no more than 3 sales from the same residence in any 12-month period (recorded as 3 a year)."
+ },
+ "buffalo-ny-yard-sale-guide": {
+  "confidence": "verified",
+  "set": {"permit_required": false, "fee": "None for up to 3 sales a year (a 4th or later sale needs a Public Works permit; fee per Chapter 175)", "sales_per_year": 3, "max_days": 3, "hours": "8:00 a.m. to 8:00 p.m.", "sign_rules": "Up to 6 signs per sale, each no larger than 2 sq ft, posted no more than 2 days before and removed at the close of the sale. Not on traffic control devices, city light poles, any public property or the public right-of-way."},
+  "official_source_url": "https://ecode360.com/11767317",
+  "notes": "Buffalo City Code Chapter 254 (ecode360): 254-8 says garage sales are exempt from the chapter's licensing unless more than 3 are held in a calendar year, in which case a Commissioner of Public Works permit is needed after the District Council member approves; each sale up to 3 consecutive days; sign limits in 254-8(B). 254-11 limits hours to 8 a.m. to 8 p.m."
+ },
+ "st.-paul-mn-garage-sale-guide": {
+  "confidence": "verified",
+  "set": {"permit_required": false, "fee": "None (no city license needed)", "sales_per_year": 3, "max_days": 3},
+  "official_source_url": "https://www.stpaul.gov/departments/safety-inspections/open-operate-expand-business/business-licenses-and-permits/peddler-license",
+  "notes": "City DSI Peddlers, Solicitors and Transient Merchants page (last edited 2026-10-15): garage and yard sales are permitted on residential properties without a city license, up to 3 sales a year, each no longer than 72 consecutive hours (recorded as 3 days). Items must be owned by the occupant and not bought for resale."
+ },
+ "cleveland-oh-garage-sale-guide": {
+  "confidence": "partial",
+  "set": {"sales_per_year": 3, "max_days": 4, "hours": "10:00 a.m. to 6:00 p.m."},
+  "official_source_url": "https://codelibrary.amlegal.com/codes/cleveland/latest/cleveland_oh/0-0-0-36706",
+  "notes": "Cleveland Codified Ordinances Chapter 676B (American Legal): 676B.04 allows sales only 10 a.m. to 6 p.m., up to 4 consecutive days, and no more than 3 per residential premises a year unless the Director of Public Safety approves another after the ward Councilmember approves. Only personal property may be sold (676B.02). Minor misdemeanor with a mandatory $100 minimum fine (676B.99). The chapter does not mention a permit, so permit status stays unknown."
+ },
+ "toledo-oh-garage-sale-guide": {
+  "confidence": "partial",
+  "set": {"permit_required": false, "fee": "None for short sales (a $125 second-hand dealer license applies beyond the day limits)"},
+  "official_source_url": "https://codelibrary.amlegal.com/codes/toledo/latest/toledo_oh/0-0-0-94947",
+  "notes": "Toledo Municipal Code Chapter 727 (American Legal): 727.02 requires a second-hand dealer license for any garage, yard or estate sale exceeding 7 cumulative calendar days within a 90-day period, and 727.01(a)(1) treats anyone with more than 7 sale days in a calendar year as a second-hand dealer. A garage sale within those day limits needs no license. Recorded permit as not required for that case; no per-sale day or count limit beyond the 7-day totals, so sales per year and max days stay unknown. License fee $125 a year (727.05)."
+ },
+ "kansas-city-mo-garage-sale-guide": {
+  "confidence": "partial",
+  "set": {"permit_required": false, "fee": "None (no temporary-use permit needed)"},
+  "official_source_url": "https://clerk.kcmo.gov/ViewReport.ashx?Extra=WithText&GID=821&GUID=E3D2636A-3B74-4300-9872-33E8E347B8CC&ID=6268768&M=R&N=Master&Title=Legislation+Details+%28With+Text%29",
+  "notes": "Kansas City Zoning and Development Code 88-370-04-A, as re-enacted by Ordinance 230552 (passed 2023-06-29, City Clerk legislation record): garage sales in R districts or on lots with residential dwellings are permitted temporary uses without the temporary-use permit when they run no more than 6 days total in any calendar year. The code sets a 6-day annual total rather than a sale count, so sales per year and max days stay unknown."
+ },
+ "new-york-city-ny-yard-sale-guide": {
+  "confidence": "partial",
+  "set": {"permit_required": false, "fee": "None (no General Vendor License needed)"},
+  "official_source_url": "https://portal.311.nyc.gov/article/?kanumber=KA-01833",
+  "notes": "NYC311 General Vendor License page (DCWP): a General Vendor License is not needed to sell items at a garage sale on private property. No official NYC page found yet on sale counts, days, hours or signs, so those stay unknown."
+ },
+ "salt-lake-city-ut-garage-sale-guide": {
+  "confidence": "partial",
+  "set": {"sales_per_year": 2, "max_days": 7},
+  "official_source_url": "https://codelibrary.amlegal.com/codes/saltlakecityut/latest/saltlakecity_ut/0-0-0-47272",
+  "notes": "Salt Lake City Code 5.60.090 (American Legal): unlawful to hold or take part as a seller in more than 2 sales of personal property at a private residence in a calendar year, or in any one sale longer than 7 days. Permit language not found, so permit stays unknown."
+ },
+ "spokane-wa-garage-sale-guide": {
+  "confidence": "partial",
+  "set": {"sales_per_year": 3, "max_days": 3},
+  "official_source_url": "https://my.spokanecity.org/smc/?Section=10.45.070",
+  "notes": "Spokane Municipal Code 10.45.070 (city-hosted code, passed 2025-07-14, effective 2025-08-24): it is a civil infraction to hold 4 or more yard sales in a calendar year or to run one at a single location for more than 3 days (recorded as 3 a year, 3 days). Permit language not found, so permit stays unknown."
+ },
+ "sioux-falls-sd-garage-sale-guide": {
+  "confidence": "partial",
+  "set": {"permit_required": false, "fee": "None (exempt from the peddler permit)", "sales_per_year": 4, "max_days": 4},
+  "official_source_url": "https://codelibrary.amlegal.com/codes/siouxfalls/latest/siouxfalls_sd/0-0-0-57333",
+  "notes": "Sioux Falls Code 117.002(d) (American Legal): the peddler and vendor chapter does not apply to bona fide garage, rummage, yard or moving sales held at the same location no more than 4 times a year for no more than 4 days each. Recorded as no permit for sales within those limits. Zoning rules not checked yet."
+ },
+ "boise-id-garage-sale-guide": {
+  "confidence": "partial",
+  "set": {"sales_per_year": 2, "max_days": 3},
+  "official_source_url": "https://codelibrary.amlegal.com/codes/boise_id/latest/boise/0-0-0-1639",
+  "notes": "Boise City Code 3-2-7(G) (American Legal): garage and yard sales at a residence are exempt from vendor licensing when there are no more than 2 separate sales a calendar year, each up to 3 days, with no business inventory or items bought for resale. American Legal flags 3-2-7 as amended by Ord. 29-26 (passed 2026-06-30) and not yet codified, so permit status stays unknown until the new text is published."
+ },
+ "aurora-co-garage-sale-guide": {
+  "confidence": "partial",
+  "set": {"hours": "Outdoor items must be put away in an enclosed structure by sunset each day"},
+  "official_source_url": "https://aurora.municipal.codes/Code/110-98",
+  "notes": "Aurora City Code 110-96 and 110-98 (aurora.municipal.codes): the sale must be at the primary seller's premises, in the garage or yard, with nothing in the right-of-way, and outside items stored in an enclosed structure by sunset each day. 110-98(a) (count and duration limits) did not load in the fetch, so sales per year and max days stay unknown."
+ },
+ "bakersfield-ca-garage-sale-guide": {
+  "confidence": "partial",
+  "set": {"sign_rules": "Up to 2 signs per residence (1 on-site, 1 off-site), each up to 3 sq ft and 6 ft tall, not lit. The off-site sign may not be in the right-of-way or attached to any utility pole, street sign or fence. Signs allowed for no more than 2 sales a calendar year and no more than 3 consecutive days."},
+  "official_source_url": "https://bakersfield.municipal.codes/Code/17.60.060",
+  "notes": "Bakersfield Municipal Code 17.60.060(B)(1)(d)(v) (sign matrix, residential zones): garage, yard and estate sale sign rules as recorded. The code ties signs to 2 sales a year and 3 days, but that is a sign limit, so sales per year and max days stay unknown."
+ }
+}
