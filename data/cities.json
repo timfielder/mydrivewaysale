@@ -3247,10 +3247,10 @@
     "region": "Pacific Coast",
     "sale_term": "Garage Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
+    "fee": "None (no permit or license needed)",
+    "sales_per_year": 2,
+    "max_days": 3,
+    "hours": "8:00 a.m. to 6:00 p.m.",
     "sign_rules": "Signs are restricted to private property. Posting on city infrastructure, streetlights, or utility poles is banned.",
     "how_to_apply": null,
     "permit_link": null,
@@ -3260,9 +3260,9 @@
       "Nextdoor Pierce County",
       "Tacoma Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://tacoma.gov/government/departments/finance/taxes-and-licenses/business-licensing/specific-business-activity/garage-and-yard-sales/",
+    "last_checked": "2026-10-27",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -3295,34 +3295,34 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://tacoma.gov/government/departments/finance/taxes-and-licenses/business-licensing/specific-business-activity/garage-and-yard-sales/"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://tacoma.gov/government/departments/finance/taxes-and-licenses/business-licensing/specific-business-activity/garage-and-yard-sales/"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://tacoma.gov/government/departments/finance/taxes-and-licenses/business-licensing/specific-business-activity/garage-and-yard-sales/"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://tacoma.gov/government/departments/finance/taxes-and-licenses/business-licensing/specific-business-activity/garage-and-yard-sales/"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://tacoma.gov/government/departments/finance/taxes-and-licenses/business-licensing/specific-business-activity/garage-and-yard-sales/"
       },
       "sign_rules": {
         "verified": false,
@@ -3355,7 +3355,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City of Tacoma Garage and Yard Sales page: no permit or license required; sales only 8 a.m. to 6 p.m.; limited to 2 a calendar year; a sale longer than 3 consecutive days or a 3rd sale in the year by the same household is a prohibited continuous garage sale (TMC 6B.160). Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Tacoma",
       "county": "Pierce",
@@ -11078,10 +11078,10 @@
     "sale_term": "Yard Sale",
     "permit_required": true,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
-    "sign_rules": "Signs must remain on private residential property. Placing signs on utility poles, street signs, or public right-of-ways is prohibited.",
+    "sales_per_year": 4,
+    "max_days": 3,
+    "hours": "Daylight hours only",
+    "sign_rules": "No sign or advertisement more than 24 hours before the sale; signs must be removed right after. Yard sale signs must show the address and date, and may not go on City property, traffic control devices, or where they block the right-of-way.",
     "how_to_apply": null,
     "permit_link": "https://www.allentownpa.gov",
     "best_season": "Summer (June-August)",
@@ -11090,9 +11090,9 @@
       "Nextdoor Lehigh County",
       "Allentown Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.allentownpa.gov/Portals/0/files/Departments/PlanningZoning/Zoning%20Ordinance.pdf",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -11137,28 +11137,28 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.allentownpa.gov/Portals/0/files/Departments/PlanningZoning/Zoning%20Ordinance.pdf"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.allentownpa.gov/Portals/0/files/Departments/PlanningZoning/Zoning%20Ordinance.pdf"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.allentownpa.gov/Portals/0/files/Departments/PlanningZoning/Zoning%20Ordinance.pdf"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://ecode360.com/36440900"
       },
       "how_to_apply": {
         "verified": false,
@@ -11185,7 +11185,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: https://www.allentownpa.gov+garage+sale+permit']",
+    "notes": "Allentown Zoning Ordinance 660-57.A (city PDF, effective 2026-01-01): yard sales at residential properties limited to 4 a calendar year, each to the daylight hours of 3 consecutive days; advertising no more than 24 hours before. Chapter 505 (ecode360) temporary sign rules. No permit language found, so permit stays unknown (the live site says a permit is required). Live site permit link is broken: https://www.allentownpa.gov+garage+sale+permit']",
     "original": {
       "city_name": "Allentown",
       "county": "Lehigh",
@@ -11482,12 +11482,12 @@
     "region": "Mid-Atlantic",
     "sale_term": "Yard Sale",
     "permit_required": true,
-    "fee": "$5.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
-    "sign_rules": "Signs allowed on private host property only. Placement on utility poles, public streets, or right-of-ways is prohibited.",
-    "how_to_apply": null,
+    "fee": "$10 garage sale license",
+    "sales_per_year": 1,
+    "max_days": 4,
+    "hours": "9:00 a.m. to 6:00 p.m.",
+    "sign_rules": "Signs only on the premises where the sale is held, no larger than 2 ft by 2 ft, up no earlier than 2 days before the sale and removed within 24 hours after it ends. No signs on government property.",
+    "how_to_apply": "Apply online through the city's business license portal (Garage Sale license, Division of Tax Abatements/Special Taxes) before the sale and display the license on the premises during the sale.",
     "permit_link": "https://www.newarknj.gov",
     "best_season": "Late Spring and Summer (May-August)",
     "cross_posting": [
@@ -11495,9 +11495,9 @@
       "Nextdoor Essex County",
       "Newark NJ Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://ecode360.com/36678793",
+    "last_checked": "2026-10-27",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -11530,46 +11530,46 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://ecode360.com/36678793"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://ecode360.com/36678793"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://ecode360.com/36678793"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://ecode360.com/36678793"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://ecode360.com/36678793"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://ecode360.com/36678793"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.newarknj.gov/333/Garage-Sales"
       },
       "permit_link": {
         "verified": false,
@@ -11590,7 +11590,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: https://www.newarknj.gov+garage+sale+permit']",
+    "notes": "Newark Revised Ordinances Chapter 8:24 (ecode360): a garage sale license is required (8:24-2), fee $10; issued to any one person and any one premises only once in 12 months, for no more than 4 consecutive days (8:24-3); license displayed during the sale; hours 9 a.m. to 6 p.m. (8:24-6); sign rules in 8:24-7. City Garage Sales page: 'Max of 4 days once a year', price $10+, apply online. The live site says $5; the code and city page say $10. Live site permit link is broken: https://www.newarknj.gov+garage+sale+permit']",
     "original": {
       "city_name": "Newark",
       "county": "Essex",
@@ -12426,13 +12426,13 @@
     "county": "Brown",
     "region": "Wisconsin and Upper Midwest",
     "sale_term": "Rummage Sale",
-    "permit_required": false,
-    "fee": "$0.00",
+    "permit_required": true,
+    "fee": "$25 temporary use permit",
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
     "sign_rules": "Signs entirely limited to private properties with owner consent. Prohibited on public street poles or signs.",
-    "how_to_apply": null,
+    "how_to_apply": "Submit the Temporary Use Permit application with a site plan and the $25 filing fee to the Department of Community & Economic Development, 100 N. Jefferson St., or planning@greenbaywi.gov, before the sale.",
     "permit_link": null,
     "best_season": "Summer (June-August)",
     "cross_posting": [
@@ -12440,9 +12440,9 @@
       "Nextdoor Brown County",
       "Green Bay Rummage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.greenbaywi.gov/DocumentCenter/View/959/Temporary-Use-Permit-Application-PDF",
+    "last_checked": "2026-10-27",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -12475,16 +12475,16 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.greenbaywi.gov/DocumentCenter/View/959/Temporary-Use-Permit-Application-PDF"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://mcclibrary.blob.core.usgovcloudapi.net/codecontent/15619/460049/2025%20Fee%20Schedule.pdf"
       },
       "sales_per_year": {
         "verified": false,
@@ -12511,10 +12511,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.greenbaywi.gov/DocumentCenter/View/959/Temporary-Use-Permit-Application-PDF"
       },
       "permit_link": {
         "verified": false,
@@ -12535,7 +12535,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City Temporary Use Permit application (quoting Sec. 44-469): temporary uses including rummage sales need a temporary use permit; rummage sales limited to 3 events and 9 days of operation per calendar year at a residential location. City 2025 fee schedule: Temporary Use Permit $25. Common Council minutes (2025) referred an amendment to 4 events and 16 days to staff; adoption not confirmed, so sales per year and max days stay unknown. The live site says no permit is needed, which is wrong. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Green Bay",
       "county": "Brown",
@@ -13371,13 +13371,13 @@
     "county": "Hampden",
     "region": "Connecticut and Western Massachusetts",
     "sale_term": "Tag Sale",
-    "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "permit_required": true,
+    "fee": "$10 for the 1st and 2nd permit, $20 for the 3rd and 4th",
+    "sales_per_year": 4,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "Signs restricted to private property. Posting on city light poles, traffic signs, or public parkways is illegal.",
-    "how_to_apply": null,
+    "how_to_apply": "Apply to the City Clerk (City Hall Room 123, 36 Court Street) at least 48 hours before the sale, in person or by mail with a stamped self-addressed envelope and a certified bank check or money order. Display the permit during the sale.",
     "permit_link": null,
     "best_season": "Late Spring and Summer (May-August)",
     "cross_posting": [
@@ -13385,9 +13385,9 @@
       "Nextdoor Hampden County",
       "Springfield Tag Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.springfield-ma.gov/cos/clerk-tagsale",
+    "last_checked": "2026-10-27",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -13420,28 +13420,28 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.springfield-ma.gov/cos/clerk-tagsale"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.springfield-ma.gov/cos/clerk-tagsale"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.springfield-ma.gov/cos/clerk-tagsale"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.springfield-ma.gov/cos/clerk-tagsale"
       },
       "hours": {
         "verified": false,
@@ -13456,10 +13456,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.springfield-ma.gov/cos/clerk-tagsale"
       },
       "permit_link": {
         "verified": false,
@@ -13480,7 +13480,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City Clerk Tag Sale Permits page quoting Ordinance Chapter 351: a City Clerk permit is required for any tag, garage, lawn, cellar, attic or rummage sale (351-1); up to 3 consecutive days (351-3); apply at least 48 hours ahead (351-4); no more than 4 sales a calendar year at one location (351-6); fee $10 for the 1st and 2nd permit, $20 for the 3rd and 4th (351-8). The ecode360 copy of Chapter 351 shows an older flat $10 fee and a 2-occasion rule in 351-5; the city page (updated 2023-03-20) is used. The live site says no permit is needed, which is wrong. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Springfield",
       "county": "Hampden",

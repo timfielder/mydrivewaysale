@@ -1,0 +1,36 @@
+{
+ "_about": "Batch 6, 2026-10-27. Official city pages, ecode360 and city-hosted PDFs only. Newark NJ, Springfield MA and Green Bay WI require a permit or license; the live site says no permit for Springfield and Green Bay.",
+ "newark-nj-yard-sale-guide": {
+  "confidence": "verified",
+  "set": {"permit_required": true, "fee": "$10 garage sale license", "sales_per_year": 1, "max_days": 4, "hours": "9:00 a.m. to 6:00 p.m.", "sign_rules": "Signs only on the premises where the sale is held, no larger than 2 ft by 2 ft, up no earlier than 2 days before the sale and removed within 24 hours after it ends. No signs on government property.", "how_to_apply": "Apply online through the city's business license portal (Garage Sale license, Division of Tax Abatements/Special Taxes) before the sale and display the license on the premises during the sale."},
+  "official_source_url": "https://ecode360.com/36678793",
+  "field_sources": {"how_to_apply": "https://www.newarknj.gov/333/Garage-Sales"},
+  "notes": "Newark Revised Ordinances Chapter 8:24 (ecode360): a garage sale license is required (8:24-2), fee $10; issued to any one person and any one premises only once in 12 months, for no more than 4 consecutive days (8:24-3); license displayed during the sale; hours 9 a.m. to 6 p.m. (8:24-6); sign rules in 8:24-7. City Garage Sales page: 'Max of 4 days once a year', price $10+, apply online. The live site says $5; the code and city page say $10."
+ },
+ "springfield-ma-tag-sale-guide": {
+  "confidence": "verified",
+  "set": {"permit_required": true, "fee": "$10 for the 1st and 2nd permit, $20 for the 3rd and 4th", "sales_per_year": 4, "max_days": 3, "how_to_apply": "Apply to the City Clerk (City Hall Room 123, 36 Court Street) at least 48 hours before the sale, in person or by mail with a stamped self-addressed envelope and a certified bank check or money order. Display the permit during the sale."},
+  "official_source_url": "https://www.springfield-ma.gov/cos/clerk-tagsale",
+  "notes": "City Clerk Tag Sale Permits page quoting Ordinance Chapter 351: a City Clerk permit is required for any tag, garage, lawn, cellar, attic or rummage sale (351-1); up to 3 consecutive days (351-3); apply at least 48 hours ahead (351-4); no more than 4 sales a calendar year at one location (351-6); fee $10 for the 1st and 2nd permit, $20 for the 3rd and 4th (351-8). The ecode360 copy of Chapter 351 shows an older flat $10 fee and a 2-occasion rule in 351-5; the city page (updated 2023-03-20) is used. The live site says no permit is needed, which is wrong."
+ },
+ "green-bay-wi-rummage-sale-guide": {
+  "confidence": "partial",
+  "set": {"permit_required": true, "fee": "$25 temporary use permit", "how_to_apply": "Submit the Temporary Use Permit application with a site plan and the $25 filing fee to the Department of Community & Economic Development, 100 N. Jefferson St., or planning@greenbaywi.gov, before the sale."},
+  "official_source_url": "https://www.greenbaywi.gov/DocumentCenter/View/959/Temporary-Use-Permit-Application-PDF",
+  "field_sources": {"fee": "https://mcclibrary.blob.core.usgovcloudapi.net/codecontent/15619/460049/2025%20Fee%20Schedule.pdf"},
+  "notes": "City Temporary Use Permit application (quoting Sec. 44-469): temporary uses including rummage sales need a temporary use permit; rummage sales limited to 3 events and 9 days of operation per calendar year at a residential location. City 2025 fee schedule: Temporary Use Permit $25. Common Council minutes (2025) referred an amendment to 4 events and 16 days to staff; adoption not confirmed, so sales per year and max days stay unknown. The live site says no permit is needed, which is wrong."
+ },
+ "tacoma-wa-garage-sale-guide": {
+  "confidence": "verified",
+  "set": {"permit_required": false, "fee": "None (no permit or license needed)", "sales_per_year": 2, "max_days": 3, "hours": "8:00 a.m. to 6:00 p.m."},
+  "official_source_url": "https://tacoma.gov/government/departments/finance/taxes-and-licenses/business-licensing/specific-business-activity/garage-and-yard-sales/",
+  "notes": "City of Tacoma Garage and Yard Sales page: no permit or license required; sales only 8 a.m. to 6 p.m.; limited to 2 a calendar year; a sale longer than 3 consecutive days or a 3rd sale in the year by the same household is a prohibited continuous garage sale (TMC 6B.160)."
+ },
+ "allentown-pa-yard-sale-guide": {
+  "confidence": "partial",
+  "set": {"sales_per_year": 4, "max_days": 3, "hours": "Daylight hours only", "sign_rules": "No sign or advertisement more than 24 hours before the sale; signs must be removed right after. Yard sale signs must show the address and date, and may not go on City property, traffic control devices, or where they block the right-of-way."},
+  "official_source_url": "https://www.allentownpa.gov/Portals/0/files/Departments/PlanningZoning/Zoning%20Ordinance.pdf",
+  "field_sources": {"sign_rules": "https://ecode360.com/36440900"},
+  "notes": "Allentown Zoning Ordinance 660-57.A (city PDF, effective 2026-01-01): yard sales at residential properties limited to 4 a calendar year, each to the daylight hours of 3 consecutive days; advertising no more than 24 hours before. Chapter 505 (ecode360) temporary sign rules. No permit language found, so permit stays unknown (the live site says a permit is required)."
+ }
+}
