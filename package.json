@@ -9,8 +9,9 @@
   "scripts": {
     "dev": "astro dev",
     "check:data": "node scripts/check-data.mjs",
-    "build": "node scripts/check-data.mjs && astro build",
-    "preview": "astro preview"
+    "build": "node scripts/check-data.mjs && astro build && node scripts/check-dist.mjs",
+    "preview": "astro preview",
+    "check:dist": "node scripts/check-dist.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
