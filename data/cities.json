@@ -4873,7 +4873,7 @@
     "hours": "9 a.m. to sunset",
     "sign_rules": "Signs only on the property where the sale is held. None anywhere else.",
     "how_to_apply": "Get the permit at your alderman's ward office, or mail the city's application at least 2 weeks before the sale. Each household in a joint sale needs its own permit.",
-    "permit_link": null,
+    "permit_link": "https://www.chicago.gov/city/en/depts/streets/provdrs/streets_san/svcs/garage_yard_and_apartmentsalesavailablecitywide.html",
     "best_season": "Late Spring and Summer (May-September)",
     "cross_posting": [
       "Craigslist Chicago",
@@ -4957,10 +4957,10 @@
         "origin": "official_source"
       },
       "permit_link": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.chicago.gov/city/en/depts/streets/provdrs/streets_san/svcs/garage_yard_and_apartmentsalesavailablecitywide.html"
       },
       "best_season": {
         "verified": false,
@@ -4975,7 +4975,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "2 per calendar year per household; a 3rd is allowed if you're moving out for good. Rain date: the next 3 days after the permit period, still 3 days total. Fines $50 to $500 per day. Charities, churches, and schools are exempt. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "2 per calendar year per household; a 3rd is allowed if you're moving out for good. Rain date: the next 3 days after the permit period, still 3 days total. Fines $50 to $500 per day. Charities, churches, and schools are exempt. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Live main hotfix 162b864: permit required Yes, $0.00, permit link set to the chicago.gov Streets and San garage sale page (live link ends in # as a stopgap for the widget bug).",
     "original": {
       "city_name": "Chicago",
       "county": "Cook",
@@ -7564,7 +7564,7 @@
     "city": "Wichita",
     "state": "KS",
     "county": "Sedgwick",
-    "region": "Great Lakes",
+    "region": "Midwest",
     "sale_term": "Garage Sale",
     "permit_required": true,
     "fee": "$2.50 per day (plus $1 for card payments online)",
@@ -7573,7 +7573,7 @@
     "hours": null,
     "sign_rules": "Signs allowed strictly on private property with owner permission. Banned on public right-of-ways, utility poles, and municipal structures.",
     "how_to_apply": "Buy a garage sale permit online through the City of Wichita Garage Sales Online service (account required), or get and submit the application at City Hall Business Licensing, 455 N. Main, 1st floor (316-268-4553).",
-    "permit_link": null,
+    "permit_link": "https://www.wichita.gov/345/Garage-Sales-Online",
     "best_season": "Spring and Fall (April-May, September-October)",
     "cross_posting": [
       "Craigslist Wichita",
@@ -7657,10 +7657,10 @@
         "source": "https://www.wichita.gov/345/Garage-Sales-Online"
       },
       "permit_link": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.wichita.gov/345/Garage-Sales-Online"
       },
       "best_season": {
         "verified": false,
@@ -7675,7 +7675,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "City Business Licenses page: a miscellaneous sale is any garage, basement, yard, rummage or similar sale of 6 or more items originally bought for the applicant's own use, and needs a permit, available online or at City Hall. City Garage Sales Online page: permit $2.50 per day with a $1 credit card fee; permit holders can list the sale on the city map. The city information sheet with count, day and hour limits did not load (connection failed), so those stay unknown. The live site says no permit is needed, which is wrong. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City Business Licenses page: a miscellaneous sale is any garage, basement, yard, rummage or similar sale of 6 or more items originally bought for the applicant's own use, and needs a permit, available online or at City Hall. City Garage Sales Online page: permit $2.50 per day with a $1 credit card fee; permit holders can list the sale on the city map. The city information sheet with count, day and hour limits did not load (connection failed), so those stay unknown. The live site says no permit is needed, which is wrong. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Live main hotfix 162b864: permit required Yes, $2.50 per day, permit link set to Garage Sales Online (live link ends in # as a stopgap). Region corrected from Great Lakes to Midwest in the new build (editorial, not a legal field).",
     "original": {
       "city_name": "Wichita",
       "county": "Sedgwick",
@@ -9052,13 +9052,13 @@
     "region": "Southeast",
     "sale_term": "Yard Sale",
     "permit_required": true,
-    "fee": "$0.00",
+    "fee": "$5.00 per day, up to 2 consecutive days",
     "sales_per_year": null,
-    "max_days": null,
+    "max_days": 2,
     "hours": null,
     "sign_rules": "Signs must stay entirely on private properties with consent. Forbidden on public verges, utility standards, or roadway medians.",
     "how_to_apply": "Buy a Yard Sale License online from Mecklenburg County Business Tax Collections (you print it yourself), or in person, cash only, at the Office of the Tax Collector, 3205 Freedom Drive, Suite 3000. Questions: 980-314-4400.",
-    "permit_link": null,
+    "permit_link": "https://biztax.mecklenburgcountync.gov/yardsale/Default.aspx",
     "best_season": "Spring and Fall (April-May, September-October)",
     "cross_posting": [
       "Craigslist Charlotte",
@@ -9106,10 +9106,10 @@
         "origin": "official_source"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://tax.mecknc.gov/due-dates"
       },
       "sales_per_year": {
         "verified": false,
@@ -9118,10 +9118,10 @@
         "origin": "none"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://tax.mecknc.gov/due-dates"
       },
       "hours": {
         "verified": false,
@@ -9142,10 +9142,10 @@
         "origin": "official_source"
       },
       "permit_link": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://biztax.mecklenburgcountync.gov/yardsale/Default.aspx"
       },
       "best_season": {
         "verified": false,
@@ -9160,7 +9160,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "County tax office page: a Yard Sale License is required for any attic, garage, yard, or similar sale inside Charlotte city limits, and skipping it can mean a fine. Fee and limits aren't shown on that page. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "County tax office page: a Yard Sale License is required for any attic, garage, yard, or similar sale inside Charlotte city limits, and skipping it can mean a fine. Fee and limits aren't shown on that page. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] County tax office due dates page (Attic Sale License): $5 per day, max 2 consecutive days. Live main hotfix 162b864: permit required Yes, $5.00 per day, permit link set to the county yard sale license page (live link ends in # as a stopgap).",
     "original": {
       "city_name": "Charlotte",
       "county": "Mecklenburg",
@@ -11590,7 +11590,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Newark Revised Ordinances Chapter 8:24 (ecode360): a garage sale license is required (8:24-2), fee $10; issued to any one person and any one premises only once in 12 months, for no more than 4 consecutive days (8:24-3); license displayed during the sale; hours 9 a.m. to 6 p.m. (8:24-6); sign rules in 8:24-7. City Garage Sales page: 'Max of 4 days once a year', price $10+, apply online. The live site says $5; the code and city page say $10. Live site permit link is broken: https://www.newarknj.gov+garage+sale+permit']",
+    "notes": "Newark Revised Ordinances Chapter 8:24 (ecode360): a garage sale license is required (8:24-2), fee $10; issued to any one person and any one premises only once in 12 months, for no more than 4 consecutive days (8:24-3); license displayed during the sale; hours 9 a.m. to 6 p.m. (8:24-6); sign rules in 8:24-7. City Garage Sales page: 'Max of 4 days once a year', price $10+, apply online. The live site says $5; the code and city page say $10. Live site permit link is broken: https://www.newarknj.gov+garage+sale+permit'] [2026-10-27 update] Live main hotfix 162b864: fee corrected from $5.00 to $10.00 on the live site, matching this row. Permit link unchanged on main.",
     "original": {
       "city_name": "Newark",
       "county": "Essex",
@@ -12433,7 +12433,7 @@
     "hours": null,
     "sign_rules": "Signs entirely limited to private properties with owner consent. Prohibited on public street poles or signs.",
     "how_to_apply": "Submit the Temporary Use Permit application with a site plan and the $25 filing fee to the Department of Community & Economic Development, 100 N. Jefferson St., or planning@greenbaywi.gov, before the sale.",
-    "permit_link": null,
+    "permit_link": "https://www.greenbaywi.gov/DocumentCenter/View/959/Temporary-Use-Permit-Application-PDF",
     "best_season": "Summer (June-August)",
     "cross_posting": [
       "Craigslist Appleton/Green Bay",
@@ -12517,10 +12517,10 @@
         "source": "https://www.greenbaywi.gov/DocumentCenter/View/959/Temporary-Use-Permit-Application-PDF"
       },
       "permit_link": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.greenbaywi.gov/DocumentCenter/View/959/Temporary-Use-Permit-Application-PDF"
       },
       "best_season": {
         "verified": false,
@@ -12535,7 +12535,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "City Temporary Use Permit application (quoting Sec. 44-469): temporary uses including rummage sales need a temporary use permit; rummage sales limited to 3 events and 9 days of operation per calendar year at a residential location. City 2025 fee schedule: Temporary Use Permit $25. Common Council minutes (2025) referred an amendment to 4 events and 16 days to staff; adoption not confirmed, so sales per year and max days stay unknown. The live site says no permit is needed, which is wrong. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City Temporary Use Permit application (quoting Sec. 44-469): temporary uses including rummage sales need a temporary use permit; rummage sales limited to 3 events and 9 days of operation per calendar year at a residential location. City 2025 fee schedule: Temporary Use Permit $25. Common Council minutes (2025) referred an amendment to 4 events and 16 days to staff; adoption not confirmed, so sales per year and max days stay unknown. The live site says no permit is needed, which is wrong. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Live main hotfix 162b864: permit required Yes, $25.00, permit link set to the Temporary Use Permit application PDF (live link ends in # as a stopgap).",
     "original": {
       "city_name": "Green Bay",
       "county": "Brown",
@@ -13378,7 +13378,7 @@
     "hours": null,
     "sign_rules": "Signs restricted to private property. Posting on city light poles, traffic signs, or public parkways is illegal.",
     "how_to_apply": "Apply to the City Clerk (City Hall Room 123, 36 Court Street) at least 48 hours before the sale, in person or by mail with a stamped self-addressed envelope and a certified bank check or money order. Display the permit during the sale.",
-    "permit_link": null,
+    "permit_link": "https://www.springfield-ma.gov/cos/clerk-tagsale",
     "best_season": "Late Spring and Summer (May-August)",
     "cross_posting": [
       "Craigslist Western Massachusetts",
@@ -13462,10 +13462,10 @@
         "source": "https://www.springfield-ma.gov/cos/clerk-tagsale"
       },
       "permit_link": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-10-27",
+        "origin": "official_source",
+        "source": "https://www.springfield-ma.gov/cos/clerk-tagsale"
       },
       "best_season": {
         "verified": false,
@@ -13480,7 +13480,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "City Clerk Tag Sale Permits page quoting Ordinance Chapter 351: a City Clerk permit is required for any tag, garage, lawn, cellar, attic or rummage sale (351-1); up to 3 consecutive days (351-3); apply at least 48 hours ahead (351-4); no more than 4 sales a calendar year at one location (351-6); fee $10 for the 1st and 2nd permit, $20 for the 3rd and 4th (351-8). The ecode360 copy of Chapter 351 shows an older flat $10 fee and a 2-occasion rule in 351-5; the city page (updated 2023-03-20) is used. The live site says no permit is needed, which is wrong. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City Clerk Tag Sale Permits page quoting Ordinance Chapter 351: a City Clerk permit is required for any tag, garage, lawn, cellar, attic or rummage sale (351-1); up to 3 consecutive days (351-3); apply at least 48 hours ahead (351-4); no more than 4 sales a calendar year at one location (351-6); fee $10 for the 1st and 2nd permit, $20 for the 3rd and 4th (351-8). The ecode360 copy of Chapter 351 shows an older flat $10 fee and a 2-occasion rule in 351-5; the city page (updated 2023-03-20) is used. The live site says no permit is needed, which is wrong. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Live main hotfix 162b864: permit required Yes, $10.00, permit link set to the City Clerk tag sale page (live link ends in # as a stopgap).",
     "original": {
       "city_name": "Springfield",
       "county": "Hampden",
