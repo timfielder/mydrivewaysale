@@ -5,7 +5,7 @@ export const SITE_URL = 'https://mydrivewaysale.net';
 export const SITE_NAME = 'My Driveway Sale';
 
 // Amazon Associates tracking ID. Keep as config; do not hardcode in templates.
-export const AMAZON_TAG = 'mydrivewaysal-20';
+export const AMAZON_TAG = 'mydriveways0a-20';
 
 // Tim's apps. Store URLs confirmed 2026-10-27 by opening each public listing (seller
 // "Tim Fielder Enterprises, LLC" / developer "TF Dev"); prices are the US listings that day.
