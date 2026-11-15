@@ -1,5 +1,6 @@
 import cities from '../../data/cities.json' with { type: 'json' };
 import { SHOW_UNVERIFIED_VALUES } from './site-config.mjs';
+import { cityGuideTitle } from './titles.mjs';
 
 export const UNKNOWN = 'Unknown, check with your city';
 export const allCities = [...cities].sort((a, b) => a.state.localeCompare(b.state) || a.city.localeCompare(b.city));
@@ -24,8 +25,9 @@ export function display(v) {
   return String(v);
 }
 
+// Kept as a wrapper so existing imports keep working. The formula lives in titles.mjs.
 export function pageTitle(r) {
-  return `${r.city}, ${r.state} ${r.sale_term} Rules: Permits, Fees and Signs`;
+  return cityGuideTitle(r);
 }
 
 export function metaDescription(r) {

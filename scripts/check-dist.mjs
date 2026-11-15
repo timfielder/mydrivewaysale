@@ -3,6 +3,7 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { SITE_URL, AMAZON_TAG, APPS } from '../src/lib/site-config.mjs';
+import { cityGuideTitle, withSiteName } from '../src/lib/titles.mjs';
 import { ADS_ENABLED } from '../src/lib/ads-config.mjs';
 import cities from '../data/cities.json' with { type: 'json' };
 
@@ -35,7 +36,7 @@ for (const f of htmlFiles) {
   if (!ADS_ENABLED && /adsbygoogle|pagead2\.googlesyndication/.test(html)) err(rel, 'AdSense markup while ads are disabled');
   const title = html.match(/<title>([^<]*)<\/title>/)?.[1];
   if (!title) err(rel, 'missing <title>');
-  else if (!/noindex/.test(html)) titles.set(title, [...(titles.get(title) ?? []), rel]);
+  else titles.set(title, [...(titles.get(title) ?? []), rel]);
 }
 for (const [t, list] of titles) if (list.length > 1) err(list.join(', '), `duplicate title "${t}"`);
 
@@ -47,6 +48,9 @@ for (const c of cities) {
   if (!existsSync(f)) { err(c.slug, 'city page not built'); continue; }
   const html = readFileSync(f, 'utf8');
   const url = `${SITE_URL}/${c.slug}/`;
+  const title = html.match(/<title>([^<]*)<\/title>/)?.[1];
+  const expected = withSiteName(cityGuideTitle(c));
+  if (title !== expected) err(c.slug, `title does not match the city-guide formula (got "${title}")`);
   if (!html.includes(`<link rel="canonical" href="${url}">`)) err(c.slug, 'canonical is not the page itself');
   const d = html.match(/<meta name="description" content="([^"]*)"/)?.[1];
   if (!d) err(c.slug, 'missing meta description'); else descs.set(d, (descs.get(d) ?? 0) + 1);

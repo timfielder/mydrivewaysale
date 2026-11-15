@@ -1,10 +1,11 @@
 ---
 import { SITE_URL, SITE_NAME } from '../lib/site-config.mjs';
+import { withSiteName } from '../lib/titles.mjs';
 import AdSenseLoader from '../components/AdSenseLoader.astro';
 interface Props { title: string; description: string; canonicalPath?: string | null; noindex?: boolean; pageType?: string; }
 const { title, description, canonicalPath = Astro.url.pathname, noindex = false, pageType = 'legal' } = Astro.props;
 const canonical = canonicalPath ? new URL(canonicalPath, SITE_URL).href : null;
-const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
+const fullTitle = withSiteName(title);
 ---
 <!doctype html>
 <html lang="en">
