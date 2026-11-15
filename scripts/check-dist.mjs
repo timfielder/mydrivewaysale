@@ -37,6 +37,13 @@ for (const f of htmlFiles) {
   const title = html.match(/<title>([^<]*)<\/title>/)?.[1];
   if (!title) err(rel, 'missing <title>');
   else titles.set(title, [...(titles.get(title) ?? []), rel]);
+  // Indexable pages must canonical to their own URL on SITE_URL. Noindex pages may omit it.
+  const noindex = /<meta name="robots" content="[^"]*noindex/i.test(html);
+  if (!noindex) {
+    const canonical = html.match(/<link rel="canonical" href="([^"]*)">/)?.[1];
+    const self = `${SITE_URL}${rel}`;
+    if (canonical !== self) err(rel, `canonical is not the page itself (got ${canonical ?? 'none'})`);
+  }
 }
 for (const [t, list] of titles) if (list.length > 1) err(list.join(', '), `duplicate title "${t}"`);
 
