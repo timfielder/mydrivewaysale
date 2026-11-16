@@ -1,6 +1,6 @@
 // Post-build check of the generated HTML in dist/. Fails (exit 1) on any error.
 // Guards the money and SEO basics so a template change can't quietly break them.
-import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { SITE_URL, AMAZON_TAG, APPS } from '../src/lib/site-config.mjs';
 import { cityGuideTitle, withSiteName } from '../src/lib/titles.mjs';
@@ -12,17 +12,59 @@ const errors = [];
 const err = (f, m) => errors.push(`${f}: ${m}`);
 const walk = (d) => readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(join(d, e.name)) : [join(d, e.name)]));
 const htmlFiles = walk(DIST).filter((f) => f.endsWith('.html'));
+const isFile = (p) => { try { return statSync(p).isFile(); } catch { return false; } };
+
+const SITE_HOSTS = new Set([
+  new URL(SITE_URL).hostname,
+  `www.${new URL(SITE_URL).hostname.replace(/^www\./, '')}`,
+]);
+
+// Pathname of an internal href, or null if the href is not on this site.
+// Allows #fragments and query strings (URL.pathname drops them). Accepts
+// root-relative, https?://, and protocol-relative links to SITE_URL, with or without www.
+function internalPath(href) {
+  if (!href) return null;
+  try {
+    if (href.startsWith('/') && !href.startsWith('//')) return new URL(href, SITE_URL).pathname;
+    const abs = href.startsWith('//') ? `https:${href}` : href;
+    if (!/^https?:\/\//i.test(abs)) return null;
+    const u = new URL(abs);
+    if (!SITE_HOSTS.has(u.hostname.toLowerCase())) return null;
+    return u.pathname || '/';
+  } catch {
+    return null;
+  }
+}
+
+// True if pathname maps to a built file or page in dist/. Trailing slashes
+// are normalized to the directory pages the build writes (foo/ or foo -> foo/index.html).
+function resolves(pathname) {
+  let path;
+  try { path = decodeURIComponent(pathname || '/'); } catch { return false; }
+  if (!path.startsWith('/')) path = `/${path}`;
+  const segs = path.split('/').filter((s) => s !== '' && s !== '.');
+  if (segs.some((s) => s === '..')) return false;
+  if (path === '/' || path === '/index.html') return isFile(join(DIST, 'index.html'));
+  if (!path.endsWith('/') && isFile(join(DIST, path.slice(1)))) return true;
+  return isFile(join(DIST, path.replace(/^\//, '').replace(/\/$/, ''), 'index.html'));
+}
 
 const BAD = [
   [/"\]/, 'stray "]'], [/\+sale\+permit(['"]|&#8221;|&quot;|&#39;|&#x27;)/i, 'broken permit link tail'], [/\/wp-admin/, '/wp-admin link'],
   [/\[INSERT_/i, '[INSERT_...] placeholder'], [/\[pseo/i, 'raw [pseo] shortcode'], [/[\u2013\u2014]/, 'em or en dash'],
   [/1000000\d{3}/, 'placeholder AdSense slot'],
 ];
+const STRAY_HREF = [
+  [/"\]/, 'stray "]'],
+  [/\[INSERT_/i, '[INSERT_...] placeholder'],
+  [/\/wp-admin\//i, '/wp-admin/ link'],
+];
 
 const titles = new Map();
 const indexableUrls = new Set();
 const canonicalOf = new Map();
 let amazonLinks = 0;
+let internalLinks = 0;
 for (const f of htmlFiles) {
   const rel = '/' + f.slice(DIST.length).replace(/index\.html$/, '');
   const html = readFileSync(f, 'utf8');
@@ -47,6 +89,15 @@ for (const f of htmlFiles) {
   if (!noindex) {
     indexableUrls.add(self);
     if (canonical !== self) err(rel, `canonical is not the page itself (got ${canonical ?? 'none'})`);
+  }
+  // Every internal href must resolve to a built file or page. Fragments and queries are allowed.
+  for (const m of html.matchAll(/href\s*=\s*(?:"([^"]*)"|'([^']*)')/g)) {
+    const href = (m[1] ?? m[2] ?? '').replaceAll('&amp;', '&');
+    for (const [re, what] of STRAY_HREF) if (re.test(href)) err(rel, `${what} in href ${href}`);
+    const path = internalPath(href);
+    if (path === null) continue;
+    internalLinks++;
+    if (!resolves(path)) err(rel, `broken internal link ${href}`);
   }
 }
 for (const [t, list] of titles) if (list.length > 1) err(list.join(', '), `duplicate title "${t}"`);
@@ -93,7 +144,7 @@ for (const u of sitemapUrls) {
 const all = htmlFiles.map((f) => readFileSync(f, 'utf8')).join('\n');
 for (const [name, a] of Object.entries(APPS)) for (const k of ['appStore', 'googlePlay']) if (a[k] && !all.includes(a[k])) err(name, `${k} link not used anywhere`);
 
-console.log(`dist check: ${htmlFiles.length} HTML files, ${cities.length} city pages, ${indexableUrls.size} indexable, ${sitemapUrls.size} sitemap URLs, ${amazonLinks} Amazon links, ads ${ADS_ENABLED ? 'ON' : 'off'}`);
+console.log(`dist check: ${htmlFiles.length} HTML files, ${cities.length} city pages, ${indexableUrls.size} indexable, ${sitemapUrls.size} sitemap URLs, ${internalLinks} internal links, ${amazonLinks} Amazon links, ads ${ADS_ENABLED ? 'ON' : 'off'}`);
 if (errors.length) {
   console.error(`\nFAILED with ${errors.length} error(s):`);
   for (const e of errors.slice(0, 60)) console.error('  ' + e);
