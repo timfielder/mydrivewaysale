@@ -20,6 +20,8 @@ const BAD = [
 ];
 
 const titles = new Map();
+const indexableUrls = new Set();
+const canonicalOf = new Map();
 let amazonLinks = 0;
 for (const f of htmlFiles) {
   const rel = '/' + f.slice(DIST.length).replace(/index\.html$/, '');
@@ -39,16 +41,17 @@ for (const f of htmlFiles) {
   else titles.set(title, [...(titles.get(title) ?? []), rel]);
   // Indexable pages must canonical to their own URL on SITE_URL. Noindex pages may omit it.
   const noindex = /<meta name="robots" content="[^"]*noindex/i.test(html);
+  const canonical = html.match(/<link rel="canonical" href="([^"]*)">/)?.[1];
+  const self = `${SITE_URL}${rel}`;
+  canonicalOf.set(self, canonical);
   if (!noindex) {
-    const canonical = html.match(/<link rel="canonical" href="([^"]*)">/)?.[1];
-    const self = `${SITE_URL}${rel}`;
+    indexableUrls.add(self);
     if (canonical !== self) err(rel, `canonical is not the page itself (got ${canonical ?? 'none'})`);
   }
 }
 for (const [t, list] of titles) if (list.length > 1) err(list.join(', '), `duplicate title "${t}"`);
 
-// Every city page: own canonical, own description, in the sitemap.
-const sitemap = walk(DIST).filter((f) => /sitemap-\d+\.xml$/.test(f)).map((f) => readFileSync(f, 'utf8')).join('\n');
+// Every city page: own canonical, own description, not noindex.
 const descs = new Map();
 for (const c of cities) {
   const f = join(DIST, c.slug, 'index.html');
@@ -61,16 +64,36 @@ for (const c of cities) {
   if (!html.includes(`<link rel="canonical" href="${url}">`)) err(c.slug, 'canonical is not the page itself');
   const d = html.match(/<meta name="description" content="([^"]*)"/)?.[1];
   if (!d) err(c.slug, 'missing meta description'); else descs.set(d, (descs.get(d) ?? 0) + 1);
-  if (!sitemap.includes(`<loc>${url}</loc>`)) err(c.slug, 'not in sitemap');
   if (/noindex/.test(html)) err(c.slug, 'city page is noindex');
 }
 for (const [d, n] of descs) if (n > 1) err('cities', `meta description used ${n} times: ${d}`);
+
+// Sitemap lists exactly the indexable pages (no noindex meta), each at its self-canonical URL.
+if (!existsSync(join(DIST, 'sitemap-index.xml'))) err('sitemap-index.xml', 'missing');
+const robots = join(DIST, 'robots.txt');
+if (!existsSync(robots)) err('robots.txt', 'missing');
+else if (!readFileSync(robots, 'utf8').includes(`Sitemap: ${SITE_URL}/sitemap-index.xml`)) {
+  err('robots.txt', 'does not reference the sitemap index');
+}
+const sitemapUrls = new Set();
+for (const f of walk(DIST).filter((p) => p.endsWith('.xml'))) {
+  const xml = readFileSync(f, 'utf8');
+  if (!xml.includes('<urlset')) continue;
+  for (const m of xml.matchAll(/<loc>([^<]*)<\/loc>/g)) sitemapUrls.add(m[1]);
+}
+for (const u of indexableUrls) {
+  if (!sitemapUrls.has(u)) err(u.slice(SITE_URL.length), 'indexable page missing from sitemap');
+}
+for (const u of sitemapUrls) {
+  if (!indexableUrls.has(u)) err(u, 'sitemap URL is not an indexable built page');
+  else if (canonicalOf.get(u) !== u) err(u, `sitemap URL canonical is not itself (got ${canonicalOf.get(u) ?? 'none'})`);
+}
 
 // The app store links we promote must be on the built site.
 const all = htmlFiles.map((f) => readFileSync(f, 'utf8')).join('\n');
 for (const [name, a] of Object.entries(APPS)) for (const k of ['appStore', 'googlePlay']) if (a[k] && !all.includes(a[k])) err(name, `${k} link not used anywhere`);
 
-console.log(`dist check: ${htmlFiles.length} HTML files, ${cities.length} city pages, ${amazonLinks} Amazon links, ads ${ADS_ENABLED ? 'ON' : 'off'}`);
+console.log(`dist check: ${htmlFiles.length} HTML files, ${cities.length} city pages, ${indexableUrls.size} indexable, ${sitemapUrls.size} sitemap URLs, ${amazonLinks} Amazon links, ads ${ADS_ENABLED ? 'ON' : 'off'}`);
 if (errors.length) {
   console.error(`\nFAILED with ${errors.length} error(s):`);
   for (const e of errors.slice(0, 60)) console.error('  ' + e);
