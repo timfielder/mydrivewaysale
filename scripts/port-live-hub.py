@@ -16,7 +16,10 @@ Changes from live, all from approved items or ads being off (see the progress lo
   - City topic links: the 10 articles -> the live city URL /<city>-<suffix>/ (built per city);
     calculator/app suffixes -> the national StickerCalc page; suffixes that
     404 on live are left as unlinked text (approved item 31). /wp-admin/stickercalc-app -> /stickercalc-app/.
-  - [INSERT_..._AFFILIATE_LINK] placeholder hrefs are dropped (text kept) until Tim supplies real links.
+  - [INSERT_..._AFFILIATE_LINK] placeholder hrefs -> real links (Tim 2026-11-17 t107u: Fred's call):
+    Amazon ones -> a tagged Amazon search for the product named in the list item (same format as
+    live's working Amazon links); 1800GOTJUNK and ExtraSpace -> their official public pages, no
+    tracking ID (no affiliate account). See AFFILIATE_HREF.
   - Stray "] after the cross-posting list removed (approved item 5); &#038; in URLs written as &amp;.
   - Em dashes in visible copy become " - " (site rule; check-dist bans them).
   - Footer shortcode output is replaced by %%FOOTER%% (rendered by MasterFooter.astro, same markup).
@@ -27,6 +30,27 @@ import re, json, html, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SNAP = ROOT / '_import' / 'live-2026-11-17'
 OUT = ROOT / 'src' / 'live'
+
+AMAZON_TAG = 'mydriveways0a-20'
+def amazon_search(q):
+    return 'https://www.amazon.com/s?k=' + q.replace(' ', '+') + '&amp;tag=' + AMAZON_TAG
+# <strong> label of the list item -> href for its [INSERT_..._AFFILIATE_LINK] placeholder.
+AFFILIATE_HREF = {
+    'Commercial Folding Tables (6-Foot):': amazon_search('6 foot commercial folding table'),
+    'Rolling Garment Racks:': amazon_search('rolling garment rack'),
+    'Fitted Tablecloths:': amazon_search('fitted tablecloth 6 foot table'),
+    'Lockable Cash Box or Fanny Pack:': amazon_search('lockable cash box'),
+    'Counterfeit Detector Pens:': amazon_search('counterfeit detector pen'),
+    'Neon Price-Sticker Packs:': amazon_search('neon color coding labels price stickers'),
+    'Wearable Cash Apron:': amazon_search('vendor cash apron with pockets'),
+    'Junk Removal Services:': 'https://www.1800gotjunk.com/us_en',
+    'Temporary Self-Storage:': 'https://www.extraspace.com/',
+}
+def fill_affiliate(b):
+    def rep(m):
+        label = re.findall(r'<strong>([^<]*)</strong>', b[:m.start()])[-1]
+        return 'href="' + AFFILIATE_HREF[label] + '"'
+    return re.sub(r'href="\[INSERT_[A-Z0-9_]+_AFFILIATE_LINK\]"', rep, b)
 
 # Router suffix (snippet 05) -> path in this build. None = no page yet (live 404) -> unlinked.
 ENDPOINT_PATH = {
@@ -95,7 +119,7 @@ def clean(b):
     # Stray "] after the cross-posting list (nested shortcode leftover on live; approved item 5).
     b = re.sub(r'(padding-left: 12px;">\s*[^<]*?)"\]', r'\1', b)
     b = b.replace('href="/wp-admin/stickercalc-app"', 'href="/stickercalc-app/"')
-    b = re.sub(r'\s*href="\[INSERT_[A-Z0-9_]+\]"', '', b)
+    b = fill_affiliate(b)
     # Em/en dashes in visible text (outside scripts) -> " - ".
     parts = re.split(r'(<script.*?</script>)', b, flags=re.S)
     parts = [p if p.startswith('<script') else re.sub(r'\s*[\u2013\u2014]\s*', ' - ', p) for p in parts]
