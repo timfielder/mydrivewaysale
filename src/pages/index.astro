@@ -1,13 +1,42 @@
 ---
+// Homepage, matched to the live WordPress homepage (page 14, Elementor Canvas template:
+// no site header). Layout, copy, logo and classes copied from live on 2026-11-17.
+// Live title is "My Driveway Sale - Everything you need to plan, prep, run, and survive your
+// driveway sale." with an en dash; this site bans en and em dashes, so a colon stands in.
 import Base from '../layouts/Base.astro';
-import AppPromo from '../components/AppPromo.astro';
-import { allCities } from '../lib/cities.mjs';
-const states = [...new Set(allCities.map((c) => c.state))];
+import CitySelector from '../components/CitySelector.astro';
+import MasterFooter from '../components/MasterFooter.astro';
+import '../styles/live-home.css';
 ---
-<Base title="My Driveway Sale: Garage, Yard and Tag Sale Rules by City" description="Do you need a permit for your garage sale? City-by-city rules for permits, fees, and signs, with the official source and the date we last checked." canonicalPath="/" pageType="home">
-  <h1>Garage sale rules for your city</h1>
-  <p>Permits, fees, sign rules, and limits for {allCities.length} US cities. Each city page says whether we've checked its rules against the city's own website, and shows the source and date when we have.</p>
-  <p><a href="/hub/">Browse all city guides</a> ({states.length} states)</p>
-  <AppPromo app="stickercalc" />
-  <AppPromo app="beamme" />
+<Base title="My Driveway Sale: Everything you need to plan, prep, run, and survive your driveway sale." description="Do you need a permit for your garage sale? City-by-city rules for permits, fees, and signs, with the official source and the date we last checked." canonicalPath="/" pageType="home" canvas>
+  <Fragment slot="head">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap" media="all" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap" media="all" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap" media="all" />
+  </Fragment>
+  <div data-elementor-type="wp-page" data-elementor-id="14" class="elementor elementor-14">
+    <div class="elementor-element elementor-element-bfb8021 e-con e-atomic-element e-flexbox-base e-default-div e-bfb8021-385a0a5">
+      <img fetchpriority="high" decoding="async" class="e-image-base e-default-img e-491cf0d-cbd1f12" src="/wp-content/uploads/2026/07/MDS-logo-1024x496.png" width="800" height="388" srcset="/wp-content/uploads/2026/07/MDS-logo-1024x496.png 1024w, /wp-content/uploads/2026/07/MDS-logo-300x145.png 300w, /wp-content/uploads/2026/07/MDS-logo-768x372.png 768w, /wp-content/uploads/2026/07/MDS-logo.png 1193w" alt="" />
+    </div>
+    <div class="elementor-element elementor-element-2e38a06 e-con e-atomic-element e-flexbox-base e-default-div e-2e38a06-98d9b68">
+      <h1 class="e-7230eae-97b32b1 e-heading-base e-default-h1">Everything you need to plan, prep, execute, and survive your driveway sale.</h1>
+    </div>
+    <div class="elementor-element elementor-element-5203914 e-flex e-con-boxed e-con e-parent">
+      <div class="e-con-inner">
+        <div class="elementor-element elementor-element-ac7eafd elementor-widget elementor-widget-shortcode">
+          <div class="elementor-shortcode"><CitySelector /></div>
+        </div>
+      </div>
+    </div>
+    <div class="elementor-element elementor-element-52d898d e-con e-atomic-element e-flexbox-base e-default-div">
+      <hr class="e-divider-base" />
+    </div>
+    <div class="elementor-element elementor-element-60884ca e-flex e-con-boxed e-con e-parent">
+      <div class="e-con-inner">
+        <div class="elementor-element elementor-element-924e24f elementor-widget elementor-widget-shortcode">
+          <div class="elementor-shortcode"><MasterFooter /></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </Base>

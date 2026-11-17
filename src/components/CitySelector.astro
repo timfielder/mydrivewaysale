@@ -1,0 +1,173 @@
+---
+// Homepage city search. Ported 1:1 from the live WordPress [city_selector] shortcode
+// (Code Snippets export 06-homepage-city-selector.php), markup, styles and script copied
+// from the live homepage HTML on 2026-11-17. Live builds supportedCities from
+// location_rules_database.json on main; here it comes from the same 100 cities in
+// data/cities.json (same city, state, slug and order as live on 2026-11-17).
+// Firebase endpoints and payloads are the live ones, unchanged.
+import { allCities } from '../lib/cities.mjs';
+const supportedCities = allCities.map((c) => ({ city: c.city.toLowerCase(), state: c.state.toLowerCase(), slug: c.slug }));
+---
+    <style is:inline>
+        .pseo-search-container { position: relative; max-width: 600px; margin: 0 auto; text-align: left; font-family: "Roboto", sans-serif; }
+        .pseo-search-input { width: 100%; padding: 18px 20px; font-size: 16px; border: 2px solid #4A7D8F; border-radius: 8px; box-sizing: border-box; color: #00264C; outline: none; transition: all 0.3s ease; }
+        .pseo-search-input:focus { border-color: #E0B42D; box-shadow: 0 4px 15px rgba(0,38,76,0.1); }
+        .pseo-results-box { position: absolute; top: 100%; left: 0; right: 0; background: #ffffff; border: 2px solid #E0B42D; border-top: none; border-radius: 0 0 8px 8px; max-height: 280px; overflow-y: auto; z-index: 1000; box-shadow: 0 15px 30px rgba(0,38,76,0.15); display: none; }
+        .pseo-result-item { padding: 15px 20px; cursor: pointer; color: #00264C; border-bottom: 1px solid #f0f0f0; transition: background-color 0.2s; }
+        .pseo-result-item:hover { background-color: #F5F7FA; color: #4A7D8F; font-weight: bold; }
+        
+        /* Modal Styles */
+        .pseo-modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 38, 76, 0.7); z-index: 9999; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; backdrop-filter: blur(4px); }
+        .pseo-modal-box { background: white; padding: 30px; border-radius: 12px; width: 100%; max-width: 450px; text-align: center; box-shadow: 0 15px 35px rgba(0,0,0,0.2); border-top: 5px solid #E0B42D; font-family: "Roboto", sans-serif; }
+        .pseo-modal-btn { background-color: #4A7D8F; color: white; border: none; padding: 15px; border-radius: 8px; font-weight: bold; width: 100%; font-size: 15px; cursor: pointer; margin-top: 15px; }
+        .pseo-modal-btn-alt { background-color: transparent; color: #4A7D8F; border: 2px solid #4A7D8F; padding: 13px; border-radius: 8px; font-weight: bold; width: 100%; font-size: 15px; cursor: pointer; margin-top: 10px; }
+    </style>
+
+    <div style="background-color: #F5F7FA; padding: 40px 30px; border-radius: 12px; border: 2px solid #4A7D8F; text-align: center; max-width: 600px; margin: 0 auto;">
+        <h3 style="color: #00264C; font-family: 'Montserrat', sans-serif; margin-top: 0; font-size: 22px;">Find Your Local Driveway Sale Hub</h3>
+        <p style="color: #4A7D8F; font-family: 'Roboto', sans-serif; font-size: 14px; margin-bottom: 25px;">Search your city to compile your local regulations.</p>
+
+        <div class="pseo-search-container">
+            <input type="text" id="pseo-city-input" class="pseo-search-input" placeholder="Search USA (e.g., Amarillo, TX)..." autocomplete="off">
+            <div id="pseo-results" class="pseo-results-box"></div>
+            <button id="pseo-submit-btn" style="background-color: #E0B42D; color: #00264C; border: none; padding: 18px 25px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 16px; width: 100%; margin-top: 15px;">Go To My Local Guide</button>
+        </div>
+    </div>
+
+    <!-- THE AMARILLO TRAP MODAL -->
+    <div id="pseo-modal" class="pseo-modal-overlay">
+        <div class="pseo-modal-box">
+            <h3 style="color: #00264C; font-family: 'Montserrat', sans-serif; margin-top: 0; font-size: 20px;">Location Pending</h3>
+            <p style="color: #4A7D8F; font-size: 15px; line-height: 1.5; margin-bottom: 20px;">
+                <strong><span id="modal-city"></span>, <span id="modal-state-code"></span></strong> has not been added to our location registry yet. We just submitted an automated request to our team to build your local guide!
+            </p>
+            <div style="background-color: #F5F7FA; padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #E1E8ED;">
+                <p style="margin-top: 0; font-size: 13px; color: #00264C; font-weight: bold;">Submit your email to be notified the second it is compiled:</p>
+                <input type="email" id="pseo-email-input" placeholder="Enter your email address" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-bottom: 10px;">
+                <button id="pseo-email-submit" style="background-color: #00264C; color: white; border: none; padding: 12px; width: 100%; border-radius: 4px; font-weight: bold; cursor: pointer;">NOTIFY ME</button>
+            </div>
+            <p style="color: #4A7D8F; font-size: 13px; line-height: 1.5;">In the meantime, you can view the general <span id="modal-state-full"></span> guide, or select a different city.</p>
+            <button id="modal-state-btn" class="pseo-modal-btn">View General <span id="modal-state-btn-text"></span> Guide</button>
+            <button onclick="document.getElementById('pseo-modal').style.display='none';" class="pseo-modal-btn-alt">Select A Different City</button>
+        </div>
+    </div>
+
+    <script is:inline define:vars={{ supportedCities }}>
+    (function(){
+        const input = document.getElementById("pseo-city-input");
+        const resultsBox = document.getElementById("pseo-results");
+        const submitBtn = document.getElementById("pseo-submit-btn");
+
+        let typingTimer;
+        let selectedCity = "";
+        let selectedState = "";
+        let selectedCountryCode = "";
+
+        const stateMap = {"Alabama":"AL","Alaska":"AK","Arizona":"AZ","Arkansas":"AR","California":"CA","Colorado":"CO","Connecticut":"CT","Delaware":"DE","Florida":"FL","Georgia":"GA","Hawaii":"HI","Idaho":"ID","Illinois":"IL","Indiana":"IN","Iowa":"IA","Kansas":"KS","Kentucky":"KY","Louisiana":"LA","Maine":"ME","Maryland":"MD","Massachusetts":"MA","Michigan":"MI","Minnesota":"MN","Mississippi":"MS","Missouri":"MO","Montana":"MT","Nebraska":"NE","Nevada":"NV","New Hampshire":"NH","New Jersey":"NJ","New Mexico":"NM","New York":"NY","North Carolina":"NC","North Dakota":"ND","Ohio":"OH","Oklahoma":"OK","Oregon":"OR","Pennsylvania":"PA","Rhode Island":"RI","South Carolina":"SC","South Dakota":"SD","Tennessee":"TN","Texas":"TX","Utah":"UT","Vermont":"VT","Virginia":"VA","Washington":"WA","West Virginia":"WV","Wisconsin":"WI","Wyoming":"WY","District of Columbia":"DC"};
+
+		// External Validation: Open-Meteo Geocoding API
+		input.addEventListener("input", function() {
+			clearTimeout(typingTimer);
+			selectedCity = ""; // Reset validation
+
+			const query = this.value.trim();
+			if (query.length < 3) { resultsBox.style.display = "none"; return; }
+
+			typingTimer = setTimeout(() => {
+				// Increased count to 15 to ensure we catch the US city if buried under global results
+				fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(query)}&count=15&language=en&format=json`)
+					.then(res => res.json())
+					.then(data => {
+						resultsBox.innerHTML = "";
+						if (data.results && data.results.length > 0) {
+							// STRICT USA FILTER: Only keep US cities, and slice to show only the top 5
+							let usResults = data.results.filter(res => res.country_code === "US").slice(0, 5);
+
+							usResults.forEach(res => {
+								let locName = res.name;
+								let region = res.admin1 ? res.admin1 : res.country;
+								let div = document.createElement("div");
+								div.className = "pseo-result-item";
+								div.innerHTML = `<strong>${locName}</strong>, ${region}`;
+								div.onclick = function() {
+									selectedCity = res.name;
+									selectedState = res.admin1 || "";
+									selectedCountryCode = res.country_code || "";
+									input.value = `${locName}, ${region}`;
+									resultsBox.style.display = "none";
+								};
+								resultsBox.appendChild(div);
+							});
+							resultsBox.style.display = "block";
+						}
+					}).catch(e => console.log(e));
+			}, 300);
+		});
+
+        document.addEventListener("click", function(e) {
+            if (e.target !== input && e.target !== resultsBox) resultsBox.style.display = "none";
+        });
+
+        // The Routing Engine
+        submitBtn.onclick = function() {
+            if (!selectedCity) {
+                alert("Please select a valid location from the dropdown suggestions first.");
+                return;
+            }
+
+            // Global Fallback (South Africa Problem Solved!)
+            if (selectedCountryCode !== "US") {
+                window.location.href = "/international-garage-sale-guide/";
+                return;
+            }
+
+            let stateCode = stateMap[selectedState] || "";
+            let match = supportedCities.find(c => c.city === selectedCity.toLowerCase() && c.state === stateCode.toLowerCase());
+
+            if (match) {
+                // Happy Path: Match Found
+                window.location.href = "/" + match.slug + "/";
+            } else {
+                // The Amarillo Trap: No Match Found!
+                
+                // 1. Silently log the missing city demand to your newly siloed Firebase
+                fetch("https://mydrivewaysale-default-rtdb.firebaseio.com/drivewaysale_requests.json", {
+                    method: "POST",
+                    body: JSON.stringify({ city: selectedCity, state: stateCode, timestamp: new Date().toISOString() })
+                }).catch(e => {});
+
+                // 2. Populate and display the Modal
+                document.getElementById("modal-city").innerText = selectedCity;
+                document.getElementById("modal-state-code").innerText = stateCode;
+                document.getElementById("modal-state-full").innerText = selectedState;
+                document.getElementById("modal-state-btn-text").innerText = selectedState;
+
+                // Create the safe General State Route (e.g., /general-texas-garage-sale-guide/)
+                let stateSlug = "general-" + selectedState.toLowerCase().replace(/\s+/g, "-") + "-garage-sale-guide";
+                document.getElementById("modal-state-btn").onclick = function() {
+                    window.location.href = "/" + stateSlug + "/";
+                };
+
+                document.getElementById("pseo-modal").style.display = "flex";
+            }
+        };
+
+        // Email Lead Collection Submission
+        document.getElementById("pseo-email-submit").onclick = function() {
+            let email = document.getElementById("pseo-email-input").value;
+            if (email.includes("@")) {
+                // Sent safely to your newly siloed Firebase!
+                fetch("https://mydrivewaysale-default-rtdb.firebaseio.com/drivewaysale_leads.json", {
+                    method: "POST",
+                    body: JSON.stringify({ email: email, city: selectedCity, state: stateMap[selectedState] || "", timestamp: new Date().toISOString() })
+                }).catch(e => {});
+                
+                this.innerText = "Subscribed!";
+                this.style.backgroundColor = "#388E3C";
+                this.disabled = true;
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        };
+    })();
+    </script>
