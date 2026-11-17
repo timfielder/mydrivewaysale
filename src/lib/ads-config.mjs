@@ -1,14 +1,14 @@
 // AdSense settings and where ads go on each page type.
 // Ads are OFF. AdSense rejected the site in July 2026; nothing renders (no loader,
-// no <ins>, no empty "Sponsored" boxes) until ADS_ENABLED is true AND the IDs below are real.
+// no <ins>, no empty "Sponsored" boxes) until ADS_ENABLED is true AND the slot IDs below are real.
 
 // Flip to true only after Tim's AdSense account is approved for mydrivewaysale.net.
 export const ADS_ENABLED = false;
 
-// TODO(Tim, AdSense account): publisher ID from AdSense > Account > Account information,
-// format 'ca-pub-0000000000000000'. The old WordPress snippets used ca-pub-2398634112645558;
-// whether that account is Tim's current, approved one is unknown, so it is NOT wired in here.
-export const ADSENSE_CLIENT = null;
+// Publisher ID from AdSense > Account > Account information. Tim supplied
+// pub-2398634112645558 on 2026-11-17 (t129u). Used for ads.txt now; ad rendering
+// stays off until ADS_ENABLED is true and the slot IDs below are real.
+export const ADSENSE_CLIENT = 'ca-pub-2398634112645558';
 
 // TODO(Tim, AdSense account): real ad unit IDs from AdSense > Ads > By ad unit.
 // The live WordPress slots 1000000001 to 1000000004 are sequential placeholders, not real units.
