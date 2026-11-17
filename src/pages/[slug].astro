@@ -18,7 +18,7 @@ import { renderCityGuide } from '../lib/live-hub.mjs';
 import cityTemplate from '../live/city-guide.html?raw';
 import liveMeta from '../live/meta.json' with { type: 'json' };
 import hubTemplate from '../live/hub.html?raw';
-import { renderHub } from '../lib/live-hub.mjs';
+import { renderHub, renderStateGuide } from '../lib/live-hub.mjs';
 import LivePageHead from '../components/LivePageHead.astro';
 import { PAGE_META, CITY_TOPICS, cityTopicSlug, renderCityTopic } from '../lib/live-pages.mjs';
 import { topicTitle, stateGuideTitle } from '../lib/titles.mjs';
@@ -65,7 +65,7 @@ const stubPicks = page ? (AMAZON_BY_PAGE[page.path] ?? []) : [];
 ) : kind === 'stateHub' ? (
   <Base title={stateGuideTitle(stateName)} description={`${stateName} garage sale guide from My Driveway Sale.`} canonicalPath="/hub/" noindex pageType="hub" canvas bodyClass={liveMeta.body_class_hub}>
     <LiveHubHead slot="head" />
-    <LiveHubBody html={renderHub(hubTemplate, '%%FOOTER%%')} />
+    <LiveHubBody html={renderStateGuide(hubTemplate, '%%FOOTER%%', stateName)} />
   </Base>
 ) : kind === 'liveHub' ? (
   <Base title={page.title} description={`${page.title} from My Driveway Sale.`} canonicalPath={page.canonical} noindex pageType="hub" canvas bodyClass={liveMeta.body_class_hub}>
