@@ -152,6 +152,31 @@ for (const m of all.matchAll(/https:\/\/(?:apps\.apple\.com|play\.google\.com)\/
   if (!storeUrls.has(m[0].replaceAll('&amp;', '&'))) err('app store', `unconfirmed store link ${m[0]}`);
 }
 
+// Build mode: production (Hostinger) has the Google tag on every page and ships .htaccess with no
+// _headers noindex; preview (CF_PAGES=1 or PREVIEW=1) has no tag, no .htaccess, and _headers noindex.
+const IS_PREVIEW = process.env.CF_PAGES === '1' || process.env.PREVIEW === '1';
+const GTAG = 'https://www.googletagmanager.com/gtag/js?id=GT-5TGL39GM';
+let gtagPages = 0;
+for (const f of htmlFiles) {
+  const html = readFileSync(f, 'utf8');
+  const rel = '/' + f.slice(DIST.length);
+  const has = html.includes(GTAG) && html.includes('gtag("config", "GT-5TGL39GM")');
+  if (has) gtagPages++;
+  if (IS_PREVIEW && /googletagmanager\.com\/gtag/.test(html)) err(rel, 'Google tag on a preview build');
+  if (!IS_PREVIEW && !has) err(rel, 'production page missing the Google tag GT-5TGL39GM');
+}
+const hasHtaccess = existsSync(join(DIST, '.htaccess'));
+const hasHeaders = existsSync(join(DIST, '_headers'));
+if (IS_PREVIEW) {
+  if (hasHtaccess) err('.htaccess', 'present in a preview build');
+  if (!hasHeaders) err('_headers', 'preview build missing the noindex _headers');
+} else {
+  if (!hasHtaccess) err('.htaccess', 'missing from the production build');
+  if (hasHeaders) err('_headers', 'present in a production build (noindex would ship)');
+  if (/noindex/i.test(readFileSync(robots, 'utf8'))) err('robots.txt', 'noindex in production');
+}
+
+console.log(`dist check (${IS_PREVIEW ? 'preview' : 'production'} build): Google tag on ${gtagPages} pages, .htaccess ${hasHtaccess ? 'yes' : 'no'}, _headers ${hasHeaders ? 'yes' : 'no'}`);
 console.log(`dist check: ${htmlFiles.length} HTML files, ${cities.length} city pages, ${indexableUrls.size} indexable, ${sitemapUrls.size} sitemap URLs, ${internalLinks} internal links, ${amazonLinks} Amazon links, ads ${ADS_ENABLED ? 'ON' : 'off'}`);
 if (errors.length) {
   console.error(`\nFAILED with ${errors.length} error(s):`);

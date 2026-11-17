@@ -8,6 +8,19 @@ interface Props { title: string; description: string; canonicalPath?: string | n
 const { title, description, canonicalPath = Astro.url.pathname, noindex = false, pageType = 'legal', canvas = false, bodyClass = 'elementor-kit-6' } = Astro.props;
 const canonical = canonicalPath ? new URL(canonicalPath, SITE_URL).href : null;
 const fullTitle = withSiteName(title);
+// Google tag: production (Hostinger) builds only. Cloudflare Pages preview builds (CF_PAGES=1) and
+// PREVIEW=1 builds leave it out so preview visits don't count (approved difference 7).
+// Markup copied from live WordPress (Site Kit output, checked 2026-11-17).
+const IS_PREVIEW = process.env.CF_PAGES === '1' || process.env.PREVIEW === '1';
+const GTAG_ID = 'GT-5TGL39GM';
+const GTAG_INLINE = `
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["mydrivewaysale.net"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "${GTAG_ID}");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+`;
 const BASE_CSS = `
       body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 0 auto; padding: 1rem; color: #00264C; line-height: 1.5; }
       a { color: #1a5d8f; }
@@ -43,6 +56,8 @@ const BASE_CSS = `
     <link rel="icon" href="/wp-content/uploads/2026/07/MDS-favicon-150x150.png" sizes="32x32" />
     <link rel="icon" href="/wp-content/uploads/2026/07/MDS-favicon-300x300.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="/wp-content/uploads/2026/07/MDS-favicon-300x300.png" />
+    {!IS_PREVIEW && <script is:inline id="google_gtagjs-js" src={`https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}`} async></script>}
+    {!IS_PREVIEW && <script is:inline id="google_gtagjs-js-after" set:html={GTAG_INLINE}></script>}
     <slot name="head" />
     <AdSenseLoader pageType={pageType} noindex={noindex} />
     {!canvas && <style is:inline set:html={BASE_CSS}></style>}
