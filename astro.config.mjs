@@ -1,13 +1,14 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, rmSync } from 'node:fs';
 import { SITE_URL, NOINDEX_PATHS } from './src/lib/site-config.mjs';
 
 // Preview builds only. Cloudflare Pages sets CF_PAGES=1 (or set PREVIEW=1 by hand).
 // Writes dist/_headers so every preview URL sends X-Robots-Tag: noindex, nofollow.
 // Production (Hostinger) builds never set these vars, so the file is not written there,
-// and Apache ignores _headers anyway. HTML output is identical in both builds.
+// and Apache ignores _headers anyway. Preview builds also drop dist/.htaccess and leave out the
+// Google tag (Base.astro); otherwise HTML output is identical in both builds.
 const IS_PREVIEW = process.env.CF_PAGES === '1' || process.env.PREVIEW === '1';
 const previewNoindex = {
   name: 'preview-noindex',
@@ -15,6 +16,8 @@ const previewNoindex = {
     'astro:build:done': ({ dir }) => {
       if (!IS_PREVIEW) return;
       writeFileSync(new URL('_headers', dir), '/*\n  X-Robots-Tag: noindex, nofollow\n');
+      // public/.htaccess is for Hostinger only. Pages ignores it but would serve it as a file.
+      rmSync(new URL('.htaccess', dir), { force: true });
       console.log('[preview-noindex] wrote _headers (preview build)');
     },
   },
