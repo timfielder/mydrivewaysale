@@ -60,3 +60,27 @@ export function renderCityGuide(cityTemplate, r, footerHtml, opts) {
 export function renderHub(hubTemplate, footerHtml) {
   return fill(hubTemplate, { HUB_FEE: NOT_VERIFIED, FOOTER: footerHtml });
 }
+
+// State guides use the same hub template, but fill the blank location slots with the
+// state name, written naturally (Tim, 2026-11-17). Sale terms already in the template
+// stay as they are; the empty sale-term slot in the permit sentence uses "garage sale",
+// the term the template uses in the other "Wondering..." lines. Law and fee fields
+// stay "Not verified". /hub/ and the international guide keep using renderHub, blanks and all.
+const PERMIT_BLANK = 'Wondering if you need a permit for a <strong></strong> in <strong>, </strong>? The short answer is <strong></strong>. While regulations vary across the <strong></strong> region';
+const PERMIT_CARD_BLANK = 'Permit Required?</span>\n      <div style="font-size: 16px; font-weight: bold; color: #00264C;"></div>';
+
+export function renderStateGuide(hubTemplate, footerHtml, stateName) {
+  const name = esc(stateName);
+  const permit = `Wondering if you need a permit for a <strong>garage sale</strong> in <strong>${name}</strong>? The short answer is <strong>${NOT_VERIFIED}</strong>. While regulations vary across the <strong>${name}</strong> region`;
+  const permitCard = `Permit Required?</span>\n      <div style="font-size: 16px; font-weight: bold; color: #00264C;">${NOT_VERIFIED}</div>`;
+  let html = fill(hubTemplate, { HUB_FEE: NOT_VERIFIED, FOOTER: footerHtml });
+  if (!html.includes(PERMIT_BLANK)) throw new Error('live-hub: state permit sentence not found');
+  if (!html.includes(PERMIT_CARD_BLANK)) throw new Error('live-hub: state permit card not found');
+  html = html.replace(PERMIT_BLANK, permit).replace(PERMIT_CARD_BLANK, permitCard);
+  html = html.replaceAll('Planning a successful Driveway Sale in the  area', `Planning a successful Driveway Sale in ${name}`);
+  html = html.replaceAll('in <strong></strong>?', `in <strong>${name}</strong>?`);
+  html = html.replaceAll('in <strong>your city</strong>?', `in <strong>${name}</strong>?`);
+  html = html.replaceAll('near .', `near ${name}.`);
+  html = html.replaceAll('Open  Permitting Page', `Open ${name} Permitting Page`);
+  return html;
+}
