@@ -21,7 +21,8 @@ import hubTemplate from '../live/hub.html?raw';
 import { renderHub } from '../lib/live-hub.mjs';
 import LivePageHead from '../components/LivePageHead.astro';
 import { PAGE_META, CITY_TOPICS, cityTopicSlug, renderCityTopic } from '../lib/live-pages.mjs';
-import { topicTitle } from '../lib/titles.mjs';
+import { topicTitle, stateGuideTitle } from '../lib/titles.mjs';
+import { STATES, stateGuideSlug } from '../lib/states.mjs';
 
 const pageTpl = import.meta.glob('../live/pages/*.html', { query: '?raw', import: 'default', eager: true });
 const topicTpl = import.meta.glob('../live/city-topics/*.html', { query: '?raw', import: 'default', eager: true });
@@ -35,10 +36,12 @@ export function getStaticPaths() {
   const pagePaths = pages
     .filter((p) => p.stub || p.live)
     .map((page) => ({ params: { slug: page.path.replaceAll('/', '') }, props: { kind: page.live === 'hub' ? 'liveHub' : page.live ? 'live' : 'stub', page } }));
-  return [...cityPaths, ...topicPaths, ...pagePaths];
+  // General state guides: live renders /hub/'s template with no city data (canonical /hub/).
+  const statePaths = Object.keys(STATES).map((name) => ({ params: { slug: stateGuideSlug(name) }, props: { kind: 'stateHub', stateName: name } }));
+  return [...cityPaths, ...topicPaths, ...pagePaths, ...statePaths];
 }
 
-const { kind, city: r, page, suffix, article } = Astro.props;
+const { kind, city: r, page, suffix, article, stateName } = Astro.props;
 const live = kind === 'live' ? PAGE_META[page.live] : kind === 'cityTopic' ? PAGE_META[article] : null;
 const articlePage = kind === 'cityTopic' ? pageByPath[`/${article}/`] : null;
 const stubType = page ? pageTypeFor(page.path) : null;
@@ -58,6 +61,11 @@ const stubPicks = page ? (AMAZON_BY_PAGE[page.path] ?? []) : [];
   <Base title={page.title} description={`${page.title} from My Driveway Sale.`} canonicalPath={page.canonical} pageType={stubType} canvas bodyClass={live.body_class}>
     <LivePageHead slot="head" css={live.css} headCss={live.head_css} />
     <LiveHubBody html={tplOf(pageTpl, `pages/${page.live}`)} />
+  </Base>
+) : kind === 'stateHub' ? (
+  <Base title={stateGuideTitle(stateName)} description={`${stateName} garage sale guide from My Driveway Sale.`} canonicalPath="/hub/" noindex pageType="hub" canvas bodyClass={liveMeta.body_class_hub}>
+    <LiveHubHead slot="head" />
+    <LiveHubBody html={renderHub(hubTemplate, '%%FOOTER%%')} />
   </Base>
 ) : kind === 'liveHub' ? (
   <Base title={page.title} description={`${page.title} from My Driveway Sale.`} canonicalPath={page.canonical} noindex pageType="hub" canvas bodyClass={liveMeta.body_class_hub}>

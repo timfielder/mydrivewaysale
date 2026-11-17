@@ -33,15 +33,17 @@
     "wp_id": 251,
     "title": "StickerCalc App",
     "path": "/stickercalc-app/",
-    "stub": true,
-    "canonical": "/stickercalc-app/"
+    "stub": false,
+    "canonical": "/stickercalc-app/",
+    "live": "stickercalc-app"
   },
   {
     "wp_id": 328,
     "title": "StickerCalc Web",
     "path": "/stickercalc-web/",
-    "stub": true,
-    "canonical": "/stickercalc-web/"
+    "stub": false,
+    "canonical": "/stickercalc-web/",
+    "live": "stickercalc-web"
   },
   {
     "wp_id": 137,

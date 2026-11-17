@@ -657,6 +657,100 @@
     ]
    ],
    "head_css": "/_live/about-contact-head.css"
+  },
+  "stickercalc-web": {
+   "wp_id": "328",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-328 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-328",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-328.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/stickercalc-web-head.css"
+  },
+  "stickercalc-app": {
+   "wp_id": "251",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-251 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-251",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-251.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/stickercalc-app-head.css"
   }
  },
  "city_topics": {

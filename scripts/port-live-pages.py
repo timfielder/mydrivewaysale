@@ -36,7 +36,8 @@ OUT = ROOT / 'src' / 'live'
 NATIONAL = ['animal-protocol', 'driveway-liability-checklist', 'attractive-nuisance-warning', 'multifamily-sales',
             'the-host-comfort-survival-kit', 'the-weather-rain-pivot-plan', 'local-best-weekends-data',
             'local_regulations_guide', 'house-security-lockdown', 'the-ultimate-color-sticker-pricing-strategy',
-            'the-pricing-and-appriasal-protocol', 'privacy-policy', 'terms-of-service', 'about-contact']
+            'the-pricing-and-appriasal-protocol', 'privacy-policy', 'terms-of-service', 'about-contact',
+            'stickercalc-web', 'stickercalc-app']  # StickerCalc pages 328 (App Wrapper snippet 13, iframe /app/) and 251
 # Router suffix -> article (snippet 05). local-regulations points at a page slug that does not exist
 # on live (local-regulations-guide vs local_regulations_guide), so it 404s there and is not built.
 CITY_TOPICS = {s: p.strip('/') for s, p in hub.ENDPOINT_PATH.items() if p not in ('/stickercalc-web/', '/stickercalc-app/')}
@@ -82,6 +83,9 @@ def link_national(b):
     b = re.sub(r'\s*href="/guide/(#[^"]*)?"', '', b)
     b = re.sub(r'href="/house-guide/(#[^"]*)?"', r'href="/hub/\1"', b)
     b = b.replace('href="/home"', 'href="/"')
+    # StickerCalc App "Back to the Local Guide": live /stickercalc-guide/ is the router serving the
+    # empty hub template (page 392, canonical /hub/), so it goes to /hub/.
+    b = b.replace('href="/stickercalc-guide/"', 'href="/hub/"')
     return b
 
 

@@ -11,7 +11,9 @@ const DIST = new URL('../dist/', import.meta.url).pathname;
 const errors = [];
 const err = (f, m) => errors.push(`${f}: ${m}`);
 const walk = (d) => readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(join(d, e.name)) : [join(d, e.name)]));
-const htmlFiles = walk(DIST).filter((f) => f.endsWith('.html'));
+// dist/app/ is the StickerCalc Lite Flutter web build copied verbatim from live /app/ (iframed by
+// /stickercalc-web/), a static app bundle rather than a site page, so its index.html is not checked.
+const htmlFiles = walk(DIST).filter((f) => f.endsWith('.html') && !f.startsWith(join(DIST, 'app') + '/'));
 const isFile = (p) => { try { return statSync(p).isFile(); } catch { return false; } };
 
 const SITE_HOSTS = new Set([
@@ -141,9 +143,14 @@ for (const u of sitemapUrls) {
   else if (canonicalOf.get(u) !== u) err(u, `sitemap URL canonical is not itself (got ${canonicalOf.get(u) ?? 'none'})`);
 }
 
-// The app store links we promote must be on the built site.
+// App store links: live WordPress links no App Store or Google Play listing anywhere (checked
+// 2026-11-17), so parity means none are required. Any store link that is on the site must be the
+// confirmed listing URL in site-config APPS.
 const all = htmlFiles.map((f) => readFileSync(f, 'utf8')).join('\n');
-for (const [name, a] of Object.entries(APPS)) for (const k of ['appStore', 'googlePlay']) if (a[k] && !all.includes(a[k])) err(name, `${k} link not used anywhere`);
+const storeUrls = new Set(Object.values(APPS).flatMap((a) => [a.appStore, a.googlePlay]).filter(Boolean));
+for (const m of all.matchAll(/https:\/\/(?:apps\.apple\.com|play\.google\.com)\/[^"'\s<]*/g)) {
+  if (!storeUrls.has(m[0].replaceAll('&amp;', '&'))) err('app store', `unconfirmed store link ${m[0]}`);
+}
 
 console.log(`dist check: ${htmlFiles.length} HTML files, ${cities.length} city pages, ${indexableUrls.size} indexable, ${sitemapUrls.size} sitemap URLs, ${internalLinks} internal links, ${amazonLinks} Amazon links, ads ${ADS_ENABLED ? 'ON' : 'off'}`);
 if (errors.length) {

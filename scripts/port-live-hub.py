@@ -30,7 +30,7 @@ OUT = ROOT / 'src' / 'live'
 
 # Router suffix (snippet 05) -> path in this build. None = no page yet (live 404) -> unlinked.
 ENDPOINT_PATH = {
-    'calculator': '/stickercalc-web/', 'app': '/stickercalc-app/', 'bundle-calculator': '/stickercalc-app/',
+    'calculator': '/stickercalc-web/', 'app': '/stickercalc-app/', 'bundle-calculator': '/stickercalc-web/',  # live: city -bundle-calculator serves page 328
     'beamme-app': '/stickercalc-app/',  # live: city -beamme-app serves the StickerCalc App page
     'liability': '/driveway-liability-checklist/', 'nuisance': '/attractive-nuisance-warning/',
     'dogs': '/animal-protocol/', 'multi-family': '/multifamily-sales/',
@@ -126,6 +126,8 @@ def link_city(b, prefix):
 def link_hub(b):
     def rep(m):
         ep = m.group(1)
+        if ep == 'app':  # live /app/ is the StickerCalc Lite Flutter build, ported to public/app/
+            return m.group(0)
         if ep in ENDPOINT_PATH:
             return f'href="{ENDPOINT_PATH[ep]}"'
         if ep in UNBUILT:
