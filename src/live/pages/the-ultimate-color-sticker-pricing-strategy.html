@@ -1,0 +1,293 @@
+
+			<script>
+			const onSkipLinkClick = () => {
+				const htmlElement = document.querySelector('html');
+
+				htmlElement.style['scroll-behavior'] = 'smooth';
+
+				setTimeout( () => htmlElement.style['scroll-behavior'] = null, 1000 );
+			}
+			document.addEventListener("DOMContentLoaded", () => {
+				if (!document.querySelector('#content')) {
+					document.querySelector('.ea11y-skip-to-content-link').remove();
+				}
+			});
+		</script>
+		<nav aria-label="Skip to content navigation">
+			<a class="ea11y-skip-to-content-link"
+				href="#content"
+				tabindex="-1"
+				onclick="onSkipLinkClick()"
+			>
+				Skip to content
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" role="presentation">
+					<path d="M18 6V12C18 12.7956 17.6839 13.5587 17.1213 14.1213C16.5587 14.6839 15.7956 15 15 15H5M5 15L9 11M5 15L9 19"
+								stroke="black"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+					/>
+				</svg>
+			</a>
+			<div class="ea11y-skip-to-content-backdrop"></div>
+		</nav>
+
+				<div data-elementor-type="wp-page" data-elementor-id="1046" class="elementor elementor-1046">
+				<div class="elementor-element elementor-element-420d4548 e-flex e-con-boxed e-con e-parent" data-id="420d4548" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2038f814 elementor-widget elementor-widget-shortcode" data-id="2038f814" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+							<div class="elementor-shortcode">    <style>
+        /* The Sticky Header Wrapper */
+        .pseo-header-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 38, 76, 0.08);
+            font-family: 'Roboto', sans-serif;
+            width: 100%;
+        }
+        
+        /* Flexbox Container for Logo & Title */
+        .pseo-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Logo Scaling */
+        .pseo-header-logo img {
+            max-width: 180px;
+            height: auto;
+            display: block;
+        }
+        
+        /* Dynamic pSEO Title */
+        .pseo-header-title {
+            color: #00264C;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+        .pseo-header-title span {
+            color: #4A7D8F; /* kTeal */
+        }
+
+        /* Scroll Progress Tracker */
+        .pseo-progress-container {
+            width: 100%;
+            height: 4px;
+            background-color: #F5F7FA;
+        }
+        .pseo-progress-bar {
+            height: 4px;
+            background-color: #E0B42D; /* kGold */
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Classy Mobile Bottom Sticky Anchor Ad System[cite: 1] */
+        .ad-anchor-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99999;
+            background: #FFFFFF;
+            border-top: 1px solid #E6E9ED;
+            box-shadow: 0 -4px 15px rgba(0, 38, 76, 0.06);
+            text-align: center;
+            padding: 4px 0 2px 0;
+            display: none; /* Controlled via JS Scroll Depth */
+        }
+        .ad-anchor-label {
+            display: block;
+            font-size: 9px;
+            color: #A0AEC0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+            font-family: sans-serif;
+        }
+
+        /* Mobile Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .pseo-header-title {
+                font-size: 12px;
+            }
+            .pseo-header-logo img {
+                max-width: 110px;
+            }
+            .pseo-header-container {
+                padding: 12px 5%;
+            }
+            /* Restrict display ad viewport overflow on tight touch screens */
+            .ad-anchor-container ins {
+                max-width: 100vw;
+                overflow: hidden;
+            }
+        }
+    </style>
+
+    <div class="pseo-header-wrapper">
+        <div class="pseo-header-container">
+            <!-- LEFT: Brand Logo -->
+            <div class="pseo-header-logo">
+                <a href="/">
+                    <img decoding="async" src="/wp-content/uploads/2026/07/MDS-logo.png" alt="My Driveway Sale">
+                </a>
+            </div>
+            
+            <!-- RIGHT: Dynamic pSEO Identity -->
+            <div class="pseo-header-title">
+                The <span>Local</span> Guide            </div>
+        </div>
+        
+        <!-- BOTTOM: The Progress Tracker Blueprint Execution -->
+        <div class="pseo-progress-container">
+            <div class="pseo-progress-bar" id="pseo-scroll-tracker"></div>
+        </div>
+    </div>
+    
+
+    <script>
+        (function() {
+            var tracker = document.getElementById("pseo-scroll-tracker");
+            var bottomAd = document.getElementById("pseo-bottom-anchor-ad");
+            var adTriggered = false;
+
+            window.addEventListener('scroll', function() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+                
+                // 1. Move Top Depth Progress Tracker
+                if (tracker) {
+                    tracker.style.width = scrolled + "%";
+                }
+
+                // 2. Classy Delay: Only reveal bottom anchor after user scrolls past 5% depth
+                if (bottomAd && !adTriggered && winScroll > 80) {
+                    bottomAd.style.display = "block";
+                    adTriggered = true;
+                }
+            }, { passive: true });
+        })();
+    </script>
+    </div>
+						</div>
+				<div class="elementor-element elementor-element-13934a5f elementor-widget elementor-widget-html" data-id="13934a5f" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<!-- ========================================== -->
+<!-- DYNAMIC BREADCRUMB / BACK NAVIGATION       -->
+<!-- ========================================== -->
+<div style="margin-bottom: 24px; text-align: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <a style="display: inline-flex; align-items: center; background-color: #F5F7FA; border: 1px solid #E6E9ED; color: #00264C; padding: 10px 16px; border-radius: 6px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <span style="margin-right: 8px; color: #E0B42D; font-size: 16px; line-height: 1;">←</span>
+        Back to the Local Guide
+    </a>
+</div>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-b3063db e-con e-atomic-element e-flexbox-base e-default-div " data-id="b3063db" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="b3063db">
+    			<h2 data-interaction-id="5a6cee81" class="e-heading-base e-default-h2">The Ultimate Color-Sticker Pricing Strategy for Your Garage Sale</h2>
+		
+</div>
+<div class="elementor-element elementor-element-3b0d19e e-flex e-con-boxed e-con e-parent" data-id="3b0d19e" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-44807754 elementor-widget elementor-widget-text-editor" data-id="44807754" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<h4>Shoppers will immediately walk away if your used household items and toys are priced too close to retail value.</h4><p><strong>Implement our color-sticker pricing protocol to map uniform tiers, cut checkout friction, and seamlessly split multi-family profits without a paper ledger.</strong></p>    
+    <div class="paragraph normal ng-star-inserted" data-start-index="857">Your  driveway is about to be packed with shoppers hunting for a deal. There will be loud haggling, people carrying large boxes, and early-bird pickers wanting to move fast. This is an incredibly high-stress environment where pricing hesitation costs you sales.</div><div class="paragraph normal ng-star-inserted" data-start-index="857">Even the best items won&#8217;t sell if shoppers have to wait in a long queue while you decipher tiny handwriting on masking tape. Managing your checkout flow during a high-traffic garage sale is not just about keeping the line moving; it is about guaranteeing your inventory actually leaves your yard.</div><div class="paragraph normal ng-star-inserted" data-start-index="857">Instead of negotiating every single item, buyers simply match colored dots on your items directly to highly visible pricing legends spread across your driveway.</div><div class="paragraph normal ng-star-inserted" data-start-index="857"><strong>The Color-Sticker Pricing Protocol:</strong></div><div data-start-index="857"> </div><ul><li class="paragraph normal ng-star-inserted" data-start-index="857"><strong>Choose the Right Sticker Pack:</strong> Not all stickers are created equal. Using permanent labels will leave a sticky residue that ruins delicate items like glass, pottery, or books. Always look for packs that specify they are &#8220;removable.&#8221; Depending on your needs, grab a basic 4-color pack for a simple sale, or a 10-color variety pack if you plan on a wide range of pricing or have multiple families participating. If you plan to write shorthand on them, look for a matte finish so your permanent marker won&#8217;t smear during outdoor humidity.</li></ul>								</div>
+				<div class="elementor-element elementor-element-314a35e elementor-widget elementor-widget-html" data-id="314a35e" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<!-- AMAZON SEARCH CARD: REMOVABLE COLOR DOT STICKERS -->
+<div style="display: flex; gap: 16px; background-color: #F8FAFC; border: 1px solid #E2E8F0; padding: 16px; border-radius: 8px; margin-top: 12px; margin-bottom: 16px; align-items: center; flex-wrap: wrap;">
+    <div style="width: 100px; height: 100px; background-color: #FFFFFF; border: 1px solid #E6E9ED; border-radius: 4px; overflow: hidden; flex-shrink: 0;">
+        <a href="https://www.amazon.com/s?k=removable+color+dot+stickers&tag=mydriveways0a-20" target="_blank">
+            <img decoding="async" src="/wp-content/uploads/2026/07/Chromocolor-Matte-Flourescent.jpg" alt="Removable Color Dot Stickers" style="width: 100%; height: 100%; object-fit: cover;">
+        </a>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+        <strong style="color: #00264C; font-size: 15px; display: block; margin-bottom: 4px;">Removable Color Dot Stickers</strong>
+        <p style="color: #4A7D8F; font-size: 13px; margin: 0 0 12px 0; line-height: 1.4;">
+            Mandatory for delicate items. Matte finish prevents marker smearing, and removable adhesive protects glass and books from sticky residue.
+        </p>
+        <a href="https://www.amazon.com/s?k=removable+color+dot+stickers&tag=mydriveways0a-20" target="_blank" style="display: inline-block; background-color: #E0B42D; color: #00264C; padding: 8px 16px; border-radius: 4px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+            Search Amazon ➔
+        </a>
+    </div>
+</div>				</div>
+				<div class="elementor-element elementor-element-c33e14d elementor-widget elementor-widget-text-editor" data-id="c33e14d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<ul><li><strong>Weatherproof Permanent Markers:</strong> Even with matte stickers, standard pens will fail during a damp, humid morning setup. If you are writing custom prices on your tags or drawing large directional street signs, upgrade to fade-resistant, heavy-duty permanent markers so your prices survive the morning dew.</li></ul>								</div>
+				<div class="elementor-element elementor-element-c0d461f elementor-widget elementor-widget-html" data-id="c0d461f" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<!-- AMAZON SEARCH CARD: WEATHERPROOF PERMANENT MARKERS -->
+<div style="display: flex; gap: 16px; background-color: #F8FAFC; border: 1px solid #E2E8F0; padding: 16px; border-radius: 8px; margin-top: 12px; margin-bottom: 24px; align-items: center; flex-wrap: wrap;">
+    <div style="width: 100px; height: 100px; background-color: #FFFFFF; border: 1px solid #E6E9ED; border-radius: 4px; overflow: hidden; flex-shrink: 0;">
+        <a href="https://www.amazon.com/s?k=sharpie+extreme+permanent+markers&tag=mydriveways0a-20" target="_blank">
+            <img decoding="async" src="/wp-content/uploads/2026/07/Weatherproof-Markers.jpg" alt="Sharpie Extreme Permanent Markers" style="width: 100%; height: 100%; object-fit: cover;">
+        </a>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+        <strong style="color: #00264C; font-size: 15px; display: block; margin-bottom: 4px;">Weatherproof Permanent Markers</strong>
+        <p style="color: #4A7D8F; font-size: 13px; margin: 0 0 12px 0; line-height: 1.4;">
+            Don't let morning dew or sweaty hands erase your prices. Fade-resistant ink is mandatory for outdoor sales and roadside signage.
+        </p>
+        <a href="https://www.amazon.com/s?k=sharpie+extreme+permanent+markers&tag=mydriveways0a-20" target="_blank" style="display: inline-block; background-color: #E0B42D; color: #00264C; padding: 8px 16px; border-radius: 4px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+            Search Amazon ➔
+        </a>
+    </div>
+</div>				</div>
+				<div class="elementor-element elementor-element-0b19e57 elementor-widget elementor-widget-text-editor" data-id="0b19e57" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<ul><li class="paragraph normal ng-star-inserted" data-start-index="857"><strong>Map Your Uniform Price Tiers:</strong> Keep your pricing structure simple. Shoppers should not have to memorize a complex math equation. Assign clear, rounded dollar amounts to standard colors to speed up cash handoffs (e.g., Green = $1.00, Pink = $5.00, Blue = $10.00, Red = $20.00).</li></ul><ul><li class="paragraph normal ng-star-inserted" data-start-index="857"><strong>The &#8220;Color Dot Bundling&#8221; Hack:</strong> Don&#8217;t let low-value inventory clog your tables. Use a single color sticker tier (like Yellow) to bundle smaller items together under a uniform checkout rule. For example, place a Yellow dot on all paperback books, CDs, and cheap toys, and set your legend to read: Yellow Dots = 3 for $1.00. Setting up a dedicated volume-bundle color ensures long checkout queues dissolve instantly during peak morning rushes.</li></ul><ul><li class="paragraph normal ng-star-inserted" data-start-index="857"><strong>The Multi-Family Tagging Protocol:</strong> Hosting a joint event? Skip the messy ledger notebooks where you have to write down everyone&#8217;s initials. You can use the color-dot system to track both the seller and the price simultaneously. For example, Red stickers can represent the Jones family, while Blue stickers represent the Smith family. You simply set your legend so that a Red dot means &#8220;Jones Family &#8211; $1.00&#8221; and a Blue dot means &#8220;Smith Family &#8211; $1.00.&#8221; At checkout, you simply tally the totals by color to know exactly who earned what without doing any manual division.</li><li><strong>Digitize Your Checkout Table:</strong> The final step is throwing away the paper scratchpad. When a customer walks up with an armful of items, launch our free &lt;a href=&#8221;/app/&#8221; style=&#8221;color: #E0B42D; font-weight: bold; text-decoration: underline;&#8221;&gt;StickerCalc&lt;/a&gt; app. It replaces manual typing with large, colored buttons that match your physical stickers. Simply program your color tiers into the app to automatically log sales, calculate local tax, and split the revenue for multi-family sales instantly with every screen tap.</li></ul>								</div>
+				<div class="elementor-element elementor-element-7d99dab elementor-widget elementor-widget-text-editor" data-id="7d99dab" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p>If a buyer is frustrated by slow lines or confusing prices, they will quickly move on to the next sale in your state, leaving you to pack up unsold inventory at the end of the weekend.</p><p> </p>								</div>
+				<div class="elementor-element elementor-element-5dbffeb elementor-widget elementor-widget-html" data-id="5dbffeb" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					  <!-- Protected Application Conversion Zone -->
+    <div class="app-conversion-zone-wrapper" style="background-color: #FFFFFF; border: 2px solid #00264C; border-radius: 8px; padding: 16px; margin-bottom: 24px; position: relative; clear: both;">
+        <div style="display: flex; gap: 12px; align-items: flex-start;">
+    <div style="font-size: 20px; line-height: 1; color: #E0B42D;">📱</div>
+    <div>
+        <strong style="color: #00264C; font-size: 14px; display: block; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px;">The Digital Checkout Tool</strong>
+        <p style="color: #4A7D8F; font-size: 13px; margin: 0; line-height: 1.5;">
+            Once your physical stickers arrive, launch our free <a href="/app/" style="color: #E0B42D; font-weight: bold; text-decoration: underline;">StickerCalc</a> app. It comes pre-loaded with layout presets for Avery, Royal Green, and ChromaLabel sticker packs. Simply assign a dollar value - or a specific family's name - to each color on your screen, and your digital cash register will automatically split the revenue for you.
+        </p>
+    </div>
+</div>
+        <a href="/stickercalc-web/" style="display: block; text-align: center; background-color: #E0B42D; color: #00264C; padding: 14px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-top: 16px; transition: background 0.2s; box-shadow: 0 4px 6px rgba(224,180,45,0.15);">
+            Open StickerCalc Lite ➔
+        </a>
+    </div>
+
+</div>				</div>
+				<div class="elementor-element elementor-element-8245ce2 elementor-widget elementor-widget-text-editor" data-id="8245ce2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<h4>Protect your time, maximize your profits, and clear your inventory by establishing your visual pricing matrix before the first buyer arrives.</h4>    
+    								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-39277cad e-flex e-con-boxed e-con e-parent" data-id="39277cad" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-57845696 elementor-widget elementor-widget-shortcode" data-id="57845696" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+							<div class="elementor-shortcode">%%FOOTER%%</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		
+			
+					
+						
+			
+
+
+
+
+
+
+
+
+
+
+	<!-- Gallery Custom Links: 4 images scanned, 0 linked (HtmlDomParser). -->

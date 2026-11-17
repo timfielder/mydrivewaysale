@@ -1,0 +1,285 @@
+
+			<script>
+			const onSkipLinkClick = () => {
+				const htmlElement = document.querySelector('html');
+
+				htmlElement.style['scroll-behavior'] = 'smooth';
+
+				setTimeout( () => htmlElement.style['scroll-behavior'] = null, 1000 );
+			}
+			document.addEventListener("DOMContentLoaded", () => {
+				if (!document.querySelector('#content')) {
+					document.querySelector('.ea11y-skip-to-content-link').remove();
+				}
+			});
+		</script>
+		<nav aria-label="Skip to content navigation">
+			<a class="ea11y-skip-to-content-link"
+				href="#content"
+				tabindex="-1"
+				onclick="onSkipLinkClick()"
+			>
+				Skip to content
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" role="presentation">
+					<path d="M18 6V12C18 12.7956 17.6839 13.5587 17.1213 14.1213C16.5587 14.6839 15.7956 15 15 15H5M5 15L9 11M5 15L9 19"
+								stroke="black"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+					/>
+				</svg>
+			</a>
+			<div class="ea11y-skip-to-content-backdrop"></div>
+		</nav>
+
+				<div data-elementor-type="wp-page" data-elementor-id="251" class="elementor elementor-251">
+				<div class="elementor-element elementor-element-9d48822 e-flex e-con-boxed e-con e-parent" data-id="9d48822" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2eb525b elementor-widget elementor-widget-shortcode" data-id="2eb525b" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+							<div class="elementor-shortcode">    <style>
+        /* The Sticky Header Wrapper */
+        .pseo-header-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 38, 76, 0.08);
+            font-family: 'Roboto', sans-serif;
+            width: 100%;
+        }
+        
+        /* Flexbox Container for Logo & Title */
+        .pseo-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Logo Scaling */
+        .pseo-header-logo img {
+            max-width: 180px;
+            height: auto;
+            display: block;
+        }
+        
+        /* Dynamic pSEO Title */
+        .pseo-header-title {
+            color: #00264C;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+        .pseo-header-title span {
+            color: #4A7D8F; /* kTeal */
+        }
+
+        /* Scroll Progress Tracker */
+        .pseo-progress-container {
+            width: 100%;
+            height: 4px;
+            background-color: #F5F7FA;
+        }
+        .pseo-progress-bar {
+            height: 4px;
+            background-color: #E0B42D; /* kGold */
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Classy Mobile Bottom Sticky Anchor Ad System[cite: 1] */
+        .ad-anchor-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99999;
+            background: #FFFFFF;
+            border-top: 1px solid #E6E9ED;
+            box-shadow: 0 -4px 15px rgba(0, 38, 76, 0.06);
+            text-align: center;
+            padding: 4px 0 2px 0;
+            display: none; /* Controlled via JS Scroll Depth */
+        }
+        .ad-anchor-label {
+            display: block;
+            font-size: 9px;
+            color: #A0AEC0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+            font-family: sans-serif;
+        }
+
+        /* Mobile Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .pseo-header-title {
+                font-size: 12px;
+            }
+            .pseo-header-logo img {
+                max-width: 110px;
+            }
+            .pseo-header-container {
+                padding: 12px 5%;
+            }
+            /* Restrict display ad viewport overflow on tight touch screens */
+            .ad-anchor-container ins {
+                max-width: 100vw;
+                overflow: hidden;
+            }
+        }
+    </style>
+
+    <div class="pseo-header-wrapper">
+        <div class="pseo-header-container">
+            <!-- LEFT: Brand Logo -->
+            <div class="pseo-header-logo">
+                <a href="/">
+                    <img decoding="async" src="/wp-content/uploads/2026/07/MDS-logo.png" alt="My Driveway Sale">
+                </a>
+            </div>
+            
+            <!-- RIGHT: Dynamic pSEO Identity -->
+            <div class="pseo-header-title">
+                The <span>Local</span> Guide            </div>
+        </div>
+        
+        <!-- BOTTOM: The Progress Tracker Blueprint Execution -->
+        <div class="pseo-progress-container">
+            <div class="pseo-progress-bar" id="pseo-scroll-tracker"></div>
+        </div>
+    </div>
+    
+
+    <script>
+        (function() {
+            var tracker = document.getElementById("pseo-scroll-tracker");
+            var bottomAd = document.getElementById("pseo-bottom-anchor-ad");
+            var adTriggered = false;
+
+            window.addEventListener('scroll', function() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+                
+                // 1. Move Top Depth Progress Tracker
+                if (tracker) {
+                    tracker.style.width = scrolled + "%";
+                }
+
+                // 2. Classy Delay: Only reveal bottom anchor after user scrolls past 5% depth
+                if (bottomAd && !adTriggered && winScroll > 80) {
+                    bottomAd.style.display = "block";
+                    adTriggered = true;
+                }
+            }, { passive: true });
+        })();
+    </script>
+    </div>
+						</div>
+				<div class="elementor-element elementor-element-b87df30 elementor-widget elementor-widget-html" data-id="b87df30" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<!-- ========================================== -->
+<!-- DYNAMIC BREADCRUMB / BACK NAVIGATION       -->
+<!-- ========================================== -->
+<div style="margin-bottom: 24px; text-align: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <a href="/hub/" style="display: inline-flex; align-items: center; background-color: #F5F7FA; border: 1px solid #E6E9ED; color: #00264C; padding: 10px 16px; border-radius: 6px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <span style="margin-right: 8px; color: #E0B42D; font-size: 16px; line-height: 1;">←</span>
+        Back to the Local Guide
+    </a>
+</div>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-eb4bc37 e-flex e-con-boxed e-con e-parent" data-id="eb4bc37" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0315435 elementor-widget elementor-widget-html" data-id="0315435" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<div style="max-width: 800px; margin: 0 auto; padding: 20px; font-family: sans-serif; background: #FFFFFF; color: #2D3748; line-height: 1.6;">
+
+  <!-- Hero Section: The Hook -->
+  <div style="text-align: center; padding: 40px 20px; background-color: #F8FAFC; border-radius: 12px; margin-bottom: 30px; border: 1px solid #E2E8F0;">
+    <h1 style="color: #00264C; font-size: 32px; margin-bottom: 15px; font-weight: 8px; line-height: 1.2;">
+      The Free, No-Math Checkout for Your Driveway Sale
+    </h1>
+    <p style="color: #4A7D8F; font-size: 18px; max-width: 600px; margin: 0 auto 25px auto; font-weight: 500;">
+      Stop losing money to mental math mistakes and scratchpad chaos. Tally color-coded sticker tags instantly right in your mobile browser. Calculate totals, make change effortlessly, and keep your line moving without downloading a thing.
+    </p>
+  <a href="/stickercalc-web/?city=Local&amp;type=Driveway Sale" style="display: inline-block; background-color: #E0B42D; color: #00264C; padding: 16px 32px; border-radius: 8px; font-weight: bold; text-decoration: none; font-size: 16px; box-shadow: 0px 4px 10px rgba(224,180,45,0.3); transition: transform 0.2s;">
+  🧮 Launch StickerCalc Lite (Free Web Tool)
+</a>
+</div>
+
+  <!-- Section Title -->
+  <h2 style="color: #00264C; font-size: 22px; border-bottom: 2px solid #E6E9ED; padding-bottom: 8px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px;">
+    🛠️Here's How It Works
+  </h2>
+
+  <!-- 3-Step Advantage Grid -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 40px;">
+    
+    <!-- Step 1 -->
+    <div style="background: #FFFFFF; border: 2px solid #00264C; border-radius: 8px; padding: 20px;">
+      <span style="background-color: #00264C; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Step 1</span>
+      <h3 style="color: #00264C; font-size: 16px; margin: 10px 0 5px 0;">Set Your Colors & Labels</h3>
+      <p style="font-size: 13px; color: #718096; margin-bottom: 10px;"><strong>How It Operates:</strong> Assign dollar values and custom text labels to match your physical sticker sheets (e.g., Red button = "Dishes" for $5.00, Blue button = "Books" for $1.00).</p>
+      <p style="font-size: 13px; color: #4A5568; margin: 0; background: #F8FAFC; padding: 8px; border-radius: 4px;"><strong>The Advantage:</strong> Your digital board perfectly matches your physical tables. Group your inventory by category so you know exactly what is moving the fastest.</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div style="background: #FFFFFF; border: 2px solid #00264C; border-radius: 8px; padding: 20px;">
+      <span style="background-color: #00264C; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Step 2</span>
+      <h3 style="color: #00264C; font-size: 16px; margin: 10px 0 5px 0;">Tap to Tally</h3>
+      <p style="font-size: 13px; color: #718096; margin-bottom: 10px;"><strong>How It Operates:</strong> When the sudden rush hits, just tap the matching color blocks on your screen. The web engine instantly computes the exact subtotal.</p>
+      <p style="font-size: 13px; color: #4A5568; margin: 0; background: #F8FAFC; padding: 8px; border-radius: 4px;"><strong>The Advantage:</strong> Eliminates mental math anxiety. You can confidently close a 10-item rush in under 10 seconds without second-guessing your addition.</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div style="background: #FFFFFF; border: 2px solid #00264C; border-radius: 8px; padding: 20px;">
+      <span style="background-color: #00264C; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase;">Step 3</span>
+      <h3 style="color: #00264C; font-size: 16px; margin: 10px 0 5px 0;">Make Change & Commit</h3>
+      <p style="font-size: 13px; color: #718096; margin-bottom: 10px;"><strong>How It Operates:</strong> Enter the amount of cash the customer handed you, and the app displays the exact change to give back before adding the funds to your running "Session Total".</p>
+      <p style="font-size: 13px; color: #4A5568; margin: 0; background: #F8FAFC; padding: 8px; border-radius: 4px;"><strong>The Advantage:</strong> Protects your cash box from fast-talking "quick-change" scammers. At the end of the day, you have a perfectly accurate total of exactly what you sold.</p>
+    </div>
+
+  </div>
+
+  <!-- Native Upsell Box -->
+  <div style="background-color: #FFF9E6; border-left: 4px solid #E0B42D; padding: 20px; border-radius: 8px;">
+    <h4 style="color: #00264C; font-size: 16px; margin: 0 0 10px 0;">💡 Why Driveway Sale Hosts Keep It Open</h4>
+    <p style="font-size: 14px; color: #7D5A00; margin-bottom: 12px; line-height: 1.5;">
+      "Doing mental math during a sudden rush leaves you vulnerable to costly mistakes and quick-change artists. StickerCalc Lite keeps your checkout lightning-fast right from your mobile web browser."
+    </p>
+    <p style="font-size: 13px; color: #4A5568; margin: 0; line-height: 1.5; border-top: 1px solid rgba(224,180,45,0.3); padding-top: 12px;">
+      ⚠️ <strong>Working outside with a bad cell signal?</strong> Browser tabs can accidentally refresh, clearing your session total. For 100% offline reliability, easy record exporting, and native receipt logging, download the native StickerCalc Mobile App for iOS and Android to save your data locally with zero internet dependency.
+    </p>
+  </div>
+
+</div>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-51099cb e-flex e-con-boxed e-con e-parent" data-id="51099cb" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e0642d6 elementor-widget elementor-widget-shortcode" data-id="e0642d6" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+							<div class="elementor-shortcode">%%FOOTER%%</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		
+			
+					
+						
+			
+
+
+
+
+
+
+
+
+
+
+	<!-- Gallery Custom Links: 2 images scanned, 0 linked (HtmlDomParser). -->

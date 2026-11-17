@@ -13,7 +13,8 @@ Output:
 Changes from live, all from approved items or ads being off (see the progress log):
   - AdSense markup removed (ads are off until Tim's account is approved; slots were placeholders).
   - WordPress/Elementor runtime scripts removed; the page's own inline scripts are kept verbatim.
-  - City topic links: router suffix -> the national page that exists in this build; suffixes that
+  - City topic links: the 10 articles -> the live city URL /<city>-<suffix>/ (built per city);
+    calculator/app suffixes -> the national StickerCalc page; suffixes that
     404 on live are left as unlinked text (approved item 31). /wp-admin/stickercalc-app -> /stickercalc-app/.
   - [INSERT_..._AFFILIATE_LINK] placeholder hrefs are dropped (text kept) until Tim supplies real links.
   - Stray "] after the cross-posting list removed (approved item 5); &#038; in URLs written as &amp;.
@@ -29,7 +30,7 @@ OUT = ROOT / 'src' / 'live'
 
 # Router suffix (snippet 05) -> path in this build. None = no page yet (live 404) -> unlinked.
 ENDPOINT_PATH = {
-    'calculator': '/stickercalc-web/', 'app': '/stickercalc-app/', 'bundle-calculator': '/stickercalc-app/',
+    'calculator': '/stickercalc-web/', 'app': '/stickercalc-app/', 'bundle-calculator': '/stickercalc-web/',  # live: city -bundle-calculator serves page 328
     'beamme-app': '/stickercalc-app/',  # live: city -beamme-app serves the StickerCalc App page
     'liability': '/driveway-liability-checklist/', 'nuisance': '/attractive-nuisance-warning/',
     'dogs': '/animal-protocol/', 'multi-family': '/multifamily-sales/',
@@ -38,6 +39,8 @@ ENDPOINT_PATH = {
     'color-sticker-pricing': '/the-ultimate-color-sticker-pricing-strategy/',
     'pricing-appraisal': '/the-pricing-and-appriasal-protocol/',
 }
+# The 10 articles the router serves per city (/<city>-<suffix>/); built per city since 2026-11-17.
+CITY_ARTICLE = [k for k, v in ENDPOINT_PATH.items() if v not in ('/stickercalc-web/', '/stickercalc-app/')]
 UNBUILT = ['local-regulations', 'apparel-display', 'item-presentation', 'digital-listings', 'photo-strategy',
            'sign-font-size', 'signage-gear', 'mobile-payments', 'scam-defense', 'distraction-play', 'sticker-swap',
            'lowball-scripts', 'no-haggle-items', 'curbside-clearance', 'donation-tax-writeoff']
@@ -99,6 +102,8 @@ def clean(b):
     b = ''.join(parts)
     # Footer shortcode output -> %%FOOTER%%.
     i = b.find('<div class="pseo-footer-wrap">')
+    if i < 0:  # some live pages (e.g. /multifamily-sales/) have no footer shortcode
+        return b
     sc = b.rfind('<div class="elementor-shortcode">', 0, i) + len('<div class="elementor-shortcode">')
     sc_open = sc - len('<div class="elementor-shortcode">')
     sc_close = balanced_div_end(b, sc_open) - len('</div>')
@@ -109,6 +114,8 @@ def clean(b):
 def link_city(b, prefix):
     def rep(m):
         ep = m.group(1)
+        if ep in CITY_ARTICLE:
+            return f'href="/%%SLUGBASE%%{ep}/"'  # built at the live city URL (port-live-pages.py)
         if ep in ENDPOINT_PATH:
             return f'href="{ENDPOINT_PATH[ep]}"'
         assert ep in UNBUILT, ep
@@ -119,6 +126,8 @@ def link_city(b, prefix):
 def link_hub(b):
     def rep(m):
         ep = m.group(1)
+        if ep == 'app':  # live /app/ is the StickerCalc Lite Flutter build, ported to public/app/
+            return m.group(0)
         if ep in ENDPOINT_PATH:
             return f'href="{ENDPOINT_PATH[ep]}"'
         if ep in UNBUILT:

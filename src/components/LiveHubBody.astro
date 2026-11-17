@@ -1,9 +1,13 @@
 ---
 // Body of the live hub template (page 392) for /hub/ or one city guide. The live footer
 // shortcode spot is filled by MasterFooter (same markup as live). Live has no Amazon
-// Associates disclosure; the build check requires one wherever Amazon links appear.
+// Associates disclosure; the build check requires one wherever Amazon links appear, so it is
+// added only on pages that have Amazon links.
 import MasterFooter from './MasterFooter.astro';
 interface Props { html: string }
+// Pages without the footer shortcode on live (/multifamily-sales/) have no %%FOOTER%% token.
 const [before, after] = Astro.props.html.split('%%FOOTER%%');
+const hasFooter = after !== undefined;
+const hasAmazon = Astro.props.html.includes('amazon.com');
 ---
-<Fragment set:html={before} /><MasterFooter /><p class="mds-amazon-disclosure" style="text-align: center; font-size: 11px; color: #718096; margin: 8px 5% 16px 5%; font-family: 'Roboto', sans-serif;">As an Amazon Associate, My Driveway Sale earns from qualifying purchases.</p><Fragment set:html={after} />
+<Fragment set:html={before} />{hasFooter && <MasterFooter />}{hasFooter && hasAmazon && <p class="mds-amazon-disclosure" style="text-align: center; font-size: 11px; color: #718096; margin: 8px 5% 16px 5%; font-family: 'Roboto', sans-serif;">As an Amazon Associate, My Driveway Sale earns from qualifying purchases.</p>}{!hasFooter && hasAmazon && <p class="mds-amazon-disclosure" style="text-align: center; font-size: 11px; color: #718096; margin: 8px 5% 16px 5%; font-family: 'Roboto', sans-serif;">As an Amazon Associate, My Driveway Sale earns from qualifying purchases.</p>}{hasFooter && <Fragment set:html={after} />}
