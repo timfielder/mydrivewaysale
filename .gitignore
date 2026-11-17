@@ -1,5 +1,8 @@
 node_modules/
 dist/
+# Live plugin CSS is served from a directory named dist/. Keep the build output ignored.
+!public/wp-content/plugins/hostinger-reach/frontend/dist/
+!public/wp-content/plugins/hostinger-reach/frontend/dist/**
 .astro/
 _import/city_pages/
 _import/sources/*.pdf
