@@ -1,0 +1,133 @@
+---
+// Site footer. Ported 1:1 from the live WordPress [pseo_footer] shortcode (Code Snippets
+// export 09-master-footer.php), markup, styles and script copied from the live homepage
+// HTML on 2026-11-17. Live shuffles the city list and shows 15 random city links on each
+// (cached) page render; this build shuffles once per build. Firebase endpoint and payload
+// are the live ones, unchanged.
+import { allCities } from '../lib/cities.mjs';
+const shuffled = [...allCities];
+for (let i = shuffled.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; }
+const mesh = shuffled.slice(0, 15);
+---
+    <style is:inline>
+        /* Global Structural Wrap with Protective Buffer Shading */
+        .pseo-footer-wrap { 
+            background-color: #ffffff; 
+            padding: 40px 5% 24px 5%;
+            border-top: 5px solid #00264C; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            font-family: 'Roboto', sans-serif; 
+            gap: 30px; 
+			width: 100%; /* FORCES FOOTER TO FULL WIDTH */
+   		 	clear: both; /* STOPS IT FROM FLOATING NEXT TO MAIN CONTENT */
+    		box-sizing: border-box;
+            position: relative;
+            z-index: 1; /* Under ad layer */
+        }
+        .pseo-footer-left { flex: 1; min-width: 200px; text-align: left; }
+        .pseo-footer-mid { flex: 2; min-width: 300px; text-align: center; }
+        .pseo-footer-right { flex: 1.2; min-width: 250px; display: flex; justify-content: flex-end; text-align: left; }
+        
+        .pseo-footer-link { color: #00264C; font-weight: bold; text-decoration: none; font-size: 14px; transition: color 0.3s; margin: 0 10px; }
+        .pseo-footer-link:hover { color: #E0B42D; }
+        
+        .pseo-footer-text { color: #4A7D8F; font-size: 12px; margin-top: 15px; line-height: 1.5; }
+        
+        /* Dynamic Crawl Mesh Linking Layout */
+        .pseo-crawl-mesh-container { margin-top: 15px; line-height: 1.8; }
+        .pseo-footer-mesh-link { color: #4A7D8F; text-decoration: none; font-size: 12px; transition: color 0.3s; display: inline-block; }
+        .pseo-footer-mesh-link:hover { color: #E0B42D; text-decoration: underline; }
+        
+        /* Compact Form Elements */
+        .pseo-compact-form-wrap { width: 100%; max-width: 320px; }
+        .pseo-compact-form-title { color: #00264C; font-family: 'Montserrat', sans-serif; margin-top: 0; margin-bottom: 5px; font-size: 16px; font-weight: bold; }
+        .pseo-compact-input-group { display: flex; gap: 8px; margin-top: 10px; }
+        .pseo-compact-input { flex: 1; padding: 10px 12px; border: 1px solid #4A7D8F; border-radius: 6px; font-size: 13px; outline: none; color: #00264C; }
+        .pseo-compact-btn { background-color: #E0B42D; color: #00264C; border: none; padding: 10px 15px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 13px; transition: opacity 0.3s; }
+        .pseo-compact-btn:hover { opacity: 0.8; }
+        
+        /* Mobile Breakpoint Layout Fixes */
+        @media (max-width: 100%) {
+            .pseo-footer-wrap { 
+                flex-direction: column; 
+                text-align: center; 
+            }
+            .pseo-footer-left, .pseo-footer-mid, .pseo-footer-right { text-align: center; justify-content: center; }
+            .pseo-footer-right { margin-top: 10px; margin-bottom: 70px; } /* Shifts mobile layout clear of anchor block */
+            .pseo-compact-form-wrap { margin: 0 auto; }
+        }
+    </style>
+
+    <div class="pseo-footer-wrap">
+        <!-- LEFT COLUMN: Logo & Copyright -->
+        <div class="pseo-footer-left">
+            <img decoding="async" src="/wp-content/uploads/2026/07/MDS-logo.png" alt="My Driveway Sale" style="max-width: 180px; height: auto;">
+            <p class="pseo-footer-text">
+                © 2026 Tim Fielder Enterprises, LLC.<br>
+                All rights reserved.
+            </p>
+        </div>
+
+        <!-- MIDDLE COLUMN: Legal Links & Dynamic Crawl Mesh -->
+        <div class="pseo-footer-mid">
+            <div style="margin-bottom: 10px;">
+                <a href="/about-contact/" class="pseo-footer-link">About & Contact</a>
+                <span style="color: #E1E8ED;">|</span>
+                <a href="/privacy-policy/" class="pseo-footer-link">Privacy Policy</a>
+                <span style="color: #E1E8ED;">|</span>
+                <a href="/terms-of-service/" class="pseo-footer-link">Terms of Service</a>
+            </div>
+            
+            <div class="pseo-crawl-mesh-container">
+                <span style="font-size: 12px; font-weight: bold; color: #00264C; display: block; margin-bottom: 5px;">Explore Local Guides:</span>
+                {mesh.map((c, i) => (<Fragment>{i > 0 && <Fragment> <span style="color: #E1E8ED; padding: 0 5px;">|</span> </Fragment>}<a href={`/${c.slug}/`} class="pseo-footer-mesh-link">{c.city}, {c.state}</a></Fragment>))}            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Compact Firebase Newsletter Capture -->
+        <div class="pseo-footer-right">
+            <div class="pseo-compact-form-wrap">
+                <h4 class="pseo-compact-form-title">Subscribe for Updates</h4>
+                <p style="color: #4A7D8F; font-size: 12px; margin: 0;">Get the latest yard sale regulations, strategies, and app updates.</p>
+                <div class="pseo-compact-input-group">
+                    <input type="email" id="pseo-footer-email" class="pseo-compact-input" placeholder="Email address">
+                    <button id="pseo-footer-submit" class="pseo-compact-btn">Join</button>
+                </div>
+                <p id="pseo-footer-msg" style="color: #388E3C; font-size: 12px; font-weight: bold; display: none; margin-top: 8px; margin-bottom: 0;">Successfully subscribed!</p>
+            </div>
+        </div>
+    </div>
+    
+    <script is:inline>
+    (function(){
+        const submitBtn = document.getElementById("pseo-footer-submit");
+        const emailInput = document.getElementById("pseo-footer-email");
+        const msgBox = document.getElementById("pseo-footer-msg");
+        if(submitBtn && emailInput) {
+            submitBtn.onclick = function() {
+                let email = emailInput.value.trim();
+                
+                if (email.includes("@") && email.includes(".")) {
+                    fetch("https://mydrivewaysale-default-rtdb.firebaseio.com/drivewaysale_leads.json", {
+                        method: "POST",
+                        body: JSON.stringify({ 
+                            email: email, 
+                            source: "Compact Footer Subscribe Form", 
+                            timestamp: new Date().toISOString() 
+                        })
+                    }).catch(e => {});
+                    this.innerText = "✓";
+                    this.style.backgroundColor = "#388E3C";
+                    this.style.color = "white";
+                    this.disabled = true;
+                    emailInput.disabled = true;
+                    msgBox.style.display = "block";
+                } else {
+                    alert("Please enter a valid email address.");
+                }
+            };
+        }
+    })();
+    </script>

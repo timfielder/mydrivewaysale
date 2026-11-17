@@ -2,28 +2,13 @@
 import { SITE_URL, SITE_NAME } from '../lib/site-config.mjs';
 import { withSiteName } from '../lib/titles.mjs';
 import AdSenseLoader from '../components/AdSenseLoader.astro';
-interface Props { title: string; description: string; canonicalPath?: string | null; noindex?: boolean; pageType?: string; }
-const { title, description, canonicalPath = Astro.url.pathname, noindex = false, pageType = 'legal' } = Astro.props;
+// canvas: page draws its own full layout (no default header, footer, or base styles), like the
+// live WordPress pages built on the Elementor Canvas template (the homepage).
+interface Props { title: string; description: string; canonicalPath?: string | null; noindex?: boolean; pageType?: string; canvas?: boolean; }
+const { title, description, canonicalPath = Astro.url.pathname, noindex = false, pageType = 'legal', canvas = false } = Astro.props;
 const canonical = canonicalPath ? new URL(canonicalPath, SITE_URL).href : null;
 const fullTitle = withSiteName(title);
----
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{fullTitle}</title>
-    <meta name="description" content={description} />
-    {canonical && <link rel="canonical" href={canonical} />}
-    {noindex && <meta name="robots" content="noindex, follow" />}
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={SITE_NAME} />
-    <meta property="og:title" content={fullTitle} />
-    <meta property="og:description" content={description} />
-    {canonical && <meta property="og:url" content={canonical} />}
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <AdSenseLoader pageType={pageType} noindex={noindex} />
-    <style is:global>
+const BASE_CSS = `
       body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 0 auto; padding: 1rem; color: #00264C; line-height: 1.5; }
       a { color: #1a5d8f; }
       table { border-collapse: collapse; width: 100%; }
@@ -38,8 +23,35 @@ const fullTitle = withSiteName(title);
       .btn { display: inline-block; background: #E0B42D; color: #00264C; padding: .5rem .9rem; border-radius: 6px; font-weight: 600; text-decoration: none; margin: 0 .5rem .5rem 0; }
       .ad { margin: 1.5rem 0; text-align: center; }
       .ad-label { display: block; font-size: .7rem; color: #718096; text-transform: uppercase; letter-spacing: .05em; }
-    </style>
+`;
+---
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href="/wp-content/uploads/2026/07/MDS-favicon-150x150.png" sizes="32x32" />
+    <link rel="icon" href="/wp-content/uploads/2026/07/MDS-favicon-300x300.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2026/07/MDS-favicon-300x300.png" />
+    <slot name="head" />
+    <AdSenseLoader pageType={pageType} noindex={noindex} />
+    {!canvas && <style is:inline set:html={BASE_CSS}></style>}
   </head>
+  {canvas ? (
+  <body class="elementor-kit-6">
+    <slot />
+  </body>
+  ) : (
   <body>
     <header><nav><a href="/">My Driveway Sale</a><a href="/hub/">City guides</a><a href="/stickercalc-app/">StickerCalc</a><a href="/about-contact/">About</a></nav></header>
     <main><slot /></main>
@@ -48,4 +60,5 @@ const fullTitle = withSiteName(title);
       <p><small>Some links on this site are affiliate links. As an Amazon Associate, My Driveway Sale earns from qualifying purchases, at no extra cost to you.</small></p>
     </footer>
   </body>
+  )}
 </html>
