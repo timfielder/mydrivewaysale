@@ -1,18 +1,15 @@
 ---
+// /hub/, matched to live WordPress page 392 (Elementor Canvas, no city in the URL).
+// Markup from the live page on 2026-11-17 via scripts/port-live-hub.py. Title stays the
+// approved unique hub title; live uses "00 - Local Sale Guide Hub - My Driveway Sale".
 import Base from '../layouts/Base.astro';
-import AppPromo from '../components/AppPromo.astro';
-import AdSlot from '../components/AdSlot.astro';
-import { allCities } from '../lib/cities.mjs';
-const byState = Object.groupBy(allCities, (c) => c.state);
+import LiveHubHead from '../components/LiveHubHead.astro';
+import LiveHubBody from '../components/LiveHubBody.astro';
+import { renderHub } from '../lib/live-hub.mjs';
+import hubTemplate from '../live/hub.html?raw';
+import liveMeta from '../live/meta.json' with { type: 'json' };
 ---
-<Base title="Local Sale Guide Hub: Garage Sale Rules by City" description="Pick your city for its garage, yard, or tag sale rules: permits, fees, signs, and limits, with official sources and last-checked dates." canonicalPath="/hub/" pageType="hub">
-  <h1>City guides</h1>
-  <AppPromo app="stickercalc" />
-  {Object.entries(byState).map(([state, list]) => (
-    <section>
-      <h2>{state}</h2>
-      <ul>{list.map((c) => <li><a href={`/${c.slug}/`}>{c.city}</a>{c.confidence === 'verified' && ' (checked)'}</li>)}</ul>
-    </section>
-  ))}
-  <AdSlot pageType="hub" spot="end" />
+<Base title="Local Sale Guide Hub: Garage Sale Rules by City" description="Pick your city for its garage, yard, or tag sale rules: permits, fees, signs, and limits, with official sources and last-checked dates." canonicalPath="/hub/" pageType="hub" canvas bodyClass={liveMeta.body_class_hub}>
+  <LiveHubHead slot="head" />
+  <LiveHubBody html={renderHub(hubTemplate, '%%FOOTER%%')} />
 </Base>

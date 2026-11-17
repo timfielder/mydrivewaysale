@@ -1,0 +1,9 @@
+---
+// Body of the live hub template (page 392) for /hub/ or one city guide. The live footer
+// shortcode spot is filled by MasterFooter (same markup as live). Live has no Amazon
+// Associates disclosure; the build check requires one wherever Amazon links appear.
+import MasterFooter from './MasterFooter.astro';
+interface Props { html: string }
+const [before, after] = Astro.props.html.split('%%FOOTER%%');
+---
+<Fragment set:html={before} /><MasterFooter /><p class="mds-amazon-disclosure" style="text-align: center; font-size: 11px; color: #718096; margin: 8px 5% 16px 5%; font-family: 'Roboto', sans-serif;">As an Amazon Associate, My Driveway Sale earns from qualifying purchases.</p><Fragment set:html={after} />

@@ -4,8 +4,8 @@ import { withSiteName } from '../lib/titles.mjs';
 import AdSenseLoader from '../components/AdSenseLoader.astro';
 // canvas: page draws its own full layout (no default header, footer, or base styles), like the
 // live WordPress pages built on the Elementor Canvas template (the homepage).
-interface Props { title: string; description: string; canonicalPath?: string | null; noindex?: boolean; pageType?: string; canvas?: boolean; }
-const { title, description, canonicalPath = Astro.url.pathname, noindex = false, pageType = 'legal', canvas = false } = Astro.props;
+interface Props { title: string; description: string; canonicalPath?: string | null; noindex?: boolean; pageType?: string; canvas?: boolean; bodyClass?: string; }
+const { title, description, canonicalPath = Astro.url.pathname, noindex = false, pageType = 'legal', canvas = false, bodyClass = 'elementor-kit-6' } = Astro.props;
 const canonical = canonicalPath ? new URL(canonicalPath, SITE_URL).href : null;
 const fullTitle = withSiteName(title);
 const BASE_CSS = `
@@ -48,7 +48,7 @@ const BASE_CSS = `
     {!canvas && <style is:inline set:html={BASE_CSS}></style>}
   </head>
   {canvas ? (
-  <body class="elementor-kit-6">
+  <body class={bodyClass}>
     <slot />
   </body>
   ) : (
