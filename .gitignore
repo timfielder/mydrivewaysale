@@ -7,3 +7,4 @@ dist/
 _import/city_pages/
 _import/sources/*.pdf
 _import/sources/*.txt
+__pycache__/

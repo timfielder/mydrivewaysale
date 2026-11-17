@@ -74,7 +74,8 @@ for (const f of htmlFiles) {
     amazonLinks++;
     const u = new URL(m[1].replaceAll('&amp;', '&'));
     if (u.searchParams.get('tag') !== AMAZON_TAG) err(rel, `Amazon link without tag ${AMAZON_TAG}: ${m[1]}`);
-    if (!/^\/(s|dp\/[A-Z0-9]{10})\/?$/.test(u.pathname)) err(rel, `Amazon link is not a search or product URL: ${m[1]}`);
+    // Search, product, or the tagged Amazon homepage (live /the-pricing-and-appriasal-protocol/ links it).
+    if (!/^\/((s|dp\/[A-Z0-9]{10})\/?)?$/.test(u.pathname)) err(rel, `Amazon link is not a search, product or homepage URL: ${m[1]}`);
     if (!html.includes('As an Amazon Associate')) err(rel, 'Amazon links without the Associates disclosure');
   }
   if (!ADS_ENABLED && /adsbygoogle|pagead2\.googlesyndication/.test(html)) err(rel, 'AdSense markup while ads are disabled');

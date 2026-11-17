@@ -1,0 +1,231 @@
+
+			<script>
+			const onSkipLinkClick = () => {
+				const htmlElement = document.querySelector('html');
+
+				htmlElement.style['scroll-behavior'] = 'smooth';
+
+				setTimeout( () => htmlElement.style['scroll-behavior'] = null, 1000 );
+			}
+			document.addEventListener("DOMContentLoaded", () => {
+				if (!document.querySelector('#content')) {
+					document.querySelector('.ea11y-skip-to-content-link').remove();
+				}
+			});
+		</script>
+		<nav aria-label="Skip to content navigation">
+			<a class="ea11y-skip-to-content-link"
+				href="#content"
+				tabindex="-1"
+				onclick="onSkipLinkClick()"
+			>
+				Skip to content
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" role="presentation">
+					<path d="M18 6V12C18 12.7956 17.6839 13.5587 17.1213 14.1213C16.5587 14.6839 15.7956 15 15 15H5M5 15L9 11M5 15L9 19"
+								stroke="black"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+					/>
+				</svg>
+			</a>
+			<div class="ea11y-skip-to-content-backdrop"></div>
+		</nav>
+
+				<div data-elementor-type="wp-page" data-elementor-id="878" class="elementor elementor-878">
+				<div class="elementor-element elementor-element-facb29e e-flex e-con-boxed e-con e-parent" data-id="facb29e" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1442f4ef elementor-widget elementor-widget-shortcode" data-id="1442f4ef" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+							<div class="elementor-shortcode">    <style>
+        /* The Sticky Header Wrapper */
+        .pseo-header-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 38, 76, 0.08);
+            font-family: 'Roboto', sans-serif;
+            width: 100%;
+        }
+        
+        /* Flexbox Container for Logo & Title */
+        .pseo-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Logo Scaling */
+        .pseo-header-logo img {
+            max-width: 180px;
+            height: auto;
+            display: block;
+        }
+        
+        /* Dynamic pSEO Title */
+        .pseo-header-title {
+            color: #00264C;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+        .pseo-header-title span {
+            color: #4A7D8F; /* kTeal */
+        }
+
+        /* Scroll Progress Tracker */
+        .pseo-progress-container {
+            width: 100%;
+            height: 4px;
+            background-color: #F5F7FA;
+        }
+        .pseo-progress-bar {
+            height: 4px;
+            background-color: #E0B42D; /* kGold */
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Classy Mobile Bottom Sticky Anchor Ad System[cite: 1] */
+        .ad-anchor-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99999;
+            background: #FFFFFF;
+            border-top: 1px solid #E6E9ED;
+            box-shadow: 0 -4px 15px rgba(0, 38, 76, 0.06);
+            text-align: center;
+            padding: 4px 0 2px 0;
+            display: none; /* Controlled via JS Scroll Depth */
+        }
+        .ad-anchor-label {
+            display: block;
+            font-size: 9px;
+            color: #A0AEC0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+            font-family: sans-serif;
+        }
+
+        /* Mobile Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .pseo-header-title {
+                font-size: 12px;
+            }
+            .pseo-header-logo img {
+                max-width: 110px;
+            }
+            .pseo-header-container {
+                padding: 12px 5%;
+            }
+            /* Restrict display ad viewport overflow on tight touch screens */
+            .ad-anchor-container ins {
+                max-width: 100vw;
+                overflow: hidden;
+            }
+        }
+    </style>
+
+    <div class="pseo-header-wrapper">
+        <div class="pseo-header-container">
+            <!-- LEFT: Brand Logo -->
+            <div class="pseo-header-logo">
+                <a href="/">
+                    <img decoding="async" src="/wp-content/uploads/2026/07/MDS-logo.png" alt="My Driveway Sale">
+                </a>
+            </div>
+            
+            <!-- RIGHT: Dynamic pSEO Identity -->
+            <div class="pseo-header-title">
+                The <span>Local</span> Guide            </div>
+        </div>
+        
+        <!-- BOTTOM: The Progress Tracker Blueprint Execution -->
+        <div class="pseo-progress-container">
+            <div class="pseo-progress-bar" id="pseo-scroll-tracker"></div>
+        </div>
+    </div>
+    
+
+    <script>
+        (function() {
+            var tracker = document.getElementById("pseo-scroll-tracker");
+            var bottomAd = document.getElementById("pseo-bottom-anchor-ad");
+            var adTriggered = false;
+
+            window.addEventListener('scroll', function() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+                
+                // 1. Move Top Depth Progress Tracker
+                if (tracker) {
+                    tracker.style.width = scrolled + "%";
+                }
+
+                // 2. Classy Delay: Only reveal bottom anchor after user scrolls past 5% depth
+                if (bottomAd && !adTriggered && winScroll > 80) {
+                    bottomAd.style.display = "block";
+                    adTriggered = true;
+                }
+            }, { passive: true });
+        })();
+    </script>
+    </div>
+						</div>
+				<div class="elementor-element elementor-element-661676e7 elementor-widget elementor-widget-html" data-id="661676e7" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<!-- ========================================== -->
+<!-- DYNAMIC BREADCRUMB / BACK NAVIGATION       -->
+<!-- ========================================== -->
+<div style="margin-bottom: 24px; text-align: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <a style="display: inline-flex; align-items: center; background-color: #F5F7FA; border: 1px solid #E6E9ED; color: #00264C; padding: 10px 16px; border-radius: 6px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <span style="margin-right: 8px; color: #E0B42D; font-size: 16px; line-height: 1;">←</span>
+        Back to the Local Guide
+    </a>
+</div>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-12c4f83e e-con e-atomic-element e-flexbox-base e-default-div " data-id="12c4f83e" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="12c4f83e">
+    			<h2 data-interaction-id="77a70237" class="e-heading-base e-default-h2">The   Local Regulations Guide: 3 Rules to Check Before Selling</h2>
+		
+</div>
+<div class="elementor-element elementor-element-20b9a8fc e-flex e-con-boxed e-con e-parent" data-id="20b9a8fc" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-401b4a0b elementor-widget elementor-widget-text-editor" data-id="401b4a0b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<h4><strong>Did you know that violating local municipal codes can result in the immediate shutdown of your sale and hundreds of dollars in fines?</strong></h4><p><strong>Learn how to navigate city limits, zoning ordinances, and neighborhood HOA rules before you put a single item on your driveway.</strong></p><p><br />    
+    </p><p><br />Hosting a massive  in  isn&#8217;t always as simple as setting up tables. Many municipalities heavily regulate residential sales to prevent neighborhood traffic congestion and stop commercial operations from infiltrating residential zones.</p><p> </p><p>If you assume you can just open your garage and start selling, you are exposing yourself to potential code enforcement visits and citations. Before you advertise your event, you should think about and verify these three primary regulatory layers:</p><p> </p><ul><li><strong>City &amp; County Permits:</strong> While some areas allow free sales, others require a paid permit to be displayed visibly on your property. Check your local municipal website to see if  requires a formal permit and what the associated fees are.</li></ul><p> </p><ul><li><strong>HOA &amp; Neighborhood Zoning:</strong> Even if  does not require a municipal permit, your specific Homeowners Association (HOA) might have strict bylaws prohibiting sales entirely, or limiting them to specific community-wide dates. Always check your HOA bylaws first to avoid neighborhood disputes.</li></ul><p> </p><ul><li><strong>Signage Ordinances:</strong> The most common code violation is illegal street signage. As a general rule, never attach signs to utility poles, traffic signs, or public right-of-ways, as city sweepers will confiscate them and may fine you per sign.</li></ul><h4><br />Operating within your local municipal and neighborhood regulations ensures you get to keep 100% of your profits without risking sudden closures or penalties.</h4>    
+    								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5d9ce5eb e-flex e-con-boxed e-con e-parent" data-id="5d9ce5eb" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1327190d elementor-widget elementor-widget-shortcode" data-id="1327190d" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+							<div class="elementor-shortcode">%%FOOTER%%</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		
+			
+					
+						
+			
+
+
+
+
+
+
+
+
+
+
+	<!-- Gallery Custom Links: 2 images scanned, 0 linked (HtmlDomParser). -->

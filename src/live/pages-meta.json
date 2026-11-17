@@ -1,0 +1,674 @@
+{
+ "pages": {
+  "animal-protocol": {
+   "wp_id": "543",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-543 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-543",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-543.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/animal-protocol-head.css"
+  },
+  "driveway-liability-checklist": {
+   "wp_id": "553",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-553 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-553",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-553.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/driveway-liability-checklist-head.css"
+  },
+  "attractive-nuisance-warning": {
+   "wp_id": "558",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-558 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-558",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-558.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/attractive-nuisance-warning-head.css"
+  },
+  "multifamily-sales": {
+   "wp_id": "678",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-678 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-678",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-678.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/multifamily-sales-head.css"
+  },
+  "the-host-comfort-survival-kit": {
+   "wp_id": "765",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-765 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-765",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-765.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/the-host-comfort-survival-kit-head.css"
+  },
+  "the-weather-rain-pivot-plan": {
+   "wp_id": "793",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-793 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-793",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-793.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/the-weather-rain-pivot-plan-head.css"
+  },
+  "local-best-weekends-data": {
+   "wp_id": "800",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-800 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-800",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-800.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/local-best-weekends-data-head.css"
+  },
+  "local_regulations_guide": {
+   "wp_id": "878",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-878 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-878",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-878.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/local_regulations_guide-head.css"
+  },
+  "house-security-lockdown": {
+   "wp_id": "983",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-983 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-983",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-983.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/house-security-lockdown-head.css"
+  },
+  "the-ultimate-color-sticker-pricing-strategy": {
+   "wp_id": "1046",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-1046 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-1046",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-1046.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/the-ultimate-color-sticker-pricing-strategy-head.css"
+  },
+  "the-pricing-and-appriasal-protocol": {
+   "wp_id": "1073",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-1073 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-1073",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-1073.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/the-pricing-and-appriasal-protocol-head.css"
+  },
+  "privacy-policy": {
+   "wp_id": "123",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-123 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-123",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-123.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/privacy-policy-head.css"
+  },
+  "terms-of-service": {
+   "wp_id": "137",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-137 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-137",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-137.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/terms-of-service-head.css"
+  },
+  "about-contact": {
+   "wp_id": "146",
+   "body_class": "wp-singular page-template page-template-elementor_canvas page page-id-146 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ally-default hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-146",
+   "css": [
+    [
+     "plugins/hostinger-reach/frontend/dist/blocks/subscription.css",
+     "all"
+    ],
+    [
+     "plugins/pojo-accessibility/assets/build/skip-link.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/reset.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/theme.css",
+     "all"
+    ],
+    [
+     "themes/hello-elementor/assets/css/header-footer.css",
+     "all"
+    ],
+    [
+     "plugins/elementor/assets/css/frontend.min.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-6.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/post-146.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-desktop.css",
+     "all"
+    ],
+    [
+     "uploads/elementor/css/base-mobile.css",
+     "(max-width:767px)"
+    ]
+   ],
+   "head_css": "/_live/about-contact-head.css"
+  }
+ },
+ "city_topics": {
+  "liability": "driveway-liability-checklist",
+  "nuisance": "attractive-nuisance-warning",
+  "dogs": "animal-protocol",
+  "multi-family": "multifamily-sales",
+  "weather-plan": "the-weather-rain-pivot-plan",
+  "security-lockdown": "house-security-lockdown",
+  "host-comfort": "the-host-comfort-survival-kit",
+  "best-weekends": "local-best-weekends-data",
+  "color-sticker-pricing": "the-ultimate-color-sticker-pricing-strategy",
+  "pricing-appraisal": "the-pricing-and-appriasal-protocol"
+ }
+}

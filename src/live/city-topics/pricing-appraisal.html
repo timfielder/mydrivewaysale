@@ -1,0 +1,251 @@
+
+			<script>
+			const onSkipLinkClick = () => {
+				const htmlElement = document.querySelector('html');
+
+				htmlElement.style['scroll-behavior'] = 'smooth';
+
+				setTimeout( () => htmlElement.style['scroll-behavior'] = null, 1000 );
+			}
+			document.addEventListener("DOMContentLoaded", () => {
+				if (!document.querySelector('#content')) {
+					document.querySelector('.ea11y-skip-to-content-link').remove();
+				}
+			});
+		</script>
+		<nav aria-label="Skip to content navigation">
+			<a class="ea11y-skip-to-content-link"
+				href="#content"
+				tabindex="-1"
+				onclick="onSkipLinkClick()"
+			>
+				Skip to content
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" role="presentation">
+					<path d="M18 6V12C18 12.7956 17.6839 13.5587 17.1213 14.1213C16.5587 14.6839 15.7956 15 15 15H5M5 15L9 11M5 15L9 19"
+								stroke="black"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+					/>
+				</svg>
+			</a>
+			<div class="ea11y-skip-to-content-backdrop"></div>
+		</nav>
+
+				<div data-elementor-type="wp-page" data-elementor-id="1073" class="elementor elementor-1073">
+				<div class="elementor-element elementor-element-2a400cd2 e-flex e-con-boxed e-con e-parent" data-id="2a400cd2" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-77f027b1 elementor-widget elementor-widget-shortcode" data-id="77f027b1" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+							<div class="elementor-shortcode">    <style>
+        /* The Sticky Header Wrapper */
+        .pseo-header-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 38, 76, 0.08);
+            font-family: 'Roboto', sans-serif;
+            width: 100%;
+        }
+        
+        /* Flexbox Container for Logo & Title */
+        .pseo-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Logo Scaling */
+        .pseo-header-logo img {
+            max-width: 180px;
+            height: auto;
+            display: block;
+        }
+        
+        /* Dynamic pSEO Title */
+        .pseo-header-title {
+            color: #00264C;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+        .pseo-header-title span {
+            color: #4A7D8F; /* kTeal */
+        }
+
+        /* Scroll Progress Tracker */
+        .pseo-progress-container {
+            width: 100%;
+            height: 4px;
+            background-color: #F5F7FA;
+        }
+        .pseo-progress-bar {
+            height: 4px;
+            background-color: #E0B42D; /* kGold */
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Classy Mobile Bottom Sticky Anchor Ad System[cite: 1] */
+        .ad-anchor-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99999;
+            background: #FFFFFF;
+            border-top: 1px solid #E6E9ED;
+            box-shadow: 0 -4px 15px rgba(0, 38, 76, 0.06);
+            text-align: center;
+            padding: 4px 0 2px 0;
+            display: none; /* Controlled via JS Scroll Depth */
+        }
+        .ad-anchor-label {
+            display: block;
+            font-size: 9px;
+            color: #A0AEC0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+            font-family: sans-serif;
+        }
+
+        /* Mobile Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .pseo-header-title {
+                font-size: 12px;
+            }
+            .pseo-header-logo img {
+                max-width: 110px;
+            }
+            .pseo-header-container {
+                padding: 12px 5%;
+            }
+            /* Restrict display ad viewport overflow on tight touch screens */
+            .ad-anchor-container ins {
+                max-width: 100vw;
+                overflow: hidden;
+            }
+        }
+    </style>
+
+    <div class="pseo-header-wrapper">
+        <div class="pseo-header-container">
+            <!-- LEFT: Brand Logo -->
+            <div class="pseo-header-logo">
+                <a href="/">
+                    <img decoding="async" src="/wp-content/uploads/2026/07/MDS-logo.png" alt="My Driveway Sale">
+                </a>
+            </div>
+            
+            <!-- RIGHT: Dynamic pSEO Identity -->
+            <div class="pseo-header-title">
+                The <span>%%CITY%%</span> Guide            </div>
+        </div>
+        
+        <!-- BOTTOM: The Progress Tracker Blueprint Execution -->
+        <div class="pseo-progress-container">
+            <div class="pseo-progress-bar" id="pseo-scroll-tracker"></div>
+        </div>
+    </div>
+    
+
+    <script>
+        (function() {
+            var tracker = document.getElementById("pseo-scroll-tracker");
+            var bottomAd = document.getElementById("pseo-bottom-anchor-ad");
+            var adTriggered = false;
+
+            window.addEventListener('scroll', function() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+                
+                // 1. Move Top Depth Progress Tracker
+                if (tracker) {
+                    tracker.style.width = scrolled + "%";
+                }
+
+                // 2. Classy Delay: Only reveal bottom anchor after user scrolls past 5% depth
+                if (bottomAd && !adTriggered && winScroll > 80) {
+                    bottomAd.style.display = "block";
+                    adTriggered = true;
+                }
+            }, { passive: true });
+        })();
+    </script>
+    </div>
+						</div>
+				<div class="elementor-element elementor-element-412728c1 elementor-widget elementor-widget-html" data-id="412728c1" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<!-- ========================================== -->
+<!-- DYNAMIC BREADCRUMB / BACK NAVIGATION       -->
+<!-- ========================================== -->
+<div style="margin-bottom: 24px; text-align: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <a href="/%%SLUGBASE%%guide/#step-02" style="display: inline-flex; align-items: center; background-color: #F5F7FA; border: 1px solid #E6E9ED; color: #00264C; padding: 10px 16px; border-radius: 6px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <span style="margin-right: 8px; color: #E0B42D; font-size: 16px; line-height: 1;">←</span>
+        Back to the %%CITY%% Guide
+    </a>
+</div>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-3dc7a2ca e-con e-atomic-element e-flexbox-base e-default-div " data-id="3dc7a2ca" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="3dc7a2ca">
+    			<h2 data-interaction-id="236c4ffa" class="e-heading-base e-default-h2">Pricing &amp; Appraisal Protocol: Valuing and Displaying to Clear Your Driveway</h2>
+		
+</div>
+<div class="elementor-element elementor-element-7c9ce17d e-flex e-con-boxed e-con e-parent" data-id="7c9ce17d" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-7ed5ac12 elementor-widget elementor-widget-text-editor" data-id="7ed5ac12" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<h4>Shoppers will walk away if your used items are overpriced, but professional pickers are actively hunting your driveway hoping you accidentally price a $500 collectible for $2.00.</h4><p> </p><p><strong> Even the best-priced items won&#8217;t sell if buyers have to hunt for a sloppy handwritten price tag.</strong></p><p><br />Follow our definitive pricing, signage, and appraisal protocol to clear your standard clutter quickly, eliminate checkout confusion, and protect the true value of your rare items.</p><p><br />    
+    </p><p><br />Your %%CITY%% property is about to be packed with shoppers hunting for a deal. There will be new homeowners needing cheap kitchenware, parents searching for used toys, and professional resellers looking for a massive return on investment. This is a fast-paced environment where pricing hesitation and invisible tags cost you sales in %%ST%%.</p><p><br />To guarantee your inventory clears without leaving money on the table, you must establish strict rules for pricing, visual sightlines, and high-value appraisals.</p><p><br /><strong>The Standard Pricing Protocol:</strong></p><p> </p><ul><li><strong>The 10-20% Rule (Standard Goods):</strong> Never price standard used household goods at retail value. The golden rule for a %%DIALECT%% is to price standard kitchenware, basic home decor, and clothing at exactly 10% to 20% of their original retail cost to guarantee they move.</li></ul><p> </p><ul><li><strong>Toy &amp; Media Volume Bundling:</strong> If you are selling action figures, basic video games, or loose toys, do not haggle over individual pieces. Group them into volume bundles and mark them as a package deal (e.g., &#8220;Fill a Bag&#8221; or 3 for $5) to clear out the clutter instantly.</li></ul><p> </p><ul><li><strong>Tools &amp; High-Ticket Baselines:</strong> Heavy items like used lawn mowers and power drills are massive draws. Establish &#8220;no-haggle&#8221; minimum baseline thresholds before crowds arrive. If a drill is worth $50 and you refuse to take less than $40, communicate that clearly to stop the negotiation line.</li></ul><p> </p><p><strong>Strict Visual Pricing Sightlines:</strong></p><p><br />A visual pricing strategy only works if the “key” to the colors is aggressively visible from anywhere in your yard. Hand-writing a sloppy key on a scrap piece of cardboard looks unprofessional and is easily missed by fast-moving shoppers.</p><p> </p><ul><li><strong>The 3-Second Rule:</strong> Place a price legend sign on every major folding table or clothing rack. Buyers should be able to see a pricing key within 3 seconds of picking up any item, regardless of where they are standing in your yard.</li></ul><p> </p><ul><li><strong>Weatherproof Your Signs:</strong> Morning dew and unexpected humidity will destroy standard printer paper. Once you print your legend signs, slide them into cheap plastic sheet protectors or laminate them so the ink does not bleed onto your merchandise.</li></ul>								</div>
+				<div class="elementor-element elementor-element-39c471b elementor-widget elementor-widget-html" data-id="39c471b" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					  <!-- INJECTED AFFILIATE GEAR CARD -->
+    <div style="display: flex; gap: 16px; background-color: #F8FAFC; border: 1px solid #E2E8F0; padding: 16px; border-radius: 8px; margin-top: 12px; margin-bottom: 16px; align-items: center; flex-wrap: wrap;">
+        <div style="width: 100px; height: 100px; background-color: #FFFFFF; border: 1px solid #E6E9ED; border-radius: 4px; overflow: hidden; flex-shrink: 0;">
+            <a href="https://www.amazon.com/?tag=mydriveways0a-20" target="_blank">
+                <img decoding="async" src="/wp-content/uploads/2026/07/Sheet-Protectors.jpg" alt="Plastic Sheet Protectors" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+        </div>
+        <div style="flex: 1; min-width: 200px;">
+            <strong style="color: #00264C; font-size: 15px; display: block; margin-bottom: 4px;">Heavyweight Plastic Sheet Protectors</strong>
+            <p style="color: #4A7D8F; font-size: 13px; margin: 0 0 12px 0; line-height: 1.4;">
+                Mandatory for outdoor signs. Protects your printed legend from morning dew so ink doesn't bleed onto your tables.
+            </p>
+            <a href="https://www.amazon.com/?tag=mydriveways0a-20" target="_blank" style="display: inline-block; background-color: #E0B42D; color: #00264C; padding: 8px 16px; border-radius: 4px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+                Search Amazon ➔
+            </a>
+        </div>
+    </div>				</div>
+				<div class="elementor-element elementor-element-72d16ba elementor-widget elementor-widget-text-editor" data-id="72d16ba" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<ul><li><strong>The Cashier Anchor:</strong> Always tape one master legend sign directly to the front of your checkout table so buyers can double-check their math while they wait in line.</li></ul><p> </p><p><strong>The “Picker Magnet” Appraisal Directory:</strong></p><p><br />While standard goods need clear signs to move fast, you must handle your high-value items differently. If you have a box of old baseball cards, retro video games, or vintage kitchenware, do not guess the price. Searching standard eBay active listings will give you wildly inaccurate numbers because anyone can ask $10,000 for a $5 item. Bookmark these databases to check recently sold data on the fly:</p><p> </p><ul><li><strong>Trading Cards (Sports, Pokémon, Magic):</strong> Search for the exact card on 130Point.com or PriceCharting.com to see actual, finalized auction prices.</li></ul><p> </p><ul><li><strong>Retro Video Games &amp; Consoles:</strong> Search PriceCharting.com to see the massive difference in value between a “Loose” game cartridge and one that is “Complete in Box” (CIB).</li></ul><p> </p><ul><li><strong>Vinyl Records &amp; Media:</strong> The 1980 reissue of an album is worth drastically less than the 1970 original pressing. Search the matrix numbers etched into the inner ring of the vinyl on Discogs.com to find the exact pressing value.</li></ul><p> </p><ul><li><strong>Vintage Glassware &amp; Antiques:</strong> For unmarked cast iron or vintage Pyrex, use the Google Lens app to take a picture of the item and instantly find visually matching auction results, or cross-reference it on WorthPoint.com.</li></ul><p> </p><p>If you discover a premium item during your sale, pull it out of the yard immediately. High-value collectibles should always be moved directly to your secure checkout table so you can confidently negotiate their true value.</p><h4><br />Protect your margins, clear your everyday clutter instantly, and guarantee you never accidentally sell a $500 collectible for pocket change by locking in your pricing strategy before the morning rush.</h4><p> </p>    
+    								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-76aeb374 e-flex e-con-boxed e-con e-parent" data-id="76aeb374" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-69137b6b elementor-widget elementor-widget-shortcode" data-id="69137b6b" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+							<div class="elementor-shortcode">%%FOOTER%%</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		
+			
+					
+						
+			
+
+
+
+
+
+
+
+
+
+
+	<!-- Gallery Custom Links: 3 images scanned, 0 linked (HtmlDomParser). -->

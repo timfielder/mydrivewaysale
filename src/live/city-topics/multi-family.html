@@ -1,0 +1,266 @@
+
+			<script>
+			const onSkipLinkClick = () => {
+				const htmlElement = document.querySelector('html');
+
+				htmlElement.style['scroll-behavior'] = 'smooth';
+
+				setTimeout( () => htmlElement.style['scroll-behavior'] = null, 1000 );
+			}
+			document.addEventListener("DOMContentLoaded", () => {
+				if (!document.querySelector('#content')) {
+					document.querySelector('.ea11y-skip-to-content-link').remove();
+				}
+			});
+		</script>
+		<nav aria-label="Skip to content navigation">
+			<a class="ea11y-skip-to-content-link"
+				href="#content"
+				tabindex="-1"
+				onclick="onSkipLinkClick()"
+			>
+				Skip to content
+				<svg width="24" height="24" viewbox="0 0 24 24" fill="none" role="presentation">
+					<path d="M18 6V12C18 12.7956 17.6839 13.5587 17.1213 14.1213C16.5587 14.6839 15.7956 15 15 15H5M5 15L9 11M5 15L9 19"
+								stroke="black"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+					/>
+				</svg>
+			</a>
+			<div class="ea11y-skip-to-content-backdrop"></div>
+		</nav>
+
+				<div data-elementor-type="wp-page" data-elementor-id="678" class="elementor elementor-678">
+				<div class="elementor-element elementor-element-7dde3fb3 e-flex e-con-boxed e-con e-parent" data-id="7dde3fb3" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4b286d31 elementor-widget elementor-widget-shortcode" data-id="4b286d31" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+							<div class="elementor-shortcode">    <style>
+        /* The Sticky Header Wrapper */
+        .pseo-header-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 38, 76, 0.08);
+            font-family: 'Roboto', sans-serif;
+            width: 100%;
+        }
+        
+        /* Flexbox Container for Logo & Title */
+        .pseo-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Logo Scaling */
+        .pseo-header-logo img {
+            max-width: 180px;
+            height: auto;
+            display: block;
+        }
+        
+        /* Dynamic pSEO Title */
+        .pseo-header-title {
+            color: #00264C;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+        .pseo-header-title span {
+            color: #4A7D8F; /* kTeal */
+        }
+
+        /* Scroll Progress Tracker */
+        .pseo-progress-container {
+            width: 100%;
+            height: 4px;
+            background-color: #F5F7FA;
+        }
+        .pseo-progress-bar {
+            height: 4px;
+            background-color: #E0B42D; /* kGold */
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Classy Mobile Bottom Sticky Anchor Ad System[cite: 1] */
+        .ad-anchor-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99999;
+            background: #FFFFFF;
+            border-top: 1px solid #E6E9ED;
+            box-shadow: 0 -4px 15px rgba(0, 38, 76, 0.06);
+            text-align: center;
+            padding: 4px 0 2px 0;
+            display: none; /* Controlled via JS Scroll Depth */
+        }
+        .ad-anchor-label {
+            display: block;
+            font-size: 9px;
+            color: #A0AEC0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+            font-family: sans-serif;
+        }
+
+        /* Mobile Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .pseo-header-title {
+                font-size: 12px;
+            }
+            .pseo-header-logo img {
+                max-width: 110px;
+            }
+            .pseo-header-container {
+                padding: 12px 5%;
+            }
+            /* Restrict display ad viewport overflow on tight touch screens */
+            .ad-anchor-container ins {
+                max-width: 100vw;
+                overflow: hidden;
+            }
+        }
+    </style>
+
+    <div class="pseo-header-wrapper">
+        <div class="pseo-header-container">
+            <!-- LEFT: Brand Logo -->
+            <div class="pseo-header-logo">
+                <a href="/">
+                    <img decoding="async" src="/wp-content/uploads/2026/07/MDS-logo.png" alt="My Driveway Sale">
+                </a>
+            </div>
+            
+            <!-- RIGHT: Dynamic pSEO Identity -->
+            <div class="pseo-header-title">
+                The <span>%%CITY%%</span> Guide            </div>
+        </div>
+        
+        <!-- BOTTOM: The Progress Tracker Blueprint Execution -->
+        <div class="pseo-progress-container">
+            <div class="pseo-progress-bar" id="pseo-scroll-tracker"></div>
+        </div>
+    </div>
+    
+
+    <script>
+        (function() {
+            var tracker = document.getElementById("pseo-scroll-tracker");
+            var bottomAd = document.getElementById("pseo-bottom-anchor-ad");
+            var adTriggered = false;
+
+            window.addEventListener('scroll', function() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+                
+                // 1. Move Top Depth Progress Tracker
+                if (tracker) {
+                    tracker.style.width = scrolled + "%";
+                }
+
+                // 2. Classy Delay: Only reveal bottom anchor after user scrolls past 5% depth
+                if (bottomAd && !adTriggered && winScroll > 80) {
+                    bottomAd.style.display = "block";
+                    adTriggered = true;
+                }
+            }, { passive: true });
+        })();
+    </script>
+    </div>
+						</div>
+				<div class="elementor-element elementor-element-8f3c1cb elementor-widget elementor-widget-html" data-id="8f3c1cb" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<!-- ========================================== -->
+<!-- DYNAMIC BREADCRUMB / BACK NAVIGATION       -->
+<!-- ========================================== -->
+<div style="margin-bottom: 24px; text-align: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <a href="/%%SLUGBASE%%guide/#planning-prep" style="display: inline-flex; align-items: center; background-color: #F5F7FA; border: 1px solid #E6E9ED; color: #00264C; padding: 10px 16px; border-radius: 6px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <span style="margin-right: 8px; color: #E0B42D; font-size: 16px; line-height: 1;">←</span>
+        Back to the %%CITY%% Guide
+    </a>
+</div>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4f8c404d e-con e-atomic-element e-flexbox-base e-default-div" data-id="4f8c404d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="4f8c404d">
+    			<h2 data-interaction-id="172b2ac8" class="e-heading-base e-default-h2">The %%CITY%% %%DIALECT%% Multi-Family Guide: Block Sales &amp; Joint Permits</h2>
+		
+</div>
+<div class="elementor-element elementor-element-4bcc756e e-flex e-con-boxed e-con e-parent" data-id="4bcc756e" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-30cb7040 elementor-widget elementor-widget-text-editor" data-id="30cb7040" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<h4>Did you know that pooling your inventory with neighbors can triple your foot traffic, but instantly creates a logistical nightmare for tracking who gets paid what?</h4><p><strong>Learn how to navigate joint-permit requirements, consolidate your checkout station, and seamlessly split the profits without a calculator.</strong></p>    
+    <p>Hosting a massive multi-family %%DIALECT%% in %%ST%% is the ultimate way to attract serious buyers. Shoppers and professional pickers are far more likely to stop for a massive, multi-driveway block event than a small single-family setup.</p><p>However, combining households introduces immediate operational challenges regarding city ordinances, shared liability, and accurate end-of-day payouts. If you do not have a system in place before the crowds arrive, you will spend hours arguing over a messy paper ledger trying to figure out whose item just sold.</p><p>Before combining your inventory with other families, you must establish strict operational rules to keep the event legal and profitable:</p><ul><li><strong>Verify Joint Permit Rules:</strong> Some municipalities require a special &#8220;Block Sale&#8221; permit if multiple driveways are participating, or they limit how many households can legally operate under a single residential permit. Check your local regulations to see if each participating house in %%CITY%% needs to file individually at %%PERMIT_LINK%%.</li></ul><ul><li><strong>The Color-Dot Payout System:</strong><br /><div class="paragraph normal ng-star-inserted" data-start-index="2041"><span class="ng-star-inserted" data-start-index="2041">Never try to write down initials on a paper notepad during a morning rush. Assign a specific physical sticker color to each participating family (e.g., Red for the Smiths, Blue for the Joneses). To make checkout effortless, the <a href="/stickercalc-app/"><strong>StickerCalc</strong></a> app comes pre-loaded with layouts for the most popular sticker packs on the market. Just grab one of these pre-configured packs, and your digital register is already set up for you:</span></div><div class="paragraph normal ng-star-inserted" data-start-index="3020"> </div></li></ul>								</div>
+				<div class="elementor-element elementor-element-95492b6 elementor-widget elementor-widget-html" data-id="95492b6" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<div style="display: flex; gap: 16px; background-color: #F8FAFC; border: 1px solid #E2E8F0; padding: 16px; border-radius: 8px; margin-bottom: 32px; align-items: center; flex-wrap: wrap;">
+    <!-- Image linked to Amazon search -->
+    <div style="width: 100px; height: 100px; background-color: #FFFFFF; border: 1px solid #E6E9ED; border-radius: 4px; overflow: hidden; flex-shrink: 0;">
+        <a href="https://www.amazon.com/s?k=Royal+Green+Color+Coding+Labels+10+Color+Variety&amp;tag=mydriveways0a-20" target="_self" class="custom-link no-lightbox" title="Royal Green 10 color labels" onclick="event.stopPropagation()">
+            <img decoding="async" src="/wp-content/uploads/2026/07/Royal-Green-10-color-labels.jpg" alt="Multi-Color Dot Sticker Pack" style="width: 100%; height: 100%; object-fit: cover;">
+        </a>
+    </div>
+    
+    <!-- Copy & Button -->
+    <div style="flex: 1; min-width: 200px;">
+        <strong style="color: #00264C; font-size: 15px; display: block; margin-bottom: 4px;">Multi-Color Dot Sticker Pack</strong>
+        <p style="color: #4A7D8F; font-size: 13px; margin: 0 0 12px 0; line-height: 1.4;">
+            Stop using masking tape. A multi-color dot pack is exactly what you need to assign a unique color to each participating family or seller for easy end-of-day tallying.
+        </p>
+        <a href="https://www.amazon.com/s?k=multi+color+dot+stickers+garage+sale&tag=mydriveways0a-20" target="_blank" style="display: inline-block; background-color: #E0B42D; color: #00264C; padding: 8px 16px; border-radius: 4px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+            View on Amazon ➔
+        </a>
+    </div>
+</div>				</div>
+				<div class="elementor-element elementor-element-7d17296 elementor-widget elementor-widget-text-editor" data-id="7d17296" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<ul><li><strong>Digital Tallying &amp; Profit Splits:</strong> Use a digital register like the <strong><a href="/stickercalc-app/">StickerCalc</a></strong> app to track the families. When a buyer checks out, you simply tap the corresponding color buttons on your phone. At the end of the day, the app instantly generates a report showing exactly how much cash belongs to each household.</li><li><strong>Consolidate the Cashier Station:</strong> Do not make buyers pay separately at each individual driveway. Establish one central checkout table with a dedicated cashier handling all the money. This eliminates buyer confusion, speeds up checkout lines, and significantly reduces the risk of theft.</li></ul><h4><br />Establishing strict checkout rules and color-coding your inventory guarantees every participating family gets paid their exact share without any end-of-day arguments or mathematical errors.</h4><p><br />    <div class="pseo-app-promo-card" style="display: flex; flex-wrap: wrap; gap: 16px; background-color: #F8FAFC; border: 2px solid #00264C; padding: 20px; border-radius: 12px; margin: 32px 0; align-items: center; box-shadow: 0px 4px 12px rgba(0,0,0,0.05); clear: both;">
+        
+        <!-- App Image/Graphic -->
+        <div style="flex: 1; min-width: 120px; max-width: 180px; border-radius: 8px; overflow: hidden; border: 1px solid #E6E9ED;">
+            <img decoding="async" src="/wp-content/uploads/2026/07/StickerCalc-Lite-app-screen.png" alt="StickerCalc Color Tag Checkout" style="width: 100%; height: auto; display: block; object-fit: cover;">
+        </div>
+
+        <!-- Copy & Call to Action -->
+        <div style="flex: 2; min-width: 200px;">
+            <span style="display: block; font-size: 10px; color: #E0B42D; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; font-weight: bold;">Free Checkout Tool</span>
+            <strong style="color: #00264C; font-size: 18px; font-family: 'Montserrat', sans-serif; display: block; margin-bottom: 8px;">StickerCalc: The No-Math Sale Calculator</strong>
+            <p style="color: #2D3748; font-size: 13px; margin: 0 0 16px 0; line-height: 1.5;">
+                Skip the messy paper scratchpad math. Tally color-coded sticker prices instantly, easily track multi-family sales splits, and calculate cash change on the fly directly in your browser.
+            </p>
+            <a href="/stickercalc-app/" style="display: inline-block; background-color: #E0B42D; color: #00264C; padding: 12px 20px; border-radius: 6px; font-weight: bold; font-size: 13px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; transition: background 0.2s;">
+                Get StickerCalc Now ➔
+            </a>
+        </div>
+
+    </div>
+    </p><p><br />    
+    </p>								</div>
+					</div>
+				</div>
+				</div>
+		
+			
+					
+						
+			
+
+
+
+
+
+
+
+
+
+
+	<!-- Gallery Custom Links: 3 images scanned, 1 linked (HtmlDomParser). -->

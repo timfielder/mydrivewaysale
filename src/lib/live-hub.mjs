@@ -26,7 +26,7 @@ export function cityValues(r, { liveMode = false } = {}) {
   const base = {
     CITY: esc(o.city_name), ST: esc(o.state_code), REGION: esc(o.region), DIALECT: esc(o.sale_dialect),
     COUNTY: esc(o.county), BEST: esc(o.best_weekends), CROSSPOST: esc(o.local_crosspost_sites.join(', ')),
-    JS_CITY: jsStr(o.city_name), JS_ST: jsStr(o.state_code),
+    JS_CITY: jsStr(o.city_name), JS_ST: jsStr(o.state_code), SLUGBASE: r.slug.replace(/guide$/, ''),
   };
   if (liveMode) {
     const link = o.permit_link && o.permit_link !== 'N/A' ? o.permit_link : '';

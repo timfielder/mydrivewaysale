@@ -1,0 +1,12 @@
+---
+// <head> assets of one live Elementor Canvas page, in live load order, copied from
+// https://mydrivewaysale.net on 2026-11-17 to the same /wp-content paths (version query strings
+// dropped). css and headCss come from src/live/pages-meta.json (scripts/port-live-pages.py).
+interface Props { css: [string, string][]; headCss: string }
+const { css, headCss } = Astro.props;
+const fonts = ['Roboto', 'Roboto+Slab', 'Montserrat'];
+const w = '100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic';
+---
+<link rel="stylesheet" href={headCss} media="all" />
+{css.map(([h, media]) => <link rel="stylesheet" href={`/wp-content/${h}`} media={media} />)}
+{fonts.map((f) => <link rel="stylesheet" href={`https://fonts.googleapis.com/css?family=${f}:${w}&display=swap`} media="all" />)}
