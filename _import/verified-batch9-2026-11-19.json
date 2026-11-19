@@ -1,0 +1,74 @@
+{
+  "_about": "Batch 9, 2026-11-19, research batch 2. Official city pages, city-hosted code, city PDFs, American Legal, or eCode360 only. Silence on a field is left unknown. No third-party blogs or original_db values used as sources.",
+  "durham-nc-yard-sale-guide": {
+    "confidence": "verified",
+    "set": {
+      "permit_required": false,
+      "fee": "None if the sale stays within the daylight, two-day, and spacing limits",
+      "sales_per_year": 4,
+      "max_days": 2,
+      "hours": "Daylight hours only",
+      "how_to_apply": "No permit or approval is required if the sale is in a residential zoning district, runs only during daylight hours, lasts no more than two consecutive days, and sales are spaced at least three months apart (no more than four sales per calendar year). Sales that do not meet those limits are allowed with a Temporary Use Permit from the Development Services Center, 101 City Hall Plaza, 919-560-4137."
+    },
+    "official_source_url": "https://www.durhamnc.gov/DocumentCenter/View/32975/Outdoor-Sales-Info-Sheet-English",
+    "field_sources": {
+      "sales_per_year": "https://udo.durhamnc.gov/udo/5_05_Temporary%2520Uses.htm"
+    },
+    "notes": "City of Durham official Outdoor Sales Information sheet: garage or yard sales are allowed in residential zoning districts without any permits or approvals if they occur only during daylight hours, last only two consecutive days, and each property has no more than one sale every three months. Sales that do not meet those requirements are allowed with a Temporary Use Permit. The city-hosted UDO Sec. 5.5.2.I.1 adds that no more than four sales may occur on any single site in any calendar year, with a minimum of three months between sales, and that goods may not be displayed or stored outside except on the day of the sale. Sign rules are not stated on these pages."
+  },
+  "knoxville-tn-yard-sale-guide": {
+    "confidence": "verified",
+    "set": {
+      "permit_required": true,
+      "fee": "$10.00 per sale",
+      "sales_per_year": 3,
+      "max_days": 3,
+      "hours": "9:00 a.m. to 6:00 p.m.",
+      "sign_rules": "Advertising on local streets may use only two signs of not more than 2 square feet each. Signs on the property may be only two signs of not more than 4 square feet each. Signs may be placed no longer than two days before the sale begins.",
+      "how_to_apply": "Submit the official Application for Garage Sale Permit to the City of Knoxville Business Tax Office, P.O. Box 1028, Knoxville, TN 37901, telephone (865) 215-2083."
+    },
+    "official_source_url": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF",
+    "notes": "Official City of Knoxville Application for Garage Sale Permit. A garage sale is for selling property that was personally owned and used and not purchased for resale. Three garage or yard sales are allowed a year, and a permit should be purchased for each sale. The fee is $10.00. A sale may be held between 9:00 a.m. and 6:00 p.m. on three consecutive days or two consecutive weekends (the three-consecutive-day limit is recorded as max days; the two-weekend alternative is noted here). Sign limits are stated on the form."
+  },
+  "milwaukee-wi-rummage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 3,
+      "sign_rules": "Temporary signs and advertisements are forbidden on public property, including in the right-of-way between a sidewalk and the street, and on poles or trees (Ord. 244-18)."
+    },
+    "official_source_url": "https://city.milwaukee.gov/cityclerk/library/FAQOrdinances",
+    "notes": "City of Milwaukee official Frequently Asked-About Ordinances page quotes Ord. 295-503-3-d: not more than 2 rummage sales shall occur on a residential premises in one calendar year; no rummage sale shall exceed 3 days in length; items offered for sale shall be limited to household items from one dwelling unit. The same page cites Ord. 244-18 on temporary signs on public property. The page does not state whether a rummage sale permit is required, so permit and fee are left unknown."
+  },
+  "worcester-ma-yard-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "max_days": 3
+    },
+    "official_source_url": "https://www.worcesterma.gov/planning-regulatory/document-center/zoning-ord.pdf",
+    "notes": "Official City of Worcester Zoning Ordinance PDF. A yard sale is the sale or offering of more than five items of personal property on a lot in a residential district. Yard sales may be conducted on the premises of the owner or tenant, provided the sale does not occur more than three days per year, and all sale goods shall be limited to personal property used previously by the occupant. That three-day cap is a yearly total, not three days per sale; it is recorded as max days. The ordinance does not state whether a separate yard sale permit is required, so permit and fee are left unknown."
+  },
+  "providence-ri-yard-sale-guide": {
+    "confidence": "verified",
+    "set": {
+      "permit_required": false,
+      "fee": "None for a yard sale on private property",
+      "sales_per_year": 6,
+      "max_days": 2,
+      "hours": "8:00 a.m. to 8:00 p.m.",
+      "sign_rules": "Yard sale signs are not permitted in the public right-of-way. Signs are limited to 12 square feet, with two signs permitted per lot. Post signs no earlier than 48 hours before the event and remove them within 24 hours after the event.",
+      "how_to_apply": "No application is required for a yard sale on private property. An encroachment permit is required to hold a yard sale in the public right-of-way."
+    },
+    "official_source_url": "https://www.providenceri.gov/wp-content/uploads/2026/10/26.07.22-Official-Zoning-Ordinance.pdf",
+    "notes": "Official City of Providence Zoning Ordinance PDF (city-hosted, 26.07.22). Yard sales are allowed as accessory to a residential use. They must be on private property unless an encroachment permit is approved for the public right-of-way. Events are limited to six per calendar year on the same lot, a maximum of two days per event, and a minimum of 30 days between events. Hours are 8:00 a.m. to 8:00 p.m. Sign rules are in the yard sale signs section of the same ordinance."
+  },
+  "new-haven-ct-tag-sale-guide": {
+    "confidence": "verified",
+    "set": {
+      "permit_required": true,
+      "how_to_apply": "Apply in person for a Sales License at the Permit and License Center, 200 Orange Street, Room 501, New Haven, CT 06510, 203-946-8388. Applications must be presented in person; mailed applications are returned and not processed. No license or permit on this list is issued the same day."
+    },
+    "official_source_url": "https://www.newhavenct.gov/government/departments-divisions/office-of-building-inspection-enforcement/permit-license-center-applications/",
+    "notes": "Official City of New Haven Permit and License Center Applications page lists Tag Sales under Sales, together with closing-out sales and door-to-door solicitors, and requires a Sales License application. Applications must be presented in person and are not issued the same day. Fee, hours, frequency, duration, and sign rules are not stated on this page."
+  }
+}
