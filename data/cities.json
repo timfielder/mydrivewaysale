@@ -9457,12 +9457,12 @@
     "region": "Southeast",
     "sale_term": "Yard Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
+    "fee": "None if the sale stays within the daylight, two-day, and spacing limits",
+    "sales_per_year": 4,
+    "max_days": 2,
+    "hours": "Daylight hours only",
     "sign_rules": "Signs restricted to private property. Off-site and public right-of-way placement is prohibited under city zoning ordinances.",
-    "how_to_apply": null,
+    "how_to_apply": "No permit or approval is required if the sale is in a residential zoning district, runs only during daylight hours, lasts no more than two consecutive days, and sales are spaced at least three months apart (no more than four sales per calendar year). Sales that do not meet those limits are allowed with a Temporary Use Permit from the Development Services Center, 101 City Hall Plaza, 919-560-4137.",
     "permit_link": null,
     "best_season": "Spring and Fall (April-May, October)",
     "cross_posting": [
@@ -9470,9 +9470,9 @@
       "Nextdoor Durham County",
       "Durham Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.durhamnc.gov/DocumentCenter/View/32975/Outdoor-Sales-Info-Sheet-English",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -9505,34 +9505,34 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.durhamnc.gov/DocumentCenter/View/32975/Outdoor-Sales-Info-Sheet-English"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.durhamnc.gov/DocumentCenter/View/32975/Outdoor-Sales-Info-Sheet-English"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://udo.durhamnc.gov/udo/5_05_Temporary%2520Uses.htm"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.durhamnc.gov/DocumentCenter/View/32975/Outdoor-Sales-Info-Sheet-English"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.durhamnc.gov/DocumentCenter/View/32975/Outdoor-Sales-Info-Sheet-English"
       },
       "sign_rules": {
         "verified": false,
@@ -9541,10 +9541,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.durhamnc.gov/DocumentCenter/View/32975/Outdoor-Sales-Info-Sheet-English"
       },
       "permit_link": {
         "verified": false,
@@ -9565,7 +9565,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City of Durham official Outdoor Sales Information sheet: garage or yard sales are allowed in residential zoning districts without any permits or approvals if they occur only during daylight hours, last only two consecutive days, and each property has no more than one sale every three months. Sales that do not meet those requirements are allowed with a Temporary Use Permit. The city-hosted UDO Sec. 5.5.2.I.1 adds that no more than four sales may occur on any single site in any calendar year, with a minimum of three months between sales, and that goods may not be displayed or stored outside except on the day of the sale. Sign rules are not stated on these pages.",
     "original": {
       "city_name": "Durham",
       "county": "Durham",
@@ -9861,23 +9861,23 @@
     "county": "Knox",
     "region": "Southeast",
     "sale_term": "Yard Sale",
-    "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
-    "sign_rules": "Signs restricted to private property with owner permission. Prohibited inside public street rights-of-way or on utility infrastructure.",
-    "how_to_apply": null,
-    "permit_link": null,
+    "permit_required": true,
+    "fee": "$10.00 per sale",
+    "sales_per_year": 3,
+    "max_days": 3,
+    "hours": "9:00 a.m. to 6:00 p.m.",
+    "sign_rules": "Advertising on local streets may use only two signs of not more than 2 square feet each. Signs on the property may be only two signs of not more than 4 square feet each. Signs may be placed no longer than two days before the sale begins.",
+    "how_to_apply": "Submit the official Application for Garage Sale Permit to the City of Knoxville Business Tax Office, P.O. Box 1028, Knoxville, TN 37901, telephone (865) 215-2083.",
+    "permit_link": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF",
     "best_season": "Late Spring and Autumn (May, September-October)",
     "cross_posting": [
       "Craigslist Knoxville",
       "Nextdoor Knox County",
       "Knoxville Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -9910,52 +9910,52 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF"
       },
       "permit_link": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.knoxvilletn.gov/DocumentCenter/View/443/Garage-Sale-Permit-PDF"
       },
       "best_season": {
         "verified": false,
@@ -9970,7 +9970,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Official City of Knoxville Application for Garage Sale Permit. A garage sale is for selling property that was personally owned and used and not purchased for resale. Three garage or yard sales are allowed a year, and a permit should be purchased for each sale. The fee is $10.00. A sale may be held between 9:00 a.m. and 6:00 p.m. on three consecutive days or two consecutive weekends (the three-consecutive-day limit is recorded as max days; the two-weekend alternative is noted here). Sign limits are stated on the form.",
     "original": {
       "city_name": "Knoxville",
       "county": "Knox",
@@ -11889,7 +11889,7 @@
     "permit_required": false,
     "fee": "$0.00",
     "sales_per_year": null,
-    "max_days": null,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "Signs allowed only on private residential properties. Prohibited on utility poles, traffic signs, and municipal easements.",
     "how_to_apply": null,
@@ -11900,9 +11900,9 @@
       "Nextdoor Worcester County",
       "Worcester Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.worcesterma.gov/planning-regulatory/document-center/zoning-ord.pdf",
+    "last_checked": "2026-11-19",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -11953,10 +11953,10 @@
         "origin": "none"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.worcesterma.gov/planning-regulatory/document-center/zoning-ord.pdf"
       },
       "hours": {
         "verified": false,
@@ -11995,7 +11995,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Official City of Worcester Zoning Ordinance PDF. A yard sale is the sale or offering of more than five items of personal property on a lot in a residential district. Yard sales may be conducted on the premises of the owner or tenant, provided the sale does not occur more than three days per year, and all sale goods shall be limited to personal property used previously by the occupant. That three-day cap is a yearly total, not three days per sale; it is recorded as max days. The ordinance does not state whether a separate yard sale permit is required, so permit and fee are left unknown.",
     "original": {
       "city_name": "Worcester",
       "county": "Worcester",
@@ -12022,12 +12022,12 @@
     "region": "New England",
     "sale_term": "Yard Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
-    "sign_rules": "Signs allowed strictly on private property with owner permission. Posting on light poles or public sidewalks is banned.",
-    "how_to_apply": null,
+    "fee": "None for a yard sale on private property",
+    "sales_per_year": 6,
+    "max_days": 2,
+    "hours": "8:00 a.m. to 8:00 p.m.",
+    "sign_rules": "Yard sale signs are not permitted in the public right-of-way. Signs are limited to 12 square feet, with two signs permitted per lot. Post signs no earlier than 48 hours before the event and remove them within 24 hours after the event.",
+    "how_to_apply": "No application is required for a yard sale on private property. An encroachment permit is required to hold a yard sale in the public right-of-way.",
     "permit_link": null,
     "best_season": "Late Spring and Summer (May-August)",
     "cross_posting": [
@@ -12035,9 +12035,9 @@
       "Nextdoor Providence County",
       "Providence Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.providenceri.gov/wp-content/uploads/2026/10/26.07.22-Official-Zoning-Ordinance.pdf",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -12070,46 +12070,46 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.providenceri.gov/wp-content/uploads/2026/10/26.07.22-Official-Zoning-Ordinance.pdf"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.providenceri.gov/wp-content/uploads/2026/10/26.07.22-Official-Zoning-Ordinance.pdf"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.providenceri.gov/wp-content/uploads/2026/10/26.07.22-Official-Zoning-Ordinance.pdf"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.providenceri.gov/wp-content/uploads/2026/10/26.07.22-Official-Zoning-Ordinance.pdf"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.providenceri.gov/wp-content/uploads/2026/10/26.07.22-Official-Zoning-Ordinance.pdf"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.providenceri.gov/wp-content/uploads/2026/10/26.07.22-Official-Zoning-Ordinance.pdf"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.providenceri.gov/wp-content/uploads/2026/10/26.07.22-Official-Zoning-Ordinance.pdf"
       },
       "permit_link": {
         "verified": false,
@@ -12130,7 +12130,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Official City of Providence Zoning Ordinance PDF (city-hosted, 26.07.22). Yard sales are allowed as accessory to a residential use. They must be on private property unless an encroachment permit is approved for the public right-of-way. Events are limited to six per calendar year on the same lot, a maximum of two days per event, and a minimum of 30 days between events. Hours are 8:00 a.m. to 8:00 p.m. Sign rules are in the yard sale signs section of the same ordinance.",
     "original": {
       "city_name": "Providence",
       "county": "Providence",
@@ -12158,10 +12158,10 @@
     "sale_term": "Rummage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 3,
     "hours": null,
-    "sign_rules": "Signs must be limited to private property. Posting on telephone posts, city light poles, or within the public right-of-way is illegal.",
+    "sign_rules": "Temporary signs and advertisements are forbidden on public property, including in the right-of-way between a sidewalk and the street, and on poles or trees (Ord. 244-18).",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Summer (June-August)",
@@ -12170,9 +12170,9 @@
       "Nextdoor Milwaukee County",
       "Milwaukee Rummage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://city.milwaukee.gov/cityclerk/library/FAQOrdinances",
+    "last_checked": "2026-11-19",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -12217,16 +12217,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://city.milwaukee.gov/cityclerk/library/FAQOrdinances"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://city.milwaukee.gov/cityclerk/library/FAQOrdinances"
       },
       "hours": {
         "verified": false,
@@ -12235,10 +12235,10 @@
         "origin": "none"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://city.milwaukee.gov/cityclerk/library/FAQOrdinances"
       },
       "how_to_apply": {
         "verified": false,
@@ -12265,7 +12265,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City of Milwaukee official Frequently Asked-About Ordinances page quotes Ord. 295-503-3-d: not more than 2 rummage sales shall occur on a residential premises in one calendar year; no rummage sale shall exceed 3 days in length; items offered for sale shall be limited to household items from one dwelling unit. The same page cites Ord. 244-18 on temporary signs on public property. The page does not state whether a rummage sale permit is required, so permit and fee are left unknown.",
     "original": {
       "city_name": "Milwaukee",
       "county": "Milwaukee",
@@ -12966,23 +12966,23 @@
     "county": "New Haven",
     "region": "Connecticut and Western Massachusetts",
     "sale_term": "Tag Sale",
-    "permit_required": false,
+    "permit_required": true,
     "fee": "$0.00",
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
     "sign_rules": "One on-site sign allowed. Up to two off-site directional signs allowed on private property with owner permission. No public right-of-way signage.",
-    "how_to_apply": null,
-    "permit_link": null,
+    "how_to_apply": "Apply in person for a Sales License at the Permit and License Center, 200 Orange Street, Room 501, New Haven, CT 06510, 203-946-8388. Applications must be presented in person; mailed applications are returned and not processed. No license or permit on this list is issued the same day.",
+    "permit_link": "https://www.newhavenct.gov/government/departments-divisions/office-of-building-inspection-enforcement/permit-license-center-applications/",
     "best_season": "Late Spring and Summer (May-August)",
     "cross_posting": [
       "Craigslist New Haven",
       "Nextdoor New Haven County",
       "New Haven Tag Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.newhavenct.gov/government/departments-divisions/office-of-building-inspection-enforcement/permit-license-center-applications/",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -13015,10 +13015,10 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.newhavenct.gov/government/departments-divisions/office-of-building-inspection-enforcement/permit-license-center-applications/"
       },
       "fee": {
         "verified": false,
@@ -13051,16 +13051,16 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.newhavenct.gov/government/departments-divisions/office-of-building-inspection-enforcement/permit-license-center-applications/"
       },
       "permit_link": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.newhavenct.gov/government/departments-divisions/office-of-building-inspection-enforcement/permit-license-center-applications/"
       },
       "best_season": {
         "verified": false,
@@ -13075,7 +13075,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Official City of New Haven Permit and License Center Applications page lists Tag Sales under Sales, together with closing-out sales and door-to-door solicitors, and requires a Sales License application. Applications must be presented in person and are not issued the same day. Fee, hours, frequency, duration, and sign rules are not stated on this page.",
     "original": {
       "city_name": "New Haven",
       "county": "New Haven",
