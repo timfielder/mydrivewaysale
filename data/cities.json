@@ -1357,12 +1357,12 @@
     "region": "Midwest",
     "sale_term": "Garage Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "fee": "None (no Mesa business license for garage sales 4 times or fewer per year)",
+    "sales_per_year": 4,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "Signs must be placed on private property only. Signs on utility poles, medians, or public right-of-ways are subject to dynamic fines.",
-    "how_to_apply": null,
+    "how_to_apply": "No Mesa business license is required for garage sales held 4 times or fewer per year.",
     "permit_link": null,
     "best_season": "Winter and Spring (January-April, October-December)",
     "cross_posting": [
@@ -1370,9 +1370,9 @@
       "Nextdoor Maricopa County",
       "Mesa Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.mesaaz.gov/Resident-Resources/Code-Compliance/Most-Common-Violations",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -1405,28 +1405,28 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.mesaaz.gov/Business-Development/Licensing/Mesa-General-Business-License"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.mesaaz.gov/Business-Development/Licensing/Mesa-General-Business-License"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.mesaaz.gov/Resident-Resources/Code-Compliance/Most-Common-Violations"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.mesaaz.gov/Resident-Resources/Code-Compliance/Most-Common-Violations"
       },
       "hours": {
         "verified": false,
@@ -1441,10 +1441,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.mesaaz.gov/Business-Development/Licensing/Mesa-General-Business-License"
       },
       "permit_link": {
         "verified": false,
@@ -1465,7 +1465,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City of Mesa Code Compliance Most Common Violations page, citing Title 8-6-3(X): four events are allowed per calendar year, and each event must not exceed 3 consecutive days. Official Mesa General Business License FAQ: if you offer garage sales four times or fewer per year, you are not required to obtain a Mesa Business License. The FAQ notes sales may still be taxable and may require a TPT license with the Arizona Department of Revenue. Hours and sign rules are not stated on these pages.",
     "original": {
       "city_name": "Mesa",
       "county": "Maricopa",
@@ -2842,22 +2842,22 @@
     "region": "Pacific Coast",
     "sale_term": "Garage Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
-    "sign_rules": "Signs must be placed on private residential property only. Attaching signs to telephone poles, streetlights, or public rights-of-way is prohibited.",
-    "how_to_apply": null,
-    "permit_link": null,
+    "fee": "None for sales on the four designated weekends",
+    "sales_per_year": 4,
+    "max_days": 2,
+    "hours": "7:00 a.m. to 7:00 p.m., and only during daylight hours",
+    "sign_rules": "Signs only on the sale property, put up no earlier than 1 hour before the sale starts, and taken down within 1 hour after it ends. No signs in the public right-of-way or on telephone poles, street lights, traffic signs, traffic control devices, or other public property. No flags or other attention-getting devices. One sign up to 3 square feet in the front yard; on a corner lot, one additional sign up to 3 square feet in the street side yard. No signs or advertisements on vehicles.",
+    "how_to_apply": "No application is required for sales on the first full weekend of March, June, September, and December. For other dates, submit a Garage Sale Date Exception Request to the Community Preservation Manager. Tenants must have the owner's written permission available during the sale.",
+    "permit_link": "https://www.anaheim.net/DocumentCenter/View/1319/Garage-Sale-form",
     "best_season": "Year-round (Optimal March-May, September-October)",
     "cross_posting": [
       "Craigslist Orange County",
       "Nextdoor Orange County",
       "Anaheim Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-93724",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -2890,52 +2890,52 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-93724"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-93724"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-93724"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-93724"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-93724"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-93724"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.anaheim.net/DocumentCenter/View/1319/Garage-Sale-form"
       },
       "permit_link": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.anaheim.net/DocumentCenter/View/1319/Garage-Sale-form"
       },
       "best_season": {
         "verified": false,
@@ -2950,7 +2950,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Anaheim Municipal Code Chapter 6.26 (American Legal). Unless the Community Preservation Manager permits otherwise, garage sales may be conducted only on the first full weekend (Saturday and Sunday) of March, June, September, and December. Hours are 7:00 a.m. to 7:00 p.m. and only during daylight hours. The chapter does not require a permit for those four designated weekends. Sales on other dates need a Garage Sale Date Exception Request approved by the Community Preservation Manager (official city form). Goods must be used household items owned by the owner or occupant; no food or beverage sales; no display on fences or in the public right-of-way. Court-ordered sales are exempt under 6.26.040.",
     "original": {
       "city_name": "Anaheim",
       "county": "Orange",
@@ -5001,23 +5001,23 @@
     "county": "Kane",
     "region": "Midwest",
     "sale_term": "Garage Sale",
-    "permit_required": true,
-    "fee": "$5.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "permit_required": false,
+    "fee": "None (no city permit is required)",
+    "sales_per_year": 2,
+    "max_days": 3,
     "hours": null,
-    "sign_rules": "Signs allowed on private host property only. Placement on utility poles, public streets, or right-of-ways is prohibited.",
-    "how_to_apply": null,
-    "permit_link": "https://www.aurora-il.org",
+    "sign_rules": "Temporary signs are permitted on private property. Do not place signs on parkways, telephone poles, or traffic directional signs. The City may remove and dispose of improperly placed signs on parkways.",
+    "how_to_apply": "No city permit is required.",
+    "permit_link": null,
     "best_season": "Summer (June-August)",
     "cross_posting": [
       "Craigslist Chicago",
       "Nextdoor Kane County",
       "Aurora IL Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.aurora.il.us/Property-Business/Property-Violations-and-Complaints/Residential-Property-Standards/Garage-Yard-Sale",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -5050,28 +5050,28 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.aurora.il.us/Property-Business/Property-Violations-and-Complaints/Residential-Property-Standards/Garage-Yard-Sale"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.aurora.il.us/Property-Business/Property-Violations-and-Complaints/Residential-Property-Standards/Garage-Yard-Sale"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.aurora.il.us/Property-Business/Property-Violations-and-Complaints/Residential-Property-Standards/Garage-Yard-Sale"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.aurora.il.us/Property-Business/Property-Violations-and-Complaints/Residential-Property-Standards/Garage-Yard-Sale"
       },
       "hours": {
         "verified": false,
@@ -5080,22 +5080,22 @@
         "origin": "none"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.aurora.il.us/Property-Business/Property-Violations-and-Complaints/Residential-Property-Standards/Garage-Yard-Sale"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.aurora.il.us/Property-Business/Property-Violations-and-Complaints/Residential-Property-Standards/Garage-Yard-Sale"
       },
       "permit_link": {
         "verified": false,
-        "source": null,
         "checked": null,
-        "origin": "original_db"
+        "origin": "none",
+        "source": null
       },
       "best_season": {
         "verified": false,
@@ -5110,7 +5110,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: https://www.aurora-il.org+garage+sale+permit']",
+    "notes": "City of Aurora official Garage and Yard Sale page, citing the City's Zoning Ordinance. Garage and yard sales are permitted only two times per year per property. Each sale may last no longer than three consecutive days. Merchandise is limited to residential-related products and should not be placed on city-owned property such as the parkway. If there is no sidewalk, items should be at least 12 feet from the edge of the street. The page states no city permit is required.",
     "original": {
       "city_name": "Aurora",
       "county": "Kane",
@@ -5136,23 +5136,23 @@
     "county": "Will",
     "region": "Midwest",
     "sale_term": "Garage Sale",
-    "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "permit_required": true,
+    "fee": "$6.00 for an individual sale at 1 address (1 to 4 days); $30.00 for a neighborhood or group sale covering 5 or more addresses",
+    "sales_per_year": 2,
+    "max_days": 4,
     "hours": null,
     "sign_rules": "Signs restricted to private property with consent. Banned on public right-of-ways, utility poles, and streetlights.",
-    "how_to_apply": null,
-    "permit_link": null,
+    "how_to_apply": "Buy the permit in person at the Customer Service Office in Joliet City Hall, 150 West Jefferson Street, Monday through Friday 8:00 a.m. to 4:30 p.m. Permits will not be mailed. No rain dates, substitutions, or refunds.",
+    "permit_link": "https://www.joliet.gov/government/departments/customer-service/garage-sales-permit",
     "best_season": "Summer (June-August)",
     "cross_posting": [
       "Craigslist Chicago",
       "Nextdoor Will County",
       "Joliet Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.joliet.gov/government/departments/customer-service/garage-sales-permit",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -5185,28 +5185,28 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.joliet.gov/government/departments/customer-service/garage-sales-permit"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.joliet.gov/government/departments/customer-service/garage-sales-permit"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.joliet.gov/government/departments/customer-service/garage-sales-permit"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.joliet.gov/government/departments/customer-service/garage-sales-permit"
       },
       "hours": {
         "verified": false,
@@ -5221,16 +5221,16 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.joliet.gov/government/departments/customer-service/garage-sales-permit"
       },
       "permit_link": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.joliet.gov/government/departments/customer-service/garage-sales-permit"
       },
       "best_season": {
         "verified": false,
@@ -5245,7 +5245,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City of Joliet official Garage Sales Permit page. Only two permits are allowed per calendar year. Sale dates must be consecutive and may not exceed four calendar days. The total number of sale days at a residence, residential lot, or tract in a calendar year may not exceed eight days. Individual fee is $6.00; a neighborhood or group permit for 5 or more addresses is $30.00. Hours and sign rules are not stated on this page.",
     "original": {
       "city_name": "Joliet",
       "county": "Will",
@@ -5542,12 +5542,12 @@
     "region": "Great Lakes",
     "sale_term": "Garage Sale",
     "permit_required": false,
-    "fee": "$0.00",
+    "fee": "None (no permit is required)",
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
-    "sign_rules": "Signs allowed strictly on private property with owner permission. Posting on light poles or public boulevards is banned.",
-    "how_to_apply": null,
+    "sign_rules": "Garage sale signs cannot be posted in the public right-of-way and must be removed after the event.",
+    "how_to_apply": "You do not need to obtain a permit to hold a garage sale.",
     "permit_link": null,
     "best_season": "Late Spring and Summer (May-September)",
     "cross_posting": [
@@ -5555,9 +5555,9 @@
       "Nextdoor Kent County",
       "Grand Rapids Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.grandrapidsmi.gov/media/vgfficfz/neighborhood-living-guide-2025_eng_web.pdf",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -5590,16 +5590,16 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.grandrapidsmi.gov/media/vgfficfz/neighborhood-living-guide-2025_eng_web.pdf"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.grandrapidsmi.gov/media/vgfficfz/neighborhood-living-guide-2025_eng_web.pdf"
       },
       "sales_per_year": {
         "verified": false,
@@ -5620,16 +5620,16 @@
         "origin": "none"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.grandrapidsmi.gov/media/vgfficfz/neighborhood-living-guide-2025_eng_web.pdf"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.grandrapidsmi.gov/media/vgfficfz/neighborhood-living-guide-2025_eng_web.pdf"
       },
       "permit_link": {
         "verified": false,
@@ -5650,7 +5650,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City of Grand Rapids Neighborhood Living Guide (2025 official PDF). Quote: You do not need to obtain a permit to hold a garage sale. Recurring or continual garage sales (for example, every weekend) are not permitted. The guide encourages no more than two sales per year of no more than three days duration each; that frequency and duration language is guidance, not recorded here as a hard legal limit. Dealers are not permitted to operate in residential areas.",
     "original": {
       "city_name": "Grand Rapids",
       "county": "Kent",
@@ -5678,21 +5678,21 @@
     "sale_term": "Garage Sale",
     "permit_required": true,
     "fee": "$5.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 4,
     "hours": null,
     "sign_rules": "Signs permitted on private property where the sale takes place. Prohibited on traffic signs, utility poles, and public street edges.",
-    "how_to_apply": null,
-    "permit_link": "https://www.cityofwarren.org",
+    "how_to_apply": "Apply online at least 3 days before the sale, or pick up an application at City Hall, One City Square, Warren, MI 48093, Monday through Friday 8:30 a.m. to 5:00 p.m. The license must be prominently displayed at the sale site.",
+    "permit_link": "https://www.cityofwarren.org/government/city-clerk/garage-sale-license/",
     "best_season": "Summer (June-August)",
     "cross_posting": [
       "Craigslist Detroit",
       "Nextdoor Macomb County",
       "Warren Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.cityofwarren.org/government/city-clerk/garage-sale-license/",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -5725,10 +5725,10 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.cityofwarren.org/government/city-clerk/garage-sale-license/"
       },
       "fee": {
         "verified": false,
@@ -5737,16 +5737,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.cityofwarren.org/government/city-clerk/garage-sale-license/"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.cityofwarren.org/government/city-clerk/garage-sale-license/"
       },
       "hours": {
         "verified": false,
@@ -5761,16 +5761,16 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.cityofwarren.org/government/city-clerk/garage-sale-license/"
       },
       "permit_link": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.cityofwarren.org/government/city-clerk/garage-sale-license/"
       },
       "best_season": {
         "verified": false,
@@ -5785,7 +5785,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: https://www.cityofwarren.org+garage+sale+permit']",
+    "notes": "City of Warren official Garage Sale License page, citing Zoning Ordinance Section 2-72, 4.42 and Ordinance No. 30-680. Residents are allowed two garage sales a year, each no more than four consecutive days. Online applications must be filed at least 3 days before the sale date; applications may also be picked up at City Hall. A license must be prominently displayed at the site. The page does not state a fee, hours, or sign rules.",
     "original": {
       "city_name": "Warren",
       "county": "Macomb",
@@ -6352,12 +6352,12 @@
     "region": "Great Lakes",
     "sale_term": "Garage Sale",
     "permit_required": false,
-    "fee": "$0.00",
+    "fee": "None (garage sales are exempt from a transient merchant license)",
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
     "sign_rules": "Signs restricted to private property. Posting on traffic signs, public utility poles, or street trees is strictly prohibited.",
-    "how_to_apply": null,
+    "how_to_apply": "No transient merchant license is required for a garage sale as provided under Article II of Chapter 987.",
     "permit_link": null,
     "best_season": "Spring and Summer (May-August)",
     "cross_posting": [
@@ -6365,9 +6365,9 @@
       "Nextdoor Marion County",
       "Indianapolis Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.indy.gov/activity/transient-merchant-licenses",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -6400,16 +6400,16 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.indy.gov/activity/transient-merchant-licenses"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.indy.gov/activity/transient-merchant-licenses"
       },
       "sales_per_year": {
         "verified": false,
@@ -6436,10 +6436,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.indy.gov/activity/transient-merchant-licenses"
       },
       "permit_link": {
         "verified": false,
@@ -6460,7 +6460,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Official Indianapolis Transient Merchant Licenses page lists a garage sale, as provided under Article II of Chapter 987, as exempt from a transient merchant license. Frequency, duration, hours, and sign rules are not stated on this page, so those fields are left unknown pending a successful open of Chapter 987 Article II itself. The page notes that even when a transient merchant license is not required, additional permits may apply if accessory structures such as tents, canopies, or tables are erected for outdoor sales.",
     "original": {
       "city_name": "Indianapolis",
       "county": "Marion",
@@ -8241,13 +8241,13 @@
     "county": "Richmond",
     "region": "Southeast",
     "sale_term": "Yard Sale",
-    "permit_required": false,
+    "permit_required": true,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "Permitted on-site only. Signs cannot be posted on utility lines, public traffic signposts, or medians.",
-    "how_to_apply": null,
+    "how_to_apply": "A Temporary Use Permit is required before a yard sale in a residential district (Zoning Ordinance Table 3.4.5-1). The Zoning Administrator may revoke a permit that creates a nuisance or disruption.",
     "permit_link": null,
     "best_season": "Spring and Autumn (March-April, October-November)",
     "cross_posting": [
@@ -8255,9 +8255,9 @@
       "Nextdoor Richmond County",
       "Augusta Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://www.augustaga.gov/DocumentCenter/View/19957/Article-3-_-Use-Regulations",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -8290,10 +8290,10 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.augustaga.gov/DocumentCenter/View/19957/Article-3-_-Use-Regulations"
       },
       "fee": {
         "verified": false,
@@ -8302,16 +8302,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.augustaga.gov/DocumentCenter/View/19957/Article-3-_-Use-Regulations"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.augustaga.gov/DocumentCenter/View/19957/Article-3-_-Use-Regulations"
       },
       "hours": {
         "verified": false,
@@ -8326,10 +8326,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://www.augustaga.gov/DocumentCenter/View/19957/Article-3-_-Use-Regulations"
       },
       "permit_link": {
         "verified": false,
@@ -8350,7 +8350,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Augusta-Richmond County Zoning Ordinance, Article 3, Sec. 3.4 Temporary Uses and Structures, last updated August 14, 2025 (official city PDF). Table 3.4.5-1 lists Yard Sales in all residential districts, Temporary Use Permit required, maximum two permits per single address during a calendar year, and a maximum period of three consecutive days for each permit. Sec. 3.4.6.H.1 states that in residential zones, yard sales are permitted provided that no more than two, lasting no more than three days per time, are conducted at a single address during a calendar year. Fee, hours, and sign rules are not stated in this article.",
     "original": {
       "city_name": "Augusta",
       "county": "Richmond",
@@ -8376,13 +8376,13 @@
     "county": "Miami-Dade",
     "region": "Southeast",
     "sale_term": "Yard Sale",
-    "permit_required": false,
+    "permit_required": true,
     "fee": "$0.00",
-    "sales_per_year": null,
+    "sales_per_year": 2,
     "max_days": null,
     "hours": null,
     "sign_rules": "Strictly prohibited on public right-of-ways. Allowed only on private residential property where the sale takes place.",
-    "how_to_apply": null,
+    "how_to_apply": "Get the permit at your local Neighborhood Enhancement Team (NET) office.",
     "permit_link": null,
     "best_season": "Winter and Early Spring (December-March, avoiding high humidity and rain)",
     "cross_posting": [
@@ -8390,9 +8390,9 @@
       "Nextdoor Miami-Dade County",
       "Miami Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://archive.miamigov.com/Codecompliance/faqs.html",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -8425,10 +8425,10 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://archive.miamigov.com/Codecompliance/faqs.html"
       },
       "fee": {
         "verified": false,
@@ -8437,10 +8437,10 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://archive.miamigov.com/Codecompliance/faqs.html"
       },
       "max_days": {
         "verified": false,
@@ -8461,10 +8461,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://archive.miamigov.com/Codecompliance/faqs.html"
       },
       "permit_link": {
         "verified": false,
@@ -8485,7 +8485,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "City of Miami Code Compliance FAQ (official city archive site), question 22: garage sales require permits and are allowed twice per year, and the permit may be obtained at your local NET office. Fee, hours, duration, and sign rules are not stated on this page.",
     "original": {
       "city_name": "Miami",
       "county": "Miami-Dade",
