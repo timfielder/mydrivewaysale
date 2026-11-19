@@ -4,8 +4,10 @@
 // scripts/port-live-pages.py (live snapshots of 2026-11-17); scripts/check-live-pages.py checks the
 // city templates against all 1000 live city topic pages.
 // City fields are the live non-law values (cities.json "original", what the live router reads).
-// The only law field is the multi-family permit link, which uses the city guide permit link (item 3).
+// Law fields on topic pages come from renderLocalSnapshot (verified official-source values only).
+// The multi-family permit link still uses permitLink (verified, official source, or a search).
 import { permitLink } from './cities.mjs';
+import { renderLocalSnapshot } from './topic-snapshot.mjs';
 import meta from '../live/pages-meta.json' with { type: 'json' };
 
 const esc = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
@@ -25,13 +27,14 @@ export function cityTopicSlug(city, suffix) {
   return city.slug.replace(/guide$/, suffix);
 }
 
-export function renderCityTopic(tpl, r) {
+export function renderCityTopic(tpl, r, suffix) {
   const o = r.original;
   const link = permitLink(r);
   return fill(tpl, {
-    CITY: esc(o.city_name), ST: esc(o.state_code), DIALECT: esc(o.sale_dialect), BEST: esc(o.best_weekends),
+    CITY: esc(o.city_name), ST: esc(o.state_code), DIALECT: esc(o.sale_dialect),
     COUNTY: esc(o.county), REGION: esc(o.region), SLUGBASE: r.slug.replace(/guide$/, ''),
     PERMIT_LINK: `<a href="${esc(link.href)}" target="_blank" rel="noopener">${esc(link.label)}</a>`,
+    LOCAL_SNAPSHOT: renderLocalSnapshot(r, suffix),
     FOOTER: '%%FOOTER%%',
   });
 }

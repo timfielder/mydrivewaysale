@@ -56,7 +56,7 @@ const stubPicks = page ? (AMAZON_BY_PAGE[page.path] ?? []) : [];
 ) : kind === 'cityTopic' ? (
   <Base title={topicTitle({ level: 'city', topicName: articlePage.title, city: r.city, state: r.state, saleTerm: r.sale_term })} description={`${articlePage.title} for your ${r.sale_term.toLowerCase()} in ${r.city}, ${r.state}, from My Driveway Sale.`} pageType="topic" canvas bodyClass={live.body_class} noindex={!isTopicIndexable(r, suffix)}>
     <LivePageHead slot="head" css={live.css} headCss={live.head_css} />
-    <LiveHubBody html={renderCityTopic(tplOf(topicTpl, `city-topics/${suffix}`), r)} />
+    <LiveHubBody html={renderCityTopic(tplOf(topicTpl, `city-topics/${suffix}`), r, suffix)} />
   </Base>
 ) : kind === 'live' ? (
   <Base title={page.title} description={`${page.title} from My Driveway Sale.`} canonicalPath={page.canonical} pageType={stubType} canvas bodyClass={live.body_class}>
