@@ -1,0 +1,46 @@
+{
+  "_about": "Batch 11, 2026-11-19, Municode browser batch 2. Official municipal code via Municode, last checked 2026-11-19. Record only what the opened sections say. Silence on permit is left unknown. Do not treat a license-exemption threshold as a sales-per-year cap.",
+  "chandler-az-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sign_rules": "A single-family lot may place one sign anywhere on the property, plus one additional sign at each turning movement beginning at the property and extending up to one mile, up to a maximum of 10 signs. Signs shall be placed away from the street and no closer than 5 feet from the curb behind the public sidewalk, or no closer than 5 feet from the edge of pavement when there is no public sidewalk. Signs may be displayed only on days when the property is open to the public."
+    },
+    "official_source_url": "https://library.municode.com/az/chandler/codes/code_of_ordinances?nodeId=PTVIPL_CH39SICO_39-10TESI",
+    "field_sources": {
+      "sign_rules": "https://library.municode.com/az/chandler/codes/code_of_ordinances?nodeId=PTVIPL_CH39SICO_39-10TESI"
+    },
+    "notes": "Chandler Code (Municode). Sec. 39-10(c) sources the temporary sign rules for single-family lots on days the property is open to the public, including a garage or yard sale. Sec. 15-1 excludes from the secondhand-dealer definition persons conducting no more than three garage and/or yard sales per year, with each such sale not lasting more than three consecutive days; that is an exemption threshold, not recorded as a hard sales-per-year cap. Sec. 61-1 defines a casual sale as including a garage sale item on no more than four separate occasions during any calendar year; that is also a definition, not recorded as a cap. These sections do not state a garage-sale permit, fee, or hours, so those fields are left unknown."
+  },
+  "fresno-ca-garage-sale-guide": {
+    "confidence": "verified",
+    "set": {
+      "permit_required": false,
+      "fee": "None for a Temporary Use Permit",
+      "sales_per_year": 4,
+      "max_days": 2,
+      "hours": "7:00 a.m. to 7:00 p.m.",
+      "sign_rules": "Signs may be displayed only during the hours the garage sale is actively being conducted and shall be removed at the completion of the sale. No signs shall be placed on utility poles or cabinets or in the public right-of-way.",
+      "how_to_apply": "No Temporary Use Permit is required for a yard sale. Other permits, such as building permits, may still apply. A street closure permit from Public Works is required if a block sale would close a street."
+    },
+    "official_source_url": "https://library.municode.com/ca/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC_S15-2760TEUS",
+    "notes": "Fresno Code Sec. 15-2760 A.1 (Municode). Yard sales may be conducted without a Temporary Use Permit, though other permits such as building permits may be required. No more than four garage sales in any calendar year. No single sale event shall be conducted for longer than two consecutive days, and not more than two consecutive weekends. Sales may only be conducted between 7 a.m. and 7 p.m., with display only on the residence property. Sign rules are as stated in that section. A block sale that closes a street needs a street closure permit from Public Works. Sec. 7-1105 says the business license chapter does not apply to garage sales under Sec. 12-320; Sec. 12-320 was not readable, so that cross-reference is noted only."
+  },
+  "reno-nv-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 4,
+      "max_days": 3
+    },
+    "official_source_url": "https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART5TEUSST_18.03.503STSPTEUS",
+    "notes": "Reno Land Development Code Sec. 18.03.503(d) (Municode). A garage sale is allowed only if a principal dwelling is on the premises. No more than four garage sales may be held within one year, and a sale shall not exceed three days in duration per event. This section does not mention a permit, fee, hours, or signs, so those fields are left unknown."
+  },
+  "tampa-fl-yard-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 3
+    },
+    "official_source_url": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA",
+    "notes": "Tampa Code Sec. 27-282.3 (Municode). Such sales shall be limited to one during each six-month period, for a duration not to exceed three days (recorded as 2 sales a year, 3 days each). Subsection (b) says all such sales shall be conducted in compliance with the licensing provisions of chapter 24 of this Code. Chapter 24, Article V Business Tax was read in full; it lists no garage, yard, tag, or rummage sale license or fee. That silence is not treated as a no-permit answer, so permit and fee stay unknown."
+  }
+}
