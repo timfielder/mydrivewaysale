@@ -23,6 +23,7 @@ import LivePageHead from '../components/LivePageHead.astro';
 import { PAGE_META, CITY_TOPICS, cityTopicSlug, renderCityTopic } from '../lib/live-pages.mjs';
 import { topicTitle, stateGuideTitle } from '../lib/titles.mjs';
 import { STATES, stateGuideSlug } from '../lib/states.mjs';
+import { isTopicIndexable } from '../lib/site-config.mjs';
 
 const pageTpl = import.meta.glob('../live/pages/*.html', { query: '?raw', import: 'default', eager: true });
 const topicTpl = import.meta.glob('../live/city-topics/*.html', { query: '?raw', import: 'default', eager: true });
@@ -53,7 +54,7 @@ const stubPicks = page ? (AMAZON_BY_PAGE[page.path] ?? []) : [];
     <LiveHubBody html={renderCityGuide(cityTemplate, r, '%%FOOTER%%')} />
   </Base>
 ) : kind === 'cityTopic' ? (
-  <Base title={topicTitle({ level: 'city', topicName: articlePage.title, city: r.city, state: r.state, saleTerm: r.sale_term })} description={`${articlePage.title} for your ${r.sale_term.toLowerCase()} in ${r.city}, ${r.state}, from My Driveway Sale.`} pageType="topic" canvas bodyClass={live.body_class}>
+  <Base title={topicTitle({ level: 'city', topicName: articlePage.title, city: r.city, state: r.state, saleTerm: r.sale_term })} description={`${articlePage.title} for your ${r.sale_term.toLowerCase()} in ${r.city}, ${r.state}, from My Driveway Sale.`} pageType="topic" canvas bodyClass={live.body_class} noindex={!isTopicIndexable(r, suffix)}>
     <LivePageHead slot="head" css={live.css} headCss={live.head_css} />
     <LiveHubBody html={renderCityTopic(tplOf(topicTpl, `city-topics/${suffix}`), r)} />
   </Base>

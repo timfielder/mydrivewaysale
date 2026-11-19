@@ -2,7 +2,7 @@
 // Guards the money and SEO basics so a template change can't quietly break them.
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join } from 'node:path';
-import { SITE_URL, AMAZON_TAG, APPS } from '../src/lib/site-config.mjs';
+import { SITE_URL, AMAZON_TAG, APPS, TOPIC_SUFFIXES, isTopicIndexable, topicPagePath, BASE_INDEXABLE_COUNT } from '../src/lib/site-config.mjs';
 import { cityGuideTitle, withSiteName } from '../src/lib/titles.mjs';
 import { ADS_ENABLED } from '../src/lib/ads-config.mjs';
 import cities from '../data/cities.json' with { type: 'json' };
@@ -122,6 +122,30 @@ for (const c of cities) {
 }
 for (const [d, n] of descs) if (n > 1) err('cities', `meta description used ${n} times: ${d}`);
 
+// City topic pages: noindex (and out of the sitemap) unless isTopicIndexable says otherwise.
+// Keep a self-canonical so flipping the flag later does not need a canonical change.
+let topicIndexable = 0;
+let topicNoindex = 0;
+for (const c of cities) {
+  for (const suffix of TOPIC_SUFFIXES) {
+    const rel = topicPagePath(c, suffix);
+    const f = join(DIST, rel.slice(1), 'index.html');
+    if (!existsSync(f)) { err(rel, 'city topic page not built'); continue; }
+    const html = readFileSync(f, 'utf8');
+    const url = `${SITE_URL}${rel}`;
+    const noindex = /<meta name="robots" content="[^"]*noindex/i.test(html);
+    const canonical = html.match(/<link rel="canonical" href="([^"]*)">/)?.[1];
+    if (canonical !== url) err(rel, `topic canonical is not the page itself (got ${canonical ?? 'none'})`);
+    if (isTopicIndexable(c, suffix)) {
+      topicIndexable++;
+      if (noindex) err(rel, 'topic page is noindex but topicIndexable is on');
+    } else {
+      topicNoindex++;
+      if (!noindex) err(rel, 'topic page is missing noindex,follow');
+    }
+  }
+}
+
 // Sitemap lists exactly the indexable pages (no noindex meta), each at its self-canonical URL.
 if (!existsSync(join(DIST, 'sitemap-index.xml'))) err('sitemap-index.xml', 'missing');
 const robots = join(DIST, 'robots.txt');
@@ -141,6 +165,27 @@ for (const u of indexableUrls) {
 for (const u of sitemapUrls) {
   if (!indexableUrls.has(u)) err(u, 'sitemap URL is not an indexable built page');
   else if (canonicalOf.get(u) !== u) err(u, `sitemap URL canonical is not itself (got ${canonicalOf.get(u) ?? 'none'})`);
+}
+for (const c of cities) {
+  for (const suffix of TOPIC_SUFFIXES) {
+    const url = `${SITE_URL}${topicPagePath(c, suffix)}`;
+    const inSitemap = sitemapUrls.has(url);
+    if (isTopicIndexable(c, suffix)) {
+      if (!inSitemap) err(url.slice(SITE_URL.length), 'indexable topic page missing from sitemap');
+    } else if (inSitemap) {
+      err(url.slice(SITE_URL.length), 'noindex topic page is in the sitemap');
+    }
+  }
+}
+const expectedIndexable = BASE_INDEXABLE_COUNT + topicIndexable;
+if (indexableUrls.size !== expectedIndexable) {
+  err('indexable', `expected ${expectedIndexable} indexable pages (${BASE_INDEXABLE_COUNT} base + ${topicIndexable} topics), got ${indexableUrls.size}`);
+}
+if (sitemapUrls.size !== expectedIndexable) {
+  err('sitemap', `expected ${expectedIndexable} sitemap URLs, got ${sitemapUrls.size}`);
+}
+if (topicNoindex + topicIndexable !== cities.length * TOPIC_SUFFIXES.length) {
+  err('topics', `checked ${topicNoindex + topicIndexable} topic pages, expected ${cities.length * TOPIC_SUFFIXES.length}`);
 }
 
 // App store links: live WordPress links no App Store or Google Play listing anywhere (checked
@@ -177,7 +222,7 @@ if (IS_PREVIEW) {
 }
 
 console.log(`dist check (${IS_PREVIEW ? 'preview' : 'production'} build): Google tag on ${gtagPages} pages, .htaccess ${hasHtaccess ? 'yes' : 'no'}, _headers ${hasHeaders ? 'yes' : 'no'}`);
-console.log(`dist check: ${htmlFiles.length} HTML files, ${cities.length} city pages, ${indexableUrls.size} indexable, ${sitemapUrls.size} sitemap URLs, ${internalLinks} internal links, ${amazonLinks} Amazon links, ads ${ADS_ENABLED ? 'ON' : 'off'}`);
+console.log(`dist check: ${htmlFiles.length} HTML files, ${cities.length} city pages, ${topicNoindex} noindex topics, ${topicIndexable} indexable topics, ${indexableUrls.size} indexable, ${sitemapUrls.size} sitemap URLs, ${internalLinks} internal links, ${amazonLinks} Amazon links, ads ${ADS_ENABLED ? 'ON' : 'off'}`);
 if (errors.length) {
   console.error(`\nFAILED with ${errors.length} error(s):`);
   for (const e of errors.slice(0, 60)) console.error('  ' + e);

@@ -1,5 +1,7 @@
 // Single place for site-wide settings. Plain JS so astro.config and scripts can import it.
 import pages from '../../data/pages.json' with { type: 'json' };
+import cities from '../../data/cities.json' with { type: 'json' };
+import pagesMeta from '../live/pages-meta.json' with { type: 'json' };
 import { STATE_GUIDE_PATHS } from './states.mjs';
 
 export const SITE_URL = 'https://mydrivewaysale.net';
@@ -38,4 +40,37 @@ export const SHOW_UNVERIFIED_VALUES = false;
 // Paths that are placeholder stubs: rendered noindex and kept out of the sitemap.
 // The general state guides are live's empty hub template (same content as /hub/, canonical /hub/ on
 // live), so they are noindex too, like the international guide.
-export const NOINDEX_PATHS = [...pages.filter((p) => p.stub).map((p) => p.path), ...STATE_GUIDE_PATHS];
+// City topic pages default to noindex (AdSense low-value-content risk, 2026-11-19). Flip
+// TOPIC_INDEX_DEFAULT, or add a city slug, topic suffix, or exact path below, to put sets back
+// in the index later. A page is indexable if the default is true, or its city is listed, or its
+// topic suffix is listed, or its path is listed.
+export const TOPIC_INDEX_DEFAULT = false;
+export const TOPIC_INDEXABLE_CITIES = []; // city guide slugs, e.g. 'chicago-il-garage-sale-guide'
+export const TOPIC_INDEXABLE_TOPICS = []; // suffixes, e.g. 'liability'
+export const TOPIC_INDEXABLE_PAGES = []; // exact paths, e.g. '/chicago-il-garage-sale-liability/'
+
+export const TOPIC_SUFFIXES = Object.keys(pagesMeta.city_topics);
+
+export function topicPagePath(city, suffix) {
+  const slug = typeof city === 'string' ? city : city.slug;
+  return `/${slug.replace(/guide$/, suffix)}/`;
+}
+
+export function isTopicIndexable(city, suffix) {
+  if (TOPIC_INDEX_DEFAULT) return true;
+  const slug = typeof city === 'string' ? city : city.slug;
+  if (TOPIC_INDEXABLE_CITIES.includes(slug)) return true;
+  if (TOPIC_INDEXABLE_TOPICS.includes(suffix)) return true;
+  if (TOPIC_INDEXABLE_PAGES.includes(topicPagePath(slug, suffix))) return true;
+  return false;
+}
+
+const noindexTopicPaths = cities.flatMap((c) =>
+  TOPIC_SUFFIXES.filter((suffix) => !isTopicIndexable(c, suffix)).map((suffix) => topicPagePath(c, suffix)),
+);
+
+export const NOINDEX_PATHS = [...pages.filter((p) => p.stub).map((p) => p.path), ...STATE_GUIDE_PATHS, ...noindexTopicPaths];
+
+// Indexable pages when no city topic is on: homepage, hub, 100 city guides, 11 national articles,
+// 3 legal pages, 2 StickerCalc pages.
+export const BASE_INDEXABLE_COUNT = 118;

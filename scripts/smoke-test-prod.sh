@@ -78,5 +78,22 @@ if [ "$SKIP_HOSTS" != "1" ]; then
   fi
 fi
 
+if [ "$BASE" = "$PROD" ]; then
+  echo "== Topic noindex and sitemap (AdSense prep)"
+  topic=$(curl -sS -A "$UA" --max-time 25 "$BASE/austin-tx-garage-sale-liability/" || true)
+  echo "$topic" | grep -qi 'name="robots" content="noindex' && ok "noindex on /austin-tx-garage-sale-liability/" || bad "missing noindex on /austin-tx-garage-sale-liability/"
+  echo "$topic" | grep -q 'rel="canonical" href="https://mydrivewaysale.net/austin-tx-garage-sale-liability/"' && ok "self-canonical on topic page" || bad "topic page canonical is not self"
+  guide=$(curl -sS -A "$UA" --max-time 25 "$BASE/austin-tx-garage-sale-guide/" || true)
+  echo "$guide" | grep -qi 'name="robots" content="[^"]*noindex' && bad "city guide is noindex" || ok "city guide is indexable"
+  hub=$(curl -sS -A "$UA" --max-time 25 "$BASE/hub/" || true)
+  echo "$hub" | grep -qi 'name="robots" content="[^"]*noindex' && bad "hub is noindex" || ok "hub is indexable"
+  smap=$(curl -sS -A "$UA" --max-time 25 "$BASE/sitemap-0.xml" || true)
+  smap_n=$(printf '%s' "$smap" | grep -o '<loc>' | wc -l)
+  [ "$smap_n" = "118" ] && ok "sitemap-0.xml has 118 URLs" || bad "sitemap-0.xml has $smap_n URLs, expected 118"
+  echo "$smap" | grep -q '/austin-tx-garage-sale-liability/' && bad "topic URL is in the sitemap" || ok "topic URL is not in the sitemap"
+  ads=$(curl -sS -A "$UA" --max-time 25 "$BASE/ads.txt" || true)
+  echo "$ads" | grep -q 'google.com, pub-2398634112645558, DIRECT, f08c47fec0942fa0' && ok "ads.txt has the publisher line" || bad "ads.txt missing the publisher line"
+fi
+
 echo "== $passes passed, $fails failed"
 exit "$fails"
