@@ -1,0 +1,44 @@
+{
+  "_about": "Batch 10, 2026-11-19, Municode browser batch 1. Official municipal code via Municode, last checked 2026-11-19. Record only what the opened sections say. Silence on permit or fee is left unknown.",
+  "st.-petersburg-fl-yard-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 4,
+      "max_days": 3,
+      "hours": "Daylight hours only, Friday through Sunday",
+      "sign_rules": "One sign of no more than 4 square feet may be displayed on the property where the sale is conducted, and only during daylight hours on days when garage sales are allowed, unless greater signage is allowed in the sign section."
+    },
+    "official_source_url": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA",
+    "notes": "St. Petersburg Code Sec. 16.50.160 (Municode). At each property, not more than four garage sales may be held in any one calendar year and shall not be allowed within 60 days of another garage sale. Garage sales are prohibited Mondays through Thursdays, allowed only during daylight hours, and may continue for not more than three consecutive days. Property shall be displayed only on private property and shall not be located in a visibility triangle. One sign of no more than four square feet may be displayed on the property, only during daylight hours on days when sales are allowed, unless greater signage is allowed in the sign section. This section does not mention a permit or fee, so those fields are left unknown."
+  },
+  "salem-or-garage-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 3,
+      "max_days": 3
+    },
+    "official_source_url": "https://library.municode.com/or/salem/codes/code_of_ordinances?nodeId=PTIICOOR_TITVIIIOF_CH95MIOF_S95.165GASALI",
+    "notes": "Salem Code Sec. 95.165 (Municode). It shall be unlawful to conduct within the City more than three garage sales in any calendar year, each of said sales to extend no longer than three days. This section does not mention permits, fees, hours, or signs, so those fields are left unknown."
+  },
+  "tampa-fl-yard-sale-guide": {
+    "confidence": "partial",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 3
+    },
+    "official_source_url": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA",
+    "notes": "Tampa Code Sec. 27-282.3 (Municode). Such sales shall be limited to one during each six-month period, for a duration not to exceed three days (recorded as 2 sales a year, 3 days each). Subsection (b) says all such sales shall be conducted in compliance with the licensing provisions of chapter 24 of this Code. Chapter 24 was not read, so permit and fee are left unknown."
+  },
+  "orlando-fl-yard-sale-guide": {
+    "confidence": "verified",
+    "set": {
+      "permit_required": false,
+      "fee": "None (no building permit or other permit is required)",
+      "sales_per_year": 2,
+      "max_days": 4,
+      "how_to_apply": "No building permit or other permit is required to conduct a garage or yard sale."
+    },
+    "official_source_url": "https://library.municode.com/fl/orlando/codes/code_of_ordinances?nodeId=TITIICICO_CH58ZODIUS_PT5ACUSST_5BSPACUSST_5B_6_GAYASA_S58.934GERE",
+    "notes": "Orlando Code Secs. 58.934-58.936 (Municode). Sec. 58.935: no garage or yard sale shall be conducted at a frequency of more than 2 sales per calendar year, nor shall any individual garage or yard sale exceed a maximum of 4 days in a one week period. No property shall exceed a maximum of 8 sale days per calendar year. Sec. 58.936: no building permit or other permit shall be required to conduct a garage or yard sale. Hours and sign rules are not stated in the opened sections."
+  }
+}
