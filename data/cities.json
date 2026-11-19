@@ -7032,7 +7032,7 @@
     "max_days": null,
     "hours": null,
     "sign_rules": "Signs must be limited to private property. Posting on city street lamps, utility lines, or within public easements is strictly prohibited.",
-    "how_to_apply": null,
+    "how_to_apply": "A festival permit as provided by Chapter 20.46 is required to use the public sidewalk or streets for the area on which the activity is to be conducted. Chapter 20.46 was not read. Chapter 15.156 does not say whether a general garage-sale permit is required for a sale that stays off the public sidewalk and streets.",
     "permit_link": null,
     "best_season": "Spring and Fall (April-May, September-October)",
     "cross_posting": [
@@ -7040,9 +7040,9 @@
       "Nextdoor St. Louis City",
       "St. Louis Garage/Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/mo/st._louis/codes/code_of_ordinances?nodeId=TIT15PUPEMOWE_DIVIXMIOFRE_CH15.156YASA",
+    "last_checked": "2026-11-19",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -7111,10 +7111,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/mo/st._louis/codes/code_of_ordinances?nodeId=TIT15PUPEMOWE_DIVIXMIOFRE_CH15.156YASA"
       },
       "permit_link": {
         "verified": false,
@@ -7135,7 +7135,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "St. Louis Code Ch. 15.156 (Municode). Sec. 15.156.010 A: It shall be unlawful to conduct any sale at retail in the front yard of any residentially zoned property, as the term \"front yard\" is herein defined, which said sale is known as a yard sale, garage sale or lawn sale. Sec. 15.156.020 A makes it unlawful to display goods for a yard, garage, or lawn sale in the front yard of a residentially zoned structure. Sec. 15.156.020 B, quoted: \"No person or group of persons shall be permitted to conduct a yard sale, garage sale or lawn sale, or activities of substantially the same character, being activity as defined in this chapter, unless they have first obtained a festival permit as provided by Chapter 20.46 to use the public sidewalk or streets the area on which said activity is to be conducted.\" That festival-permit clause is for use of the public sidewalk or streets. It is not recorded as a general permit requirement, so permit_required is left unknown. Chapter 20.46 was not read. Sales per year, max days, hours, signs, and fee are not stated. Sec. 15.156.030 sets a penalty of a fine of $50 to $500 or up to 90 days, or both.",
     "original": {
       "city_name": "St. Louis",
       "county": "Independent City",
@@ -7164,7 +7164,7 @@
     "permit_required": false,
     "fee": "$0.00",
     "sales_per_year": null,
-    "max_days": null,
+    "max_days": 2,
     "hours": null,
     "sign_rules": "Signs must stay strictly on private property with owner permission. Prohibited on traffic signals, light posts, or public rights-of-way.",
     "how_to_apply": null,
@@ -7175,9 +7175,9 @@
       "Nextdoor Douglas County",
       "Omaha Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/ne/omaha/codes/code_of_ordinances?nodeId=PTIIMUCO_CH30SA_ARTVIGASA",
+    "last_checked": "2026-11-19",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -7228,10 +7228,10 @@
         "origin": "none"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ne/omaha/codes/code_of_ordinances?nodeId=PTIIMUCO_CH30SA_ARTVIGASA"
       },
       "hours": {
         "verified": false,
@@ -7270,7 +7270,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Omaha Code Ch. 30 Art. VI (Municode). Sec. 30-251 allows garage sales as an accessory use to any residential property and states that garage sales shall occur no more than two days in any two-month period (recorded as max days 2, with that two-month window; not recorded as a sales-per-year cap). The sale must be advertised to the general public for a specific address and time. Merchandise made at the residence may not be sold, and new merchandise bought for resale may not be resold. Zoning Sec. 55-769(c)(8) repeats the two-days-in-any-two-month-period limit. These sections do not mention a permit, fee, hours, or signs, so those fields are left unknown.",
     "original": {
       "city_name": "Omaha",
       "county": "Douglas",
@@ -7433,8 +7433,8 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 4,
     "hours": null,
     "sign_rules": "Signs must remain on private residential property. Placing signs on utility poles, street signs, or public right-of-ways is prohibited.",
     "how_to_apply": null,
@@ -7445,9 +7445,9 @@
       "Nextdoor Polk County",
       "Des Moines Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/ia/des_moines/codes/code_of_ordinances?nodeId=MUCO_CH78PESO",
+    "last_checked": "2026-11-19",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -7492,16 +7492,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ia/des_moines/codes/code_of_ordinances?nodeId=MUCO_CH78PESO"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ia/des_moines/codes/code_of_ordinances?nodeId=MUCO_CH78PESO"
       },
       "hours": {
         "verified": false,
@@ -7540,7 +7540,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Des Moines Code Ch. 78 Peddlers (Municode). Sec. 78-10 and Sec. 78-61 exempt yard sales, defined as the casual and occasional sales of used household goods by the owner thereof, so long as such sales are not conducted in excess of four consecutive days and no more than two times annually (recorded as 2 sales a year, max 4 consecutive days). That is an exemption inside the peddlers chapter, not a statement that no permit of any kind is required, so permit and fee are left unknown. Hours and sign rules are not stated in the opened sections.",
     "original": {
       "city_name": "Des Moines",
       "county": "Polk",
@@ -9335,8 +9335,8 @@
       "Nextdoor Guilford County",
       "Greensboro Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
+    "official_source_url": "https://library.municode.com/nc/greensboro/codes/code_of_ordinances?nodeId=COOR_CH13LITABUPEMIBURE_ARTIIIRE",
+    "last_checked": "2026-11-19",
     "confidence": "unverified",
     "field_status": {
       "city": {
@@ -9430,7 +9430,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Greensboro Code Ch. 13 Art. III is reserved. An editor's note on the official Municode page states that Ord. No. 15-073, section 1 (Exh. A), adopted June 16, 2015, repealed Art. III in its entirety, and that former Art. III, sections 13-136 through 13-140, pertained to yard sales. No current yard-sale rules are recorded from that repealed article. The Development Ordinance was not checked. Confidence stays unverified, and no legal fields are set.",
     "original": {
       "city_name": "Greensboro",
       "county": "Guilford",
