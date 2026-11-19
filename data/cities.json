@@ -1496,7 +1496,7 @@
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
-    "sign_rules": "Signs allowed on the residence only. Off-site signage on public streets, light poles, or traffic lights is prohibited.",
+    "sign_rules": "A single-family lot may place one sign anywhere on the property, plus one additional sign at each turning movement beginning at the property and extending up to one mile, up to a maximum of 10 signs. Signs shall be placed away from the street and no closer than 5 feet from the curb behind the public sidewalk, or no closer than 5 feet from the edge of pavement when there is no public sidewalk. Signs may be displayed only on days when the property is open to the public.",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Winter and Spring (January-March, October-November)",
@@ -1505,9 +1505,9 @@
       "Nextdoor Maricopa County",
       "Chandler Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/az/chandler/codes/code_of_ordinances?nodeId=PTVIPL_CH39SICO_39-10TESI",
+    "last_checked": "2026-11-19",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -1570,10 +1570,10 @@
         "origin": "none"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/az/chandler/codes/code_of_ordinances?nodeId=PTVIPL_CH39SICO_39-10TESI"
       },
       "how_to_apply": {
         "verified": false,
@@ -1600,7 +1600,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Chandler Code (Municode). Sec. 39-10(c) sources the temporary sign rules for single-family lots on days the property is open to the public, including a garage or yard sale. Sec. 15-1 excludes from the secondhand-dealer definition persons conducting no more than three garage and/or yard sales per year, with each such sale not lasting more than three consecutive days; that is an exemption threshold, not recorded as a hard sales-per-year cap. Sec. 61-1 defines a casual sale as including a garage sale item on no more than four separate occasions during any calendar year; that is also a definition, not recorded as a cap. These sections do not state a garage-sale permit, fee, or hours, so those fields are left unknown.",
     "original": {
       "city_name": "Chandler",
       "county": "Maricopa",
@@ -2167,12 +2167,12 @@
     "region": "Pacific Coast",
     "sale_term": "Garage Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
-    "sign_rules": "One on-site sign allowed. No off-site signage permitted on telephone poles, traffic signs, or street light poles.",
-    "how_to_apply": null,
+    "fee": "None for a Temporary Use Permit",
+    "sales_per_year": 4,
+    "max_days": 2,
+    "hours": "7:00 a.m. to 7:00 p.m.",
+    "sign_rules": "Signs may be displayed only during the hours the garage sale is actively being conducted and shall be removed at the completion of the sale. No signs shall be placed on utility poles or cabinets or in the public right-of-way.",
+    "how_to_apply": "No Temporary Use Permit is required for a yard sale. Other permits, such as building permits, may still apply. A street closure permit from Public Works is required if a block sale would close a street.",
     "permit_link": null,
     "best_season": "Spring and Fall (March-May, September-October)",
     "cross_posting": [
@@ -2180,9 +2180,9 @@
       "Nextdoor Fresno County",
       "Fresno Garage/Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/ca/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC_S15-2760TEUS",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -2215,46 +2215,46 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ca/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC_S15-2760TEUS"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ca/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC_S15-2760TEUS"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ca/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC_S15-2760TEUS"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ca/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC_S15-2760TEUS"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ca/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC_S15-2760TEUS"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ca/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC_S15-2760TEUS"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ca/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC_S15-2760TEUS"
       },
       "permit_link": {
         "verified": false,
@@ -2275,7 +2275,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Fresno Code Sec. 15-2760 A.1 (Municode). Yard sales may be conducted without a Temporary Use Permit, though other permits such as building permits may be required. No more than four garage sales in any calendar year. No single sale event shall be conducted for longer than two consecutive days, and not more than two consecutive weekends. Sales may only be conducted between 7 a.m. and 7 p.m., with display only on the residence property. Sign rules are as stated in that section. A block sale that closes a street needs a street closure permit from Public Works. Sec. 7-1105 says the business license chapter does not apply to garage sales under Sec. 12-320; Sec. 12-320 was not readable, so that cross-reference is noted only.",
     "original": {
       "city_name": "Fresno",
       "county": "Fresno",
@@ -3518,8 +3518,8 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 3,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "Signs must stay on private property. Posting on light poles, traffic controls, or within the public right-of-way is prohibited.",
     "how_to_apply": null,
@@ -3530,9 +3530,9 @@
       "Nextdoor Marion County",
       "Salem Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/or/salem/codes/code_of_ordinances?nodeId=PTIICOOR_TITVIIIOF_CH95MIOF_S95.165GASALI",
+    "last_checked": "2026-11-19",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -3577,16 +3577,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/or/salem/codes/code_of_ordinances?nodeId=PTIICOOR_TITVIIIOF_CH95MIOF_S95.165GASALI"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/or/salem/codes/code_of_ordinances?nodeId=PTIICOOR_TITVIIIOF_CH95MIOF_S95.165GASALI"
       },
       "hours": {
         "verified": false,
@@ -3625,7 +3625,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Salem Code Sec. 95.165 (Municode). It shall be unlawful to conduct within the City more than three garage sales in any calendar year, each of said sales to extend no longer than three days. This section does not mention permits, fees, hours, or signs, so those fields are left unknown.",
     "original": {
       "city_name": "Salem",
       "county": "Marion",
@@ -3923,8 +3923,8 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 4,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "Signs must be limited to private properties with permission. Placing signs on utility poles or public easements is strictly prohibited.",
     "how_to_apply": null,
@@ -3935,9 +3935,9 @@
       "Nextdoor Washoe County",
       "Reno Yard and Garage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART5TEUSST_18.03.503STSPTEUS",
+    "last_checked": "2026-11-19",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -3982,16 +3982,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART5TEUSST_18.03.503STSPTEUS"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART5TEUSST_18.03.503STSPTEUS"
       },
       "hours": {
         "verified": false,
@@ -4030,7 +4030,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Reno Land Development Code Sec. 18.03.503(d) (Municode). A garage sale is allowed only if a principal dwelling is on the premises. No more than four garage sales may be held within one year, and a sale shall not exceed three days in duration per event. This section does not mention a permit, fee, hours, or signs, so those fields are left unknown.",
     "original": {
       "city_name": "Reno",
       "county": "Washoe",
@@ -8513,8 +8513,8 @@
     "sale_term": "Yard Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 2,
+    "max_days": 3,
     "hours": null,
     "sign_rules": "Signs restricted to the private host property only. Banned from public easements, utility infrastructure, and highway exits.",
     "how_to_apply": null,
@@ -8525,9 +8525,9 @@
       "Nextdoor Hillsborough County",
       "Tampa Bay Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA",
+    "last_checked": "2026-11-19",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -8572,16 +8572,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA"
       },
       "hours": {
         "verified": false,
@@ -8620,7 +8620,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Tampa Code Sec. 27-282.3 (Municode). Such sales shall be limited to one during each six-month period, for a duration not to exceed three days (recorded as 2 sales a year, 3 days each). Subsection (b) says all such sales shall be conducted in compliance with the licensing provisions of chapter 24 of this Code. Chapter 24, Article V Business Tax was read in full; it lists no garage, yard, tag, or rummage sale license or fee. That silence is not treated as a no-permit answer, so permit and fee stay unknown.",
     "original": {
       "city_name": "Tampa",
       "county": "Hillsborough",
@@ -8647,12 +8647,12 @@
     "region": "Southeast",
     "sale_term": "Yard Sale",
     "permit_required": false,
-    "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "fee": "None (no building permit or other permit is required)",
+    "sales_per_year": 2,
+    "max_days": 4,
     "hours": null,
     "sign_rules": "Allowed strictly on private residential property. Any off-site signs on city street structures or right-of-ways are subject to confiscation and fines.",
-    "how_to_apply": null,
+    "how_to_apply": "No building permit or other permit is required to conduct a garage or yard sale.",
     "permit_link": null,
     "best_season": "Late Fall through Early Spring (November-March)",
     "cross_posting": [
@@ -8660,9 +8660,9 @@
       "Nextdoor Orange County",
       "Orlando Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/fl/orlando/codes/code_of_ordinances?nodeId=TITIICICO_CH58ZODIUS_PT5ACUSST_5BSPACUSST_5B_6_GAYASA_S58.934GERE",
+    "last_checked": "2026-11-19",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -8695,28 +8695,28 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/orlando/codes/code_of_ordinances?nodeId=TITIICICO_CH58ZODIUS_PT5ACUSST_5BSPACUSST_5B_6_GAYASA_S58.934GERE"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/orlando/codes/code_of_ordinances?nodeId=TITIICICO_CH58ZODIUS_PT5ACUSST_5BSPACUSST_5B_6_GAYASA_S58.934GERE"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/orlando/codes/code_of_ordinances?nodeId=TITIICICO_CH58ZODIUS_PT5ACUSST_5BSPACUSST_5B_6_GAYASA_S58.934GERE"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/orlando/codes/code_of_ordinances?nodeId=TITIICICO_CH58ZODIUS_PT5ACUSST_5BSPACUSST_5B_6_GAYASA_S58.934GERE"
       },
       "hours": {
         "verified": false,
@@ -8731,10 +8731,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/orlando/codes/code_of_ordinances?nodeId=TITIICICO_CH58ZODIUS_PT5ACUSST_5BSPACUSST_5B_6_GAYASA_S58.934GERE"
       },
       "permit_link": {
         "verified": false,
@@ -8755,7 +8755,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Orlando Code Secs. 58.934-58.936 (Municode). Sec. 58.935: no garage or yard sale shall be conducted at a frequency of more than 2 sales per calendar year, nor shall any individual garage or yard sale exceed a maximum of 4 days in a one week period. No property shall exceed a maximum of 8 sale days per calendar year. Sec. 58.936: no building permit or other permit shall be required to conduct a garage or yard sale. Hours and sign rules are not stated in the opened sections.",
     "original": {
       "city_name": "Orlando",
       "county": "Orange",
@@ -8918,10 +8918,10 @@
     "sale_term": "Yard Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
-    "sign_rules": "Signs restricted to private property. Attaching signs to code traffic markers, telephone poles, or public right-of-ways is prohibited.",
+    "sales_per_year": 4,
+    "max_days": 3,
+    "hours": "Daylight hours only, Friday through Sunday",
+    "sign_rules": "One sign of no more than 4 square feet may be displayed on the property where the sale is conducted, and only during daylight hours on days when garage sales are allowed, unless greater signage is allowed in the sign section.",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Winter and Spring (January-April, October-November)",
@@ -8930,9 +8930,9 @@
       "Nextdoor Pinellas County",
       "St. Pete Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA",
+    "last_checked": "2026-11-19",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -8977,28 +8977,28 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-19",
+        "origin": "official_source",
+        "source": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA"
       },
       "how_to_apply": {
         "verified": false,
@@ -9025,7 +9025,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "St. Petersburg Code Sec. 16.50.160 (Municode). At each property, not more than four garage sales may be held in any one calendar year and shall not be allowed within 60 days of another garage sale. Garage sales are prohibited Mondays through Thursdays, allowed only during daylight hours, and may continue for not more than three consecutive days. Property shall be displayed only on private property and shall not be located in a visibility triangle. One sign of no more than four square feet may be displayed on the property, only during daylight hours on days when sales are allowed, unless greater signage is allowed in the sign section. This section does not mention a permit or fee, so those fields are left unknown.",
     "original": {
       "city_name": "St. Petersburg",
       "county": "Pinellas",
