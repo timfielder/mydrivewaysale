@@ -3126,7 +3126,7 @@
       "Spokane Yard & Garage Sales Facebook Groups"
     ],
     "official_source_url": "https://my.spokanecity.org/smc/?Section=10.45.070",
-    "last_checked": "2026-10-27",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -3173,13 +3173,13 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://my.spokanecity.org/smc/?Section=10.45.070"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://my.spokanecity.org/smc/?Section=10.45.070"
       },
@@ -3220,7 +3220,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Spokane Municipal Code 10.45.070 (city-hosted code, passed 2025-07-14, effective 2025-08-24): it is a civil infraction to hold 4 or more yard sales in a calendar year or to run one at a single location for more than 3 days (recorded as 3 a year, 3 days). Permit language not found, so permit stays unknown. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Spokane Municipal Code Sec. 10.45.070 (city-hosted code, effective August 24, 2025). It is a civil infraction to hold 4 or more yard sales per calendar year (recorded as a maximum of 3 sales a year) or to run a sale longer than 3 days at a single location (recorded as max 3 days). Sec. 10.45.020: a yard sale is at a residence zoned RSF, RSF-C, or RTF. Secs. 10.45.010, 10.45.030, 10.45.040 (License Required), 10.45.050, and 10.45.060 were repealed by ORD C35611 (2018). No permit, license, or fee remains in the chapter, so the general permit and fee are left unknown (silence is not treated as no permit). No hours or signs are stated. Spokane Municipal Code 10.45.070 (city-hosted code, passed 2025-07-14, effective 2025-08-24): it is a civil infraction to hold 4 or more yard sales in a calendar year or to run one at a single location for more than 3 days (recorded as 3 a year, 3 days). Permit language not found, so permit stays unknown. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Spokane",
       "county": "Spokane",
@@ -4328,9 +4328,9 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": "Outdoor items must be put away in an enclosed structure by sunset each day",
+    "sales_per_year": 4,
+    "max_days": 3,
+    "hours": null,
     "sign_rules": "Signs restricted to private property. Posting on public utility poles, city signposts, or medians is strictly illegal.",
     "how_to_apply": null,
     "permit_link": null,
@@ -4341,7 +4341,7 @@
       "Aurora Garage Sales Facebook Groups"
     ],
     "official_source_url": "https://aurora.municipal.codes/Code/110-98",
-    "last_checked": "2026-10-27",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -4387,22 +4387,22 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
-      },
-      "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
-      },
-      "hours": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://aurora.municipal.codes/Code/110-98"
+      },
+      "max_days": {
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://aurora.municipal.codes/Code/110-98"
+      },
+      "hours": {
+        "verified": false,
+        "source": null,
+        "checked": null,
+        "origin": "none"
       },
       "sign_rules": {
         "verified": false,
@@ -4435,7 +4435,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Aurora City Code 110-96 and 110-98 (aurora.municipal.codes): the sale must be at the primary seller's premises, in the garage or yard, with nothing in the right-of-way, and outside items stored in an enclosed structure by sunset each day. 110-98(a) (count and duration limits) did not load in the fetch, so sales per year and max days stay unknown. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Aurora City Code Ch. 110 Art. III, Secs. 110-96 to 110-100 (aurora.municipal.codes). Sec. 110-96(b): a garage sale is allowed when conducted per this article, at the primary seller's premises. Sec. 110-98(a): it is unlawful to run a garage sale for more than 72 consecutive hours, or more than 4 garage sales per calendar year per address (recorded as 4 sales a year, and max 3 days for the 72-hour cap). Sec. 110-98(b): sales are held in the garage or yard only; no items in the right-of-way, and nothing that impedes traffic or visibility. Sec. 110-98(c): outside items must be removed and stored in an enclosed structure by sunset each day (this is a storage rule, not sale hours, so hours stay unknown; an earlier hours value that repeated this storage rule was cleared). Sec. 110-97 is reserved; the advertising rules were repealed in 2011, so no sign rules were taken from this article. Sec. 110-99 lets police stop a sale for traffic. Sec. 110-100 is a nonprofit exemption statement. No permit, license, or fee is mentioned, so those fields are left unknown (silence is not treated as no permit). Aurora City Code 110-96 and 110-98 (aurora.municipal.codes): the sale must be at the primary seller's premises, in the garage or yard, with nothing in the right-of-way, and outside items stored in an enclosed structure by sunset each day. 110-98(a) (count and duration limits) did not load in the fetch, so sales per year and max days stay unknown. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Aurora",
       "county": "Arapahoe",
@@ -7985,8 +7985,8 @@
       "Nextdoor Ada County",
       "Boise Garage Sales Facebook Groups"
     ],
-    "official_source_url": "https://codelibrary.amlegal.com/codes/boise_id/latest/boise/0-0-0-1639",
-    "last_checked": "2026-10-27",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/boise_id/latest/boise/0-0-0-1588",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -8033,15 +8033,15 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
-        "source": "https://codelibrary.amlegal.com/codes/boise_id/latest/boise/0-0-0-1639"
+        "source": "https://codelibrary.amlegal.com/codes/boise_id/latest/boise/0-0-0-1588"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
-        "source": "https://codelibrary.amlegal.com/codes/boise_id/latest/boise/0-0-0-1639"
+        "source": "https://codelibrary.amlegal.com/codes/boise_id/latest/boise/0-0-0-1588"
       },
       "hours": {
         "verified": false,
@@ -8080,7 +8080,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Boise City Code 3-2-7(G) (American Legal): garage and yard sales at a residence are exempt from vendor licensing when there are no more than 2 separate sales a calendar year, each up to 3 days, with no business inventory or items bought for resale. American Legal flags 3-2-7 as amended by Ord. 29-26 (passed 2026-06-30) and not yet codified, so permit status stays unknown until the new text is published. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Boise City Code Title 3, Ch. 2 (American Legal). Sec. 3-2-6 requires a City Clerk license for vendors, solicitors, and temporary merchants. Sec. 3-2-7(F), License Exemptions, exempts garage, yard, or similar sales by individuals at their residence or place of business not exceeding 2 separate sales in one calendar year, not to exceed 3 days each, which sales shall not include business inventory or items that have been purchased for the purpose of resale at another garage sale (recorded as 2 sales a year, max 3 days). That is an exemption from the vendor, solicitor, and temporary-merchant license, not a statement that no permit of any kind is required, so the general permit and fee are left unknown, consistent with how Corpus Christi's peddlers article exemption was recorded. Beyond those limits, vendor or temporary-merchant licensing applies; that fee was not read. Sec. 3-2-12(B) hours apply to licensed vendors only and were not recorded as garage-sale hours. Boise City Code 3-2-7(G) (American Legal): garage and yard sales at a residence are exempt from vendor licensing when there are no more than 2 separate sales a calendar year, each up to 3 days, with no business inventory or items bought for resale. American Legal flags 3-2-7 as amended by Ord. 29-26 (passed 2026-06-30) and not yet codified, so permit status stays unknown until the new text is published. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Boise",
       "county": "Ada",
@@ -10001,7 +10001,7 @@
     "sales_per_year": 2,
     "max_days": 2,
     "hours": null,
-    "sign_rules": "Remove every sign advertising or pointing to the sale within 48 hours after it ends. Nothing for sale in the right-of-way.",
+    "sign_rules": "Signs must be removed within 48 hours after the sale ends.",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Spring and Fall (April-May, September-October)",
@@ -10011,7 +10011,7 @@
       "Louisville Yard Sales Facebook Groups"
     ],
     "official_source_url": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukyldc/0-0-0-4512",
-    "last_checked": "2026-10-27",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -10058,13 +10058,13 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukyldc/0-0-0-4512"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukyldc/0-0-0-4512"
       },
@@ -10076,7 +10076,7 @@
       },
       "sign_rules": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukyldc/0-0-0-4512"
       },
@@ -10105,7 +10105,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Louisville Metro Land Development Code 4.4.4: no more than 2 garage or yard sales a calendar year per property, up to 2 days each, sales area up to 1,800 sq ft, no items in the right-of-way, signs down within 48 hours. No permit or fee language. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Louisville Metro Land Development Code Sec. 4.4.4 (American Legal). Subsection B: a property may hold a maximum of 2 garage or yard sales per calendar year, each a maximum of 2 days (recorded as 2 sales a year, max 2 days). Subsection C: the sales area is 1,800 square feet or less. Subsection D: no items in the right-of-way. Subsection E: signs must be removed within 48 hours after the sale ends (recorded as sign rules). Buying or consigning goods specifically for garage sales is prohibited. No permit, license, or fee is mentioned, so those fields are left unknown (silence is not treated as no permit). Louisville Metro Land Development Code 4.4.4: no more than 2 garage or yard sales a calendar year per property, up to 2 days each, sales area up to 1,800 sq ft, no items in the right-of-way, signs down within 48 hours. No permit or fee language. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Louisville",
       "county": "Jefferson",
