@@ -1,0 +1,67 @@
+{
+  "cleveland-oh-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/cleveland/latest/cleveland_oh/0-0-0-36706",
+    "set": {
+      "sales_per_year": 3,
+      "max_days": 4,
+      "hours": "10:00 a.m. to 6:00 p.m."
+    },
+    "field_sources": {
+      "sales_per_year": "https://codelibrary.amlegal.com/codes/cleveland/latest/cleveland_oh/0-0-0-36706",
+      "max_days": "https://codelibrary.amlegal.com/codes/cleveland/latest/cleveland_oh/0-0-0-36706",
+      "hours": "https://codelibrary.amlegal.com/codes/cleveland/latest/cleveland_oh/0-0-0-36706"
+    },
+    "notes": "Cleveland Codified Ordinances Ch. 676B (American Legal). Sections 676B.01 through 676B.05 and 676B.99 were read. No permit, license, or fee is mentioned anywhere in those sections, so the general permit and fee are left unknown (silence is not treated as no permit). Sec. 676B.04(a): sales only between 10:00 a.m. and 6:00 p.m., and no longer than 4 consecutive days (recorded as hours 10:00 a.m. to 6:00 p.m., max 4 days). Sec. 676B.04(b): no more than 3 sales per year at a residential premises unless permitted by the Director of Public Safety with the ward Councilmember's approval (recorded as 3 sales a year). That approval step applies only to going over 3 and is not recorded as a general permit requirement. Sec. 676B.99: a violation is a minor misdemeanor, with a fine of not less than $100, and each day is a separate offense. No sign text was found in this chapter."
+  },
+  "cincinnati-oh-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/oh/cincinnati/codes/code_of_ordinances?nodeId=TITVIIIBURE_CH843JUDESENDDE",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 2,
+      "hours": "Daylight hours only"
+    },
+    "field_sources": {
+      "sales_per_year": "https://library.municode.com/oh/cincinnati/codes/code_of_ordinances?nodeId=TITVIIIBURE_CH843JUDESENDDE",
+      "max_days": "https://library.municode.com/oh/cincinnati/codes/code_of_ordinances?nodeId=TITVIIIBURE_CH843JUDESENDDE",
+      "hours": "https://library.municode.com/oh/cincinnati/codes/code_of_ordinances?nodeId=TITVIIIBURE_CH843JUDESENDDE"
+    },
+    "notes": "Cincinnati Code Sec. 843-11 (Municode). A home sale may last a maximum of 2 consecutive days, during daylight hours only, and a residential premises may hold a maximum of 2 home sales per calendar year (recorded as 2 sales a year, max 2 days, hours: Daylight hours only). Sec. 843-1-H defines a home sale to include garage, yard, lawn, patio, driveway, and rummage sales, and similar sales. The Sec. 843-3 license covers second-hand and junk dealers only, and is not a general residential garage-sale permit. Sec. 843-5 sets a $7.00 license fee per sale for a charitable, civic, or welfare organization rummage sale (max 3 days, twice a year); that fee is for organizations, not for residents. Sec. 843-99-A: a violation of 843-11 is up to $100 for the first offense and up to $500 after that. The code is silent on a residential permit, so the general permit and fee are left unknown. No sign rules were taken from these sections."
+  },
+  "salt-lake-city-ut-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/saltlakecityut/latest/saltlakecity_ut/0-0-0-47272",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 7
+    },
+    "field_sources": {
+      "sales_per_year": "https://codelibrary.amlegal.com/codes/saltlakecityut/latest/saltlakecity_ut/0-0-0-47272",
+      "max_days": "https://codelibrary.amlegal.com/codes/saltlakecityut/latest/saltlakecity_ut/0-0-0-47272"
+    },
+    "notes": "Salt Lake City Code Sec. 5.60.090 (American Legal). No more than 2 sales of personal property at a private residence per calendar year, and no single sale may last over 7 days (recorded as 2 sales a year, max 7 days). Sec. 5.60.020 licenses secondhand, junk, and antique dealers only, and is not a general residential garage-sale permit. The code is silent on a residential permit, so the general permit and fee are left unknown. No hours or signs for garage sales were found in this section. The hours in Sec. 5.60.110 apply to dealers only and were not recorded as garage-sale hours."
+  },
+  "st.-louis-mo-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/mo/st._louis/codes/code_of_ordinances?nodeId=TIT15PUPEMOWE_DIVIXMIOFRE_CH15.156YASA",
+    "set": {
+      "how_to_apply": "A festival permit as provided by Chapter 20.46 is required to use the public sidewalk or streets for the area on which the sale is conducted. The festival-permit fee is unknown. Chapter 15.156 does not state a general permit for a sale in a back yard or garage."
+    },
+    "field_sources": {
+      "how_to_apply": "https://library.municode.com/mo/st._louis/codes/code_of_ordinances?nodeId=TIT15PUPEMOWE_DIVIXMIOFRE_CH15.156YASA"
+    },
+    "notes": "St. Louis Code Ch. 15.156 (Municode). Sec. 15.156.010(A): it is unlawful to hold a yard, garage, or lawn sale in the front yard of residentially zoned property. Sec. 15.156.020(A) also bars displaying goods in the front yard. Sec. 15.156.020(B): a festival permit under Chapter 20.46 is required to use the public sidewalk or streets for the area on which the sale is conducted (recorded in how to apply; the festival-permit fee is unknown, and Chapter 20.46 was not read for a dollar amount). That festival-permit clause is not a general permit requirement for a sale in a back yard or garage, and the code is silent on a general permit for those sales, so permit_required is left unknown. No hours, frequency, or signs are stated. Sec. 15.156.030: a fine of $50 to $500 and/or up to 90 days."
+  },
+  "omaha-ne-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/ne/omaha/codes/code_of_ordinances?nodeId=PTIIMUCO_CH30SA_ARTVIGASA",
+    "set": {
+      "max_days": 2
+    },
+    "field_sources": {
+      "max_days": "https://library.municode.com/ne/omaha/codes/code_of_ordinances?nodeId=PTIIMUCO_CH30SA_ARTVIGASA"
+    },
+    "notes": "Omaha Code Sec. 30-251 (Municode). Garage sales are allowed as an accessory use to residential property. A sale may occur no more than 2 days in any two-month period (recorded as max 2 days, with that two-month window; not recorded as a sales-per-year cap). The sale is limited to the occasional sale of personal goods. Goods made at the residence may not be sold, and new merchandise bought for resale may not be resold. The article has only Sec. 30-250 and Sec. 30-251. No permit or fee is stated in those sections (the nearby Sec. 30-262 permit is for fireworks). The code is silent on a residential permit, so the general permit and fee are left unknown. No hours or signs were found."
+  }
+}
