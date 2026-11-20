@@ -7,6 +7,7 @@
 // shown only when it was checked against an official source; otherwise the approved wording.
 import { isVerified, permitLink } from './cities.mjs';
 import { renderLocalGuideSection, countyLabel } from './local-guide-section.mjs';
+import { renderAmazonBlock, amazonGroupsFor } from './amazon.mjs';
 
 const esc = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const jsStr = (s) => String(s).replaceAll('\\', '\\\\').replaceAll("'", "\\'").replaceAll('<', '\\u003c');
@@ -35,7 +36,7 @@ export function cityValues(r, { liveMode = false } = {}) {
       PERMIT_SENTENCE: `The short answer is <strong>${yesNo(o.permit_required)}</strong>.`,
       PERMIT_CARD: yesNo(o.permit_required), FEE_CARD: esc(o.permit_cost),
       PERMIT_HREF: esc(link + "+garage+sale+permit']").replace("'", '&#039;'), JS_PERMIT_URL: jsStr(link),
-      SIGNAGE: esc(o.signage_rules), CHECKED: '', LOCAL_SECTION: '' };
+      SIGNAGE: esc(o.signage_rules), CHECKED: '', LOCAL_SECTION: '', AMAZON: '' };
   }
   const permitOk = isVerified(r, 'permit_required') && typeof r.permit_required === 'boolean';
   const feeOk = isVerified(r, 'fee') && r.fee;
@@ -52,7 +53,8 @@ export function cityValues(r, { liveMode = false } = {}) {
     FEE_CARD: feeOk ? esc(r.fee) : NOT_VERIFIED,
     PERMIT_HREF: esc(link), JS_PERMIT_URL: jsStr(link),
     SIGNAGE: signOk ? esc(r.sign_rules) : unverified(o.city_name),
-    LOCAL_SECTION: renderLocalGuideSection(r) };
+    LOCAL_SECTION: renderLocalGuideSection(r),
+    AMAZON: renderAmazonBlock(amazonGroupsFor('city'), { heading: 'Supplies for a ' + (r.sale_term || 'garage sale').toLowerCase() + ' in ' + r.city }) };
 }
 
 export function renderCityGuide(cityTemplate, r, footerHtml, opts) {
@@ -60,7 +62,7 @@ export function renderCityGuide(cityTemplate, r, footerHtml, opts) {
 }
 
 export function renderHub(hubTemplate, footerHtml) {
-  return fill(hubTemplate, { HUB_FEE: NOT_VERIFIED, FOOTER: footerHtml });
+  return fill(hubTemplate, { HUB_FEE: NOT_VERIFIED, FOOTER: footerHtml, AMAZON: renderAmazonBlock(amazonGroupsFor('hub'), { heading: 'Supplies for a driveway sale' }) });
 }
 
 // State guides use the same hub template, but fill the blank location slots with the
@@ -75,7 +77,7 @@ export function renderStateGuide(hubTemplate, footerHtml, stateName) {
   const name = esc(stateName);
   const permit = `Wondering if you need a permit for a <strong>garage sale</strong> in <strong>${name}</strong>? The short answer is <strong>${NOT_VERIFIED}</strong>. While regulations vary across the <strong>${name}</strong> region`;
   const permitCard = `Permit Required?</span>\n      <div style="font-size: 16px; font-weight: bold; color: #00264C;">${NOT_VERIFIED}</div>`;
-  let html = fill(hubTemplate, { HUB_FEE: NOT_VERIFIED, FOOTER: footerHtml });
+  let html = fill(hubTemplate, { HUB_FEE: NOT_VERIFIED, FOOTER: footerHtml, AMAZON: renderAmazonBlock(amazonGroupsFor('hub'), { heading: 'Supplies for a driveway sale' }) });
   if (!html.includes(PERMIT_BLANK)) throw new Error('live-hub: state permit sentence not found');
   if (!html.includes(PERMIT_CARD_BLANK)) throw new Error('live-hub: state permit card not found');
   html = html.replace(PERMIT_BLANK, permit).replace(PERMIT_CARD_BLANK, permitCard);

@@ -8,6 +8,7 @@
 // The multi-family permit link still uses permitLink (verified, official source, or a search).
 import { permitLink } from './cities.mjs';
 import { renderLocalSnapshot } from './topic-snapshot.mjs';
+import { renderAmazonBlock, amazonGroupsFor } from './amazon.mjs';
 import meta from '../live/pages-meta.json' with { type: 'json' };
 
 const esc = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
@@ -30,11 +31,13 @@ export function cityTopicSlug(city, suffix) {
 export function renderCityTopic(tpl, r, suffix) {
   const o = r.original;
   const link = permitLink(r);
+  const amazon = renderAmazonBlock(amazonGroupsFor(suffix), { heading: 'Supplies for this step' });
   return fill(tpl, {
     CITY: esc(o.city_name), ST: esc(o.state_code), DIALECT: esc(o.sale_dialect),
     COUNTY: esc(o.county), REGION: esc(o.region), SLUGBASE: r.slug.replace(/guide$/, ''),
     PERMIT_LINK: `<a href="${esc(link.href)}" target="_blank" rel="noopener">${esc(link.label)}</a>`,
     LOCAL_SNAPSHOT: renderLocalSnapshot(r, suffix),
+    AMAZON: amazon,
     FOOTER: '%%FOOTER%%',
   });
 }
