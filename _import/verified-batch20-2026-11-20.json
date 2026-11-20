@@ -1,0 +1,71 @@
+{
+  "los-angeles-ca-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886",
+    "set": {
+      "sales_per_year": 5,
+      "max_days": 2,
+      "hours": "9 a.m. to 5 p.m."
+    },
+    "field_sources": {
+      "sales_per_year": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886",
+      "max_days": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886",
+      "hours": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886"
+    },
+    "notes": "LAMC Sec. 12.03 Accessory Use (American Legal). Garage and yard sales are an accessory residential use only if they involve used household items only, with a maximum of 5 sale events per calendar year, a maximum of 2 consecutive days per event, a maximum of 10 days per calendar year in total (recorded as 5 sales a year and max 2 days; the 10-day yearly total stays in these notes), and hours of 9 a.m. to 5 p.m. New goods, or items not intended for household use, disqualify the sale. Business tax sections LAMC 21.00 to 21.147 were searched and none mention garage sales; that silence is not a general no-permit answer. The section is silent on permit and fee, so those fields are left unknown. Sign rules from LAMC Sec. 28.04 and Sec. 28.03, checked 2026-10-27, were not re-opened in this pass and are left as previously verified."
+  },
+  "san-diego-ca-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art01Division03.pdf",
+    "set": {
+      "sales_per_year": 3,
+      "max_days": 2
+    },
+    "field_sources": {
+      "sales_per_year": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art01Division03.pdf",
+      "max_days": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art01Division03.pdf"
+    },
+    "notes": "San Diego Municipal Code 141.0306 (city-hosted code PDF). A garage sale is a limited use in zones marked L, and only as an accessory use to a permitted dwelling unit. Maximum of 3 sales per premises per year, each a maximum of 2 consecutive calendar days (recorded as 3 sales a year, max 2 days). The section is silent on permit and fee, so those fields are left unknown (silence is not treated as no permit)."
+  },
+  "san-jose-ca-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.30REZODI",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 4,
+      "hours": "9 a.m. to 9 p.m."
+    },
+    "field_sources": {
+      "sales_per_year": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.30REZODI",
+      "max_days": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.30REZODI",
+      "hours": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.30REZODI"
+    },
+    "notes": "San Jose Municipal Code Sec. 20.30.110(D)-(E) (Municode; this replaces the earlier Legistar council-packet source). A garage sale of the occupants' personal property is a permitted incidental non-commercial activity. To qualify: a maximum of 2 sales per calendar year, each a maximum of 4 consecutive days, and hours of 9:00 a.m. to 9:00 p.m. (recorded as 2 sales a year, max 4 days, hours 9 a.m. to 9 p.m.). Sales parties must be held inside a permanent structure or in the rear yard. The section is silent on permit and fee, so those fields are left unknown (silence is not treated as no permit)."
+  },
+  "portland-or-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://www.portland.gov/sites/default/files/code/33.296-temporary-activities.pdf",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 3
+    },
+    "field_sources": {
+      "sales_per_year": "https://www.portland.gov/sites/default/files/code/33.296-temporary-activities.pdf",
+      "max_days": "https://www.portland.gov/sites/default/files/code/33.296-temporary-activities.pdf"
+    },
+    "notes": "Portland Zoning Code 33.296.030.C.1 (portland.gov PDF dated 4/30/21). Garage sales are allowed in the IR, CI1, and RF through RM4 and RMP zones, for a maximum of 3 consecutive days, on 2 different occasions per calendar year (recorded as 2 sales a year, max 3 days). Products brought to the site for the sale are not allowed. A Parks permit is required only for activities on public property; that is not a general residential garage-sale permit, so permit_required is left unknown. The section is silent on a general permit, fee, hours, and signs."
+  },
+  "colorado-springs-co-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/coloradospringsco/latest/coloradosprings_co/0-0-0-51851",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 2
+    },
+    "field_sources": {
+      "sales_per_year": "https://codelibrary.amlegal.com/codes/coloradospringsco/latest/coloradosprings_co/0-0-0-51851",
+      "max_days": "https://codelibrary.amlegal.com/codes/coloradospringsco/latest/coloradosprings_co/0-0-0-51851"
+    },
+    "notes": "Colorado Springs UDC Sec. 7.3.305.B (American Legal). Garage sales are allowed in any residential zone, up to 2 times per calendar year, for a maximum of 2 consecutive days (recorded as 2 sales a year, max 2 days). The old citation 7.3.105.A.2.g is outdated: 7.3.105 is now Unlisted Uses. The city residential accessory-use page (https://coloradosprings.gov/planning-and-development/page/residential-accessory-use) still cites the old number and states the same 2/2 limits; the official code section recorded here is 7.3.305.B. Sec. 7.3.305.D.2 requires a temporary use permit only for merchandise display in nonresidential settings, which does not apply to a residential garage sale, and is not a general residential permit answer. The section is silent on a general permit and fee, so those fields are left unknown."
+  }
+}

@@ -1641,7 +1641,7 @@
       "Los Angeles Garage Sales Facebook Groups"
     ],
     "official_source_url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886",
-    "last_checked": "2026-10-27",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -1688,27 +1688,27 @@
       },
       "sales_per_year": {
         "verified": true,
-        "source": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886"
       },
       "max_days": {
         "verified": true,
-        "source": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886"
       },
       "hours": {
         "verified": true,
-        "source": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-886"
       },
       "sign_rules": {
         "verified": true,
-        "source": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-128154",
         "checked": "2026-10-27",
-        "origin": "official_source"
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-128154"
       },
       "how_to_apply": {
         "verified": false,
@@ -1735,7 +1735,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "LAMC Sec. 12.03 (Accessory Use): max 5 sale events per calendar year, 2 consecutive days per event, 10 days per year total, used household items only. The code section has no permit or fee language; permit left unverified. Sign rules not checked yet (LAMC 28.04 is the likely section). Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Signs from LAMC Sec. 28.04 (https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-128154) and Sec. 28.03 (owner consent), browser pass. Neither section, nor Sec. 12.03, mentions a permit or fee, so permit stays unknown (silence).",
+    "notes": "LAMC Sec. 12.03 Accessory Use (American Legal). Garage and yard sales are an accessory residential use only if they involve used household items only, with a maximum of 5 sale events per calendar year, a maximum of 2 consecutive days per event, a maximum of 10 days per calendar year in total (recorded as 5 sales a year and max 2 days; the 10-day yearly total stays in these notes), and hours of 9 a.m. to 5 p.m. New goods, or items not intended for household use, disqualify the sale. Business tax sections LAMC 21.00 to 21.147 were searched and none mention garage sales; that silence is not a general no-permit answer. The section is silent on permit and fee, so those fields are left unknown. Sign rules from LAMC Sec. 28.04 and Sec. 28.03, checked 2026-10-27, were not re-opened in this pass and are left as previously verified. LAMC Sec. 12.03 (Accessory Use): max 5 sale events per calendar year, 2 consecutive days per event, 10 days per year total, used household items only. The code section has no permit or fee language; permit left unverified. Sign rules not checked yet (LAMC 28.04 is the likely section). Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Signs from LAMC Sec. 28.04 (https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-128154) and Sec. 28.03 (owner consent), browser pass. Neither section, nor Sec. 12.03, mentions a permit or fee, so permit stays unknown (silence).",
     "original": {
       "city_name": "Los Angeles",
       "county": "Los Angeles",
@@ -1776,7 +1776,7 @@
       "San Diego Garage & Yard Sales Facebook Groups"
     ],
     "official_source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art01Division03.pdf",
-    "last_checked": "2026-10-27",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -1823,15 +1823,15 @@
       },
       "sales_per_year": {
         "verified": true,
-        "source": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art01Division03.pdf",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art01Division03.pdf"
       },
       "max_days": {
         "verified": true,
-        "source": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art01Division03.pdf",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art01Division03.pdf"
       },
       "hours": {
         "verified": false,
@@ -1870,7 +1870,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "San Diego Municipal Code 141.0306: allowed only as an accessory use to a dwelling, in zones marked L; max 3 sales per premises per year, each no more than 2 consecutive calendar days. The section has no permit or fee language; permit left unverified. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Re-checked SDMC 141.0306: no permit or fee language; permit stays null (silence).",
+    "notes": "San Diego Municipal Code 141.0306 (city-hosted code PDF). A garage sale is a limited use in zones marked L, and only as an accessory use to a permitted dwelling unit. Maximum of 3 sales per premises per year, each a maximum of 2 consecutive calendar days (recorded as 3 sales a year, max 2 days). The section is silent on permit and fee, so those fields are left unknown (silence is not treated as no permit). San Diego Municipal Code 141.0306: allowed only as an accessory use to a dwelling, in zones marked L; max 3 sales per premises per year, each no more than 2 consecutive calendar days. The section has no permit or fee language; permit left unverified. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Re-checked SDMC 141.0306: no permit or fee language; permit stays null (silence).",
     "original": {
       "city_name": "San Diego",
       "county": "San Diego",
@@ -1910,8 +1910,8 @@
       "Nextdoor Santa Clara County",
       "San Jose Garage Sales Facebook Groups"
     ],
-    "official_source_url": "https://sanjose.legistar.com/gateway.aspx?ID=1c8eeaf8-deab-4672-b264-1d478fa2197c.pdf&M=F",
-    "last_checked": "2026-10-27",
+    "official_source_url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.30REZODI",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -1958,21 +1958,21 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
-        "source": "https://sanjose.legistar.com/gateway.aspx?ID=1c8eeaf8-deab-4672-b264-1d478fa2197c.pdf&M=F"
+        "source": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.30REZODI"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
-        "source": "https://sanjose.legistar.com/gateway.aspx?ID=1c8eeaf8-deab-4672-b264-1d478fa2197c.pdf&M=F"
+        "source": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.30REZODI"
       },
       "hours": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
-        "source": "https://sanjose.legistar.com/gateway.aspx?ID=1c8eeaf8-deab-4672-b264-1d478fa2197c.pdf&M=F"
+        "source": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.30REZODI"
       },
       "sign_rules": {
         "verified": false,
@@ -2005,7 +2005,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "San Jose Municipal Code 20.30.110(D)-(E): a garage sale of the occupants' own things is an allowed non-commercial incidental use if there are no more than 2 sales a calendar year, none longer than 4 consecutive days, held 9 a.m. to 9 p.m. Text read from the city's own Legistar council packet (file 19-1216, Dec 2019, which amended 20.30.110); the section's history ends at Ord. 30353 (Jan 2020), so no later change is known. Municode (current code) blocks direct access. The code doesn't mention a permit or fee, so those stay unknown. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "San Jose Municipal Code Sec. 20.30.110(D)-(E) (Municode; this replaces the earlier Legistar council-packet source). A garage sale of the occupants' personal property is a permitted incidental non-commercial activity. To qualify: a maximum of 2 sales per calendar year, each a maximum of 4 consecutive days, and hours of 9:00 a.m. to 9:00 p.m. (recorded as 2 sales a year, max 4 days, hours 9 a.m. to 9 p.m.). Sales parties must be held inside a permanent structure or in the rear yard. The section is silent on permit and fee, so those fields are left unknown (silence is not treated as no permit). San Jose Municipal Code 20.30.110(D)-(E): a garage sale of the occupants' own things is an allowed non-commercial incidental use if there are no more than 2 sales a calendar year, none longer than 4 consecutive days, held 9 a.m. to 9 p.m. Text read from the city's own Legistar council packet (file 19-1216, Dec 2019, which amended 20.30.110); the section's history ends at Ord. 30353 (Jan 2020), so no later change is known. Municode (current code) blocks direct access. The code doesn't mention a permit or fee, so those stay unknown. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "San Jose",
       "county": "Santa Clara",
@@ -2303,11 +2303,11 @@
     "sale_term": "Garage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": 1,
-    "max_days": 2,
+    "sales_per_year": null,
+    "max_days": null,
     "hours": null,
     "sign_rules": "Signs must be placed on private property with permission. Prohibited on all public right-of-ways, utility poles, and street traffic installations.",
-    "how_to_apply": null,
+    "how_to_apply": "A secondhand dealer permit is required to hold more than 1 garage sale per calendar year, or a sale longer than 2 consecutive days (City Code 5.80.010 and 5.80.020). Applications go to the chief of police (5.80.050). The application fee is set by council resolution (amount not stated in 5.80.060). The code does not explicitly say that no permit is required for 1 sale of 2 days or less.",
     "permit_link": null,
     "best_season": "Spring and Fall (April-June, September-October)",
     "cross_posting": [
@@ -2316,7 +2316,7 @@
       "Sacramento Garage Sales Facebook Groups"
     ],
     "official_source_url": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-12627",
-    "last_checked": "2026-10-27",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -2362,16 +2362,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": true,
-        "checked": "2026-10-27",
-        "origin": "official_source",
-        "source": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-12627"
+        "verified": false,
+        "source": null,
+        "checked": null,
+        "origin": "none"
       },
       "max_days": {
-        "verified": true,
-        "checked": "2026-10-27",
-        "origin": "official_source",
-        "source": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-12627"
+        "verified": false,
+        "source": null,
+        "checked": null,
+        "origin": "none"
       },
       "hours": {
         "verified": false,
@@ -2386,10 +2386,10 @@
         "origin": "original_db"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-12627"
       },
       "permit_link": {
         "verified": false,
@@ -2410,7 +2410,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Sacramento City Code 5.80.020: anyone who holds more than 1 garage sale a calendar year, or one longer than 2 consecutive days, counts as a secondhand dealer, which needs a police permit (5.80.010). One sale of up to 2 days needs no dealer permit; no other garage sale permit was found, so permit status stays unknown. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Sacramento City Code Ch. 5.80 (American Legal). Sec. 5.80.010 requires a permit to operate as a secondhand dealer, junk dealer, pawnbroker, or pallet reseller. Sec. 5.80.020: a secondhand dealer also includes any person who conducts more than one garage sale per calendar year, or who conducts a garage sale which extends beyond two consecutive days. That is a conditional permit requirement for more than 1 sale a year or a sale longer than 2 consecutive days, recorded in how to apply. It is not a hard cap of 1 sale or 2 days, so sales_per_year and max_days are left unset (earlier values of 1 and 2 were those thresholds and were cleared). The code does not say that no permit is required for 1 sale of 2 days or less; that case is implied, not explicit, so permit_required is left unknown and is not recorded as No. Sec. 5.80.060: the application fee is a nonrefundable fee set by council resolution (dollar amount unknown). Applications go to the chief of police (5.80.050). Sec. 5.80.030: a violation is an infraction. This conditional requirement does not verify the row, because a verified Yes would tell every seller they need a permit, and a verified No would claim no permit for a single sale, which the code does not explicitly say. Sacramento City Code 5.80.020: anyone who holds more than 1 garage sale a calendar year, or one longer than 2 consecutive days, counts as a secondhand dealer, which needs a police permit (5.80.010). One sale of up to 2 days needs no dealer permit; no other garage sale permit was found, so permit status stays unknown. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Sacramento",
       "county": "Sacramento",
@@ -3396,7 +3396,7 @@
       "Portland Garage Sales Facebook Groups"
     ],
     "official_source_url": "https://www.portland.gov/sites/default/files/code/33.296-temporary-activities.pdf",
-    "last_checked": "2026-10-27",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -3443,13 +3443,13 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://www.portland.gov/sites/default/files/code/33.296-temporary-activities.pdf"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://www.portland.gov/sites/default/files/code/33.296-temporary-activities.pdf"
       },
@@ -3490,7 +3490,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Portland Zoning Code 33.296.030.C.1 (portland.gov PDF): garage sales in residential zones for no more than 3 consecutive days on 2 occasions a calendar year; no products brought in for the sale. Doesn't mention a permit, fee, hours, or signs. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Portland Zoning Code 33.296.030.C.1 (portland.gov PDF dated 4/30/21). Garage sales are allowed in the IR, CI1, and RF through RM4 and RMP zones, for a maximum of 3 consecutive days, on 2 different occasions per calendar year (recorded as 2 sales a year, max 3 days). Products brought to the site for the sale are not allowed. A Parks permit is required only for activities on public property; that is not a general residential garage-sale permit, so permit_required is left unknown. The section is silent on a general permit, fee, hours, and signs. Portland Zoning Code 33.296.030.C.1 (portland.gov PDF): garage sales in residential zones for no more than 3 consecutive days on 2 occasions a calendar year; no products brought in for the sale. Doesn't mention a permit, fee, hours, or signs. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Portland",
       "county": "Multnomah",
@@ -3531,7 +3531,7 @@
       "Salem Garage Sales Facebook Groups"
     ],
     "official_source_url": "https://library.municode.com/or/salem/codes/code_of_ordinances?nodeId=PTIICOOR_TITVIIIOF_CH95MIOF_S95.165GASALI",
-    "last_checked": "2026-11-19",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -3578,13 +3578,13 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-11-19",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://library.municode.com/or/salem/codes/code_of_ordinances?nodeId=PTIICOOR_TITVIIIOF_CH95MIOF_S95.165GASALI"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-11-19",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://library.municode.com/or/salem/codes/code_of_ordinances?nodeId=PTIICOOR_TITVIIIOF_CH95MIOF_S95.165GASALI"
       },
@@ -3625,7 +3625,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Salem Code Sec. 95.165 (Municode). It shall be unlawful to conduct within the City more than three garage sales in any calendar year, each of said sales to extend no longer than three days. This section does not mention permits, fees, hours, or signs, so those fields are left unknown.",
+    "notes": "Salem Code Sec. 95.165 (Municode). Subsection (b): a maximum of 3 garage sales per calendar year, each no longer than 3 days (recorded as 3 sales a year, max 3 days). Subsection (a) exempts a single priced item, unsigned sales, and nonprofit sales. The section is silent on permit, fee, and hours, so those fields are left unknown (silence is not treated as no permit). Salem Code Sec. 95.165 (Municode). It shall be unlawful to conduct within the City more than three garage sales in any calendar year, each of said sales to extend no longer than three days. This section does not mention permits, fees, hours, or signs, so those fields are left unknown.",
     "original": {
       "city_name": "Salem",
       "county": "Marion",
@@ -3936,7 +3936,7 @@
       "Reno Yard and Garage Sales Facebook Groups"
     ],
     "official_source_url": "https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART5TEUSST_18.03.503STSPTEUS",
-    "last_checked": "2026-11-19",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -3983,13 +3983,13 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-11-19",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART5TEUSST_18.03.503STSPTEUS"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-11-19",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART5TEUSST_18.03.503STSPTEUS"
       },
@@ -4030,7 +4030,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Reno Land Development Code Sec. 18.03.503(d) (Municode). A garage sale is allowed only if a principal dwelling is on the premises. No more than four garage sales may be held within one year, and a sale shall not exceed three days in duration per event. This section does not mention a permit, fee, hours, or signs, so those fields are left unknown.",
+    "notes": "Reno Land Development Code Sec. 18.03.503(d) (Municode). A garage sale is allowed only on residential premises with a principal dwelling. No more than 4 garage sales may be held per year on the same premises, and a sale may last a maximum of 3 days (recorded as 4 sales a year, max 3 days). Table 3-1 marks Garage Sale as P (permitted) in most districts. Sec. 18.03.501 is a generic requirement to obtain all required permits and names no garage-sale permit. This section is silent on a permit or fee, and no hours or signs are stated, so those fields are left unknown (silence is not treated as no permit). Reno Land Development Code Sec. 18.03.503(d) (Municode). A garage sale is allowed only if a principal dwelling is on the premises. No more than four garage sales may be held within one year, and a sale shall not exceed three days in duration per event. This section does not mention a permit, fee, hours, or signs, so those fields are left unknown.",
     "original": {
       "city_name": "Reno",
       "county": "Washoe",
@@ -4205,8 +4205,8 @@
       "Nextdoor El Paso County",
       "Colorado Springs Yard Sales Facebook Groups"
     ],
-    "official_source_url": "https://coloradosprings.gov/planning-and-development/page/residential-accessory-use",
-    "last_checked": "2026-10-27",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/coloradospringsco/latest/coloradosprings_co/0-0-0-51851",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -4253,15 +4253,15 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
-        "source": "https://coloradosprings.gov/planning-and-development/page/residential-accessory-use"
+        "source": "https://codelibrary.amlegal.com/codes/coloradospringsco/latest/coloradosprings_co/0-0-0-51851"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
-        "source": "https://coloradosprings.gov/planning-and-development/page/residential-accessory-use"
+        "source": "https://codelibrary.amlegal.com/codes/coloradospringsco/latest/coloradosprings_co/0-0-0-51851"
       },
       "hours": {
         "verified": false,
@@ -4300,7 +4300,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "City page (citing City Code 7.3.105.A.2.g): garage sales allowed no more than 2 times a calendar year, each up to 2 consecutive days. No permit or fee language. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Colorado Springs UDC Sec. 7.3.305.B (American Legal). Garage sales are allowed in any residential zone, up to 2 times per calendar year, for a maximum of 2 consecutive days (recorded as 2 sales a year, max 2 days). The old citation 7.3.105.A.2.g is outdated: 7.3.105 is now Unlisted Uses. The city residential accessory-use page (https://coloradosprings.gov/planning-and-development/page/residential-accessory-use) still cites the old number and states the same 2/2 limits; the official code section recorded here is 7.3.305.B. Sec. 7.3.305.D.2 requires a temporary use permit only for merchandise display in nonresidential settings, which does not apply to a residential garage sale, and is not a general residential permit answer. The section is silent on a general permit and fee, so those fields are left unknown. City page (citing City Code 7.3.105.A.2.g): garage sales allowed no more than 2 times a calendar year, each up to 2 consecutive days. No permit or fee language. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Colorado Springs",
       "county": "El Paso",
@@ -8526,7 +8526,7 @@
       "Tampa Bay Yard Sales Facebook Groups"
     ],
     "official_source_url": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA",
-    "last_checked": "2026-11-19",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -8573,13 +8573,13 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-11-19",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-11-19",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA"
       },
@@ -8620,7 +8620,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Tampa Code Sec. 27-282.3 (Municode). Such sales shall be limited to one during each six-month period, for a duration not to exceed three days (recorded as 2 sales a year, 3 days each). Subsection (b) says all such sales shall be conducted in compliance with the licensing provisions of chapter 24 of this Code. Chapter 24, Article V Business Tax was read in full; it lists no garage, yard, tag, or rummage sale license or fee. That silence is not treated as a no-permit answer, so permit and fee stay unknown.",
+    "notes": "Tampa Code Sec. 27-282.3 (Municode). Subsection (a): garage and yard sales are allowed as an accessory use in all residential districts, limited to 1 sale per six-month period, for a maximum of 3 days (recorded as 2 sales a year, with that six-month spacing, and max 3 days). Subsection (b) says sales must comply with the licensing provisions of Chapter 24. Chapter 24 (Taxation, Secs. 24-1 to 24-125) never mentions garage, yard, or tag sales, and Sec. 24-102 taxes only enumerated businesses. That cross-reference leads nowhere, so the general permit and fee are left unknown. Tampa Code Sec. 27-282.3 (Municode). Such sales shall be limited to one during each six-month period, for a duration not to exceed three days (recorded as 2 sales a year, 3 days each). Subsection (b) says all such sales shall be conducted in compliance with the licensing provisions of chapter 24 of this Code. Chapter 24, Article V Business Tax was read in full; it lists no garage, yard, tag, or rummage sale license or fee. That silence is not treated as a no-permit answer, so permit and fee stay unknown.",
     "original": {
       "city_name": "Tampa",
       "county": "Hillsborough",
@@ -8920,8 +8920,8 @@
     "fee": "$0.00",
     "sales_per_year": 4,
     "max_days": 3,
-    "hours": "Daylight hours only, Friday through Sunday",
-    "sign_rules": "One sign of no more than 4 square feet may be displayed on the property where the sale is conducted, and only during daylight hours on days when garage sales are allowed, unless greater signage is allowed in the sign section.",
+    "hours": "Daylight hours only; prohibited Monday through Thursday",
+    "sign_rules": "One on-property sign of 4 square feet or less, displayed only in daylight on allowed sale days.",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Winter and Spring (January-April, October-November)",
@@ -8931,7 +8931,7 @@
       "St. Pete Yard Sales Facebook Groups"
     ],
     "official_source_url": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA",
-    "last_checked": "2026-11-19",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -8978,25 +8978,25 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-11-19",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-11-19",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA"
       },
       "hours": {
         "verified": true,
-        "checked": "2026-11-19",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA"
       },
       "sign_rules": {
         "verified": true,
-        "checked": "2026-11-19",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA"
       },
@@ -9025,7 +9025,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "St. Petersburg Code Sec. 16.50.160 (Municode). At each property, not more than four garage sales may be held in any one calendar year and shall not be allowed within 60 days of another garage sale. Garage sales are prohibited Mondays through Thursdays, allowed only during daylight hours, and may continue for not more than three consecutive days. Property shall be displayed only on private property and shall not be located in a visibility triangle. One sign of no more than four square feet may be displayed on the property, only during daylight hours on days when sales are allowed, unless greater signage is allowed in the sign section. This section does not mention a permit or fee, so those fields are left unknown.",
+    "notes": "St. Petersburg Code Sec. 16.50.160 (Municode). Subsection .5: a maximum of 4 garage sales per calendar year, not within 60 days of another sale, prohibited Monday through Thursday, daylight hours only, and a maximum of 3 consecutive days (recorded as 4 sales a year, max 3 days, and hours: daylight only, prohibited Monday through Thursday; the 60-day spacing stays in these notes). Subsection .4: one on-property sign of 4 square feet or less, displayed only in daylight on allowed sale days. Subsection .3: items may be displayed only on private property and not in the visibility triangle. The section is silent on permit and fee, so those fields are left unknown (silence is not treated as no permit). St. Petersburg Code Sec. 16.50.160 (Municode). At each property, not more than four garage sales may be held in any one calendar year and shall not be allowed within 60 days of another garage sale. Garage sales are prohibited Mondays through Thursdays, allowed only during daylight hours, and may continue for not more than three consecutive days. Property shall be displayed only on private property and shall not be located in a visibility triangle. One sign of no more than four square feet may be displayed on the property, only during daylight hours on days when sales are allowed, unless greater signage is allowed in the sign section. This section does not mention a permit or fee, so those fields are left unknown.",
     "original": {
       "city_name": "St. Petersburg",
       "county": "Pinellas",
