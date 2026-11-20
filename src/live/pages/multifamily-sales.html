@@ -1,266 +1,41 @@
-
-			<script>
-			const onSkipLinkClick = () => {
-				const htmlElement = document.querySelector('html');
-
-				htmlElement.style['scroll-behavior'] = 'smooth';
-
-				setTimeout( () => htmlElement.style['scroll-behavior'] = null, 1000 );
-			}
-			document.addEventListener("DOMContentLoaded", () => {
-				if (!document.querySelector('#content')) {
-					document.querySelector('.ea11y-skip-to-content-link').remove();
-				}
-			});
-		</script>
 		<nav aria-label="Skip to content navigation">
-			<a class="ea11y-skip-to-content-link"
-				href="#content"
-				tabindex="-1"
-				onclick="onSkipLinkClick()"
-			>
-				Skip to content
-				<svg width="24" height="24" viewbox="0 0 24 24" fill="none" role="presentation">
-					<path d="M18 6V12C18 12.7956 17.6839 13.5587 17.1213 14.1213C16.5587 14.6839 15.7956 15 15 15H5M5 15L9 11M5 15L9 19"
-								stroke="black"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-					/>
-				</svg>
-			</a>
-			<div class="ea11y-skip-to-content-backdrop"></div>
+			<a href="#content" class="ea11y-skip-to-content-link">Skip to content</a>
 		</nav>
+<header style="background:#00264C;color:#fff;padding:12px 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <nav style="max-width:44rem;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px 18px;font-size:14px;">
+    <a href="/" style="color:#E0B42D;text-decoration:none;font-weight:700;">My Driveway Sale</a>
+    <a href="/hub/" style="color:#fff;text-decoration:none;">City guides</a>
+    <a href="/stickercalc-web/" style="color:#fff;text-decoration:none;">StickerCalc</a>
+    <a href="/about-contact/" style="color:#fff;text-decoration:none;">About</a>
+  </nav>
+</header>
 
-				<div data-elementor-type="wp-page" data-elementor-id="678" class="elementor elementor-678">
-				<div class="elementor-element elementor-element-7dde3fb3 e-flex e-con-boxed e-con e-parent" data-id="7dde3fb3" data-element_type="container" data-e-type="container">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-4b286d31 elementor-widget elementor-widget-shortcode" data-id="4b286d31" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
-							<div class="elementor-shortcode">    <style>
-        /* The Sticky Header Wrapper */
-        .pseo-header-wrapper {
-            position: sticky;
-            top: 0;
-            z-index: 9999;
-            background-color: #ffffff;
-            box-shadow: 0 4px 15px rgba(0, 38, 76, 0.08);
-            font-family: 'Roboto', sans-serif;
-            width: 100%;
-        }
-        
-        /* Flexbox Container for Logo & Title */
-        .pseo-header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        /* Logo Scaling */
-        .pseo-header-logo img {
-            max-width: 180px;
-            height: auto;
-            display: block;
-        }
-        
-        /* Dynamic pSEO Title */
-        .pseo-header-title {
-            color: #00264C;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: right;
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-        }
-        .pseo-header-title span {
-            color: #4A7D8F; /* kTeal */
-        }
+<main class="mds-article" style="max-width:44rem;margin:0 auto;padding:1.75rem 1.25rem 3rem;font-family:Georgia,'Times New Roman',serif;color:#00264C;line-height:1.65;font-size:1.05rem;">
+<h1 id="content" style="font-family:Montserrat,system-ui,sans-serif;font-size:1.85rem;line-height:1.25;margin:0 0 0.75rem 0;">Multi-Family Sales</h1>
+<p style="margin:0 0 1rem 0;">A multi-family sale can empty three attics in one morning, or it can end with two households arguing over a $4 blender. The difference is almost never the quality of the stuff. It is whether you decided, in writing, who owns which table, which color, and which pile of cash.</p>
+<p style="margin:0 0 1rem 0;">Treat this like a tiny joint venture that lasts 48 hours. Check your <a href="/hub/">city guide</a> before you pick a date, because some towns count a shared sale against each household's yearly limit, and some want a permit in one name.</p>
+<h2 style="font-family:Montserrat,system-ui,sans-serif;font-size:1.25rem;line-height:1.3;margin:1.75rem 0 0.6rem 0;">Pick a lead address and a lead human</h2>
+<p style="margin:0 0 1rem 0;">One driveway, one official contact, one person who can answer a shopper asking 'is the dresser still available?' If you rotate yards, put that in the listing so people are not standing on the wrong porch. The lead human also holds the permit, if your city wants one, and keeps a copy of everyone's phone numbers.</p>
+<h2 style="font-family:Montserrat,system-ui,sans-serif;font-size:1.25rem;line-height:1.3;margin:1.75rem 0 0.6rem 0;">Color is how you stay friends at 4 p.m.</h2>
+<p style="margin:0 0 1rem 0;">Give each household a sticker color, and only that color. Household A is green, B is blue, C is yellow. Price tags sit on the item. When a shopper walks up with a mixed armload, you are adding colors, not memories of who brought the lamp.</p>
+<p style="margin:0 0 1rem 0;">Put a legend on a poster at the checkout: green is the Ramirez family, blue is the Cole family, and so on. Helpers should be able to run the table without asking, 'wait, whose was the red sticker?'</p>
+<p style="margin:0 0 1rem 0;">If you want the math done by a tap instead of a scratchpad, the free <a href="/stickercalc-web/">StickerCalc Lite</a> tool lets you assign a dollar value and a label to each color, then tap the colors as people buy. It will not settle a family argument for you. It will keep the totals honest.</p>
+<h2 style="font-family:Montserrat,system-ui,sans-serif;font-size:1.25rem;line-height:1.3;margin:1.75rem 0 0.6rem 0;">Cash, change, and the ugly envelopes</h2>
+<p style="margin:0 0 1rem 0;">Start with a shared change bank, counted together, and write the starting amount on a card in the cash box. Every household chips in the same amount. At the end, pull that starter cash back out first, then split the rest by color totals.</p>
+<p style="margin:0 0 1rem 0;">Do not dump all cash into one jar and 'figure it out later.' Later is when everyone is tired and the $20s look the same. A simple tally sheet, or the session total in StickerCalc if you used color values correctly, is the adult move.</p>
+<p style="margin:0 0 1rem 0;">If one household is selling a $200 mower and another is selling paperbacks, color totals already handle the imbalance. You do not need a spreadsheet. You need the stickers to stay on until the item leaves the driveway.</p>
+<h2 style="font-family:Montserrat,system-ui,sans-serif;font-size:1.25rem;line-height:1.3;margin:1.75rem 0 0.6rem 0;">Parking, bathrooms, and the neighbor truce</h2>
+<p style="margin:0 0 1rem 0;">Tell the block what you are doing, especially if three households of shoppers are about to arrive at one corner. Agree in advance on overflow parking, who restocks toilet paper, and who shuts it down if the crowd spills into a no-parking area. If an HOA or a city rule limits signs or hours, the lead human is the one who has actually read it.</p>
+<h2 style="font-family:Montserrat,system-ui,sans-serif;font-size:1.25rem;line-height:1.3;margin:1.75rem 0 0.6rem 0;">Close like you opened: together</h2>
+<p style="margin:0 0 1rem 0;">Set a hard end time. Count the box together. Photograph the tally. Return the starter cash. Send each household home with their unsold items the same day, because 'I'll grab it tomorrow' is how a garage stays full. Then text the group one number: what each color earned, after the change bank.</p>
+<aside style="background:#F5F7FA;border:1px solid #E2E8F0;border-radius:10px;padding:16px 18px;margin:1.75rem 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:0.95rem;">
+  <h2 style="font-family:Montserrat,system-ui,sans-serif;font-size:1.1rem;margin:0 0 0.5rem 0;">Stickers for a multi-family sale</h2>
+  <p style="margin:0 0 0.6rem 0;">As an Amazon Associate, My Driveway Sale earns from qualifying purchases. Prices and availability are set by Amazon.</p>
+  <ul style="margin:0;padding-left:1.1rem;">
+<li style="margin:0 0 0.45rem 0;"><a href="https://www.amazon.com/s?k=multi+color+dot+stickers+garage+sale&tag=mydriveways0a-20" target="_blank" rel="noopener">Multi-color dot stickers</a></li>
+<li style="margin:0 0 0.45rem 0;"><a href="https://www.amazon.com/s?k=Royal+Green+Color+Coding+Labels+10+Color+Variety&tag=mydriveways0a-20" target="_blank" rel="noopener">Royal Green 10-color coding labels</a></li>
+  </ul>
+</aside>
+</main>
 
-        /* Scroll Progress Tracker */
-        .pseo-progress-container {
-            width: 100%;
-            height: 4px;
-            background-color: #F5F7FA;
-        }
-        .pseo-progress-bar {
-            height: 4px;
-            background-color: #E0B42D; /* kGold */
-            width: 0%;
-            transition: width 0.1s ease-out;
-        }
-
-        /* Classy Mobile Bottom Sticky Anchor Ad System[cite: 1] */
-        .ad-anchor-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            z-index: 99999;
-            background: #FFFFFF;
-            border-top: 1px solid #E6E9ED;
-            box-shadow: 0 -4px 15px rgba(0, 38, 76, 0.06);
-            text-align: center;
-            padding: 4px 0 2px 0;
-            display: none; /* Controlled via JS Scroll Depth */
-        }
-        .ad-anchor-label {
-            display: block;
-            font-size: 9px;
-            color: #A0AEC0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 2px;
-            font-family: sans-serif;
-        }
-
-        /* Mobile Responsive Breakpoints */
-        @media (max-width: 768px) {
-            .pseo-header-title {
-                font-size: 12px;
-            }
-            .pseo-header-logo img {
-                max-width: 110px;
-            }
-            .pseo-header-container {
-                padding: 12px 5%;
-            }
-            /* Restrict display ad viewport overflow on tight touch screens */
-            .ad-anchor-container ins {
-                max-width: 100vw;
-                overflow: hidden;
-            }
-        }
-    </style>
-
-    <div class="pseo-header-wrapper">
-        <div class="pseo-header-container">
-            <!-- LEFT: Brand Logo -->
-            <div class="pseo-header-logo">
-                <a href="/">
-                    <img decoding="async" src="/wp-content/uploads/2026/07/MDS-logo.png" alt="My Driveway Sale">
-                </a>
-            </div>
-            
-            <!-- RIGHT: Dynamic pSEO Identity -->
-            <div class="pseo-header-title">
-                The <span>Local</span> Guide            </div>
-        </div>
-        
-        <!-- BOTTOM: The Progress Tracker Blueprint Execution -->
-        <div class="pseo-progress-container">
-            <div class="pseo-progress-bar" id="pseo-scroll-tracker"></div>
-        </div>
-    </div>
-    
-
-    <script>
-        (function() {
-            var tracker = document.getElementById("pseo-scroll-tracker");
-            var bottomAd = document.getElementById("pseo-bottom-anchor-ad");
-            var adTriggered = false;
-
-            window.addEventListener('scroll', function() {
-                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                var scrolled = height > 0 ? (winScroll / height) * 100 : 0;
-                
-                // 1. Move Top Depth Progress Tracker
-                if (tracker) {
-                    tracker.style.width = scrolled + "%";
-                }
-
-                // 2. Classy Delay: Only reveal bottom anchor after user scrolls past 5% depth
-                if (bottomAd && !adTriggered && winScroll > 80) {
-                    bottomAd.style.display = "block";
-                    adTriggered = true;
-                }
-            }, { passive: true });
-        })();
-    </script>
-    </div>
-						</div>
-				<div class="elementor-element elementor-element-8f3c1cb elementor-widget elementor-widget-html" data-id="8f3c1cb" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
-					<!-- ========================================== -->
-<!-- DYNAMIC BREADCRUMB / BACK NAVIGATION       -->
-<!-- ========================================== -->
-<div style="margin-bottom: 24px; text-align: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-    <a style="display: inline-flex; align-items: center; background-color: #F5F7FA; border: 1px solid #E6E9ED; color: #00264C; padding: 10px 16px; border-radius: 6px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
-        <span style="margin-right: 8px; color: #E0B42D; font-size: 16px; line-height: 1;">←</span>
-        Back to the Local Guide
-    </a>
-</div>				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-4f8c404d e-con e-atomic-element e-flexbox-base e-default-div" data-id="4f8c404d" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="4f8c404d">
-    			<h2 data-interaction-id="172b2ac8" class="e-heading-base e-default-h2">The Local Garage Sale Multi-Family Guide: Block Sales &amp; Joint Permits</h2>
-		
-</div>
-<div class="elementor-element elementor-element-4bcc756e e-flex e-con-boxed e-con e-parent" data-id="4bcc756e" data-element_type="container" data-e-type="container">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-30cb7040 elementor-widget elementor-widget-text-editor" data-id="30cb7040" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<h4>Did you know that pooling your inventory with neighbors can triple your foot traffic, but instantly creates a logistical nightmare for tracking who gets paid what?</h4><p><strong>Learn how to navigate joint-permit requirements, consolidate your checkout station, and seamlessly split the profits without a calculator.</strong></p>    
-    <p>Hosting a massive multi-family garage sale in your state is the ultimate way to attract serious buyers. Shoppers and professional pickers are far more likely to stop for a massive, multi-driveway block event than a small single-family setup.</p><p>However, combining households introduces immediate operational challenges regarding city ordinances, shared liability, and accurate end-of-day payouts. If you do not have a system in place before the crowds arrive, you will spend hours arguing over a messy paper ledger trying to figure out whose item just sold.</p><p>Before combining your inventory with other families, you must establish strict operational rules to keep the event legal and profitable:</p><ul><li><strong>Verify Joint Permit Rules:</strong> Some municipalities require a special &#8220;Block Sale&#8221; permit if multiple driveways are participating, or they limit how many households can legally operate under a single residential permit. Check your local regulations to see if each participating house in your city needs to file individually.</li></ul><ul><li><strong>The Color-Dot Payout System:</strong><br /><div class="paragraph normal ng-star-inserted" data-start-index="2041"><span class="ng-star-inserted" data-start-index="2041">Never try to write down initials on a paper notepad during a morning rush. Assign a specific physical sticker color to each participating family (e.g., Red for the Smiths, Blue for the Joneses). To make checkout effortless, the <a href="/stickercalc-app/"><strong>StickerCalc</strong></a> app comes pre-loaded with layouts for the most popular sticker packs on the market. Just grab one of these pre-configured packs, and your digital register is already set up for you:</span></div><div class="paragraph normal ng-star-inserted" data-start-index="3020"> </div></li></ul>								</div>
-				<div class="elementor-element elementor-element-95492b6 elementor-widget elementor-widget-html" data-id="95492b6" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
-					<div style="display: flex; gap: 16px; background-color: #F8FAFC; border: 1px solid #E2E8F0; padding: 16px; border-radius: 8px; margin-bottom: 32px; align-items: center; flex-wrap: wrap;">
-    <!-- Image linked to Amazon search -->
-    <div style="width: 100px; height: 100px; background-color: #FFFFFF; border: 1px solid #E6E9ED; border-radius: 4px; overflow: hidden; flex-shrink: 0;">
-        <a href="https://www.amazon.com/s?k=Royal+Green+Color+Coding+Labels+10+Color+Variety&amp;tag=mydriveways0a-20" target="_self" class="custom-link no-lightbox" title="Royal Green 10 color labels" onclick="event.stopPropagation()">
-            <img decoding="async" src="/wp-content/uploads/2026/07/Royal-Green-10-color-labels.jpg" alt="Multi-Color Dot Sticker Pack" style="width: 100%; height: 100%; object-fit: cover;">
-        </a>
-    </div>
-    
-    <!-- Copy & Button -->
-    <div style="flex: 1; min-width: 200px;">
-        <strong style="color: #00264C; font-size: 15px; display: block; margin-bottom: 4px;">Multi-Color Dot Sticker Pack</strong>
-        <p style="color: #4A7D8F; font-size: 13px; margin: 0 0 12px 0; line-height: 1.4;">
-            Stop using masking tape. A multi-color dot pack is exactly what you need to assign a unique color to each participating family or seller for easy end-of-day tallying.
-        </p>
-        <a href="https://www.amazon.com/s?k=multi+color+dot+stickers+garage+sale&tag=mydriveways0a-20" target="_blank" style="display: inline-block; background-color: #E0B42D; color: #00264C; padding: 8px 16px; border-radius: 4px; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
-            View on Amazon ➔
-        </a>
-    </div>
-</div>				</div>
-				<div class="elementor-element elementor-element-7d17296 elementor-widget elementor-widget-text-editor" data-id="7d17296" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<ul><li><strong>Digital Tallying &amp; Profit Splits:</strong> Use a digital register like the <strong><a href="/stickercalc-app/">StickerCalc</a></strong> app to track the families. When a buyer checks out, you simply tap the corresponding color buttons on your phone. At the end of the day, the app instantly generates a report showing exactly how much cash belongs to each household.</li><li><strong>Consolidate the Cashier Station:</strong> Do not make buyers pay separately at each individual driveway. Establish one central checkout table with a dedicated cashier handling all the money. This eliminates buyer confusion, speeds up checkout lines, and significantly reduces the risk of theft.</li></ul><h4><br />Establishing strict checkout rules and color-coding your inventory guarantees every participating family gets paid their exact share without any end-of-day arguments or mathematical errors.</h4><p><br />    <div class="pseo-app-promo-card" style="display: flex; flex-wrap: wrap; gap: 16px; background-color: #F8FAFC; border: 2px solid #00264C; padding: 20px; border-radius: 12px; margin: 32px 0; align-items: center; box-shadow: 0px 4px 12px rgba(0,0,0,0.05); clear: both;">
-        
-        <!-- App Image/Graphic -->
-        <div style="flex: 1; min-width: 120px; max-width: 180px; border-radius: 8px; overflow: hidden; border: 1px solid #E6E9ED;">
-            <img decoding="async" src="/wp-content/uploads/2026/07/StickerCalc-Lite-app-screen.png" alt="StickerCalc Color Tag Checkout" style="width: 100%; height: auto; display: block; object-fit: cover;">
-        </div>
-
-        <!-- Copy & Call to Action -->
-        <div style="flex: 2; min-width: 200px;">
-            <span style="display: block; font-size: 10px; color: #E0B42D; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; font-weight: bold;">Free Checkout Tool</span>
-            <strong style="color: #00264C; font-size: 18px; font-family: 'Montserrat', sans-serif; display: block; margin-bottom: 8px;">StickerCalc: The No-Math Sale Calculator</strong>
-            <p style="color: #2D3748; font-size: 13px; margin: 0 0 16px 0; line-height: 1.5;">
-                Skip the messy paper scratchpad math. Tally color-coded sticker prices instantly, easily track multi-family sales splits, and calculate cash change on the fly directly in your browser.
-            </p>
-            <a href="/app/" style="display: inline-block; background-color: #E0B42D; color: #00264C; padding: 12px 20px; border-radius: 6px; font-weight: bold; font-size: 13px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; transition: background 0.2s;">
-                Get StickerCalc Now ➔
-            </a>
-        </div>
-
-    </div>
-    </p><p><br />    
-    </p>								</div>
-					</div>
-				</div>
-				</div>
-		
-			
-					
-						
-			
-
-
-
-
-
-
-
-
-
-
-	<!-- Gallery Custom Links: 3 images scanned, 1 linked (HtmlDomParser). -->
+%%FOOTER%%

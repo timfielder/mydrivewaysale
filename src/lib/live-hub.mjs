@@ -6,6 +6,7 @@
 // Law fields (permit required, fee, sign rules, permit link) follow approved item 2: a value is
 // shown only when it was checked against an official source; otherwise the approved wording.
 import { isVerified, permitLink } from './cities.mjs';
+import { renderLocalGuideSection } from './local-guide-section.mjs';
 
 const esc = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const jsStr = (s) => String(s).replaceAll('\\', '\\\\').replaceAll("'", "\\'").replaceAll('<', '\\u003c');
@@ -34,7 +35,7 @@ export function cityValues(r, { liveMode = false } = {}) {
       PERMIT_SENTENCE: `The short answer is <strong>${yesNo(o.permit_required)}</strong>.`,
       PERMIT_CARD: yesNo(o.permit_required), FEE_CARD: esc(o.permit_cost),
       PERMIT_HREF: esc(link + "+garage+sale+permit']").replace("'", '&#039;'), JS_PERMIT_URL: jsStr(link),
-      SIGNAGE: esc(o.signage_rules), CHECKED: '' };
+      SIGNAGE: esc(o.signage_rules), CHECKED: '', LOCAL_SECTION: '' };
   }
   const permitOk = isVerified(r, 'permit_required') && typeof r.permit_required === 'boolean';
   const feeOk = isVerified(r, 'fee') && r.fee;
@@ -50,7 +51,8 @@ export function cityValues(r, { liveMode = false } = {}) {
     PERMIT_CARD: permitOk ? yesNo(r.permit_required) : NOT_VERIFIED,
     FEE_CARD: feeOk ? esc(r.fee) : NOT_VERIFIED,
     PERMIT_HREF: esc(link), JS_PERMIT_URL: jsStr(link),
-    SIGNAGE: signOk ? esc(r.sign_rules) : unverified(o.city_name) };
+    SIGNAGE: signOk ? esc(r.sign_rules) : unverified(o.city_name),
+    LOCAL_SECTION: renderLocalGuideSection(r) };
 }
 
 export function renderCityGuide(cityTemplate, r, footerHtml, opts) {
