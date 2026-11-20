@@ -1,0 +1,75 @@
+{
+  "austin-tx-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/tx/austin/codes/land_development_code?nodeId=TIT25LADE_CH25-2ZO_SUBCHAPTER_CUSDERE_ART5ACUS_S25-2-903GASA",
+    "set": {
+      "sign_rules": "On-property sign for a residential garage or yard sale, displayed no more than 7 consecutive days. The city common-violations page says 3 consecutive days; the Land Development Code rule is 7."
+    },
+    "field_sources": {
+      "sign_rules": "https://library.municode.com/tx/austin/codes/land_development_code?nodeId=TIT25LADE_CH25-10SIRE"
+    },
+    "notes": "Austin Land Development Code 25-2-903 (Municode). Garage sales are allowed as an accessory residential use and must be at the seller's principal residence. A sale may be held at the same property for a maximum of 4 days per calendar year. That is a yearly total of days, not a per-sale duration and not a count of sales, so max_days and sales_per_year are left unset. The section is silent on permit, fee, and hours, so those fields are left unknown. Signs are in LDC 25-10-102(E) (temporary on-premise signs): an on-property sign for a residential garage or yard sale may be displayed for no more than 7 consecutive days. The city common-violations page (https://www.austintexas.gov/development-services/common-austin-code-violations) says signs may be posted only on the property where the sale is occurring, for no more than three consecutive days, and that more than four garage sales per calendar year violates the City Code. The code is presented as the rule: 7 days for signs, and 4 days per calendar year (not 4 sales). The city page's 3-day sign limit and 4-sale wording are noted here as a conflict."
+  },
+  "fort-worth-tx-garage-sale-guide": {
+    "confidence": "verified",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037",
+    "set": {
+      "permit_required": true,
+      "fee": "Established by the city council (amount not stated in Sec. 5.402)",
+      "sales_per_year": 2,
+      "max_days": 3,
+      "sign_rules": "Only one sign, not to exceed 2 square feet, upon the premises where and when the sale is taking place. The sign must be non-illuminated, and must be removed within 24 hours after the sale.",
+      "how_to_apply": "Secure a permit at least 72 hours before the sale and post it prominently on the premises during the sale."
+    },
+    "field_sources": {
+      "permit_required": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037",
+      "fee": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037",
+      "sales_per_year": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037",
+      "max_days": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037",
+      "how_to_apply": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037",
+      "sign_rules": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38717"
+    },
+    "notes": "Fort Worth Zoning Ordinance Appendix A Sec. 5.402 (American Legal). A permit shall be secured at least 72 hours prior to the sale and shall be prominently posted on the premises during the sale (recorded as permit required; how to apply is that 72-hour advance permit, posted during the sale). The permit fee amount shall be as established by the city council; the dollar amount is not stated in this section (recorded as that fee text, amount unknown). Sales are confined to garages and patios only. No more than 2 garage sales per calendar year on the same premises, each for a maximum of 3 consecutive days. Hours are not stated, so hours stay unknown. Sec. 5.402(f) allows only one sign, not to exceed 2 square feet, upon the premises where and when the sale is taking place. Sec. 6.403(j) (https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38717) allows one non-illuminated sign of 2 square feet or less, to be removed within 24 hours after the sale. Sec. 20-258(c) (https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-22370) excludes garage sales at a private residence from secondhand dealer licensing. Official code as checked 2026-11-20 is the rule recorded here."
+  },
+  "el-paso-tx-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.10SUUSRE_20.10.750YAGARUSA",
+    "set": {
+      "sales_per_year": 3,
+      "max_days": 2,
+      "hours": "Daylight hours only"
+    },
+    "field_sources": {
+      "sales_per_year": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.10SUUSRE_20.10.750YAGARUSA",
+      "max_days": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.10SUUSRE_20.10.750YAGARUSA",
+      "hours": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.10SUUSRE_20.10.750YAGARUSA"
+    },
+    "notes": "El Paso Code Sec. 20.10.750 (Municode). Yard and garage sales are allowed outdoors during daylight hours (recorded as hours: Daylight hours only). Maximum of 3 per calendar year on a single- or two-family lot, and 6 at places of public assembly or city parks (the residential cap is recorded as 3 sales a year). Each sale may last a maximum of 2 days. Subsection D requires authorization or a permit from the property owner or managing entity only at places of public assembly and city parks. No permit requirement is stated for residential lots, so the general permit and fee are left unknown (silence is not treated as no permit). Sec. 5.12.160(E) excludes neighborhood garage sales from business licensing; that is not a general no-permit answer. Selling on or near the public right-of-way is prohibited (Sec. 20.02.414 and Sec. 13.20.040). Sign rules were not set from those right-of-way selling rules."
+  },
+  "corpus-christi-tx-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/tx/corpus_christi/codes/code_of_ordinances?nodeId=PTIIITHCOOR_CH38PEVEMOFOVEITMESO_ARTIINGE_S38-3APAFDE",
+    "set": {
+      "sales_per_year": 3,
+      "max_days": 3
+    },
+    "field_sources": {
+      "sales_per_year": "https://library.municode.com/tx/corpus_christi/codes/code_of_ordinances?nodeId=PTIIITHCOOR_CH38PEVEMOFOVEITMESO_ARTIINGE_S38-3APAFDE",
+      "max_days": "https://library.municode.com/tx/corpus_christi/codes/code_of_ordinances?nodeId=PTIIITHCOOR_CH38PEVEMOFOVEITMESO_ARTIINGE_S38-3APAFDE"
+    },
+    "notes": "Corpus Christi Code Sec. 38-3(10) (Municode; this is the real section, not Sec. 38-3-9 as previously cited). The Chapter 38 peddlers and vendors article does not apply to residential garage sales. That is an exemption from that article, not a statement that no permit of any kind is required, so the general permit and fee are left unknown. Maximum of 3 sales per calendar year per residence or household (recorded as 3 sales a year). Each sale may last a maximum of 3 consecutive days or 2 consecutive weekends (recorded as max 3 days; the 2-consecutive-weekends alternative is noted here). Sales beyond those limits are business operations. Zoning and signs were not checked, and the fee is not addressed in this section."
+  },
+  "tucson-az-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-25386",
+    "set": {
+      "sales_per_year": 4,
+      "max_days": 3
+    },
+    "field_sources": {
+      "sales_per_year": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-25386",
+      "max_days": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-25386"
+    },
+    "notes": "Tucson Code Sec. 16-39.1 (American Legal). No more than 4 yard sales per calendar year per residential property, and none longer than 3 consecutive days (recorded as 4 sales a year, max 3 consecutive days). A violation is a civil infraction (Sec. 16-48(2)). The definition is in Sec. 16-4 (https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-11105). The code is silent on permit, fee, hours, and signs, so those fields are left unknown. UDC temporary-use sections have no yard-sale text."
+  }
+}
