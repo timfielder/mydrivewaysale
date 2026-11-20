@@ -6,7 +6,7 @@
 // Law fields (permit required, fee, sign rules, permit link) follow approved item 2: a value is
 // shown only when it was checked against an official source; otherwise the approved wording.
 import { isVerified, permitLink } from './cities.mjs';
-import { renderLocalGuideSection } from './local-guide-section.mjs';
+import { renderLocalGuideSection, countyLabel } from './local-guide-section.mjs';
 
 const esc = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const jsStr = (s) => String(s).replaceAll('\\', '\\\\').replaceAll("'", "\\'").replaceAll('<', '\\u003c');
@@ -26,7 +26,7 @@ export function cityValues(r, { liveMode = false } = {}) {
   const o = r.original;
   const base = {
     CITY: esc(o.city_name), ST: esc(o.state_code), REGION: esc(o.region), DIALECT: esc(o.sale_dialect),
-    COUNTY: esc(o.county), BEST: esc(o.best_weekends), CROSSPOST: esc(o.local_crosspost_sites.join(', ')),
+    COUNTY: esc(countyLabel({ county: o.county })), BEST: esc(o.best_weekends), CROSSPOST: esc(o.local_crosspost_sites.join(', ')),
     JS_CITY: jsStr(o.city_name), JS_ST: jsStr(o.state_code), SLUGBASE: r.slug.replace(/guide$/, ''),
   };
   if (liveMode) {
