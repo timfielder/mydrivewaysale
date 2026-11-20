@@ -1,92 +1,51 @@
-
-			<script>
-			const onSkipLinkClick = () => {
-				const htmlElement = document.querySelector('html');
-
-				htmlElement.style['scroll-behavior'] = 'smooth';
-
-				setTimeout( () => htmlElement.style['scroll-behavior'] = null, 1000 );
-			}
-			document.addEventListener("DOMContentLoaded", () => {
-				if (!document.querySelector('#content')) {
-					document.querySelector('.ea11y-skip-to-content-link').remove();
-				}
-			});
-		</script>
 		<nav aria-label="Skip to content navigation">
-			<a class="ea11y-skip-to-content-link"
-				href="#content"
-				tabindex="-1"
-				onclick="onSkipLinkClick()"
-			>
-				Skip to content
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" role="presentation">
-					<path d="M18 6V12C18 12.7956 17.6839 13.5587 17.1213 14.1213C16.5587 14.6839 15.7956 15 15 15H5M5 15L9 11M5 15L9 19"
-								stroke="black"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-					/>
-				</svg>
-			</a>
-			<div class="ea11y-skip-to-content-backdrop"></div>
+			<a href="#content" class="ea11y-skip-to-content-link">Skip to content</a>
 		</nav>
+<header style="background:#00264C;color:#fff;padding:12px 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <nav style="max-width:52rem;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px 18px;font-size:14px;">
+    <a href="/" style="color:#E0B42D;text-decoration:none;font-weight:700;">My Driveway Sale</a>
+    <a href="/hub/" style="color:#fff;text-decoration:none;">City guides</a>
+    <a href="/stickercalc-web/" style="color:#E0B42D;text-decoration:none;">StickerCalc</a>
+    <a href="/stickercalc-app/" style="color:#fff;text-decoration:none;">Phone app</a>
+    <a href="/about-contact/" style="color:#fff;text-decoration:none;">About</a>
+  </nav>
+</header>
+<main id="content" class="mds-stickercalc-web" style="max-width:52rem;margin:0 auto;padding:1.5rem 1.25rem 1rem;font-family:Georgia,'Times New Roman',serif;color:#00264C;line-height:1.65;font-size:1.05rem;">
+  <h1 style="font-family:Montserrat,system-ui,sans-serif;font-size:1.85rem;line-height:1.25;margin:0 0 0.75rem 0;">StickerCalc Lite: a free checkout for color-sticker sales</h1>
+  <p style="margin:0 0 1rem 0;">StickerCalc Lite is the free browser tool on this page. You give each sticker color a price and a short label, tap those colors as a shopper hands you items, and the web engine shows the total due. You then enter the cash they gave you, see the change to give, and tap PAID &amp; COMMIT to add that sale to your session total.</p>
+  <p style="margin:0 0 1rem 0;">It runs in your mobile or desktop browser, in the window below, and you do not have to install anything to try it. The phone app is a separate product, sold on the App Store and Google Play, if you want a native copy on your phone. This page describes the web tool you can launch right here.</p>
 
-				<div data-elementor-type="wp-page" data-elementor-id="328" class="elementor elementor-328">
-				<div class="elementor-element elementor-element-ae4fe2f e-flex e-con-boxed e-con e-parent" data-id="ae4fe2f" data-element_type="container" data-e-type="container">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-658f4e1 elementor-widget elementor-widget-shortcode" data-id="658f4e1" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
-							<div class="elementor-shortcode">    <style>
-        /* Lock the browser to the exact device screen height and kill scrolling */
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #F5F7FA; }
-        
-        .pseo-fullscreen-wrapper { display: flex; flex-direction: column; height: 100vh; width: 100vw; }
-        
-        /* The Fixed Top Ad Block */
-        .pseo-app-top-bar { flex-shrink: 0; text-align: center; padding: 8px 10px; background: #ffffff; border-bottom: 2px solid #E0B42D; box-shadow: 0 4px 10px rgba(0, 38, 76, 0.05); z-index: 10; }
-        .pseo-app-title { color: #00264C; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 900; margin: 0 0 5px 0; text-transform: uppercase; }
-        .pseo-ad-space { width: 100%; height: 60px; display: flex; justify-content: center; align-items: center; background: #F5F7FA; overflow: hidden; }
-        
-        /* The Dynamic App Area */
-        .pseo-iframe-container { flex-grow: 1; width: 100%; }
-        .pseo-iframe-container iframe { width: 100%; height: 100%; border: none; display: block; }
-    </style>
+  <h2 style="font-family:Montserrat,system-ui,sans-serif;font-size:1.25rem;margin:1.5rem 0 0.6rem 0;">How to use the web tool</h2>
+  <ol style="margin:0 0 1.1rem 1.2rem;padding:0;">
+    <li style="margin:0 0 0.5rem 0;"><strong>Build your sticker board.</strong> Under YOUR STICKERS, add a sticker for each color you actually put on the merchandise. Use Select Color, type a label (the tool itself uses examples like "Grab Bags"), and set the dollar value to match the physical sticker. You can add another sticker, edit the sticker layout, and save the layout so the board matches your tables.</li>
+    <li style="margin:0 0 0.5rem 0;"><strong>Tap to build the cart.</strong> When a shopper walks up, tap the color for each item. The current cart and the total due update as you tap. If you tap one extra, you can remove an item or clear the cart and the change field.</li>
+    <li style="margin:0 0 0.5rem 0;"><strong>Take the cash and commit.</strong> Enter the amount in Cash Given by Customer. The tool shows Change to Give. When the numbers look right, tap PAID &amp; COMMIT. That sale is added to SESSION TOTAL, which is a running total of what you have sold in this session.</li>
+  </ol>
+  <p style="margin:0 0 1rem 0;">If you switch sticker packs mid-sale, the tool warns you that changing to a new physical sticker pack will clear the current active cart. Read that prompt before you confirm. Also, if you leave the page or exit while sales are active, the session total can clear. Keep the tab open while the sale is running.</p>
 
-    <div class="pseo-fullscreen-wrapper">
-        <!-- TOP BAR: Title & AdSense -->
-        <div class="pseo-app-top-bar">
-            <h1 class="pseo-app-title">Local Driveway Sale CHECKOUT CALCULATOR</h1>
-            <div class="pseo-ad-space">
-                
-                <!-- PASTE YOUR RAW GOOGLE ADSENSE SCRIPT RIGHT HERE -->
-                <span style="font-size: 10px; color: #4A7D8F;">Sponsored Ad Space (60px Height)</span>
-                
-            </div>
-        </div>
-        
-        <!-- REMAINDER OF SCREEN: The App -->
-        <div class="pseo-iframe-container">
-            <iframe src="/app/index.html" scrolling="no"></iframe>
-        </div>
-    </div>
-    </div>
-						</div>
-					</div>
-				</div>
-				</div>
-		
-			
-					
-						
-			
+  <h2 style="font-family:Montserrat,system-ui,sans-serif;font-size:1.25rem;margin:1.5rem 0 0.6rem 0;">Example pricing math</h2>
+  <p style="margin:0 0 1rem 0;">Suppose you set three colors to match your table: red is "Dishes" at $5.00, blue is "Books" at $1.00, and yellow is "Tools" at $10.00. A shopper hands you 2 red, 4 blue, and 1 yellow.</p>
+  <p style="margin:0 0 0.4rem 0;">Total due:</p>
+  <ul style="margin:0 0 1rem 1.1rem;padding:0;">
+    <li style="margin:0 0 0.35rem 0;">2 red dishes: 2 &times; $5.00 = $10.00</li>
+    <li style="margin:0 0 0.35rem 0;">4 blue books: 4 &times; $1.00 = $4.00</li>
+    <li style="margin:0 0 0.35rem 0;">1 yellow tool: 1 &times; $10.00 = $10.00</li>
+    <li style="margin:0 0 0.35rem 0;"><strong>Total due = $24.00</strong></li>
+  </ul>
+  <p style="margin:0 0 1rem 0;">If they hand you $30.00, change to give is $30.00 minus $24.00, which is $6.00. After you tap PAID &amp; COMMIT, that $24.00 is added to the session total. The next shopper starts a new cart, and the session total keeps the running take for the day.</p>
+  <p style="margin:0 0 1rem 0;">Do a practice cart like that before you open, the same way you would test a calculator. If the total due does not match your head math, a color value is wrong, and you want to catch it before the first real line.</p>
 
-
-
-
-
-
-
-
-
-
-	<!-- Gallery Custom Links: 0 images scanned, 0 linked (HtmlDomParser). -->
+  <h2 style="font-family:Montserrat,system-ui,sans-serif;font-size:1.25rem;margin:1.5rem 0 0.6rem 0;">Web tool and phone app</h2>
+  <p style="margin:0 0 1rem 0;">The window below is StickerCalc Lite, the free web engine. The native StickerCalc phone app is listed at $2.99 on the US App Store and Google Play. For a longer walkthrough of the checkout idea, and a note on why some hosts want a native app for offline use, see the <a href="/stickercalc-app/">StickerCalc app page</a>.</p>
+  <p style="margin:0 0 1.25rem 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+    <a href="#stickercalc-lite-app" style="display:inline-block;background:#E0B42D;color:#00264C;padding:10px 14px;border-radius:6px;font-weight:700;text-decoration:none;margin:0 8px 8px 0;">Use the free web tool</a>
+    <a href="https://apps.apple.com/us/app/stickercalc-color-tag-checkout/id6761667962" target="_blank" rel="noopener" style="display:inline-block;background:#00264C;color:#fff;padding:10px 14px;border-radius:6px;font-weight:700;text-decoration:none;margin:0 8px 8px 0;">App Store ($2.99)</a>
+    <a href="https://play.google.com/store/apps/details?id=com.tfielder.sticker_calc" target="_blank" rel="noopener" style="display:inline-block;background:#00264C;color:#fff;padding:10px 14px;border-radius:6px;font-weight:700;text-decoration:none;margin:0 8px 8px 0;">Google Play ($2.99)</a>
+  </p>
+  <p style="margin:0 0 0.75rem 0;font-size:0.9rem;color:#4A5568;">StickerCalc is made by Tim Fielder Enterprises, LLC, the company behind My Driveway Sale.</p>
+</main>
+<div id="stickercalc-lite-app" style="width:100%;max-width:52rem;margin:0 auto 2rem auto;padding:0 1.25rem;box-sizing:border-box;">
+  <p style="font-family:Montserrat,system-ui,sans-serif;font-size:0.9rem;font-weight:700;color:#00264C;margin:0 0 8px 0;text-transform:uppercase;letter-spacing:0.04em;">StickerCalc Lite, in your browser</p>
+  <iframe src="/app/index.html" title="StickerCalc Lite web checkout" style="width:100%;height:80vh;min-height:640px;border:1px solid #E2E8F0;border-radius:8px;background:#F5F7FA;"></iframe>
+</div>
+%%FOOTER%%
