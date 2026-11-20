@@ -146,7 +146,7 @@
     "sales_per_year": null,
     "max_days": null,
     "hours": null,
-    "sign_rules": "Signs only on the property where the sale is held, for no more than 3 consecutive days.",
+    "sign_rules": "On-property sign for a residential garage or yard sale, displayed no more than 7 consecutive days. The city common-violations page says 3 consecutive days; the Land Development Code rule is 7.",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Spring and Fall (March-May, October-November)",
@@ -155,8 +155,8 @@
       "Nextdoor Travis County",
       "Austin Yard/Garage Sale Facebook Groups"
     ],
-    "official_source_url": "https://www.austintexas.gov/development-services/common-austin-code-violations",
-    "last_checked": "2026-10-27",
+    "official_source_url": "https://library.municode.com/tx/austin/codes/land_development_code?nodeId=TIT25LADE_CH25-2ZO_SUBCHAPTER_CUSDERE_ART5ACUS_S25-2-903GASA",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -221,9 +221,9 @@
       },
       "sign_rules": {
         "verified": true,
-        "source": "https://www.austintexas.gov/development-services/common-austin-code-violations",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/tx/austin/codes/land_development_code?nodeId=TIT25LADE_CH25-10SIRE"
       },
       "how_to_apply": {
         "verified": false,
@@ -250,7 +250,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "City page: a garage sale may not be held at the same property more than 4 days per calendar year (Land Development Code 25-2-903), and not at a property on a residential tour. The same page also says 'more than four garage sales per calendar year' is a home-based business, so the 4-day vs 4-sale wording conflicts; sales_per_year and max_days left null until the code text is checked. Page does not say whether a permit or fee is required. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Code text checked: Land Development Code 25-2-903 (city copy, https://www.austintexas.gov/edims/document.cfm?id=246534, labeled CURRENT CODE) allows garage sales as an accessory residential use at the seller's principal residence, max 4 days per calendar year at the same property. The section says nothing about a permit or fee, so permit stays null (silence).",
+    "notes": "Austin Land Development Code 25-2-903 (Municode). Garage sales are allowed as an accessory residential use and must be at the seller's principal residence. A sale may be held at the same property for a maximum of 4 days per calendar year. That is a yearly total of days, not a per-sale duration and not a count of sales, so max_days and sales_per_year are left unset. The section is silent on permit, fee, and hours, so those fields are left unknown. Signs are in LDC 25-10-102(E) (temporary on-premise signs): an on-property sign for a residential garage or yard sale may be displayed for no more than 7 consecutive days. The city common-violations page (https://www.austintexas.gov/development-services/common-austin-code-violations) says signs may be posted only on the property where the sale is occurring, for no more than three consecutive days, and that more than four garage sales per calendar year violates the City Code. The code is presented as the rule: 7 days for signs, and 4 days per calendar year (not 4 sales). The city page's 3-day sign limit and 4-sale wording are noted here as a conflict. City page: a garage sale may not be held at the same property more than 4 days per calendar year (Land Development Code 25-2-903), and not at a property on a residential tour. The same page also says 'more than four garage sales per calendar year' is a home-based business, so the 4-day vs 4-sale wording conflicts; sales_per_year and max_days left null until the code text is checked. Page does not say whether a permit or fee is required. Live site permit link is broken: +garage+sale+permit'] [2026-10-27 update] Code text checked: Land Development Code 25-2-903 (city copy, https://www.austintexas.gov/edims/document.cfm?id=246534, labeled CURRENT CODE) allows garage sales as an accessory residential use at the seller's principal residence, max 4 days per calendar year at the same property. The section says nothing about a permit or fee, so permit stays null (silence).",
     "original": {
       "city_name": "Austin",
       "county": "Travis",
@@ -547,12 +547,12 @@
     "region": "Texas",
     "sale_term": "Garage Sale",
     "permit_required": true,
-    "fee": "$0.00",
+    "fee": "Established by the city council (amount not stated in Sec. 5.402)",
     "sales_per_year": 2,
     "max_days": 3,
     "hours": null,
-    "sign_rules": "1 non-illuminated garage or estate sale sign, 2 sq ft max, temporary, on the property where the sale is held. Remove it within 24 hours after the sale ends.",
-    "how_to_apply": null,
+    "sign_rules": "Only one sign, not to exceed 2 square feet, upon the premises where and when the sale is taking place. The sign must be non-illuminated, and must be removed within 24 hours after the sale.",
+    "how_to_apply": "Secure a permit at least 72 hours before the sale and post it prominently on the premises during the sale.",
     "permit_link": "https://www.fortworthtexas.gov",
     "best_season": "Spring and Fall (April-May, September-October)",
     "cross_posting": [
@@ -561,8 +561,8 @@
       "Fort Worth Garage/Yard Sales Facebook Groups"
     ],
     "official_source_url": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037",
-    "last_checked": "2026-10-27",
-    "confidence": "partial",
+    "last_checked": "2026-11-20",
+    "confidence": "verified",
     "field_status": {
       "city": {
         "verified": false,
@@ -595,26 +595,26 @@
         "origin": "original_db"
       },
       "permit_required": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037"
       },
       "fee": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037"
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037"
       },
@@ -626,15 +626,15 @@
       },
       "sign_rules": {
         "verified": true,
-        "source": "https://codelibrary.amlegal.com/codes/ftworth/latest/overview",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38717"
       },
       "how_to_apply": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38037"
       },
       "permit_link": {
         "verified": false,
@@ -655,7 +655,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Browser pass 2026-10-27: Fort Worth City Code Sec. 6.403(j) (signs not requiring a permit) refers to 'property for which a garage sale permit has been obtained.' That conflicts with the city's Zoning Issues page (cited in the July review) saying no permit is required. Permit left unknown; follow up on the conflict. Sec. 20-258(c) exempts occasional residential garage sales from the secondhand dealer rules. The $10 fee on fortworthtexas.gov/news/2025/9/garage-sales is for city-run community-center sales only. Fee, limits, and hours not stated. Live site permit link is broken: https://www.fortworthtexas.gov+garage+sale+permit'] [2026-10-27 update] Zoning Ordinance 5.402 (American Legal, opened 2026-10-27): no more than 2 garage sales per premises per calendar year, each up to 3 consecutive days, sale confined to garage or patio, 1 sign up to 2 sq ft on the premises. 5.402(d) still says a permit must be secured 72 hours ahead. The city's Code Compliance 'Zoning Issues' page says the city does not require permits for garage sales and asks residents to limit them to 2 a year (seen in search results today; the page returned 404 to a direct fetch). Council moved to drop the permit in Oct 2017 (FOX 4, 2017-10-13). Permit status stays unknown until the city confirms which rule applies.",
+    "notes": "Fort Worth Zoning Ordinance Appendix A Sec. 5.402 (American Legal). A permit shall be secured at least 72 hours prior to the sale and shall be prominently posted on the premises during the sale (recorded as permit required; how to apply is that 72-hour advance permit, posted during the sale). The permit fee amount shall be as established by the city council; the dollar amount is not stated in this section (recorded as that fee text, amount unknown). Sales are confined to garages and patios only. No more than 2 garage sales per calendar year on the same premises, each for a maximum of 3 consecutive days. Hours are not stated, so hours stay unknown. Sec. 5.402(f) allows only one sign, not to exceed 2 square feet, upon the premises where and when the sale is taking place. Sec. 6.403(j) (https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-38717) allows one non-illuminated sign of 2 square feet or less, to be removed within 24 hours after the sale. Sec. 20-258(c) (https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-22370) excludes garage sales at a private residence from secondhand dealer licensing. Official code as checked 2026-11-20 is the rule recorded here. Browser pass 2026-10-27: Fort Worth City Code Sec. 6.403(j) (signs not requiring a permit) refers to 'property for which a garage sale permit has been obtained.' That conflicts with the city's Zoning Issues page (cited in the July review) saying no permit is required. Permit left unknown; follow up on the conflict. Sec. 20-258(c) exempts occasional residential garage sales from the secondhand dealer rules. The $10 fee on fortworthtexas.gov/news/2025/9/garage-sales is for city-run community-center sales only. Fee, limits, and hours not stated. Live site permit link is broken: https://www.fortworthtexas.gov+garage+sale+permit'] [2026-10-27 update] Zoning Ordinance 5.402 (American Legal, opened 2026-10-27): no more than 2 garage sales per premises per calendar year, each up to 3 consecutive days, sale confined to garage or patio, 1 sign up to 2 sq ft on the premises. 5.402(d) still says a permit must be secured 72 hours ahead. The city's Code Compliance 'Zoning Issues' page says the city does not require permits for garage sales and asks residents to limit them to 2 a year (seen in search results today; the page returned 404 to a direct fetch). Council moved to drop the permit in Oct 2017 (FOX 4, 2017-10-13). Permit status stays unknown until the city confirms which rule applies.",
     "original": {
       "city_name": "Fort Worth",
       "county": "Tarrant",
@@ -685,7 +685,7 @@
     "fee": "$0.00",
     "sales_per_year": 3,
     "max_days": 2,
-    "hours": null,
+    "hours": "Daylight hours only",
     "sign_rules": "Signs must be placed on the property where the sale takes place. Off-site and public right-of-way placement is prohibited.",
     "how_to_apply": null,
     "permit_link": "https://www.elpasotexas.gov",
@@ -695,8 +695,8 @@
       "Nextdoor El Paso County",
       "El Paso Garage Sales Facebook Groups"
     ],
-    "official_source_url": "https://www.elpasotexas.gov/code-enforcement",
-    "last_checked": "2026-10-27",
+    "official_source_url": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.10SUUSRE_20.10.750YAGARUSA",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -743,21 +743,21 @@
       },
       "sales_per_year": {
         "verified": true,
-        "source": "https://www.elpasotexas.gov/code-enforcement",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.10SUUSRE_20.10.750YAGARUSA"
       },
       "max_days": {
         "verified": true,
-        "source": "https://www.elpasotexas.gov/code-enforcement",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.10SUUSRE_20.10.750YAGARUSA"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT20ZO_CH20.10SUUSRE_20.10.750YAGARUSA"
       },
       "sign_rules": {
         "verified": false,
@@ -790,7 +790,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "City page: no more than 3 sales a calendar year on the same lot in a residential district, no more than 2 days at a time (El Paso Municipal Code 20.10.750). The page does not mention a permit or fee. A 2010 city presentation said no city permit is required, but that is too old to count as current; permit left unverified. Live site permit link is broken: https://www.elpasotexas.gov+garage+sale+permit']",
+    "notes": "El Paso Code Sec. 20.10.750 (Municode). Yard and garage sales are allowed outdoors during daylight hours (recorded as hours: Daylight hours only). Maximum of 3 per calendar year on a single- or two-family lot, and 6 at places of public assembly or city parks (the residential cap is recorded as 3 sales a year). Each sale may last a maximum of 2 days. Subsection D requires authorization or a permit from the property owner or managing entity only at places of public assembly and city parks. No permit requirement is stated for residential lots, so the general permit and fee are left unknown (silence is not treated as no permit). Sec. 5.12.160(E) excludes neighborhood garage sales from business licensing; that is not a general no-permit answer. Selling on or near the public right-of-way is prohibited (Sec. 20.02.414 and Sec. 13.20.040). Sign rules were not set from those right-of-way selling rules. City page: no more than 3 sales a calendar year on the same lot in a residential district, no more than 2 days at a time (El Paso Municipal Code 20.10.750). The page does not mention a permit or fee. A 2010 city presentation said no city permit is required, but that is too old to count as current; permit left unverified. Live site permit link is broken: https://www.elpasotexas.gov+garage+sale+permit']",
     "original": {
       "city_name": "El Paso",
       "county": "El Paso",
@@ -965,8 +965,8 @@
       "Nextdoor Nueces County",
       "Corpus Christi Garage Sales Facebook Groups"
     ],
-    "official_source_url": "https://www.corpuschristitx.gov/department-directory/development-services/code-compliance/",
-    "last_checked": "2026-10-27",
+    "official_source_url": "https://library.municode.com/tx/corpus_christi/codes/code_of_ordinances?nodeId=PTIIITHCOOR_CH38PEVEMOFOVEITMESO_ARTIINGE_S38-3APAFDE",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -1013,15 +1013,15 @@
       },
       "sales_per_year": {
         "verified": true,
-        "source": "https://www.corpuschristitx.gov/department-directory/development-services/code-compliance/",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/tx/corpus_christi/codes/code_of_ordinances?nodeId=PTIIITHCOOR_CH38PEVEMOFOVEITMESO_ARTIINGE_S38-3APAFDE"
       },
       "max_days": {
         "verified": true,
-        "source": "https://www.corpuschristitx.gov/department-directory/development-services/code-compliance/",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/tx/corpus_christi/codes/code_of_ordinances?nodeId=PTIIITHCOOR_CH38PEVEMOFOVEITMESO_ARTIINGE_S38-3APAFDE"
       },
       "hours": {
         "verified": false,
@@ -1030,10 +1030,10 @@
         "origin": "none"
       },
       "sign_rules": {
-        "verified": true,
-        "source": "https://www.corpuschristitx.gov/department-directory/development-services/code-compliance/",
-        "checked": "2026-10-27",
-        "origin": "official_source"
+        "verified": false,
+        "source": null,
+        "checked": null,
+        "origin": "original_db"
       },
       "how_to_apply": {
         "verified": false,
@@ -1060,7 +1060,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "City page: 3 garage/yard/estate sales per calendar year, each up to 3 days (sec. 38-3-9). Page does not say whether a permit or fee is required. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Corpus Christi Code Sec. 38-3(10) (Municode; this is the real section, not Sec. 38-3-9 as previously cited). The Chapter 38 peddlers and vendors article does not apply to residential garage sales. That is an exemption from that article, not a statement that no permit of any kind is required, so the general permit and fee are left unknown. Maximum of 3 sales per calendar year per residence or household (recorded as 3 sales a year). Each sale may last a maximum of 3 consecutive days or 2 consecutive weekends (recorded as max 3 days; the 2-consecutive-weekends alternative is noted here). Sales beyond those limits are business operations. Zoning and signs were not checked, and the fee is not addressed in this section. City page: 3 garage/yard/estate sales per calendar year, each up to 3 days (sec. 38-3-9). Page does not say whether a permit or fee is required. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Corpus Christi",
       "county": "Nueces",
@@ -1236,7 +1236,7 @@
       "Tucson Yard and Garage Sales Facebook Groups"
     ],
     "official_source_url": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-25386",
-    "last_checked": "2026-10-27",
+    "last_checked": "2026-11-20",
     "confidence": "partial",
     "field_status": {
       "city": {
@@ -1283,13 +1283,13 @@
       },
       "sales_per_year": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-25386"
       },
       "max_days": {
         "verified": true,
-        "checked": "2026-10-27",
+        "checked": "2026-11-20",
         "origin": "official_source",
         "source": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-25386"
       },
@@ -1330,7 +1330,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Tucson Code 16-39.1: no more than 4 yard sales a calendar year per residential property, none longer than 3 consecutive days. Violations are civil infractions, $100 to $2,500 (16-48). No permit or fee language. Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Tucson Code Sec. 16-39.1 (American Legal). No more than 4 yard sales per calendar year per residential property, and none longer than 3 consecutive days (recorded as 4 sales a year, max 3 consecutive days). A violation is a civil infraction (Sec. 16-48(2)). The definition is in Sec. 16-4 (https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az/0-0-0-11105). The code is silent on permit, fee, hours, and signs, so those fields are left unknown. UDC temporary-use sections have no yard-sale text. Tucson Code 16-39.1: no more than 4 yard sales a calendar year per residential property, none longer than 3 consecutive days. Violations are civil infractions, $100 to $2,500 (16-48). No permit or fee language. Live site permit link is broken: +garage+sale+permit']",
     "original": {
       "city_name": "Tucson",
       "county": "Pima",
