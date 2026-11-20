@@ -13115,8 +13115,8 @@
       "Nextdoor Fairfield County",
       "Stamford Tag Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
+    "official_source_url": "https://library.municode.com/ct/stamford/codes/code_of_ordinances?nodeId=COOR_CH179PESTVESO_ARTIIIITVE_S179-29EX",
+    "last_checked": "2026-11-20",
     "confidence": "unverified",
     "field_status": {
       "city": {
@@ -13210,7 +13210,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Stamford Code Sec. 179-29 (Municode), itinerant vendor exemptions. The article does not apply to tag sales or garage sales on premises devoted to residential use and where permitted by local law. That is an exemption from the itinerant vendor license, not a statement that no permit of any kind is required, so the general permit and fee are left unknown. No duration, hours, or sign rules were found in the opened section. Confidence stays unverified, and no legal fields are set.",
     "original": {
       "city_name": "Stamford",
       "county": "Fairfield",
@@ -13238,8 +13238,8 @@
     "sale_term": "Tag Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
+    "sales_per_year": 3,
+    "max_days": 2,
     "hours": null,
     "sign_rules": "Signs must stay strictly on private property. Attaching signs to trees, telephone poles, or public structures is banned.",
     "how_to_apply": null,
@@ -13250,9 +13250,9 @@
       "Nextdoor Fairfield County",
       "Bridgeport Tag Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/ct/bridgeport/codes/code_of_ordinances?nodeId=TIT5BULIRE_CH5.68TASA",
+    "last_checked": "2026-11-20",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -13297,16 +13297,16 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ct/bridgeport/codes/code_of_ordinances?nodeId=TIT5BULIRE_CH5.68TASA"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/ct/bridgeport/codes/code_of_ordinances?nodeId=TIT5BULIRE_CH5.68TASA"
       },
       "hours": {
         "verified": false,
@@ -13345,7 +13345,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Bridgeport Code Ch. 5.68, Sec. 5.68.010 (Municode). Each residence within the city is permitted to conduct three tag sales per calendar year, with each sale not to extend beyond two consecutive calendar days (recorded as 3 sales a year, max 2 consecutive days). Items offered for sale are limited to the household goods from that particular residence; items purchased, bartered, or otherwise obtained from other sources for the purpose of resale will not be construed as household items. A fine of one hundred dollars ($100.00) per day, per occurrence shall be levied for violations of this section. This chapter does not mention a permit, fee, hours, or signs, so those fields are left unknown.",
     "original": {
       "city_name": "Bridgeport",
       "county": "Fairfield",
