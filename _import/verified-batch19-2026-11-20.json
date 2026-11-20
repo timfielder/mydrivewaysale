@@ -1,0 +1,69 @@
+{
+  "sacramento-ca-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-12627",
+    "set": {
+      "how_to_apply": "A secondhand dealer permit is required to hold more than 1 garage sale per calendar year, or a sale longer than 2 consecutive days (City Code 5.80.010 and 5.80.020). Applications go to the chief of police (5.80.050). The application fee is set by council resolution (amount not stated in 5.80.060). The code does not explicitly say that no permit is required for 1 sale of 2 days or less."
+    },
+    "field_sources": {
+      "how_to_apply": "https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-12627"
+    },
+    "notes": "Sacramento City Code Ch. 5.80 (American Legal). Sec. 5.80.010 requires a permit to operate as a secondhand dealer, junk dealer, pawnbroker, or pallet reseller. Sec. 5.80.020: a secondhand dealer also includes any person who conducts more than one garage sale per calendar year, or who conducts a garage sale which extends beyond two consecutive days. That is a conditional permit requirement for more than 1 sale a year or a sale longer than 2 consecutive days, recorded in how to apply. It is not a hard cap of 1 sale or 2 days, so sales_per_year and max_days are left unset (earlier values of 1 and 2 were those thresholds and were cleared). The code does not say that no permit is required for 1 sale of 2 days or less; that case is implied, not explicit, so permit_required is left unknown and is not recorded as No. Sec. 5.80.060: the application fee is a nonrefundable fee set by council resolution (dollar amount unknown). Applications go to the chief of police (5.80.050). Sec. 5.80.030: a violation is an infraction. This conditional requirement does not verify the row, because a verified Yes would tell every seller they need a permit, and a verified No would claim no permit for a single sale, which the code does not explicitly say."
+  },
+  "salem-or-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/or/salem/codes/code_of_ordinances?nodeId=PTIICOOR_TITVIIIOF_CH95MIOF_S95.165GASALI",
+    "set": {
+      "sales_per_year": 3,
+      "max_days": 3
+    },
+    "field_sources": {
+      "sales_per_year": "https://library.municode.com/or/salem/codes/code_of_ordinances?nodeId=PTIICOOR_TITVIIIOF_CH95MIOF_S95.165GASALI",
+      "max_days": "https://library.municode.com/or/salem/codes/code_of_ordinances?nodeId=PTIICOOR_TITVIIIOF_CH95MIOF_S95.165GASALI"
+    },
+    "notes": "Salem Code Sec. 95.165 (Municode). Subsection (b): a maximum of 3 garage sales per calendar year, each no longer than 3 days (recorded as 3 sales a year, max 3 days). Subsection (a) exempts a single priced item, unsigned sales, and nonprofit sales. The section is silent on permit, fee, and hours, so those fields are left unknown (silence is not treated as no permit)."
+  },
+  "reno-nv-garage-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART5TEUSST_18.03.503STSPTEUS",
+    "set": {
+      "sales_per_year": 4,
+      "max_days": 3
+    },
+    "field_sources": {
+      "sales_per_year": "https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART5TEUSST_18.03.503STSPTEUS",
+      "max_days": "https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART5TEUSST_18.03.503STSPTEUS"
+    },
+    "notes": "Reno Land Development Code Sec. 18.03.503(d) (Municode). A garage sale is allowed only on residential premises with a principal dwelling. No more than 4 garage sales may be held per year on the same premises, and a sale may last a maximum of 3 days (recorded as 4 sales a year, max 3 days). Table 3-1 marks Garage Sale as P (permitted) in most districts. Sec. 18.03.501 is a generic requirement to obtain all required permits and names no garage-sale permit. This section is silent on a permit or fee, and no hours or signs are stated, so those fields are left unknown (silence is not treated as no permit)."
+  },
+  "tampa-fl-yard-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA",
+    "set": {
+      "sales_per_year": 2,
+      "max_days": 3
+    },
+    "field_sources": {
+      "sales_per_year": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA",
+      "max_days": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH27ZOLADE_ARTVISURE_DIV2RESPUS_S27-282.3GAYASA"
+    },
+    "notes": "Tampa Code Sec. 27-282.3 (Municode). Subsection (a): garage and yard sales are allowed as an accessory use in all residential districts, limited to 1 sale per six-month period, for a maximum of 3 days (recorded as 2 sales a year, with that six-month spacing, and max 3 days). Subsection (b) says sales must comply with the licensing provisions of Chapter 24. Chapter 24 (Taxation, Secs. 24-1 to 24-125) never mentions garage, yard, or tag sales, and Sec. 24-102 taxes only enumerated businesses. That cross-reference leads nowhere, so the general permit and fee are left unknown."
+  },
+  "st.-petersburg-fl-yard-sale-guide": {
+    "confidence": "partial",
+    "official_source_url": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA",
+    "set": {
+      "sales_per_year": 4,
+      "max_days": 3,
+      "hours": "Daylight hours only; prohibited Monday through Thursday",
+      "sign_rules": "One on-property sign of 4 square feet or less, displayed only in daylight on allowed sale days."
+    },
+    "field_sources": {
+      "sales_per_year": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA",
+      "max_days": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA",
+      "hours": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA",
+      "sign_rules": "https://library.municode.com/fl/st._petersburg/codes/code_of_ordinances?nodeId=PTIISTPECO_CH16LADERE_S16.50.160GASA"
+    },
+    "notes": "St. Petersburg Code Sec. 16.50.160 (Municode). Subsection .5: a maximum of 4 garage sales per calendar year, not within 60 days of another sale, prohibited Monday through Thursday, daylight hours only, and a maximum of 3 consecutive days (recorded as 4 sales a year, max 3 days, and hours: daylight only, prohibited Monday through Thursday; the 60-day spacing stays in these notes). Subsection .4: one on-property sign of 4 square feet or less, displayed only in daylight on allowed sale days. Subsection .3: items may be displayed only on private property and not in the visibility triangle. The section is silent on permit and fee, so those fields are left unknown (silence is not treated as no permit)."
+  }
+}
