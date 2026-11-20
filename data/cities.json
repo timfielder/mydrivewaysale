@@ -11630,8 +11630,8 @@
       "Nextdoor Hudson County",
       "Jersey City Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
+    "official_source_url": "https://library.municode.com/nj/jersey_city/codes/code_of_ordinances?nodeId=CH81ADMA_ARTIHASI_S81-13PRAPACSECORE",
+    "last_checked": "2026-11-20",
     "confidence": "unverified",
     "field_status": {
       "city": {
@@ -11725,7 +11725,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Jersey City Code Sec. 81-13(A)(3) (Municode). The owner, or lessee if the property is leased, of property used for a yard or garage sale is the person responsible for posting a handbill or sign advertising a yard or garage sale; the opened text frames that as the presumption used for sign-removal costs. This is recorded as a note only. No garage-sale permit, fee, duration, hours, or posting-location rules were taken from this section. Confidence stays unverified, and no legal fields are set.",
     "original": {
       "city_name": "Jersey City",
       "county": "Hudson",
@@ -12698,10 +12698,10 @@
     "sale_term": "Rummage Sale",
     "permit_required": false,
     "fee": "$0.00",
-    "sales_per_year": null,
-    "max_days": null,
-    "hours": null,
-    "sign_rules": "Signs permitted on private property with owner's consent. Prohibited on traffic signals, light posts, or public rights-of-way.",
+    "sales_per_year": 3,
+    "max_days": 3,
+    "hours": "7:00 a.m. to 6:00 p.m.",
+    "sign_rules": "Signs may be a maximum of 12 square feet, with a maximum of two signs per sale. Signs may not be placed on any public structure, including light poles, directional or stop signs, city right-of-way, or in street medians. Signs may be placed on a neighboring property with owner consent. All signs must be removed by 8:00 a.m. of the day following the completion of the sale.",
     "how_to_apply": null,
     "permit_link": null,
     "best_season": "Summer (June-August)",
@@ -12710,9 +12710,9 @@
       "Nextdoor Racine County",
       "Racine Rummage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/wi/racine/codes/code_of_ordinances?nodeId=PTIIMUCO_CH114ZO_ARTVDIRE_DIV2REDI_SDIIR1SIMIREDI_S114-273ACUS",
+    "last_checked": "2026-11-20",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -12757,28 +12757,28 @@
         "origin": "original_db"
       },
       "sales_per_year": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/wi/racine/codes/code_of_ordinances?nodeId=PTIIMUCO_CH114ZO_ARTVDIRE_DIV2REDI_SDIIR1SIMIREDI_S114-273ACUS"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/wi/racine/codes/code_of_ordinances?nodeId=PTIIMUCO_CH114ZO_ARTVDIRE_DIV2REDI_SDIIR1SIMIREDI_S114-273ACUS"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/wi/racine/codes/code_of_ordinances?nodeId=PTIIMUCO_CH114ZO_ARTVDIRE_DIV2REDI_SDIIR1SIMIREDI_S114-273ACUS"
       },
       "sign_rules": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "original_db"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/wi/racine/codes/code_of_ordinances?nodeId=PTIIMUCO_CH114ZO_ARTVDIRE_DIV2REDI_SDIIR1SIMIREDI_S114-273ACUS"
       },
       "how_to_apply": {
         "verified": false,
@@ -12805,7 +12805,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Racine Code Sec. 114-273(16) (Municode), accessory uses in the R1 single-family district only; other zoning districts were not checked. A rummage sale may last a maximum of three consecutive days per property, may start no earlier than 7:00 a.m., and may run no later than 6:00 p.m. Maximum of three sales within the calendar year, with a month separation between sales (recorded as 3 sales a year; the month-between-sales rule is also in these notes). Display is allowed within the property boundaries only; items for sale may not be placed within the sidewalk, parkway, alley, or street. Prohibited items at a rummage sale are motor vehicles and secondhand goods obtained for purposes of resale. Any person may file a complaint with the building inspection department. These sections do not mention a permit or fee, so those fields are left unknown.",
     "original": {
       "city_name": "Racine",
       "county": "Racine",
