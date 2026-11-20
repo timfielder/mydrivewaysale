@@ -10,7 +10,7 @@ import AmazonPicks from '../components/AmazonPicks.astro';
 import AppPromo from '../components/AppPromo.astro';
 import pages from '../../data/pages.json' with { type: 'json' };
 import { allCities, pageTitle, metaDescription } from '../lib/cities.mjs';
-import { AMAZON_BY_PAGE } from '../lib/amazon.mjs';
+import { AMAZON_BY_PAGE, renderAmazonBlock, amazonGroupsFor } from '../lib/amazon.mjs';
 import { pageTypeFor } from '../lib/page-types.mjs';
 import LiveHubHead from '../components/LiveHubHead.astro';
 import LiveHubBody from '../components/LiveHubBody.astro';
@@ -47,6 +47,16 @@ const live = kind === 'live' ? PAGE_META[page.live] : kind === 'cityTopic' ? PAG
 const articlePage = kind === 'cityTopic' ? pageByPath[`/${article}/`] : null;
 const stubType = page ? pageTypeFor(page.path) : null;
 const stubPicks = page ? (AMAZON_BY_PAGE[page.path] ?? []) : [];
+
+function withAmazon(html, key) {
+  const groups = amazonGroupsFor(key);
+  if (!groups.length) return html;
+  const block = renderAmazonBlock(groups);
+  if (html.includes('%%AMAZON%%')) return html.replace('%%AMAZON%%', block);
+  if (html.includes('%%FOOTER%%')) return html.replace('%%FOOTER%%', `${block}\n%%FOOTER%%`);
+  return html + block;
+}
+const liveHtml = kind === 'live' ? withAmazon(tplOf(pageTpl, `pages/${page.live}`), page.path) : null;
 ---
 {kind === 'city' ? (
   <Base title={pageTitle(r)} description={metaDescription(r)} pageType="city" canvas bodyClass={liveMeta.body_class_city}>
@@ -61,7 +71,7 @@ const stubPicks = page ? (AMAZON_BY_PAGE[page.path] ?? []) : [];
 ) : kind === 'live' ? (
   <Base title={page.title} description={`${page.title} from My Driveway Sale.`} canonicalPath={page.canonical} pageType={stubType} canvas bodyClass={live.body_class}>
     <LivePageHead slot="head" css={live.css} headCss={live.head_css} />
-    <LiveHubBody html={tplOf(pageTpl, `pages/${page.live}`)} />
+    <LiveHubBody html={liveHtml} />
   </Base>
 ) : kind === 'stateHub' ? (
   <Base title={stateGuideTitle(stateName)} description={`${stateName} garage sale guide from My Driveway Sale.`} canonicalPath="/hub/" noindex pageType="hub" canvas bodyClass={liveMeta.body_class_hub}>
