@@ -10145,8 +10145,8 @@
       "Nextdoor Fayette County",
       "Lexington Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
+    "official_source_url": "https://library.municode.com/ky/lexington-fayette_urban/codes/code_of_ordinances/485367?nodeId=sec15_13",
+    "last_checked": "2026-11-20",
     "confidence": "unverified",
     "field_status": {
       "city": {
@@ -10240,7 +10240,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Lexington-Fayette Urban County Code Sec. 15-13 (Municode). The provisions of Sec. 15-12 shall not apply to yard sales, garage sales, bake sales, or other similar types of activities. These activities must be temporary in nature, must comply with all local ordinance and zoning ordinance provisions, and must not be located on public property or public right-of-way unless expressly authorized by the urban county government. That is an exemption from the Sec. 15-12 peddler license, not a statement that no permit of any kind is required, so the general permit and fee are left unknown. Duration, hours, and sign rules were not found in the opened section. Confidence stays unverified, and no legal fields are set, because a partial row needs a verified legal field and none of these conditions fit one without misstating it.",
     "original": {
       "city_name": "Lexington",
       "county": "Fayette",
@@ -10550,8 +10550,8 @@
       "Nextdoor Richmond City",
       "Richmond VA Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
+    "official_source_url": "https://library.municode.com/va/richmond/codes/code_of_ordinances?nodeId=PTIICICO_CH6BUBURE_ARTIXSIVE_DIV1GE_S6-453DE",
+    "last_checked": "2026-11-20",
     "confidence": "unverified",
     "field_status": {
       "city": {
@@ -10645,7 +10645,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Richmond Code Sec. 6-453 (Municode): the definition of flea market does not include garage sales, yard sales, or estate sales held in conjunction with residential uses (https://library.municode.com/va/richmond/codes/code_of_ordinances?nodeId=PTIICICO_CH6BUBURE_ARTIXSIVE_DIV1GE_S6-453DE). Sec. 26-872 has the same exclusion for license taxes (https://library.municode.com/va/richmond/codes/code_of_ordinances?nodeId=PTIICICO_CH26TA_ARTXVLITA_DIV1GE_S26-872DE). These are definitional exclusions only. No garage-sale permit, fee, duration, hours, or sign rules were found in the opened sections. Confidence stays unverified, and no legal fields are set.",
     "original": {
       "city_name": "Richmond",
       "county": "Independent City",
@@ -10685,8 +10685,8 @@
       "Nextdoor Virginia Beach",
       "Virginia Beach Yard Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
+    "official_source_url": "https://library.municode.com/va/virginia_beach/codes/code_of_ordinances?nodeId=CO_CH26PESO_ARTIICOSO_DIV2PE_S26-26PERE",
+    "last_checked": "2026-11-20",
     "confidence": "unverified",
     "field_status": {
       "city": {
@@ -10780,7 +10780,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Virginia Beach Code Sec. 26-26(b) (Municode). The Police Department peddler and solicitor permit requirement shall not apply to occasional garage sales in residential areas. Occasional is not defined in the opened section. That is an exemption from this peddler permit, not a statement that no permit of any kind is required, so the general permit and fee are left unknown. No duration, hours, or sign rules were found. Confidence stays unverified, and no legal fields are set.",
     "original": {
       "city_name": "Virginia Beach",
       "county": "Independent City",
@@ -12294,7 +12294,7 @@
     "permit_required": false,
     "fee": "$0.00",
     "sales_per_year": null,
-    "max_days": null,
+    "max_days": 4,
     "hours": null,
     "sign_rules": "Signs allowed strictly on private property with owner permission. Banned on public right-of-ways, utility poles, and municipal trees.",
     "how_to_apply": null,
@@ -12305,9 +12305,9 @@
       "Nextdoor Dane County",
       "Madison Rummage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/wi/madison/codes/code_of_ordinances?nodeId=COORMAWIVOIICH20--31_CH28ZOCOOR_SUBCHAPTER_28JSURE",
+    "last_checked": "2026-11-20",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -12358,10 +12358,10 @@
         "origin": "none"
       },
       "max_days": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/wi/madison/codes/code_of_ordinances?nodeId=COORMAWIVOIICH20--31_CH28ZOCOOR_SUBCHAPTER_28JSURE"
       },
       "hours": {
         "verified": false,
@@ -12400,7 +12400,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Madison Code Sec. 28.151 (Municode). A yard sale shall not exceed four (4) days in duration, and no more than one sale shall be held in any three-month period (recorded as max days 4; the three-month window is not recorded as sales_per_year, because that field is a yearly count and rounding the window to 4 would misstate the rule). Sec. 28.211 defines a yard sale as any lawn sale, garage sale, attic sale, rummage sale, moving sale, or other similar sale involving the display and/or sale of new and/or used goods on a zoning lot where the principal use is residential (https://library.municode.com/wi/madison/codes/code_of_ordinances?nodeId=COORMAWIVOIICH20--31_CH28ZOCOOR_SUBCHAPTER_28ODERUCO_28.211DE). These sections do not mention a permit, fee, hours, or signs, so those fields are left unknown.",
     "original": {
       "city_name": "Madison",
       "county": "Dane",
@@ -12565,7 +12565,7 @@
     "fee": "$0.00",
     "sales_per_year": null,
     "max_days": null,
-    "hours": null,
+    "hours": "8:00 a.m. to 9:00 p.m.",
     "sign_rules": "Signs must be placed on private property only. Strictly prohibited on public utility poles, trees, or city right-of-ways.",
     "how_to_apply": null,
     "permit_link": null,
@@ -12575,9 +12575,9 @@
       "Nextdoor Kenosha County",
       "Kenosha Rummage Sales Facebook Groups"
     ],
-    "official_source_url": null,
-    "last_checked": null,
-    "confidence": "unverified",
+    "official_source_url": "https://library.municode.com/wi/kenosha/codes/code_of_ordinances?nodeId=SUHITA_CHXIOFAGGOORCO_11.149RUGASA",
+    "last_checked": "2026-11-20",
+    "confidence": "partial",
     "field_status": {
       "city": {
         "verified": false,
@@ -12634,10 +12634,10 @@
         "origin": "none"
       },
       "hours": {
-        "verified": false,
-        "source": null,
-        "checked": null,
-        "origin": "none"
+        "verified": true,
+        "checked": "2026-11-20",
+        "origin": "official_source",
+        "source": "https://library.municode.com/wi/kenosha/codes/code_of_ordinances?nodeId=SUHITA_CHXIOFAGGOORCO_11.149RUGASA"
       },
       "sign_rules": {
         "verified": false,
@@ -12670,7 +12670,7 @@
         "origin": "original_db"
       }
     },
-    "notes": "Live site permit link is broken: +garage+sale+permit']",
+    "notes": "Kenosha Code Sec. 11.149 (Municode). It is unlawful to sell other than personal property at a rummage or garage sale. It is unlawful to conduct such a sale on more than six (6) calendar days, whether or not consecutive, within any calendar year; that is a yearly total of days, not a per-sale duration and not a count of sales, so max_days and sales_per_year are left unset. Sales are prohibited during the hours of 9:00 p.m. to 8:00 a.m. on any day (recorded as 8:00 a.m. to 9:00 p.m.). The City Departments of City Inspections and Police have authority to enforce this section. This section does not state a permit, fee, or sign rules, so those fields are left unknown.",
     "original": {
       "city_name": "Kenosha",
       "county": "Kenosha",
